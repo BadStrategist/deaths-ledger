@@ -35,12 +35,6 @@
     ["population.html", "population", "Population", '<path d="M5 2h10M5 18h10M6 3c0 5 4 5 4 7s-4 2-4 7h8c0-5-4-5-4-7s4-2 4-7z" fill="none" stroke="#d4a65a" stroke-width="1.6"/>', "● LIVE"],
     ["watcher.html", "watcher", "Data watcher", '<path d="M1 10s3-6 9-6 9 6 9 6-3 6-9 6-9-6-9-6z" fill="none" stroke="#d4a65a" stroke-width="1.6"/><circle cx="10" cy="10" r="3" fill="#e8323c"/>'],
   ];
-  const SOON = [
-    ["Is it safe?", '<path d="M10 2l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V5z" fill="none" stroke="#d4a65a" stroke-width="1.6"/>'],
-    ["Kept on death", '<path d="M10 3v14M4 6h12M4 6l-2 6h4zM16 6l-2 6h4z" fill="none" stroke="#d4a65a" stroke-width="1.5"/>'],
-    ["Danger index", '<circle cx="10" cy="8" r="6" fill="#e9dbb8"/><circle cx="7.8" cy="8" r="1.6"/><circle cx="12.2" cy="8" r="1.6"/><path d="M7 14h6v4H7z" fill="#e9dbb8"/>'],
-    ["Death map", '<path d="M2 4l5-2 6 2 5-2v14l-5 2-6-2-5 2z" fill="none" stroke="#d4a65a" stroke-width="1.5"/><circle cx="10" cy="9" r="2" fill="#e8323c"/>'],
-  ];
 
   function chrome(pop, gy) {
     $("#top").innerHTML = `
@@ -58,8 +52,7 @@
     $("#nav").innerHTML = `<h3>Death's Office</h3><div class="body">` +
       NAV.map(([href, id, label, icon, tag]) =>
         `<a href="${href}" class="${PAGE === id ? "on" : ""}"><svg viewBox="0 0 20 20" aria-hidden="true">${icon}</svg>${label}${tag ? `<span class="tag">${tag}</span>` : ""}</a>`).join("") +
-      SOON.map(([label, icon]) =>
-        `<a class="soon" aria-disabled="true"><svg viewBox="0 0 20 20" aria-hidden="true">${icon}</svg>${label}<span class="tag">SOON</span></a>`).join("") +
+
       `</div>`;
   }
 

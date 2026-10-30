@@ -362,3 +362,33 @@ main,aside.rail,nav.side{min-width:0}
   .g .rsn,.t-obelisk .rsn{font-size:12px}
   .brand h1{font-size:20px}
 }
+
+/* ===== polish pass 2026-10-30 (verified with device emulation) ===== */
+.more[hidden]{display:none}                 /* the button style was overriding [hidden] */
+@media (max-width:760px){
+  /* readable minimums: nothing under 9-10px on a phone */
+  .brand small{font-size:9px;letter-spacing:2px}
+  .g .last{font-size:9px;line-height:1.55;letter-spacing:0}
+  .g .last b{font-size:9px}
+  .badge,.notable{font-size:9px;padding:3px 6px}
+  .pill{font-size:9px;padding:3px 6px}
+  .tab{font-size:10px}
+  .legend{font-size:9px}
+  .tally span,.pop-sub,.hourbars .lab,.memorial .eyebrow{font-size:9px}
+  .ledger th{font-size:9px}
+  nav.side a{font-size:13px}
+  nav.side .body{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+/* 9px floor for the pixel font on every screen size */
+nav.side a .tag,.notable,.badge,.pill,.g .last,.g .last b{font-size:9px}
+/* keep the corner rivet off the first column of framed tables */
+.frame > .ledger th:first-child,.frame > .ledger td:first-child{padding-left:18px}
+@media (max-width:760px){
+  /* run number sits inside the stone, bottom-right, instead of off the rounded top */
+  .g .run{top:auto;bottom:8px;right:10px;font-size:13px}
+  /* ledger columns sized so the date/time fits on one line */
+  .ledger{font-size:15px}
+  .ledger th:nth-child(1){width:34%} .ledger th:nth-child(2){width:17%}
+  .ledger th:nth-child(5){width:15%} .ledger th:nth-child(7){width:34%}
+  .frame > .ledger th:first-child,.frame > .ledger td:first-child{padding-left:16px}
+}
