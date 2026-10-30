@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Probe endpoints
         run: |
-          UA="DeathsLedger/1.0 (+https://github.com/BadStrategist/deaths-ledger)"
+          UA="DeathToll/1.0 (+https://deathtoll.gg)"
           H=https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman
           for u in \
             "https://secure.runescape.com/m=hiscore_oldschool/overall" \

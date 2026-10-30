@@ -1,4 +1,4 @@
-/* Death's Ledger: renders every page from the JSON files the pipeline publishes in data/. */
+/* Hardcore Worlds: Death Toll — renders every page from the JSON files the pipeline publishes in data/. */
 (function () {
   "use strict";
   const PAGE = document.body.dataset.page;
@@ -50,7 +50,7 @@
         <path d="M24 50c2-6 6-8 8-9 2 1 6 3 8 9z" fill="#e8323c"/>
         <circle cx="32" cy="18" r="6" fill="#e9dbb8"/><circle cx="29.8" cy="17.5" r="1.6" fill="#000"/><circle cx="34.2" cy="17.5" r="1.6" fill="#000"/>
       </svg>
-      <a class="brand" href="index.html"><h1>Death's Ledger</h1><small>THE HARDCORE WORLDS GRAVEYARD</small></a>
+      <a class="brand" href="index.html"><small>HARDCORE WORLDS</small><h1>Death Toll</h1></a>
       <div class="top-live">
         <div class="orb alive" title="Players on Hardcore Worlds right now"><i>♥</i><b>${pop && pop.hardcore_total != null ? fmt(pop.hardcore_total) + " alive" : "awaiting launch"}</b></div>
         <div class="orb dead" title="Deaths recorded"><i>☠</i><b>${fmt(gy && gy.counts ? gy.counts.all_time : 0)} fallen</b></div>
@@ -293,7 +293,9 @@
       const idx = hc ? 1 : 2;
       const pts = pop.history.filter(p => p[0] >= cut && p[idx] != null);
       if (pts.length < 2) { svg.innerHTML = `<text x="20" y="40">Collecting data… one point every run.</text>`; return; }
-      const W = 800, H = 280, L = 56, B = 26;
+      // Draw in real pixels so labels stay crisp and unsquashed on phones.
+      const W = Math.max(Math.round(svg.clientWidth) || 800, 280), H = Math.round(svg.clientHeight) || 280, L = 56, B = 26;
+      svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
       const t0 = pts[0][0], t1 = pts[pts.length - 1][0];
       const vmax = Math.max(...pts.map(p => p[idx])) * 1.05, vmin = Math.min(...pts.map(p => p[idx])) * 0.95;
       const x = t => L + ((t - t0) / Math.max(t1 - t0, 1)) * (W - L - 10);
@@ -303,8 +305,9 @@
         const v = vmin + ((vmax - vmin) * i) / 4;
         grid += `<line x1="${L}" x2="${W - 10}" y1="${y(v)}" y2="${y(v)}" stroke="#3a3328" stroke-dasharray="3 4"/><text x="4" y="${y(v) + 5}">${fmt(Math.round(v))}</text>`;
       }
-      for (let i = 0; i <= 4; i++) {
-        const t = t0 + ((t1 - t0) * i) / 4;
+      const ticks = W < 500 ? 2 : 4;  // fewer time labels on narrow screens so they never overlap
+      for (let i = 0; i <= ticks; i++) {
+        const t = t0 + ((t1 - t0) * i) / ticks;
         const lab = range === 1 ? clock(t) : day(t);
         grid += `<text x="${Math.min(x(t) - 16, W - 60)}" y="${H - 4}">${lab}</text>`;
       }
@@ -315,6 +318,8 @@
     $("#range").addEventListener("click", e => { const b = e.target.closest("[data-d]"); if (b) { range = +b.dataset.d; drawChart(); } });
     $("#chart-title").textContent = hc ? "Players on Hardcore Worlds" : "Players on all OSRS worlds (Hardcore Worlds not listed yet)";
     drawChart();
+    let resizeTimer;
+    window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(drawChart, 150); });
     $("#worlds").innerHTML = (pop.worlds || []).map(w => `<tr><td class="n">World ${w.id}</td><td>${esc(w.region || "")}</td><td>${esc(w.activity || "")}</td><td class="y">${fmt(w.players)}</td></tr>`).join("")
       || `<tr><td colspan="4" class="note">Hardcore worlds appear here once Jagex adds them to the world list.</td></tr>`;
   }

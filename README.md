@@ -1,4 +1,6 @@
-# Death's Ledger
+# Hardcore Worlds: Death Toll
+
+Live at https://deathtoll.gg
 
 A live graveyard for Old School RuneScape **Hardcore Worlds** (launched 4 November 2026).
 Every death comes from the official hiscores. No plugin and no player input.

@@ -270,3 +270,95 @@ button.tab{line-height:normal;border-radius:0}
 .preview-flag{margin:0 0 14px;padding:10px 14px;font-family:'VT323',monospace;font-size:19px;color:var(--parch);
   background:repeating-linear-gradient(45deg,#3a2a00,#3a2a00 10px,#2a1f00 10px,#2a1f00 20px);border:2px solid #000;outline:1px solid #6b5a00;outline-offset:-4px}
 .preview-flag b{font-family:'Silkscreen',monospace;font-size:11px;color:var(--chat-yellow);margin-right:8px;font-weight:normal}
+
+/* ================= Phone layout (shipped 2026-10-30) ================= */
+.shell.two-col{grid-template-columns:210px minmax(0,1fr)}
+main,aside.rail,nav.side{min-width:0}
+@media (max-width:1180px){.shell.two-col{grid-template-columns:200px minmax(0,1fr)}}
+@media (max-width:760px){
+  body{font-size:15px}
+  .shell,.shell.two-col{grid-template-columns:minmax(0,1fr);gap:12px;padding:10px 12px}
+
+  /* header: brand left, one compact death counter right */
+  header.top{padding:10px 12px;gap:10px}
+  .logo-mark{width:38px;height:38px}
+  .brand h1{font-size:22px}
+  .brand small{font-size:8px;letter-spacing:1.5px}
+  .top-live{gap:6px}
+  .top-live .orb.alive{display:none}
+  .orb{font-size:17px;padding:3px 10px 3px 3px}
+  .orb i{width:22px;height:22px;font-size:12px}
+
+  /* menu: a tidy row of buttons, no sideways scrolling; "soon" items hidden */
+  nav.side{position:static}
+  nav.side h3{display:none}
+  nav.side .body{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:6px;overflow:visible}
+  nav.side a{margin:0;padding:9px 4px;justify-content:center;flex-direction:column;gap:4px;font-size:12px;text-align:center;white-space:normal}
+  nav.side a svg{width:18px;height:18px}
+  nav.side a .tag,nav.side a.soon{display:none}
+
+  .preview-flag{font-size:16px;padding:8px 10px}
+
+  /* hero stacks: memorial, then headline + counters */
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .memorial{border-right:none;border-bottom:1px solid var(--edge);padding:18px 12px 16px}
+  .big-stone{width:min(230px,78vw);padding:26px 12px 16px}
+  .big-stone .rsn{font-size:19px}
+  .big-stone .lvl{font-size:34px}
+  .candle{display:none}
+  .hero-right{padding:16px 14px 14px}
+  .hero-right h2{font-size:24px}
+  .tally{gap:6px}
+  .tally b{font-size:28px}
+  .chatbar{font-size:17px}
+
+  /* filters wrap into even rows; search full width */
+  .filters{gap:6px;margin:14px 0 10px}
+  .filters .sep{display:none}
+  .tab{font-size:9px;padding:8px 9px}
+  .search{width:100%;margin:2px 0 0;flex-basis:100%}
+
+  /* graveyard: two columns; obelisks become gold-trimmed headstones so nothing is clipped */
+  .yard{padding:64px 10px 24px;min-height:0}
+  .moon{width:44px;height:44px;top:14px;right:18px}
+  .rows{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 10px}
+  .g{max-width:none}
+  .g .face{min-height:0;padding:20px 6px 10px}
+  .g .rsn{font-size:13px}
+  .g .lvl{font-size:22px}
+  .g .last{font-size:7px}
+  .g .when{font-size:14px}
+  .t-obelisk .shape{display:none}
+  .t-obelisk .face{min-height:0;padding:20px 6px 10px;border:2px solid var(--gold-soft);border-radius:70px 70px 5px 5px;
+    background:linear-gradient(160deg,#4f473e,#2f2a24 60%,#24201c);
+    box-shadow:inset 2px 2px 0 rgba(255,255,255,.12),inset -3px -3px 0 rgba(0,0,0,.35),0 10px 16px rgba(0,0,0,.7)}
+  .t-obelisk .inner{padding:0}
+  .t-obelisk .rsn{font-size:13px;letter-spacing:0}
+  .t-wood .face{min-height:170px}
+  .t-wood .plaque{width:92%;padding:5px 4px;margin-bottom:18px}
+  .t-wood .plaque .rsn{font-size:12px}
+  .legend{gap:8px;font-size:8px}
+  .more{width:100%}
+
+  /* tables: fewer columns, no sideways overflow */
+  .ledger{font-size:16px;table-layout:fixed}
+  .ledger th,.ledger td{padding:6px;overflow-wrap:anywhere}
+  .ledger .hide-sm{display:none}
+
+  /* sidebar panels stack full width */
+  aside.rail{display:flex;flex-direction:column;align-items:stretch;gap:12px}
+
+  /* population + watcher pages */
+  .page-head{padding:16px 14px}
+  .page-head h2{font-size:24px}
+  .big-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .big-row b{font-size:30px}
+  .chart{height:200px}
+  .chart-wrap{padding:10px}
+  .events li{font-size:16px}
+}
+@media (max-width:360px){
+  .rows{gap:18px 8px}
+  .g .rsn,.t-obelisk .rsn{font-size:12px}
+  .brand h1{font-size:20px}
+}

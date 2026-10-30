@@ -11,7 +11,7 @@ CONFIG_PATH = os.environ.get("LEDGER_CONFIG", os.path.join(ROOT, "config.json"))
 # Persistent files live in DATA_DIR. In CI this is the checked-out `state` branch.
 DATA_DIR = os.environ.get("LEDGER_DATA_DIR", os.path.join(ROOT, "data"))
 
-USER_AGENT = "DeathsLedger/1.0 (+https://github.com/BadStrategist/deaths-ledger)"
+USER_AGENT = "DeathToll/1.0 (+https://deathtoll.gg)"
 
 
 def load_config():
