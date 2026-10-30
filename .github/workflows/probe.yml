@@ -1,0 +1,28 @@
+name: Probe (manual)
+
+# Diagnostics only: which Jagex endpoints answer from a GitHub runner.
+on: workflow_dispatch
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Probe endpoints
+        run: |
+          UA="DeathsLedger/1.0 (+https://github.com/BadStrategist/deaths-ledger)"
+          H=https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman
+          for u in \
+            "https://secure.runescape.com/m=hiscore_oldschool/overall" \
+            "$H/overall?table=0&page=2" \
+            "$H/ranking.json?table=0&category=0&size=50" \
+            "$H/index_lite.json?player=Journeykat" \
+            "$H/index_lite.ws?player=Journeykat" \
+            "https://secure.runescape.com/m=hiscore_oldschool/overall.ws?table=0&page=2" \
+            "https://services.runescape.com/m=hiscore_oldschool/overall?table=0&page=2"; do
+            code=$(curl -s -A "$UA" -o body.txt -w "%{http_code}" "$u")
+            echo "== $code $u"
+            grep -o -i -m3 'cloudflare\|just a moment\|cf-ray\|access denied\|attention required\|akamai\|reference #[0-9a-f.]*' body.txt | sort -u | tr '\n' ' '
+            echo; head -c 200 body.txt; echo
+          done
+          echo "== headers of a blocked page"
+          curl -s -A "$UA" -D - -o /dev/null "$H/overall?table=0&page=2" | head -20
