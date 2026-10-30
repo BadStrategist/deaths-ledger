@@ -101,6 +101,20 @@ def fetch_player(http, mode, name):
     return json.loads(body)
 
 
+MAIN_PLAYER = "https://secure.runescape.com/m=hiscore_oldschool/index_lite.json?player={name}"
+
+
+def on_main_game(http, name, xp):
+    """Transfer check: a character banished to the main game keeps its stats, so it shows up on
+    the main hiscores with at least the XP it had on Hardcore Worlds. Display names are unique
+    game-wide (to verify at launch), so the same name with that XP is the same character."""
+    status, body = http.get(MAIN_PLAYER.format(name=urllib.parse.quote(name)))
+    if status != 200 or body.lstrip().startswith("<"):
+        return False
+    overall = next((s for s in json.loads(body).get("skills", []) if s.get("name") == "Overall"), {})
+    return (overall.get("xp") or 0) >= (xp or 0)
+
+
 # ---------------------------------------------------------------- scan sizing
 
 def last_page(http, mode, hint=1):
@@ -304,10 +318,12 @@ def run(http=None, watcher=None):
             name, total, xp, last_seen = p["old"]
             player = fetch_player(http, mode, name)
             if player is None:
-                info = {}
-                rec = add_death(name, {"fate": "fallen", "time": now, "time_exact": False,
-                                       "window_start": last_seen, "total": total, "xp": xp})
-                st["ghosts"][k] = k + "|" + str(rec["run"])
+                banished = on_main_game(http, name, xp)
+                rec = add_death(name, {"fate": "banished" if banished else "fallen", "time": now,
+                                       "time_exact": False, "window_start": last_seen,
+                                       "total": total, "xp": xp})
+                if not banished:
+                    st["ghosts"][k] = k + "|" + str(rec["run"])  # may still turn out a reset or a transfer
             else:
                 info = details(player)
                 if (info.get("xp") or 0) < xp:
@@ -316,6 +332,15 @@ def run(http=None, watcher=None):
                 else:
                     seen[k] = [name, info.get("total"), info.get("xp"), now]  # still alive
             st["pending"].pop(k)
+        # Still-unexplained disappearances: a transfer can show up on the main hiscores later.
+        # Bounded per cycle so a big backlog never eats the run.
+        for k, ghost in list(st["ghosts"].items())[:40]:
+            rec = by_key.get(ghost)
+            st["ghosts"].pop(k)
+            if rec and rec["fate"] == "fallen" and on_main_game(http, rec["name"], rec.get("xp")):
+                rec["fate"] = "banished"
+            else:
+                st["ghosts"][k] = ghost  # back of the queue: the next cycle checks others first
         st["roster"] = {k: v for k, v in seen.items()}
         st["cycle"] = None
         st["last_cycle_done"] = now
