@@ -19,63 +19,59 @@
 <link rel="canonical" href="https://deathtoll.gg/">
 <meta name="description" content="Live graveyard for Old School RuneScape Hardcore Worlds: every death from the official hiscores, with total level, time, world and stats at death.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=20261030d">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/art/Deaths_Office.webp">
+<link rel="stylesheet" href="assets/site.css?v=20261030e">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
 </head>
 <body data-page="graveyard">
 <header class="top" id="top"></header>
-<div class="shell">
-  <nav class="side frame" id="nav"></nav>
-  <main>
-    <section class="frame hero">
-      <div class="memorial" id="memorial"></div>
-      <div class="hero-right">
-        <h2>Here lie the <em>fallen</em> of Gielinor</h2>
-        <p>Every Hardcore Worlds death, read straight from the official hiscores.</p>
-        <div class="tally" id="tally"></div>
-        <div class="hourbars">
-          <div class="lab"><span>DEATHS PER HOUR · LAST 24H</span><span id="deadliest"></span></div>
-          <div class="bars" id="bars"></div>
-        </div>
-      </div>
-      <div class="chatbar"><span class="track" id="ticker"></span></div>
-    </section>
-
-    <div class="filters" id="filters">
-      <button class="tab" data-k="range" data-v="today">Today</button><button class="tab" data-k="range" data-v="week">Week</button><button class="tab" data-k="range" data-v="all">All time</button>
-      <span class="sep"></span>
-      <button class="tab" data-k="tier" data-v="2000">2000+</button><button class="tab" data-k="tier" data-v="1500">1500+</button><button class="tab" data-k="tier" data-v="low">Under 500</button>
-      <span class="sep"></span>
-      <button class="tab" data-k="fate" data-v="died">Died</button><button class="tab" data-k="fate" data-v="reset">Reset</button><button class="tab" data-k="fate" data-v="fallen">Fallen</button>
-      <input class="search" id="search" placeholder="Search the dead..." aria-label="Search by name">
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">ONE LIFE · NO RETURNS</div>
+      <h1>Here lie the <em>fallen</em></h1>
+      <p class="lede">Every Hardcore Worlds death, read straight from the official hiscores. Death keeps the ledger. We just publish it.</p>
+      <div class="tally" id="tally"></div>
     </div>
+    <img class="death" src="assets/art/Death.webp" width="657" height="720" alt="Death seated in his office">
+  </div>
+  <div class="treeline" id="treeline" aria-hidden="true"></div>
+</section>
+<main class="wrap" id="main">
+  <h2 class="title">The Graveyard</h2>
+  <div class="filters" id="filters">
+    <button class="tab" data-k="range" data-v="today">Today</button><button class="tab" data-k="range" data-v="week">Week</button><button class="tab" data-k="range" data-v="all">All time</button>
+    <span class="sep"></span>
+    <button class="tab" data-k="tier" data-v="2000">2000+</button><button class="tab" data-k="tier" data-v="1500">1500+</button><button class="tab" data-k="tier" data-v="low">Under 500</button>
+    <span class="sep"></span>
+    <button class="tab" data-k="fate" data-v="died">Died</button><button class="tab" data-k="fate" data-v="reset">Reset</button><button class="tab" data-k="fate" data-v="fallen">Fallen</button>
+    <input class="search" id="search" placeholder="Search the dead..." aria-label="Search by name">
+  </div>
+  <section class="yard">
+    <img class="tree l" src="assets/art/trees/Dead_tree_large_1.webp" alt="" aria-hidden="true">
+    <img class="tree r" src="assets/art/trees/Dead_tree_Gravedigger.webp" alt="" aria-hidden="true">
+    <div class="graves" id="rows"></div>
+    <div class="legend">
+      <span><img src="assets/art/Grave_Haunted_Woods.webp" alt="">UNDER 500</span>
+      <span><img src="assets/art/Grave.webp" alt="">500+</span>
+      <span><img src="assets/art/Gravestone_Draynor_Manor.webp" alt="">1800+ NOTABLE</span>
+    </div>
+  </section>
+  <button class="more" id="more" hidden>Show more graves</button>
+  <p class="note" id="listing"></p>
 
-    <section class="yard">
-      <div class="stars"></div><div class="moon"></div>
-      <svg class="trees" viewBox="0 0 800 90" preserveAspectRatio="none" aria-hidden="true">
-        <path fill="#05060b" d="M0 90V70l30-8 20 6 40-14 30 10 50-20 40 12 60-18 40 16 50-10 40 14 60-22 50 18 40-8 60 14 50-12 40 10 60-16 40 12 50-6v40z"/>
-        <path stroke="#05060b" stroke-width="3" fill="none" d="M120 70V20M120 40l-18-14M120 32l14-16M120 52l20-10M660 66V12M660 30l-16-12M660 24l12-14M660 46l18-8"/>
-      </svg>
-      <div class="fog f2"></div>
-      <div class="rows" id="rows"></div>
-      <div class="legend"><span class="l1">UNDER 500 · WOODEN CROSS</span><span class="l2">500+ · STONE</span><span class="l3">1500+ · MARBLE</span><span class="l4">1800+ · OBELISK</span><span class="l5">FALLEN · LEFT THE HISCORES</span></div>
-      <div class="fog f1"></div>
-    </section>
-    <button class="more" id="more" hidden>Show more graves</button>
-    <p class="note" id="listing"></p>
-
-    <h4 class="section-title">The full ledger</h4>
-    <section class="frame">
-      <table class="ledger">
-        <thead><tr><th>NAME</th><th>TOTAL</th><th class="hide-sm">CMB</th><th class="hide-sm">BEST SKILLS</th><th>FATE</th><th class="hide-sm">WORLD</th><th>WHEN</th></tr></thead>
-        <tbody id="ledger"></tbody>
-      </table>
-    </section>
-  </main>
-  <aside class="rail" id="rail"></aside>
-</div>
-<footer>Fan-made. Not affiliated with Jagex. Data from the official Old School hiscores and RuneLite's public world list. Old School RuneScape is a trademark of Jagex Ltd.</footer>
-<script src="assets/app.js?v=20261030d"></script>
+  <h2 class="title">The full ledger</h2>
+  <section class="frame">
+    <table class="ledger dead">
+      <thead><tr><th>NAME</th><th>TOTAL</th><th class="hide-sm">CMB</th><th class="hide-sm">BEST SKILLS</th><th>FATE</th><th class="hide-sm">WORLD</th><th>WHEN</th></tr></thead>
+      <tbody id="ledger"></tbody>
+    </table>
+  </section>
+  <div class="cards" id="cards"></div>
+</main>
+<footer>Created using intellectual property belonging to Jagex Limited under the terms of Jagex's Fan Content Policy.
+This content is not endorsed by or affiliated with Jagex.<br>Data: the official Old School hiscores and RuneLite's public world list. In-game images via the OSRS Wiki.</footer>
+<script src="assets/app.js?v=20261030e"></script>
 </body>
 </html>

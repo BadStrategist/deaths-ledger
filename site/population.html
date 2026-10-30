@@ -19,31 +19,29 @@
 <link rel="canonical" href="https://deathtoll.gg/population.html">
 <meta name="description" content="How many players are on OSRS Hardcore Worlds right now, per world, with history.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css?v=20261030d">
+<link rel="stylesheet" href="assets/site.css?v=20261030e">
 </head>
 <body data-page="population">
 <header class="top" id="top"></header>
-<div class="shell two-col">
-  <nav class="side frame" id="nav"></nav>
-  <main id="main">
-    <section class="frame page-head"><h2>Population</h2><p>Live player counts from the same world list the in-game world hopper uses.</p></section>
-    <div class="big-row" id="big" style="margin-top:16px"></div>
-    <section class="frame">
-      <h3 id="chart-title">Players</h3>
-      <div class="chart-wrap">
-        <div class="range" id="range"><button class="tab" data-d="1">24h</button><button class="tab" data-d="7">7 days</button><button class="tab" data-d="30">30 days</button><button class="tab" data-d="0">All</button></div>
-        <svg class="chart" id="chart" viewBox="0 0 800 280" preserveAspectRatio="none" role="img" aria-label="Player count over time"></svg>
-      </div>
-    </section>
-    <h4 class="section-title">Hardcore worlds</h4>
-    <section class="frame">
-      <table class="ledger"><thead><tr><th>WORLD</th><th>REGION</th><th>ACTIVITY</th><th>PLAYERS</th></tr></thead><tbody id="worlds"></tbody></table>
-    </section>
-  </main>
-</div>
-<footer>Fan-made. Not affiliated with Jagex. Old School RuneScape is a trademark of Jagex Ltd.</footer>
-<script src="assets/app.js?v=20261030d"></script>
+<main class="wrap" id="main">
+  <section class="frame page-head"><h1>Population</h1><p>Live player counts from the same world list the in-game world hopper uses.</p></section>
+  <div class="big-row" id="big"></div>
+  <section class="frame">
+    <h3 id="chart-title">Players</h3>
+    <div class="chart-wrap">
+      <div class="range" id="range"><button class="tab" data-d="1">24h</button><button class="tab" data-d="7">7 days</button><button class="tab" data-d="30">30 days</button><button class="tab" data-d="0">All</button></div>
+      <svg class="chart" id="chart" viewBox="0 0 800 280" preserveAspectRatio="none" role="img" aria-label="Player count over time"></svg>
+    </div>
+  </section>
+  <h2 class="title">Hardcore worlds</h2>
+  <section class="frame">
+    <table class="ledger"><thead><tr><th>WORLD</th><th>REGION</th><th>ACTIVITY</th><th>PLAYERS</th></tr></thead><tbody id="worlds"></tbody></table>
+  </section>
+</main>
+<footer>Created using intellectual property belonging to Jagex Limited under the terms of Jagex's Fan Content Policy.
+This content is not endorsed by or affiliated with Jagex.<br>Data: the official Old School hiscores and RuneLite's public world list. In-game images via the OSRS Wiki.</footer>
+<script src="assets/app.js?v=20261030e"></script>
 </body>
 </html>

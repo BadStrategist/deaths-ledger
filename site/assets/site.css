@@ -1,0 +1,190 @@
+/* Hardcore Worlds: Death Toll — Death's Office look (in-game art used under Jagex's Fan Content Policy). */
+:root{
+  --void:#07060b; --stone:#1b1820; --stone2:#26222c; --edge:#4a4152; --edge-hi:#6b5d78;
+  --gold:#ff981f; --gold-soft:#d4a65a; --parch:#e9dbb8; --muted:#a399ad;
+  --violet:#8b5cf6; --violet-soft:#c4b0ff; --blood:#b3121b; --blood-hi:#ff3b45;
+  --chat-y:#ffff00; --chat-c:#00ffff; --chat-red:#ff4040; --ok:#1f5a1f;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--void);color:var(--parch);font-family:Georgia,"Times New Roman",serif;min-height:100vh;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.pix{image-rendering:pixelated}
+.wrap{max-width:1200px;margin:0 auto;padding:22px}
+.note{font:17px 'VT323',monospace;color:var(--muted);margin:10px 2px}
+.note b{color:var(--chat-y);font-weight:normal}
+[hidden]{display:none!important}
+
+/* ---------- header ---------- */
+header.top{display:flex;align-items:center;gap:12px;padding:10px 18px;background:linear-gradient(#141019,#0b090e);border-bottom:2px solid #000;box-shadow:0 1px 0 var(--edge)}
+header.top .hg{width:22px;height:52px;flex:none}
+.brand{text-decoration:none;display:block}
+.brand small{display:block;font:9px 'Silkscreen',monospace;letter-spacing:3px;color:var(--violet-soft)}
+.brand b{display:block;font:900 26px/1 'Cinzel',serif;color:var(--gold);text-shadow:2px 2px 0 #000}
+.nav{margin-left:auto;display:flex;gap:6px}
+.nav a{font:700 13px 'Cinzel',serif;color:var(--parch);text-decoration:none;padding:8px 12px;border:1px solid transparent}
+.nav a:hover{color:var(--gold)}
+.nav a.on{background:linear-gradient(#3a2560,#24183d);border-color:#000;outline:1px solid var(--violet);outline-offset:-2px;color:#fff}
+.count{display:flex;align-items:center;gap:6px;font:20px 'VT323',monospace;color:var(--blood-hi);background:#0b090e;border:1px solid var(--edge);padding:2px 10px 2px 4px;border-radius:16px;white-space:nowrap}
+.count img{width:22px;height:22px}
+
+/* ---------- hero: Death in his office ---------- */
+.hero{position:relative;overflow:hidden;
+  background:linear-gradient(90deg,rgba(7,6,11,.96) 0%,rgba(7,6,11,.82) 42%,rgba(7,6,11,.35) 75%,rgba(7,6,11,.6) 100%),
+             linear-gradient(0deg,var(--void) 0%,transparent 35%),
+             url('art/Deaths_Office.webp') center 35%/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 72% 30%,rgba(139,92,246,.25),transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:46px 22px 18px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px;align-items:end}
+.eyebrow{font:11px 'Silkscreen',monospace;letter-spacing:4px;color:var(--violet-soft)}
+.hero h1{font:900 clamp(40px,6vw,74px)/.95 'Cinzel',serif;margin:8px 0 12px;color:var(--parch);text-shadow:4px 4px 0 #000}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.lede{font-size:17px;color:#d4c9e0;max-width:470px;font-style:italic;margin:0 0 18px}
+.tally{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:520px}
+.tally div{background:rgba(11,9,14,.85);border:1px solid var(--edge);padding:10px}
+.tally b{display:block;font:34px/1 'VT323',monospace;color:var(--gold);text-shadow:2px 2px 0 #000}
+.tally b.red{color:var(--blood-hi)} .tally b.yel{color:var(--chat-y)}
+.tally span{font:9px 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px}
+.death{justify-self:end;width:min(330px,100%);height:auto;filter:drop-shadow(0 0 30px rgba(139,92,246,.45)) drop-shadow(0 20px 20px #000)}
+/* border of small OSRS dead trees under the stats */
+.treeline{position:relative;z-index:1;height:118px;display:flex;align-items:flex-end;justify-content:space-between;
+  padding:0 6px;overflow:hidden;background:linear-gradient(transparent 55%,rgba(20,26,12,.9) 85%,#141a0c)}
+.treeline img{height:var(--h);width:auto;flex:none;margin:0 -4px;filter:brightness(.85) saturate(.85) drop-shadow(0 0 8px rgba(139,92,246,.35)) drop-shadow(0 4px 3px rgba(0,0,0,.9))}
+.treeline::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:#0d1208;box-shadow:0 -1px 0 #2a3818}
+
+/* ---------- shared panels ---------- */
+.preview-flag{margin:0 0 16px;padding:10px 14px;font:19px 'VT323',monospace;color:var(--parch);
+  background:repeating-linear-gradient(45deg,#2c1d4a,#2c1d4a 10px,#211539 10px,#211539 20px);border:2px solid #000;outline:1px solid #5b3fa0;outline-offset:-4px}
+.preview-flag b{font:11px 'Silkscreen',monospace;color:var(--chat-y);margin-right:8px;font-weight:normal}
+h2.title{font:900 24px 'Cinzel',serif;color:var(--gold);margin:22px 0 12px;display:flex;align-items:center;gap:10px;text-shadow:2px 2px 0 #000}
+h2.title::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--edge),transparent)}
+.frame{position:relative;background:linear-gradient(var(--stone2),var(--stone));border:2px solid #000;outline:1px solid var(--edge);outline-offset:-4px}
+.frame h3{font:900 14px 'Cinzel',serif;color:var(--gold);letter-spacing:2px;margin:0;padding:12px 16px 10px;border-bottom:1px solid var(--edge);text-transform:uppercase;text-shadow:1px 1px 0 #000}
+.frame .body{padding:12px 16px}
+.page-head{padding:20px 22px}
+.page-head h1{font:900 clamp(26px,3.4vw,38px) 'Cinzel',serif;margin:0;text-shadow:3px 3px 0 #000}
+.page-head p{margin:6px 0 0;color:var(--muted);font-style:italic}
+
+/* ---------- filters ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 12px}
+.tab{font:10px 'Silkscreen',monospace;padding:8px 11px;background:linear-gradient(#2e2838,#211c29);border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px;color:var(--parch);cursor:pointer;line-height:normal;border-radius:0}
+.tab.on{background:linear-gradient(#3a2560,#24183d);outline-color:var(--violet);color:#fff}
+.sep{width:1px;height:24px;background:var(--edge);margin:0 4px}
+.search{margin-left:auto;background:#0b090e;border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px;color:var(--chat-y);padding:7px 10px;font:19px 'VT323',monospace;width:220px}
+.search::placeholder{color:#6f6480}
+
+/* ---------- the graveyard ---------- */
+.yard{position:relative;overflow:hidden;border:2px solid #000;outline:1px solid var(--edge);
+  background:radial-gradient(500px 220px at 50% 0,rgba(139,92,246,.18),transparent 70%),linear-gradient(#0d0b16,#12101c 50%,#151a10 88%,#1c2611);padding:30px 16px 26px}
+.yard .tree{position:absolute;bottom:0;opacity:.8;filter:brightness(.42) saturate(.5) drop-shadow(0 0 18px rgba(139,92,246,.25));pointer-events:none;height:auto}
+.yard .tree.l{left:-30px;width:170px}.yard .tree.r{right:-40px;width:150px}
+.graves{position:relative;z-index:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:26px 16px;align-items:start}
+.grave{text-align:center;min-width:0}
+.grave .art{height:150px;display:flex;align-items:flex-end;justify-content:center;filter:drop-shadow(0 8px 6px rgba(0,0,0,.8))}
+.grave .art img{max-height:100%;width:auto}
+.grave.notable .art{filter:drop-shadow(0 0 14px rgba(255,152,31,.45)) drop-shadow(0 8px 6px rgba(0,0,0,.8))}
+.grave.fallen .art{opacity:.6}
+.grave .mound{height:10px;margin:-4px 8px 0;border-radius:50%;background:radial-gradient(ellipse,#3b5220,#1e2b0f 70%,transparent 72%)}
+.plate{position:relative;margin-top:8px;background:rgba(11,9,14,.9);border:1px solid var(--edge);padding:8px 6px}
+.plate .n{font:700 14px 'Cinzel',serif;color:#f1e8d6;overflow-wrap:anywhere}
+.plate .l{font:22px/1 'VT323',monospace;color:var(--gold)}
+.plate .l small{font-size:14px;color:var(--muted)}
+.plate .s{font:9px/1.6 'Silkscreen',monospace;color:#d8ccb1}
+.plate .s b{color:var(--chat-y);font-weight:normal}
+.plate .t{font:15px 'VT323',monospace;color:#b9ad95}
+.plate .k{font:9px 'Silkscreen',monospace;color:var(--chat-red)}
+.plate .run{position:absolute;top:4px;right:6px;font:14px 'VT323',monospace;color:var(--muted)}
+.tag{display:inline-block;font:9px 'Silkscreen',monospace;padding:2px 6px;margin-top:4px;background:var(--blood);color:#fff}
+.tag.gold{background:var(--gold);color:#000}
+.tag.grey{background:#4a4a4a}
+.empty{grid-column:1/-1;text-align:center;padding:40px 16px}
+.empty h3{font:900 22px 'Cinzel',serif;color:var(--gold);margin:0 0 8px;text-shadow:2px 2px 0 #000}
+.empty p{max-width:520px;margin:0 auto;color:var(--muted);font-style:italic}
+.legend{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:24px;font:9px 'Silkscreen',monospace;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend img{height:22px;width:auto}
+.more{display:block;margin:14px auto 0;font:10px 'Silkscreen',monospace;padding:10px 16px;cursor:pointer;background:linear-gradient(#2e2838,#211c29);border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px;color:var(--parch)}
+
+/* ---------- tables ---------- */
+.ledger{width:100%;border-collapse:collapse;font:19px 'VT323',monospace}
+.ledger th{font:9px 'Silkscreen',monospace;color:var(--gold);text-align:left;padding:10px;border-bottom:1px solid var(--edge);letter-spacing:1px}
+.ledger td{padding:7px 10px;border-bottom:1px solid #000}
+.ledger th:first-child,.ledger td:first-child{padding-left:18px}
+.ledger tr:nth-child(even) td{background:rgba(255,255,255,.025)}
+.ledger .n{color:#fff} .ledger .y{color:var(--chat-y)}
+.pill{font:9px 'Silkscreen',monospace;padding:3px 6px;border:1px solid #000}
+.pill.ok{background:var(--ok);color:#bfffbf}.pill.wait{background:#5a4a10;color:#ffe680}.pill.no{background:#4a1414;color:#ffb0b0}
+
+/* ---------- info cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+.card{display:flex;gap:14px;align-items:center;padding:16px}
+.card img{height:44px;width:auto;flex:none}
+.card b{display:block;font:30px/1 'VT323',monospace;color:var(--chat-y)}
+.card span{display:block;font:9px/1.6 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px}
+.card a{color:var(--chat-c);font:17px 'VT323',monospace}
+
+/* ---------- population + watcher ---------- */
+.big-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:16px 0}
+.big-row div{background:#0b090e;border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px;padding:12px}
+.big-row b{display:block;font:38px/1 'VT323',monospace;color:var(--chat-y);text-shadow:2px 2px 0 #000}
+.big-row span{font:9px 'Silkscreen',monospace;color:var(--muted)}
+.chart-wrap{padding:14px}
+.chart{width:100%;height:280px;display:block}
+.chart text{font:15px 'VT323',monospace;fill:var(--muted)}
+.range{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.events ul{margin:0;padding:0}
+.events li{font:18px 'VT323',monospace;padding:4px 0;border-bottom:1px dotted var(--edge);list-style:none}
+.events .t{color:var(--chat-c);margin-right:8px}
+
+footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 18px 40px;font-style:italic;line-height:1.6}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+/* ---------- tablets ---------- */
+@media (max-width:980px){
+  .cards{grid-template-columns:minmax(0,1fr)}
+}
+/* ---------- phones ---------- */
+@media (max-width:760px){
+  header.top{padding:8px 12px;gap:8px;flex-wrap:wrap}
+  .brand b{font-size:22px}
+  .nav{order:3;width:100%;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .nav a{text-align:center;font-size:12px;padding:9px 4px}
+  .count{margin-left:auto;font-size:18px}
+  .hero{background-position:62% 30%}
+  .hero-inner{grid-template-columns:minmax(0,1fr);padding:22px 14px 12px}
+  .death{justify-self:center;width:min(220px,62vw);order:-1}
+  .hero h1{font-size:44px}
+  .lede{font-size:15px}
+  .tally{gap:6px}
+  .tally b{font-size:26px}
+  .treeline{height:84px}
+  .wrap{padding:16px 12px}
+  .preview-flag{font-size:16px;padding:8px 10px}
+  h2.title{font-size:21px}
+  .filters .sep{display:none}
+  .search{width:100%;margin:2px 0 0;flex-basis:100%}
+  .yard{padding:20px 10px}
+  .yard .tree.l{left:-60px;width:120px}.yard .tree.r{right:-70px;width:110px}
+  .graves{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 10px}
+  .grave .art{height:118px}
+  .legend{gap:10px}
+  .more{width:100%}
+  .ledger{font-size:15px;table-layout:fixed}
+  .ledger th,.ledger td{padding:6px;overflow-wrap:anywhere}
+  .ledger th:first-child,.ledger td:first-child{padding-left:16px}
+  .ledger .hide-sm{display:none}
+  .ledger.dead th:nth-child(1){width:34%} .ledger.dead th:nth-child(2){width:17%}
+  .ledger.dead th:nth-child(5){width:15%} .ledger.dead th:nth-child(7){width:34%}
+  .page-head{padding:16px 14px}
+  .big-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .big-row b{font-size:30px}
+  .chart{height:200px}
+  .chart-wrap{padding:10px}
+  .events li{font-size:16px}
+}
+@media (max-width:360px){
+  .brand b{font-size:20px}
+  .graves{gap:18px 8px}
+  .plate .n{font-size:13px}
+}

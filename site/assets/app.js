@@ -29,91 +29,35 @@
     return `by ${clock(d.time)}`;
   }
 
-  /* ---------------- shared chrome ---------------- */
-  const NAV = [
-    ["index.html", "graveyard", "Graveyard", '<path d="M4 19V8a6 6 0 0 1 12 0v11z" fill="currentColor" opacity=".85"/><path d="M10 7v7M7.5 9.5h5" stroke="#5a1014" stroke-width="2"/>'],
-    ["population.html", "population", "Population", '<path d="M5 2h10M5 18h10M6 3c0 5 4 5 4 7s-4 2-4 7h8c0-5-4-5-4-7s4-2 4-7z" fill="none" stroke="#d4a65a" stroke-width="1.6"/>', "● LIVE"],
-    ["watcher.html", "watcher", "Data watcher", '<path d="M1 10s3-6 9-6 9 6 9 6-3 6-9 6-9-6-9-6z" fill="none" stroke="#d4a65a" stroke-width="1.6"/><circle cx="10" cy="10" r="3" fill="#e8323c"/>'],
-  ];
+  /* ---------------- shared header ---------------- */
+  const NAV = [["index.html", "graveyard", "Graveyard"], ["population.html", "population", "Population"], ["watcher.html", "watcher", "Data watcher"]];
 
-  function chrome(pop, gy) {
+  function chrome(gy) {
+    const fallen = gy && gy.counts ? gy.counts.all_time : 0;
     $("#top").innerHTML = `
-      <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M14 6h36M14 58h36" stroke="#d4a65a" stroke-width="4" stroke-linecap="round"/>
-        <path d="M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z" fill="#1a1511" stroke="#d4a65a" stroke-width="2.5"/>
-        <path d="M24 50c2-6 6-8 8-9 2 1 6 3 8 9z" fill="#e8323c"/>
-        <circle cx="32" cy="18" r="6" fill="#e9dbb8"/><circle cx="29.8" cy="17.5" r="1.6" fill="#000"/><circle cx="34.2" cy="17.5" r="1.6" fill="#000"/>
-      </svg>
-      <a class="brand" href="index.html"><small>HARDCORE WORLDS</small><h1>Death Toll</h1></a>
-      <div class="top-live">
-        <div class="orb alive" title="Players on Hardcore Worlds right now"><i>♥</i><b>${pop && pop.hardcore_total != null ? fmt(pop.hardcore_total) + " alive" : "awaiting launch"}</b></div>
-        <div class="orb dead" title="Deaths recorded"><i>☠</i><b>${fmt(gy && gy.counts ? gy.counts.all_time : 0)} fallen</b></div>
-      </div>`;
-    $("#nav").innerHTML = `<h3>Death's Office</h3><div class="body">` +
-      NAV.map(([href, id, label, icon, tag]) =>
-        `<a href="${href}" class="${PAGE === id ? "on" : ""}"><svg viewBox="0 0 20 20" aria-hidden="true">${icon}</svg>${label}${tag ? `<span class="tag">${tag}</span>` : ""}</a>`).join("") +
-
-      `</div>`;
+      <img class="hg pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
+      <a class="brand" href="index.html"><small>HARDCORE WORLDS</small><b>Death Toll</b></a>
+      <nav class="nav" aria-label="Main">${NAV.map(([href, id, label]) =>
+        `<a href="${href}"${PAGE === id ? ' class="on" aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
+      <div class="count" title="Deaths recorded from the Hardcore Worlds hiscores"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">${fmt(fallen)} fallen</div>`;
   }
 
-  function popCard(pop) {
-    if (!pop) return `<section class="frame"><h3>Population</h3><div class="body note">No data yet.</div></section>`;
-    const hc = pop.hardcore_worlds_listed;
-    const series = pop.history.slice(-144).map(p => hc ? p[1] : p[2]).filter(v => v != null);
-    const max = Math.max(...series, 1), min = Math.min(...series, max);
-    const pts = series.map((v, i) => `${(i / Math.max(series.length - 1, 1)) * 200},${54 - ((v - min) / Math.max(max - min, 1)) * 48}`).join(" ");
-    const worlds = (pop.worlds || []).slice(0, 5);
-    const top = Math.max(...worlds.map(w => w.players), 1);
-    return `<section class="frame"><h3>${hc ? "Still Breathing" : "Gielinor Tonight"}</h3><div class="body">
-      <div class="hg">
-        <svg viewBox="0 0 46 70" aria-hidden="true"><path d="M6 3h34M6 67h34" stroke="#d4a65a" stroke-width="3"/>
-          <path d="M9 5c0 16 12 20 14 30-2 10-14 14-14 30h28c0-16-12-20-14-30 2-10 14-14 14-30z" fill="#0b0907" stroke="#d4a65a" stroke-width="2"/>
-          <path d="M13 12h20c-2 8-8 12-10 16-2-4-8-8-10-16z" fill="#ffff00" opacity=".85"/>
-          <path class="sand" d="M23 30v30" stroke="#ffff00" stroke-width="1.5" stroke-dasharray="2 2"/>
-          <path d="M12 63c3-6 8-8 11-9 3 1 8 3 11 9z" fill="#ffff00" opacity=".85"/></svg>
-        <div><div class="pop-big">${fmt(hc ? pop.hardcore_total : pop.all_worlds_total)}</div>
-          <div class="pop-sub">${hc ? "PLAYERS ON HARDCORE WORLDS NOW" : "PLAYERS ON ALL OSRS WORLDS NOW"}</div></div>
-      </div>
-      ${series.length > 1 ? `<svg class="spark" viewBox="0 0 200 56" preserveAspectRatio="none" aria-hidden="true">
-        <polygon fill="rgba(255,255,0,.08)" points="0,56 ${pts} 200,56"/><polyline fill="none" stroke="#ffff00" stroke-width="2" points="${pts}"/></svg>` : ""}
-      <div class="pop-sub">${hc ? `PEAK ${fmt(pop.peak_hardcore)}` : "HARDCORE WORLDS NOT ON THE WORLD LIST YET"}</div>
-      ${worlds.length ? `<div class="worlds">${worlds.map(w =>
-        `<div><span class="w">W${w.id} ${esc((w.region || "").slice(0, 2))}</span><span class="meter"><i style="width:${(w.players / top) * 100}%"></i></span><span>${fmt(w.players)}</span></div>`).join("")}</div>` : ""}
-      <a class="note" href="population.html" style="display:block;color:var(--chat-cyan)">Population history →</a>
-    </div></section>`;
+  /* ---------------- dead-tree border under the hero stats ---------------- */
+  const TREES = ["Dead_tree_small_1", "Dead_tree_Gravedigger", "Dead_tree_Misthalin_Manor", "Dead_tree_large_1", "Dead_tree_old",
+    "Dead_tree_big_1", "Dead_tree_dark", "Dead_tree_large_2", "Dead_tree_Last_Man_Standing_small", "Dead_tree_big_2", "Dead_tree_large_3", "Dead_tree_burnt"];
+  const TREE_H = [82, 104, 70, 112, 88, 76, 108, 68, 94, 100, 74, 106];   // fixed pattern: looks placed, not random
+  function treeline() {
+    const el = $("#treeline");
+    if (!el) return;
+    const narrow = window.innerWidth <= 760;
+    const count = Math.max(6, Math.round(el.clientWidth / (narrow ? 40 : 56)));
+    el.innerHTML = Array.from({ length: count }, (_, i) =>
+      `<img src="assets/art/trees/${TREES[i % TREES.length]}.webp" alt="" style="--h:${Math.round(TREE_H[i % TREE_H.length] * (narrow ? .7 : 1))}px">`).join("");
   }
-
-  function watchCard(w, gy) {
-    const pill = (ok, wait) => ok ? `<span class="pill ok">LIVE</span>` : `<span class="pill wait">${wait}</span>`;
-    return `<section class="frame"><h3>Data Watcher</h3><div class="body status">
-      <div>World list${pill(true)}</div>
-      <div>HC hiscores${pill(w && w.hiscore_mode, "WAITING")}</div>
-      <div>HC GE prices${pill(w && w.price_route, "WAITING")}</div>
-      <div style="border:none;color:var(--muted);font-size:15px">Checked ${w && w.checked ? ago(Date.parse(w.checked)) : "—"}${gy && gy.last_full_scan ? ` · full scan ${ago(Date.parse(gy.last_full_scan))}` : ""}</div>
-    </div></section>`;
-  }
-
-  const deathSpeaks = `<div class="chatbox"><span class="nm">Death:</span> <span class="r">Nightmare Zone, Pest Control and your own house will not save you. Only a handful of minigames are safe.</span></div>`;
 
   /* ---------------- graveyard ---------------- */
-  function tier(d) {
-    if (d.fate === "fallen") return "t-stone";
-    const t = d.total || 0;
-    if (t >= 1800) return "t-obelisk";
-    if (t >= 1500) return "t-marble";
-    if (t >= 500) return "t-stone";
-    return "t-wood";
-  }
-  const BADGE = { died: ["reset", "DIED"], reset: ["reset", "RESET"], fallen: ["fallen", "FALLEN"] };
-
-  function epitaph(d) {
-    if (d.death_text) return d.death_text;
-    const bits = [];
-    const sk = (d.top_skills || [])[0];
-    if (sk) bits.push(`${sk[1]} ${sk[0]}`);
-    if (d.top_boss) bits.push(`${fmt(d.top_boss[1])} ${d.top_boss[0]} kills`);
-    return bits.length ? `Fell with ${bits.join(" and ")}.` : "";
-  }
+  const ART = t => t >= 1800 ? "Gravestone_Draynor_Manor" : t >= 500 ? "Grave" : "Grave_Haunted_Woods";
+  const FATE = { died: ["", "DIED"], reset: ["", "RESET"], fallen: ["grey", "FALLEN"] };
 
   function where(d) {
     if (d.location_text) return d.location_text;
@@ -123,49 +67,21 @@
     return parts.join(" · ");
   }
 
-  function stone(d) {
-    const t = tier(d), [cls, label] = BADGE[d.fate] || BADGE.died;
+  function grave(d) {
+    const t = d.total || 0, [cls, label] = FATE[d.fate] || FATE.died;
     const sk = (d.top_skills || []).slice(0, 2).map(s => `${s[0]} ${s[1]}`).join(" · ");
-    const killer = d.player_killer ? "SLAIN BY A PLAYER" : "";
-    const body = `
-      <div class="rsn">${esc(d.name)}</div>
-      <div class="lvl">${fmt(d.total)}${t === "t-obelisk" ? "" : " <small>total</small>"}</div>
-      ${sk ? `<div class="last">${esc(sk.toUpperCase())}${d.top_boss ? `<br>${esc(d.top_boss[0].toUpperCase())} KC <b>${fmt(d.top_boss[1])}</b>` : ""}</div>` : ""}
-      ${killer ? `<div class="killer">${killer}</div>` : ""}
-      <div class="when ${d.time_exact ? "exact" : ""}" title="${new Date(d.time).toString()}">${when(d)}</div>
-      ${where(d) ? `<div class="when">${esc(where(d))}</div>` : ""}
-      <span class="badge ${cls}">${label}</span>`;
-    const notable = d.notable ? `<span class="notable">NOTABLE</span>` : "";
-    const run = d.run > 1 ? `<span class="run">#${d.run}</span>` : "";
-    if (t === "t-wood")
-      return `<div class="g t-wood" tabindex="0"><div class="face"><span class="shape"><i></i></span><div class="plaque">
-        <div class="rsn">${esc(d.name)}</div><div class="lvl">${fmt(d.total)} <small>total</small></div>
-        <div class="when" style="color:#5a4a33">${when(d)}${d.run > 1 ? " · #" + d.run : ""}</div></div></div></div>`;
-    if (t === "t-obelisk")
-      return `<div class="g t-obelisk" tabindex="0">${notable}<div class="face"><span class="shape"><i></i><i></i></span><div class="inner">${body}</div></div></div>`;
-    return `<div class="g ${t}" tabindex="0">${notable}<div class="face">${run}${body}</div></div>`;
-  }
-
-  function memorial(deaths) {
-    const now = Date.now();
-    const pick = (since, label) => {
-      const pool = deaths.filter(d => d.time >= since);
-      if (!pool.length) return null;
-      return [pool.reduce((a, b) => ((b.total || 0) > (a.total || 0) ? b : a)), label];
-    };
-    const got = pick(now - 864e5, "TODAY") || pick(now - 7 * 864e5, "THIS WEEK") || pick(0, "ALL TIME");
-    if (!got) return `<div class="eyebrow">THE GRAVEYARD IS EMPTY</div>
-      <div class="big-stone"><div class="rsn">No one. Yet.</div><div class="epitaph">"Every adventurer in Gielinor still draws breath. Death is patient."</div></div>
-      <span class="candle" style="left:26px"></span><span class="candle" style="right:26px;height:26px"></span>`;
-    const [d, label] = got;
-    return `<div class="eyebrow">MOST NOTABLE DEATH · ${label}</div>
-      <div class="big-stone">
-        <div class="rsn">${esc(d.name)}</div>
-        <div class="lvl">${fmt(d.total)} <small>total</small></div>
-        ${epitaph(d) ? `<div class="epitaph">"${esc(epitaph(d))}"</div>` : ""}
-        <div class="when">${when(d)}${d.run > 1 ? " · run #" + d.run : ""}${d.world ? " · W" + d.world : ""}</div>
-      </div>
-      <span class="candle" style="left:26px"></span><span class="candle" style="right:26px;height:26px"></span>`;
+    const boss = d.top_boss ? `<br>${esc(d.top_boss[0].toUpperCase())} KC <b>${fmt(d.top_boss[1])}</b>` : "";
+    return `<div class="grave${d.notable ? " notable" : ""}${d.fate === "fallen" ? " fallen" : ""}">
+      <div class="art"><img src="assets/art/${ART(t)}.webp" alt="" loading="lazy"></div><div class="mound"></div>
+      <div class="plate">${d.run > 1 ? `<span class="run">#${d.run}</span>` : ""}
+        <div class="n">${esc(d.name)}</div>
+        <div class="l">${fmt(t)} <small>total</small></div>
+        ${sk ? `<div class="s">${esc(sk.toUpperCase())}${boss}</div>` : ""}
+        ${d.player_killer ? `<div class="k">SLAIN BY A PLAYER</div>` : ""}
+        <div class="t" title="${new Date(d.time).toString()}">${when(d)}</div>
+        ${where(d) ? `<div class="t">${esc(where(d))}</div>` : ""}
+        ${d.notable ? `<span class="tag gold">NOTABLE</span> ` : ""}<span class="tag ${cls}">${label}</span>
+      </div></div>`;
   }
 
   /* Until the Hardcore hiscores are live, show clearly labelled sample graves.
@@ -179,10 +95,8 @@
       const time = now - d.age_min * 60000;
       return { ...d, time, window_start: d.window_minutes ? time - d.window_minutes * 60000 : undefined };
     });
-    const hours = new Array(24).fill(0);
-    deaths.forEach(d => { const a = Math.floor((now - d.time) / 36e5); if (a < 24) hours[23 - a]++; });
     return {
-      status: "preview", sample: true, deaths, deaths_per_hour: hours,
+      status: "preview", sample: true, deaths,
       counts: {
         today: deaths.filter(d => d.time >= now - 864e5).length,
         all_time: deaths.length,
@@ -192,32 +106,36 @@
     };
   }
 
+  function cards(pop, w) {
+    const hc = pop && pop.hardcore_worlds_listed;
+    const online = pop ? (hc ? pop.hardcore_total : pop.all_worlds_total) : null;
+    return `
+      <div class="frame card"><img class="pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
+        <div><b>${fmt(online)}</b><span>${hc ? "ON HARDCORE WORLDS NOW" : "ONLINE · ALL WORLDS (HARDCORE NOT LISTED YET)"}</span><a href="population.html">Population →</a></div></div>
+      <div class="frame card"><img class="pix" src="assets/art/escape-crystal.png" width="11" height="27" alt="">
+        <div><b>10,000 gp</b><span>ESCAPE CRYSTAL · FIRES WHEN YOU GO IDLE · SOLD BY DEATH, RICK &amp; THE MYSTERIOUS STRANGER</span></div></div>
+      <div class="frame card"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">
+        <div><b>${w && w.hiscore_mode ? "LIVE" : "WAITING"}</b><span>HARDCORE WORLDS HISCORES</span><a href="watcher.html">Data watcher →</a></div></div>`;
+  }
+
   async function graveyard() {
     const [real, pop, w] = await Promise.all([load("graveyard.json"), load("population.json"), load("watcher.json")]);
     const gy = await withPreview(real);
-    chrome(pop, gy.sample ? null : gy);
+    chrome(gy.sample ? real : gy);
+    treeline();
+    let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(treeline, 200); });
     if (gy.sample) {
-      document.querySelector("main").insertAdjacentHTML("afterbegin",
+      $("#main").insertAdjacentHTML("afterbegin",
         `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE GRAVES</b> Every name and number below is made up. Hardcore Worlds open 4 November; real deaths from the official hiscores replace these automatically.</div>`);
     }
-    $("#rail").innerHTML = popCard(pop) + watchCard(w, gy.sample ? real : gy) + deathSpeaks;
     const deaths = (gy && gy.deaths) || [];
     const c = (gy && gy.counts) || {};
-    $("#memorial").innerHTML = memorial(deaths);
+    const hc = pop && pop.hardcore_worlds_listed;
     $("#tally").innerHTML = `
       <div><b class="red">${fmt(c.today || 0)}</b><span>FALLEN TODAY</span></div>
-      <div><b>${fmt(c.all_time || 0)}</b><span>FALLEN ALL-TIME</span></div>
-      <div><b class="blue">${fmt(c.resets || 0)}</b><span>RESETS DETECTED</span></div>
-      <div><b class="yel">${c.highest_total ? fmt(c.highest_total) : "—"}</b><span>HIGHEST TOTAL LOST</span></div>`;
-    const hours = (gy && gy.deaths_per_hour) || new Array(24).fill(0);
-    const hmax = Math.max(...hours, 1);
-    const worst = hours.indexOf(Math.max(...hours));
-    $("#bars").innerHTML = hours.map(h => `<i style="height:${Math.max((h / hmax) * 100, 2)}%" title="${h}"></i>`).join("");
-    $("#deadliest").textContent = Math.max(...hours) > 0 ? `PEAK: ${23 - worst}H AGO` : "";
-    const recent = deaths.slice(0, 12);
-    $("#ticker").innerHTML = recent.length
-      ? recent.map(d => `<span class="bc">☠ </span><span class="nm">${esc(d.name)}</span><span class="bc"> ${d.fate === "reset" ? "reset" : "has fallen"} at total level ${fmt(d.total)}.</span> &nbsp;&nbsp; `).join("")
-      : `<span class="bc">Death waits in his office. Hardcore Worlds open on 4 November.</span>`;
+      <div><b>${c.highest_total ? fmt(c.highest_total) : "—"}</b><span>HIGHEST TOTAL LOST</span></div>
+      <div><b class="yel">${pop ? fmt(hc ? pop.hardcore_total : pop.all_worlds_total) : "—"}</b><span>${hc ? "ON HARDCORE NOW" : "ONLINE NOW"}</span></div>`;
+    $("#cards").innerHTML = cards(pop, w);
 
     const state = { range: "all", tier: "any", fate: "any", q: "", shown: 48 };
     const filters = $("#filters");
@@ -245,13 +163,13 @@
       const list = filtered();
       const yard = $("#rows");
       if (!gy || gy.status === "waiting") {
-        yard.innerHTML = `<div class="empty" style="grid-column:1/-1"><h3>The gates open on 4 November</h3>
-          <p>Hardcore Worlds launch on Wednesday. The moment Jagex publishes the Hardcore Worlds hiscores, this page starts reading them and the first stone goes up here, automatically.</p></div>`;
+        yard.innerHTML = `<div class="empty"><h3>The gates open on 4 November</h3>
+          <p>The moment Jagex publishes the Hardcore Worlds hiscores, this page starts reading them and the first stone goes up here, automatically.</p></div>`;
       } else if (!list.length) {
-        yard.innerHTML = `<div class="empty" style="grid-column:1/-1"><h3>${deaths.length ? "No graves match" : "No graves yet"}</h3>
+        yard.innerHTML = `<div class="empty"><h3>${deaths.length ? "No graves match" : "No graves yet"}</h3>
           <p>${deaths.length ? "Try a wider filter." : "The hiscores are being read. Everyone above the listing line is still alive."}</p></div>`;
       } else {
-        yard.innerHTML = list.slice(0, state.shown).map(stone).join("");
+        yard.innerHTML = list.slice(0, state.shown).map(grave).join("");
       }
       $("#more").hidden = list.length <= state.shown;
       $("#ledger").innerHTML = list.slice(0, state.shown).map(d => `<tr>
@@ -270,7 +188,7 @@
   /* ---------------- population ---------------- */
   async function population() {
     const [pop, gy] = await Promise.all([load("population.json"), load("graveyard.json")]);
-    chrome(pop, gy);
+    chrome(gy && gy.status === "live" ? gy : null);
     if (!pop) { $("#main").innerHTML += `<p class="note">No population data yet.</p>`; return; }
     const hc = pop.hardcore_worlds_listed;
     $("#big").innerHTML = `
@@ -296,7 +214,7 @@
       let grid = "";
       for (let i = 0; i <= 4; i++) {
         const v = vmin + ((vmax - vmin) * i) / 4;
-        grid += `<line x1="${L}" x2="${W - 10}" y1="${y(v)}" y2="${y(v)}" stroke="#3a3328" stroke-dasharray="3 4"/><text x="4" y="${y(v) + 5}">${fmt(Math.round(v))}</text>`;
+        grid += `<line x1="${L}" x2="${W - 10}" y1="${y(v)}" y2="${y(v)}" stroke="#3a3346" stroke-dasharray="3 4"/><text x="4" y="${y(v) + 5}">${fmt(Math.round(v))}</text>`;
       }
       const ticks = W < 500 ? 2 : 4;  // fewer time labels on narrow screens so they never overlap
       for (let i = 0; i <= ticks; i++) {
@@ -320,7 +238,7 @@
   /* ---------------- watcher ---------------- */
   async function watcherPage() {
     const [w, s, pop, gy] = await Promise.all([load("watcher.json"), load("status.json"), load("population.json"), load("graveyard.json")]);
-    chrome(pop, gy);
+    chrome(gy && gy.status === "live" ? gy : null);
     const row = (label, ok, detail) => `<tr><td class="n">${label}</td><td>${ok ? '<span class="pill ok">FOUND</span>' : '<span class="pill wait">WAITING</span>'}</td><td>${detail}</td></tr>`;
     $("#sources").innerHTML =
       row("World list (RuneLite)", pop && pop.hardcore_worlds_listed, pop && pop.hardcore_worlds_listed ? `${(pop.worlds || []).length} Hardcore worlds listed` : "Live, but no Hardcore worlds on it yet") +
