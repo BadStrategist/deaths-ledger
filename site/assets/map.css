@@ -1,0 +1,46 @@
+/* Death map page: full-width Leaflet map in the Death's Office look. */
+.map-head{padding-bottom:0}
+.map-head .preview-flag{margin:14px 0 0}
+.map-shell{position:relative;margin:16px auto 0;max-width:1200px;border-block:2px solid #000;outline:1px solid var(--edge);outline-offset:-4px}
+#map{height:min(68vh,640px);min-height:320px;background:#0a0f1a;font:15px 'VT323',monospace}
+.map-badge{position:absolute;z-index:500;top:10px;left:50%;transform:translateX(-50%);pointer-events:none;white-space:nowrap;
+  font:10px 'Silkscreen',monospace;color:var(--chat-y);padding:5px 9px;background:rgba(33,21,57,.92);border:2px solid #000;outline:1px solid #5b3fa0;outline-offset:-4px}
+.map-msg{position:absolute;z-index:500;left:12px;right:12px;bottom:34px;margin:0;padding:8px 10px;text-align:center;
+  font:17px 'VT323',monospace;color:var(--parch);background:rgba(11,9,14,.92);border:1px solid var(--edge)}
+.map-keys{display:flex;flex-wrap:wrap;gap:8px 16px;margin:10px 2px 0;font:9px 'Silkscreen',monospace;color:var(--muted)}
+.map-keys span{display:flex;align-items:center;gap:6px}
+.map-keys .dot{width:10px;height:10px;border-radius:50%;background:var(--blood-hi);border:1.5px solid #000}
+.map-keys .heat{width:26px;height:10px;border-radius:5px;background:linear-gradient(90deg,#5b3fa0,#b3121b,#ff981f,#ffff00)}
+
+/* Leaflet controls and popups, re-skinned */
+.leaflet-container a{color:var(--chat-c)}
+.leaflet-bar a,.leaflet-bar a:hover{background:linear-gradient(#2e2838,#211c29);color:var(--parch);border-bottom-color:#000;font:700 20px/30px Georgia,serif;width:34px;height:34px}
+.leaflet-bar a:hover{color:var(--gold)}
+.leaflet-bar a.leaflet-disabled{background:#16131b;color:#5a5163}
+.leaflet-touch .leaflet-bar{border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px}
+.leaflet-control-attribution.leaflet-control{background:rgba(11,9,14,.85);color:var(--muted);font:11px/1.4 Georgia,serif;max-width:calc(100vw - 24px);white-space:normal}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#14111a;color:var(--parch);border:1px solid var(--edge);border-radius:0;box-shadow:0 6px 18px rgba(0,0,0,.7)}
+.leaflet-popup-content{margin:10px 26px 10px 12px;line-height:1.3}
+.leaflet-container a.leaflet-popup-close-button{color:var(--muted);font:18px/24px Georgia,serif;width:26px;height:26px}
+.dp{display:flex;flex-direction:column;gap:3px;font:16px 'VT323',monospace;color:#b9ad95}
+.dp b{font:700 14px 'Cinzel',serif;color:#f1e8d6;overflow-wrap:anywhere}
+.dp .l{font-size:19px;color:var(--gold)}
+.dp .l small{font-size:14px;color:var(--muted)}
+.dp em{font:9px 'Silkscreen',monospace;font-style:normal}
+.dp .tag{align-self:flex-start;margin:0 0 2px}
+
+/* deadliest regions */
+.ledger.regions th:first-child{width:56px}
+.ledger.regions th:last-child{width:90px}
+.ledger.regions tbody tr[data-r]{cursor:pointer}
+.ledger.regions tbody tr[data-r]:hover td,.ledger.regions tbody tr[data-r]:focus td{background:rgba(139,92,246,.16)}
+.ledger.regions tbody tr[data-r]:focus{outline:1px solid var(--violet);outline-offset:-1px}
+.ledger.regions small{display:block;font-size:15px;color:var(--muted)}
+
+@media (max-width:760px){
+  .map-shell{margin-top:12px;outline:none;border-inline:0}
+  #map{height:62vh;min-height:300px}
+  .ledger.regions th:first-child{width:40px}
+  .ledger.regions th:last-child{width:72px}
+  .ledger.regions small{font-size:14px}
+}

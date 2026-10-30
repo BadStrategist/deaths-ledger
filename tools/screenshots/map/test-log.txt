@@ -1,0 +1,72 @@
+preview-360
+  ok   9 tiles on screen (13 tile responses)
+  ok   preview banner + badge shown
+  ok   marker popup: SAMPLE Pretend Banker 990 total · DIED 33m ago · W503 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+preview-390
+  ok   9 tiles on screen (13 tile responses)
+  ok   preview banner + badge shown
+  ok   marker popup: SAMPLE Pretend Banker 990 total · DIED 33m ago · W503 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+preview-412
+  ok   9 tiles on screen (13 tile responses)
+  ok   preview banner + badge shown
+  ok   marker popup: SAMPLE Pretend Banker 990 total · DIED 33m ago · W503 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+preview-768
+  ok   9 tiles on screen (9 tile responses)
+  ok   preview banner + badge shown
+  ok   marker popup: SAMPLE Pretend Banker 990 total · DIED 33m ago · W503 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+preview-1366
+  ok   18 tiles on screen (18 tile responses)
+  ok   preview banner + badge shown
+  ok   marker popup: SAMPLE Pretend Banker 990 total · DIED 33m ago · W503 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+live-360
+  ok   6 tiles on screen (6 tile responses)
+  ok   counts 6,2,1,3; top region "1 Lumbridge x 3200–3263, y 3200–3263 4"
+  ok   marker popup: Stub Edge 900 total · DIED 40m ago · W504 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+live-390
+  ok   6 tiles on screen (6 tile responses)
+  ok   counts 6,2,1,3; top region "1 Lumbridge x 3200–3263, y 3200–3263 4"
+  ok   marker popup: Stub Edge 900 total · DIED 40m ago · W504 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+live-412
+  ok   6 tiles on screen (6 tile responses)
+  ok   counts 6,2,1,3; top region "1 Lumbridge x 3200–3263, y 3200–3263 4"
+  ok   marker popup: Stub Edge 900 total · DIED 40m ago · W504 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+live-768
+  ok   16 tiles on screen (16 tile responses)
+  ok   counts 6,2,1,3; top region "1 Lumbridge x 3200–3263, y 3200–3263 4"
+  ok   marker popup: Stub Edge 900 total · DIED 40m ago · W504 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+live-1366
+  ok   24 tiles on screen (24 tile responses)
+  ok   counts 6,2,1,3; top region "1 Lumbridge x 3200–3263, y 3200–3263 4"
+  ok   marker popup: Stub Edge 900 total · DIED 40m ago · W504 Edgeville · 3094, 3492
+  ok   Lumbridge castle -> …/2026-10-20_a/tiles/rendered/0/3/0_100_100.png at (180,108) in tile [100,100]
+  ok   Varrock square -> …/2026-10-20_a/tiles/rendered/0/3/0_100_107.png at (108,220) in tile [100,107]
+  ok   Edgeville bank -> …/2026-10-20_a/tiles/rendered/0/3/0_96_109.png at (180,220) in tile [96,109]
+
+All checks passed. Screenshots in /tmp/claude-0/-home-user-deaths-ledger/f1c4f1c8-e39a-59c1-a039-5578a4862c25/scratchpad/shots
