@@ -1,0 +1,1827 @@
+{
+ "status": "sample",
+ "sample": true,
+ "updated": "2026-11-06T12:00:00Z",
+ "mode": null,
+ "notes": "SAMPLE DATA for the pre-launch preview. Every name and number is made up. Shown only while data/hiscores.json is missing or not live.",
+ "overall": [
+  {
+   "rank": 1,
+   "name": "Placeholder One",
+   "total": 1712,
+   "xp": 15030683,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 2,
+   "name": "Sample Name",
+   "total": 1708,
+   "xp": 14896996,
+   "dead": true,
+   "died_at": "2026-11-05T06:31:30Z"
+  },
+  {
+   "rank": 3,
+   "name": "Example Player",
+   "total": 1701,
+   "xp": 14785983,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 4,
+   "name": "Not A Real Acct",
+   "total": 1691,
+   "xp": 14651310,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 5,
+   "name": "Fake Account",
+   "total": 1684,
+   "xp": 14524472,
+   "dead": true,
+   "died_at": "2026-11-05T10:15:48Z"
+  },
+  {
+   "rank": 6,
+   "name": "Dummy Row Six",
+   "total": 1673,
+   "xp": 14296318,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 7,
+   "name": "Preview Only",
+   "total": 1668,
+   "xp": 14253054,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 8,
+   "name": "Test Iron",
+   "total": 1659,
+   "xp": 14041483,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 9,
+   "name": "Placeholder Two",
+   "total": 1650,
+   "xp": 13926861,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 10,
+   "name": "Made Up Name",
+   "total": 1638,
+   "xp": 13756191,
+   "dead": true,
+   "died_at": "2026-11-06T06:47:11Z"
+  },
+  {
+   "rank": 11,
+   "name": "Sample Eleven",
+   "total": 1631,
+   "xp": 13649906,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 12,
+   "name": "Fictional Guy",
+   "total": 1622,
+   "xp": 13475446,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 13,
+   "name": "Example Twelve",
+   "total": 1614,
+   "xp": 13367559,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 14,
+   "name": "Lorem Ipsum",
+   "total": 1602,
+   "xp": 13122163,
+   "dead": true,
+   "died_at": "2026-11-05T22:17:04Z"
+  },
+  {
+   "rank": 15,
+   "name": "Dolor Sit",
+   "total": 1591,
+   "xp": 12939436,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 16,
+   "name": "Placeholder Three",
+   "total": 1589,
+   "xp": 12903885,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 17,
+   "name": "Sample Row",
+   "total": 1584,
+   "xp": 12822724,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 18,
+   "name": "Nobody Real",
+   "total": 1571,
+   "xp": 12637172,
+   "dead": true,
+   "died_at": "2026-11-05T06:31:44Z"
+  },
+  {
+   "rank": 19,
+   "name": "Fake Name Two",
+   "total": 1559,
+   "xp": 12400729,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 20,
+   "name": "Mock Player",
+   "total": 1556,
+   "xp": 12398250,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 21,
+   "name": "Sample 21",
+   "total": 1549,
+   "xp": 12274875,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 22,
+   "name": "Sample 22",
+   "total": 1547,
+   "xp": 12287173,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 23,
+   "name": "Sample 23",
+   "total": 1547,
+   "xp": 12238258,
+   "dead": true,
+   "died_at": "2026-11-05T21:56:06Z"
+  },
+  {
+   "rank": 24,
+   "name": "Sample 24",
+   "total": 1538,
+   "xp": 12146956,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 25,
+   "name": "Sample 25",
+   "total": 1531,
+   "xp": 11969101,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 26,
+   "name": "Sample 26",
+   "total": 1526,
+   "xp": 11901771,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 27,
+   "name": "Sample 27",
+   "total": 1521,
+   "xp": 11836705,
+   "dead": true,
+   "died_at": "2026-11-05T22:23:49Z"
+  },
+  {
+   "rank": 28,
+   "name": "Sample 28",
+   "total": 1514,
+   "xp": 11745464,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 29,
+   "name": "Sample 29",
+   "total": 1511,
+   "xp": 11725502,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 30,
+   "name": "Sample 30",
+   "total": 1505,
+   "xp": 11629299,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 31,
+   "name": "Sample 31",
+   "total": 1497,
+   "xp": 11486237,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 32,
+   "name": "Sample 32",
+   "total": 1490,
+   "xp": 11367955,
+   "dead": true,
+   "died_at": "2026-11-05T08:08:24Z"
+  },
+  {
+   "rank": 33,
+   "name": "Sample 33",
+   "total": 1477,
+   "xp": 11161503,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 34,
+   "name": "Sample 34",
+   "total": 1468,
+   "xp": 11013223,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 35,
+   "name": "Sample 35",
+   "total": 1460,
+   "xp": 10902713,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 36,
+   "name": "Sample 36",
+   "total": 1456,
+   "xp": 10846902,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 37,
+   "name": "Sample 37",
+   "total": 1445,
+   "xp": 10727908,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 38,
+   "name": "Sample 38",
+   "total": 1444,
+   "xp": 10707920,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 39,
+   "name": "Sample 39",
+   "total": 1443,
+   "xp": 10656082,
+   "dead": true,
+   "died_at": "2026-11-06T05:33:25Z"
+  },
+  {
+   "rank": 40,
+   "name": "Sample 40",
+   "total": 1442,
+   "xp": 10694415,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 41,
+   "name": "Sample 41",
+   "total": 1439,
+   "xp": 10617590,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 42,
+   "name": "Sample 42",
+   "total": 1437,
+   "xp": 10572482,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 43,
+   "name": "Sample 43",
+   "total": 1429,
+   "xp": 10426811,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 44,
+   "name": "Sample 44",
+   "total": 1417,
+   "xp": 10319845,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 45,
+   "name": "Sample 45",
+   "total": 1405,
+   "xp": 10147197,
+   "dead": true,
+   "died_at": "2026-11-04T23:23:22Z"
+  },
+  {
+   "rank": 46,
+   "name": "Sample 46",
+   "total": 1395,
+   "xp": 9949515,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 47,
+   "name": "Sample 47",
+   "total": 1395,
+   "xp": 9947074,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 48,
+   "name": "Sample 48",
+   "total": 1394,
+   "xp": 9910646,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 49,
+   "name": "Sample 49",
+   "total": 1386,
+   "xp": 9817903,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 50,
+   "name": "Sample 50",
+   "total": 1376,
+   "xp": 9700260,
+   "dead": false,
+   "died_at": null
+  }
+ ],
+ "skills": {
+  "Attack": [
+   {
+    "rank": 1,
+    "name": "Sample 23",
+    "level": 92,
+    "xp": 6555424,
+    "dead": true
+   },
+   {
+    "rank": 2,
+    "name": "Sample 28",
+    "level": 92,
+    "xp": 6551707,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Placeholder Two",
+    "level": 92,
+    "xp": 6544767,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Sample 29",
+    "level": 92,
+    "xp": 6534037,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Example Twelve",
+    "level": 92,
+    "xp": 6518735,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Preview Only",
+    "level": 91,
+    "xp": 5931937,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Dolor Sit",
+    "level": 91,
+    "xp": 5918763,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Mock Player",
+    "level": 90,
+    "xp": 5368683,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Sample 21",
+    "level": 90,
+    "xp": 5362527,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Not A Real Acct",
+    "level": 89,
+    "xp": 4867155,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Fake Name Two",
+    "level": 89,
+    "xp": 4859205,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Sample Name",
+    "level": 89,
+    "xp": 4855695,
+    "dead": true
+   },
+   {
+    "rank": 13,
+    "name": "Test Iron",
+    "level": 88,
+    "xp": 4425541,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Nobody Real",
+    "level": 88,
+    "xp": 4423606,
+    "dead": true
+   },
+   {
+    "rank": 15,
+    "name": "Sample 27",
+    "level": 88,
+    "xp": 4420663,
+    "dead": true
+   },
+   {
+    "rank": 16,
+    "name": "Sample Eleven",
+    "level": 88,
+    "xp": 4408070,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Fake Account",
+    "level": 88,
+    "xp": 4398244,
+    "dead": true
+   },
+   {
+    "rank": 18,
+    "name": "Sample 22",
+    "level": 88,
+    "xp": 4393757,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Placeholder One",
+    "level": 88,
+    "xp": 4393262,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Sample Row",
+    "level": 88,
+    "xp": 4391191,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Sample 26",
+    "level": 87,
+    "xp": 3993162,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Sample 24",
+    "level": 87,
+    "xp": 3992563,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Example Player",
+    "level": 87,
+    "xp": 3986792,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Sample 25",
+    "level": 87,
+    "xp": 3978938,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Dummy Row Six",
+    "level": 87,
+    "xp": 3973334,
+    "dead": false
+   }
+  ],
+  "Strength": [
+   {
+    "rank": 1,
+    "name": "Sample 26",
+    "level": 93,
+    "xp": 7222625,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Placeholder Two",
+    "level": 92,
+    "xp": 6548226,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Placeholder Three",
+    "level": 92,
+    "xp": 6535507,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Sample 21",
+    "level": 92,
+    "xp": 6534157,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Sample 23",
+    "level": 91,
+    "xp": 5919488,
+    "dead": true
+   },
+   {
+    "rank": 6,
+    "name": "Sample 24",
+    "level": 90,
+    "xp": 5385306,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Sample 25",
+    "level": 90,
+    "xp": 5355537,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Sample 30",
+    "level": 89,
+    "xp": 4879316,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Sample 22",
+    "level": 89,
+    "xp": 4847181,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Sample 29",
+    "level": 88,
+    "xp": 4409880,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Example Player",
+    "level": 87,
+    "xp": 3975417,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Dummy Row Six",
+    "level": 86,
+    "xp": 3623653,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Fake Account",
+    "level": 86,
+    "xp": 3617017,
+    "dead": true
+   },
+   {
+    "rank": 14,
+    "name": "Placeholder One",
+    "level": 86,
+    "xp": 3600801,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Test Iron",
+    "level": 85,
+    "xp": 3271172,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Sample Name",
+    "level": 84,
+    "xp": 2951619,
+    "dead": true
+   },
+   {
+    "rank": 17,
+    "name": "Nobody Real",
+    "level": 83,
+    "xp": 2676767,
+    "dead": true
+   },
+   {
+    "rank": 18,
+    "name": "Sample 27",
+    "level": 82,
+    "xp": 2458049,
+    "dead": true
+   },
+   {
+    "rank": 19,
+    "name": "Preview Only",
+    "level": 82,
+    "xp": 2451644,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Lorem Ipsum",
+    "level": 81,
+    "xp": 2227015,
+    "dead": true
+   },
+   {
+    "rank": 21,
+    "name": "Not A Real Acct",
+    "level": 81,
+    "xp": 2224856,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Fake Name Two",
+    "level": 81,
+    "xp": 2215704,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Sample Eleven",
+    "level": 80,
+    "xp": 2014938,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Made Up Name",
+    "level": 80,
+    "xp": 2005861,
+    "dead": true
+   },
+   {
+    "rank": 25,
+    "name": "Sample Row",
+    "level": 80,
+    "xp": 2002348,
+    "dead": false
+   }
+  ],
+  "Defence": [
+   {
+    "rank": 1,
+    "name": "Sample 22",
+    "level": 97,
+    "xp": 10709989,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Fictional Guy",
+    "level": 97,
+    "xp": 10703452,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Example Twelve",
+    "level": 96,
+    "xp": 9717459,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Mock Player",
+    "level": 96,
+    "xp": 9693834,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Fake Name Two",
+    "level": 96,
+    "xp": 9692077,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Sample Eleven",
+    "level": 95,
+    "xp": 8798872,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Preview Only",
+    "level": 95,
+    "xp": 8776194,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Sample 28",
+    "level": 94,
+    "xp": 7981451,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Test Iron",
+    "level": 93,
+    "xp": 7200901,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Sample 30",
+    "level": 92,
+    "xp": 6553167,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Sample 27",
+    "level": 92,
+    "xp": 6518116,
+    "dead": true
+   },
+   {
+    "rank": 12,
+    "name": "Sample 25",
+    "level": 91,
+    "xp": 5930824,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Sample Name",
+    "level": 91,
+    "xp": 5911313,
+    "dead": true
+   },
+   {
+    "rank": 14,
+    "name": "Sample 26",
+    "level": 90,
+    "xp": 5369995,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Example Player",
+    "level": 90,
+    "xp": 5351454,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Placeholder One",
+    "level": 90,
+    "xp": 5351005,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Dolor Sit",
+    "level": 90,
+    "xp": 5346969,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Sample 21",
+    "level": 89,
+    "xp": 4873393,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Sample 24",
+    "level": 89,
+    "xp": 4871641,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Placeholder Three",
+    "level": 89,
+    "xp": 4870887,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Nobody Real",
+    "level": 89,
+    "xp": 4864208,
+    "dead": true
+   },
+   {
+    "rank": 22,
+    "name": "Fake Account",
+    "level": 89,
+    "xp": 4846305,
+    "dead": true
+   },
+   {
+    "rank": 23,
+    "name": "Sample 29",
+    "level": 88,
+    "xp": 4410306,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Lorem Ipsum",
+    "level": 87,
+    "xp": 3995539,
+    "dead": true
+   },
+   {
+    "rank": 25,
+    "name": "Not A Real Acct",
+    "level": 86,
+    "xp": 3606713,
+    "dead": false
+   }
+  ],
+  "Hitpoints": [
+   {
+    "rank": 1,
+    "name": "Dummy Row Six",
+    "level": 97,
+    "xp": 10727419,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Sample 28",
+    "level": 97,
+    "xp": 10703710,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Fictional Guy",
+    "level": 96,
+    "xp": 9706953,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Sample 29",
+    "level": 96,
+    "xp": 9685768,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Sample 25",
+    "level": 95,
+    "xp": 8784482,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Sample 24",
+    "level": 95,
+    "xp": 8780628,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Sample 22",
+    "level": 94,
+    "xp": 7946389,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Lorem Ipsum",
+    "level": 93,
+    "xp": 7234238,
+    "dead": true
+   },
+   {
+    "rank": 9,
+    "name": "Placeholder One",
+    "level": 93,
+    "xp": 7234109,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Sample 30",
+    "level": 93,
+    "xp": 7227955,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Not A Real Acct",
+    "level": 93,
+    "xp": 7220802,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Sample Name",
+    "level": 93,
+    "xp": 7219763,
+    "dead": true
+   },
+   {
+    "rank": 13,
+    "name": "Test Iron",
+    "level": 93,
+    "xp": 7216060,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Placeholder Three",
+    "level": 93,
+    "xp": 7211150,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Made Up Name",
+    "level": 93,
+    "xp": 7202476,
+    "dead": true
+   },
+   {
+    "rank": 16,
+    "name": "Preview Only",
+    "level": 92,
+    "xp": 6546316,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Sample 23",
+    "level": 92,
+    "xp": 6534499,
+    "dead": true
+   },
+   {
+    "rank": 18,
+    "name": "Fake Name Two",
+    "level": 92,
+    "xp": 6532731,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Nobody Real",
+    "level": 92,
+    "xp": 6522129,
+    "dead": true
+   },
+   {
+    "rank": 20,
+    "name": "Placeholder Two",
+    "level": 91,
+    "xp": 5905997,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Sample Eleven",
+    "level": 90,
+    "xp": 5360117,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Example Player",
+    "level": 89,
+    "xp": 4867891,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Dolor Sit",
+    "level": 88,
+    "xp": 4387863,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Sample 21",
+    "level": 87,
+    "xp": 4005724,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Sample Row",
+    "level": 87,
+    "xp": 3974071,
+    "dead": false
+   }
+  ],
+  "Ranged": [
+   {
+    "rank": 1,
+    "name": "Sample 21",
+    "level": 96,
+    "xp": 9717729,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Test Iron",
+    "level": 96,
+    "xp": 9710917,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Dolor Sit",
+    "level": 96,
+    "xp": 9703254,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Sample Eleven",
+    "level": 96,
+    "xp": 9697549,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Dummy Row Six",
+    "level": 96,
+    "xp": 9695992,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Fictional Guy",
+    "level": 96,
+    "xp": 9691095,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Mock Player",
+    "level": 95,
+    "xp": 8780830,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Example Player",
+    "level": 94,
+    "xp": 7978751,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Made Up Name",
+    "level": 94,
+    "xp": 7977150,
+    "dead": true
+   },
+   {
+    "rank": 10,
+    "name": "Sample Name",
+    "level": 94,
+    "xp": 7977090,
+    "dead": true
+   },
+   {
+    "rank": 11,
+    "name": "Nobody Real",
+    "level": 94,
+    "xp": 7945548,
+    "dead": true
+   },
+   {
+    "rank": 12,
+    "name": "Example Twelve",
+    "level": 93,
+    "xp": 7226495,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Placeholder Two",
+    "level": 93,
+    "xp": 7225672,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Fake Name Two",
+    "level": 93,
+    "xp": 7218127,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Sample 25",
+    "level": 93,
+    "xp": 7211071,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Sample 24",
+    "level": 93,
+    "xp": 7210980,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Lorem Ipsum",
+    "level": 93,
+    "xp": 7205419,
+    "dead": true
+   },
+   {
+    "rank": 18,
+    "name": "Fake Account",
+    "level": 92,
+    "xp": 6539987,
+    "dead": true
+   },
+   {
+    "rank": 19,
+    "name": "Placeholder One",
+    "level": 92,
+    "xp": 6539319,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Sample 29",
+    "level": 92,
+    "xp": 6527435,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Sample Row",
+    "level": 91,
+    "xp": 5928264,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Sample 28",
+    "level": 91,
+    "xp": 5926841,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Sample 27",
+    "level": 91,
+    "xp": 5909290,
+    "dead": true
+   },
+   {
+    "rank": 24,
+    "name": "Placeholder Three",
+    "level": 90,
+    "xp": 5351064,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Sample 26",
+    "level": 89,
+    "xp": 4867653,
+    "dead": false
+   }
+  ],
+  "Magic": [
+   {
+    "rank": 1,
+    "name": "Test Iron",
+    "level": 95,
+    "xp": 8801009,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Sample Eleven",
+    "level": 95,
+    "xp": 8794755,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Dolor Sit",
+    "level": 95,
+    "xp": 8783181,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Sample 30",
+    "level": 95,
+    "xp": 8773055,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Dummy Row Six",
+    "level": 94,
+    "xp": 7980555,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Preview Only",
+    "level": 94,
+    "xp": 7966481,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Fake Name Two",
+    "level": 94,
+    "xp": 7956922,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Nobody Real",
+    "level": 93,
+    "xp": 7233671,
+    "dead": true
+   },
+   {
+    "rank": 9,
+    "name": "Sample Row",
+    "level": 93,
+    "xp": 7222952,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Sample 22",
+    "level": 93,
+    "xp": 7217012,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Mock Player",
+    "level": 93,
+    "xp": 7203049,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Example Twelve",
+    "level": 92,
+    "xp": 6556491,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Example Player",
+    "level": 92,
+    "xp": 6544935,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Sample 21",
+    "level": 92,
+    "xp": 6544443,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Placeholder Two",
+    "level": 92,
+    "xp": 6539951,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Made Up Name",
+    "level": 92,
+    "xp": 6537841,
+    "dead": true
+   },
+   {
+    "rank": 17,
+    "name": "Lorem Ipsum",
+    "level": 92,
+    "xp": 6525986,
+    "dead": true
+   },
+   {
+    "rank": 18,
+    "name": "Fake Account",
+    "level": 92,
+    "xp": 6519072,
+    "dead": true
+   },
+   {
+    "rank": 19,
+    "name": "Not A Real Acct",
+    "level": 92,
+    "xp": 6518387,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Fictional Guy",
+    "level": 91,
+    "xp": 5940361,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Sample 24",
+    "level": 91,
+    "xp": 5928943,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Sample Name",
+    "level": 91,
+    "xp": 5927723,
+    "dead": true
+   },
+   {
+    "rank": 23,
+    "name": "Sample 23",
+    "level": 91,
+    "xp": 5915141,
+    "dead": true
+   },
+   {
+    "rank": 24,
+    "name": "Sample 27",
+    "level": 91,
+    "xp": 5903735,
+    "dead": true
+   },
+   {
+    "rank": 25,
+    "name": "Sample 29",
+    "level": 90,
+    "xp": 5356012,
+    "dead": false
+   }
+  ],
+  "Prayer": [
+   {
+    "rank": 1,
+    "name": "Example Player",
+    "level": 92,
+    "xp": 6550879,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Sample 29",
+    "level": 91,
+    "xp": 5912419,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Example Twelve",
+    "level": 91,
+    "xp": 5911689,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Fictional Guy",
+    "level": 90,
+    "xp": 5376559,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Sample 30",
+    "level": 90,
+    "xp": 5358614,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Preview Only",
+    "level": 90,
+    "xp": 5351976,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Test Iron",
+    "level": 89,
+    "xp": 4875297,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Sample Eleven",
+    "level": 89,
+    "xp": 4873029,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Lorem Ipsum",
+    "level": 89,
+    "xp": 4845198,
+    "dead": true
+   },
+   {
+    "rank": 10,
+    "name": "Made Up Name",
+    "level": 88,
+    "xp": 4404842,
+    "dead": true
+   },
+   {
+    "rank": 11,
+    "name": "Sample 27",
+    "level": 88,
+    "xp": 4387325,
+    "dead": true
+   },
+   {
+    "rank": 12,
+    "name": "Dolor Sit",
+    "level": 87,
+    "xp": 4000607,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Fake Name Two",
+    "level": 87,
+    "xp": 3993230,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Sample Name",
+    "level": 87,
+    "xp": 3972679,
+    "dead": true
+   },
+   {
+    "rank": 15,
+    "name": "Placeholder One",
+    "level": 86,
+    "xp": 3622462,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Sample 23",
+    "level": 86,
+    "xp": 3601307,
+    "dead": true
+   },
+   {
+    "rank": 17,
+    "name": "Placeholder Two",
+    "level": 85,
+    "xp": 3298519,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Mock Player",
+    "level": 85,
+    "xp": 3287460,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Nobody Real",
+    "level": 85,
+    "xp": 3285624,
+    "dead": true
+   },
+   {
+    "rank": 20,
+    "name": "Sample Row",
+    "level": 85,
+    "xp": 3274805,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Not A Real Acct",
+    "level": 85,
+    "xp": 3264867,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Sample 28",
+    "level": 84,
+    "xp": 2986941,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Fake Account",
+    "level": 83,
+    "xp": 2712512,
+    "dead": true
+   },
+   {
+    "rank": 24,
+    "name": "Sample 26",
+    "level": 83,
+    "xp": 2689958,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Placeholder Three",
+    "level": 83,
+    "xp": 2686869,
+    "dead": false
+   }
+  ],
+  "Slayer": [
+   {
+    "rank": 1,
+    "name": "Lorem Ipsum",
+    "level": 93,
+    "xp": 7222659,
+    "dead": true
+   },
+   {
+    "rank": 2,
+    "name": "Sample 24",
+    "level": 93,
+    "xp": 7195672,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Fake Name Two",
+    "level": 92,
+    "xp": 6520820,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Not A Real Acct",
+    "level": 91,
+    "xp": 5923467,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Sample Eleven",
+    "level": 90,
+    "xp": 5355195,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Sample 22",
+    "level": 89,
+    "xp": 4868472,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Nobody Real",
+    "level": 88,
+    "xp": 4420288,
+    "dead": true
+   },
+   {
+    "rank": 8,
+    "name": "Dummy Row Six",
+    "level": 88,
+    "xp": 4415786,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Fake Account",
+    "level": 88,
+    "xp": 4395592,
+    "dead": true
+   },
+   {
+    "rank": 10,
+    "name": "Placeholder One",
+    "level": 87,
+    "xp": 4007452,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Fictional Guy",
+    "level": 87,
+    "xp": 3988611,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Sample 21",
+    "level": 87,
+    "xp": 3988564,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Sample Row",
+    "level": 87,
+    "xp": 3988462,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Test Iron",
+    "level": 87,
+    "xp": 3983404,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Example Twelve",
+    "level": 86,
+    "xp": 3636718,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Made Up Name",
+    "level": 86,
+    "xp": 3635253,
+    "dead": true
+   },
+   {
+    "rank": 17,
+    "name": "Dolor Sit",
+    "level": 85,
+    "xp": 3297023,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Sample 29",
+    "level": 85,
+    "xp": 3288523,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Sample Name",
+    "level": 85,
+    "xp": 3287131,
+    "dead": true
+   },
+   {
+    "rank": 20,
+    "name": "Mock Player",
+    "level": 85,
+    "xp": 3284506,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Sample 26",
+    "level": 85,
+    "xp": 3283069,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Sample 28",
+    "level": 85,
+    "xp": 3276264,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Example Player",
+    "level": 85,
+    "xp": 3265887,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Sample 23",
+    "level": 84,
+    "xp": 2973797,
+    "dead": true
+   },
+   {
+    "rank": 25,
+    "name": "Placeholder Three",
+    "level": 84,
+    "xp": 2963238,
+    "dead": false
+   }
+  ]
+ }
+}
