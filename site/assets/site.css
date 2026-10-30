@@ -206,3 +206,7 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .hero .lede{max-width:640px}
 .lede .continue{margin-left:0}
+/* banished: died, then transferred to the main game */
+.tag.violet{background:#4b2b8a;color:#fff}
+.grave.banished .art{opacity:.75;filter:drop-shadow(0 0 14px rgba(139,92,246,.5)) drop-shadow(0 8px 6px rgba(0,0,0,.8)) hue-rotate(10deg)}
+.grave.banished .plate{border-color:#5b3fa0}

@@ -57,7 +57,11 @@
 
   /* ---------------- graveyard ---------------- */
   const ART = t => t >= 1800 ? "Gravestone_Draynor_Manor" : t >= 500 ? "Grave" : "Grave_Haunted_Woods";
-  const FATE = { died: ["", "DIED"], reset: ["", "RESET"], fallen: ["grey", "FALLEN"] };
+  // banished = died, then transferred to the main game (confirmed on the main-game hiscores).
+  // fallen = left the Hardcore hiscores but the transfer isn't confirmed yet -> shown as "BANISHED?".
+  const FATE = { died: ["", "DIED"], reset: ["", "RESET"], banished: ["violet", "BANISHED"], fallen: ["violet", "BANISHED?"] };
+  const isBanished = d => d.fate === "banished" || d.fate === "fallen";
+  const FATE_TIP = { banished: "Died, then transferred to the main game.", fallen: "Left the Hardcore Worlds hiscores after dying; the transfer to the main game is not confirmed yet." };
 
   function where(d) {
     if (d.location_text) return d.location_text;
@@ -71,7 +75,7 @@
     const t = d.total || 0, [cls, label] = FATE[d.fate] || FATE.died;
     const sk = (d.top_skills || []).slice(0, 2).map(s => `${s[0]} ${s[1]}`).join(" · ");
     const boss = d.top_boss ? `<br>${esc(d.top_boss[0].toUpperCase())} KC <b>${fmt(d.top_boss[1])}</b>` : "";
-    return `<div class="grave${d.notable ? " notable" : ""}${d.fate === "fallen" ? " fallen" : ""}">
+    return `<div class="grave${d.notable ? " notable" : ""}${isBanished(d) ? " banished" : ""}">
       <div class="art"><img src="assets/art/${ART(t)}.webp" alt="" loading="lazy"></div><div class="mound"></div>
       <div class="plate">${d.run > 1 ? `<span class="run">#${d.run}</span>` : ""}
         <div class="n">${esc(d.name)}</div>
@@ -80,7 +84,7 @@
         ${d.player_killer ? `<div class="k">SLAIN BY A PLAYER</div>` : ""}
         <div class="t" title="${new Date(d.time).toString()}">${when(d)}</div>
         ${where(d) ? `<div class="t">${esc(where(d))}</div>` : ""}
-        ${d.notable ? `<span class="tag gold">NOTABLE</span> ` : ""}<span class="tag ${cls}">${label}</span>
+        ${d.notable ? `<span class="tag gold">NOTABLE</span> ` : ""}<span class="tag ${cls}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${label}</span>
       </div></div>`;
   }
 
@@ -154,7 +158,7 @@
       return deaths.filter(d =>
         (state.range === "all" || d.time >= now - (state.range === "today" ? 864e5 : 7 * 864e5)) &&
         (state.tier === "any" || (state.tier === "2000" ? d.total >= 2000 : state.tier === "1500" ? d.total >= 1500 : d.total < 500)) &&
-        (state.fate === "any" || d.fate === state.fate) &&
+        (state.fate === "any" || (state.fate === "banished" ? isBanished(d) : d.fate === state.fate)) &&
         (!state.q || d.name.toLowerCase().includes(state.q)));
     }
 
@@ -175,12 +179,12 @@
       $("#ledger").innerHTML = list.slice(0, state.shown).map(d => `<tr>
         <td class="n">${esc(d.name)}</td><td class="y">${fmt(d.total)}</td><td class="hide-sm">${d.combat ?? "—"}</td>
         <td class="hide-sm">${esc((d.top_skills || []).map(s => s[0] + " " + s[1]).join(", "))}</td>
-        <td style="color:${d.fate === "fallen" ? "#bbb" : "var(--chat-red)"}">${d.fate === "died" ? "Died" : d.fate === "reset" ? "Reset" : "Fallen"}</td>
+        <td style="color:${isBanished(d) ? "var(--violet-soft)" : "var(--chat-red)"}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${d.fate === "died" ? "Died" : d.fate === "reset" ? "Reset" : d.fate === "banished" ? "Banished" : "Banished?"}</td>
         <td class="hide-sm">${d.world ? "W" + d.world : "—"}</td><td>${when(d)}</td></tr>`).join("") ||
         `<tr><td colspan="7" class="note">Nothing recorded yet.</td></tr>`;
     }
     $("#listing").innerHTML = gy && gy.status === "live"
-      ? `Listing players with total level <b>${fmt(gy.min_total || 0)}+</b> · ${fmt(gy.ranked_players)} on the hiscores${gy.last_full_scan ? ` · last full scan ${ago(Date.parse(gy.last_full_scan))}` : ""}. <b>FALLEN</b> = left the hiscores; exact cause unknown.`
+      ? `Listing players with total level <b>${fmt(gy.min_total || 0)}+</b> · ${fmt(gy.ranked_players)} on the hiscores${gy.last_full_scan ? ` · last full scan ${ago(Date.parse(gy.last_full_scan))}` : ""}. <b>BANISHED</b> = died, then transferred to the main game; <b>BANISHED?</b> = left the Hardcore hiscores, transfer not confirmed yet.`
       : gy.sample ? `Showing <b>sample graves</b> until the Hardcore Worlds hiscores go live.` : "";
     draw();
   }
