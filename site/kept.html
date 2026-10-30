@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kept on Death · Hardcore Worlds: Death Toll</title>
+<meta property="og:site_name" content="Hardcore Worlds: Death Toll">
+<meta property="og:title" content="Kept on Death · Hardcore Worlds: Death Toll">
+<meta property="og:description" content="Build your loadout and see which items you keep and which you lose forever if you die on OSRS Hardcore Worlds, with GP at risk.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deathtoll.gg/kept.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://deathtoll.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hardcore Worlds: Death Toll, three gravestones under a full moon">
+<meta name="twitter:image" content="https://deathtoll.gg/assets/og.png">
+<meta name="theme-color" content="#0c0a08">
+<link rel="canonical" href="https://deathtoll.gg/kept.html">
+<meta name="description" content="Kept-on-death calculator for OSRS Hardcore Worlds: your 3 (or 4) most valuable items are kept, everything else is deleted.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css?v=20261030e">
+<link rel="stylesheet" href="assets/kept.css?v=20261030a">
+</head>
+<body data-page="kept">
+<header class="top" id="top"></header>
+<main class="wrap" id="main">
+  <section class="frame page-head"><h1>Kept on death</h1><p>Build your loadout and see which items you keep and which you lose for good if you die on Hardcore Worlds.</p></section>
+
+  <section class="frame rule" aria-labelledby="rule-h">
+    <h3 id="rule-h">The Hardcore Worlds rule</h3>
+    <div class="body">
+      <ul class="rules">
+        <li><b class="lost-c">Gravestone items are deleted.</b> Anything that would normally go to your gravestone is permanently deleted.</li>
+        <li><b class="kept-c">You keep your 3 most valuable items</b>, or 4 with Protect Item. Skulled, you keep 0, or 1 with Protect Item.</li>
+        <li>After dying you choose <b>Reset</b> or <b>Transfer</b>:
+          <ul>
+            <li><b>Reset</b> wipes the character, including the items you kept. You start again on Hardcore Worlds.</li>
+            <li><b>Transfer</b> moves the character to the main game for good, along with the items you kept, your bank and your other storage.</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="src">Source: Jagex, <a href="https://secure.runescape.com/m=news/hardcore-worlds-are-coming-on-november-4th?oldschool=1" rel="noopener">Hardcore Worlds are coming on November 4th</a>. Kept-item rules: <a href="https://oldschool.runescape.wiki/w/Items_Kept_on_Death" rel="noopener">OSRS Wiki, Items Kept on Death</a>. This is a pre-launch calculator. Always check the in-game <i>Items Kept on Death</i> screen before you take a risk.</p>
+    </div>
+  </section>
+
+  <h2 class="title">Your loadout</h2>
+  <section class="frame">
+    <div class="body">
+      <div class="addbar">
+        <div class="seg" role="group" aria-label="Add items to">
+          <button class="tab on" type="button" data-to="inv" aria-pressed="true">Inventory</button>
+          <button class="tab" type="button" data-to="eq" aria-pressed="false">Equipment</button>
+        </div>
+        <label class="sr" for="q">Search items</label>
+        <input class="search kq" id="q" type="search" placeholder="Search items, e.g. abyssal whip" autocomplete="off" disabled>
+      </div>
+      <div class="price-state" id="price-state" role="status">Loading prices…</div>
+      <ul class="results" id="results" hidden></ul>
+      <div class="toggles">
+        <button class="tab tog" type="button" id="t-protect" aria-pressed="false"><span class="box"></span>Protect Item</button>
+        <button class="tab tog" type="button" id="t-skull" aria-pressed="false"><span class="box"></span>Skulled</button>
+        <button class="tab clear" type="button" id="clear">Clear all</button>
+      </div>
+      <div class="slots">
+        <div><h4>Equipment <span id="eq-n">0/11</span></h4><ul class="load" id="eq"></ul></div>
+        <div><h4>Inventory <span id="inv-n">0/28</span></h4><ul class="load" id="inv"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="title">If you die now</h2>
+  <div class="verdict" id="verdict"></div>
+  <div class="outcome">
+    <section class="frame kept"><h3>Kept <span id="kept-n"></span></h3><ul class="list" id="kept"></ul></section>
+    <section class="frame lost"><h3>Lost forever <span id="lost-n"></span></h3><ul class="list" id="lost"></ul></section>
+  </div>
+  <p class="note" id="price-label"></p>
+
+  <h2 class="title">What this doesn't cover</h2>
+  <section class="frame"><div class="body notes">
+    <ul>
+      <li><b>Ranking uses live prices.</b> The game ranks items by its own value, which is usually close to the Grand Exchange guide price. These are live OSRS Wiki trade prices, so items with close values can swap places. Treat near-ties as unsure.</li>
+      <li><b>Stacks count one item at a time.</b> If a stack is among your most valuable items you keep that many units of it (for example 3 death runes), not the whole stack.</li>
+      <li><b>Untradeable items are not listed.</b> Some are always kept, some turn into coins or components, and some are lost. Those rules are item by item, so this calculator doesn't guess. Check the <a href="https://oldschool.runescape.wiki/w/Items_Kept_on_Death" rel="noopener">wiki page</a> and the in-game screen.</li>
+      <li><b>Not modelled:</b> PvP deaths (where the killer gets your loot), safe minigames, instanced bosses, and items with their own death rules (looting bag contents, rune pouch, Trouver parchment, and so on).</li>
+    </ul>
+  </div></section>
+</main>
+<footer>Created using intellectual property belonging to Jagex Limited under the terms of Jagex's Fan Content Policy.
+This content is not endorsed by or affiliated with Jagex.<br>Data: OSRS Wiki real-time prices (prices.runescape.wiki). In-game images via the OSRS Wiki.</footer>
+<script src="assets/kept.js?v=20261030a"></script>
+</body>
+</html>
