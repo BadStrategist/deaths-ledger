@@ -5,7 +5,7 @@ name: Ledger
 # death times come from the hiscores themselves, not from when this ran.
 on:
   schedule:
-    - cron: "4-59/10 * * * *"
+    - cron: "4,14,24,34,44,54 * * * *"
   workflow_dispatch:
 
 concurrency:
