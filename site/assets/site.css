@@ -188,3 +188,21 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 18px 40p
   .graves{gap:18px 8px}
   .plate .n{font-size:13px}
 }
+
+/* hero headline: the in-game death message, in a pixel face with the game's hard black text shadow */
+.hero h1.dead-msg{font:400 clamp(56px,8.4vw,112px)/.86 'VT323',monospace;color:var(--chat-y);letter-spacing:1px;
+  text-shadow:4px 4px 0 #000,0 0 28px rgba(255,255,0,.12);margin:10px 0 14px}
+.hero h1.dead-msg em{font-style:normal;color:var(--blood-hi);text-shadow:4px 4px 0 #000,0 0 30px rgba(255,59,69,.35)}
+.lede .continue{font:20px 'VT323',monospace;font-style:normal;color:#7fb2ff;text-decoration:none;white-space:nowrap;margin-left:4px;
+  border-bottom:1px dashed rgba(127,178,255,.55);text-shadow:1px 1px 0 #000}
+.lede .continue:hover,.lede .continue:focus-visible{color:#cfe3ff;border-bottom-style:solid}
+html{scroll-behavior:smooth}
+#graveyard{scroll-margin-top:12px}
+@media (max-width:760px){
+  .hero h1.dead-msg{font-size:clamp(50px,14.5vw,64px);text-shadow:3px 3px 0 #000}
+  .hero h1.dead-msg em{text-shadow:3px 3px 0 #000}
+  .lede .continue{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.hero .lede{max-width:640px}
+.lede .continue{margin-left:0}
