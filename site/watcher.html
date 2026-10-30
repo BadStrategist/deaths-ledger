@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Watcher · Death's Ledger</title>
+<meta name="description" content="Which official Hardcore Worlds data sources are live: hiscores, world list, GE prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="watcher">
+<header class="top" id="top"></header>
+<div class="shell" style="grid-template-columns:210px minmax(0,1fr)">
+  <nav class="side frame" id="nav"></nav>
+  <main>
+    <section class="frame page-head"><h2>Data watcher</h2><p>Checks every run for the official sources Hardcore Worlds will add. When one appears, the site switches over by itself. <span id="checked"></span></p></section>
+    <h4 class="section-title">Sources</h4>
+    <section class="frame"><table class="ledger"><thead><tr><th>SOURCE</th><th>STATUS</th><th>DETAIL</th></tr></thead><tbody id="sources"></tbody></table></section>
+    <h4 class="section-title">Last run</h4>
+    <section class="frame"><table class="ledger"><thead><tr><th>STEP</th><th>RESULT</th><th>DETAIL</th></tr></thead><tbody id="steps"></tbody></table></section>
+    <h4 class="section-title">Discoveries</h4>
+    <section class="frame events"><div class="body" id="events"></div></section>
+  </main>
+</div>
+<footer>Fan-made. Not affiliated with Jagex. Old School RuneScape is a trademark of Jagex Ltd.</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

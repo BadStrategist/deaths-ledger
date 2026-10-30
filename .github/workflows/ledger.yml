@@ -1,0 +1,83 @@
+name: Ledger
+
+# Every run: population snapshot -> watcher -> graveyard scan, then publish the site.
+# Scans resume where the last run stopped, so a late or skipped run loses nothing;
+# death times come from the hiscores themselves, not from when this ran.
+on:
+  schedule:
+    - cron: "4-59/10 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ledger
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # The scanner's memory lives on the `state` branch as a single commit (force-pushed),
+      # so main's history never fills up with data.
+      - name: Load state
+        run: |
+          if git ls-remote --exit-code --heads origin state >/dev/null; then
+            git fetch --depth=1 origin state
+            mkdir statedir && git --work-tree=statedir checkout FETCH_HEAD -- .
+            git reset -q
+          else
+            mkdir statedir
+          fi
+          ls -la statedir
+
+      - name: Run pipeline
+        id: pipeline
+        continue-on-error: true
+        env:
+          LEDGER_DATA_DIR: ${{ github.workspace }}/statedir
+        run: python3 scraper/run_all.py
+
+      - name: Save state
+        if: always()
+        working-directory: statedir
+        run: |
+          rm -f *.tmp
+          git init -q -b state
+          git add -A
+          git -c user.name="ledger-bot" -c user.email="ledger-bot@users.noreply.github.com" commit -qm "state $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" state
+
+      - name: Build site
+        if: always()
+        run: |
+          mkdir -p _site/data
+          cp -r site/. _site/
+          for f in graveyard population watcher status; do
+            [ -f "statedir/$f.json" ] && cp "statedir/$f.json" _site/data/
+          done
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        if: always()
+        with:
+          path: _site
+
+      - id: deploy
+        if: always()
+        uses: actions/deploy-pages@v4
+
+      - name: Report pipeline failure
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          echo "::error::A pipeline step failed. See data/status.json or the Run pipeline log."
+          exit 1

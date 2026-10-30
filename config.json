@@ -1,0 +1,47 @@
+{
+  "hiscore": {
+    "mode": "auto",
+    "mode_comment": "auto = use the Hardcore Worlds table once the watcher finds it. Or set a mode name, e.g. hiscore_oldschool_hardcore_ironman for testing.",
+    "known_modes": [
+      "hiscore_oldschool", "hiscore_oldschool_deadman", "hiscore_oldschool_fresh_start",
+      "hiscore_oldschool_hardcore_ironman", "hiscore_oldschool_ironman", "hiscore_oldschool_seasonal",
+      "hiscore_oldschool_skiller", "hiscore_oldschool_skiller_defence", "hiscore_oldschool_tournament",
+      "hiscore_oldschool_ultimate"
+    ],
+    "candidate_modes": [
+      "hiscore_oldschool_hardcore_worlds", "hiscore_oldschool_hardcore_world", "hiscore_oldschool_hardcore",
+      "hiscore_oldschool_hcw", "hiscore_oldschool_hardcore_mode"
+    ],
+    "deaths_since": "2026-11-04T00:00:00Z",
+    "request_delay_seconds": 0.5,
+    "run_budget_seconds": 1500
+  },
+  "listing": {
+    "comment": "Who gets a gravestone. min_total rises with the size of the hiscores; the scan stops at the page where total level falls below it.",
+    "scale_steps": [
+      { "ranked_players": 0,      "min_total": 0 },
+      { "ranked_players": 25000,  "min_total": 300 },
+      { "ranked_players": 75000,  "min_total": 750 },
+      { "ranked_players": 200000, "min_total": 1000 },
+      { "ranked_players": 400000, "min_total": 1250 },
+      { "ranked_players": 700000, "min_total": 1500 }
+    ],
+    "min_total_override": null,
+    "notable_total": 1800
+  },
+  "population": {
+    "hardcore_world_types": ["HARDCORE", "HARDCORE_WORLD", "HARDCORE_WORLDS"],
+    "hardcore_activity_regex": "(?i)hard ?core",
+    "known_world_types": [
+      "MEMBERS", "PVP", "BOUNTY", "PVP_ARENA", "SKILL_TOTAL", "HIGH_RISK", "LAST_MAN_STANDING",
+      "QUEST_SPEEDRUNNING", "FRESH_START_WORLD", "DEADMAN", "SEASONAL", "NOSAVE_MODE", "TOURNAMENT",
+      "BETA_WORLD", "PVP_ARENA", "BETA"
+    ],
+    "history_days_full": 3,
+    "history_days_hourly": 120
+  },
+  "prices": {
+    "known_routes": ["osrs", "dmm"],
+    "candidate_routes": ["hardcore", "hcw", "hc", "hardcoreworlds", "hardcore-worlds"]
+  }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/
+statedir/
+_site/
+*.tmp
+*.corrupt
