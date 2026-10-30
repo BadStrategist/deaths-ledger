@@ -1,0 +1,97 @@
+/* Kept on death calculator. Builds on site.css (palette, .frame, .tab, h2.title). */
+:root{--kept:#5fe35f; --kept-bg:#123312; --lost:#ff5a5f; --lost-bg:#3a1013}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.kept-c{color:var(--kept)} .lost-c{color:var(--lost)}
+
+/* ---------- rule ---------- */
+.rules{margin:0;padding-left:20px;line-height:1.55}
+.rules li{margin:4px 0}
+.rules ul{padding-left:18px;margin:4px 0}
+.rules b{color:var(--gold-soft)}
+.rules b.kept-c{color:var(--kept)} .rules b.lost-c{color:var(--lost)}
+.src{font-size:13px;color:var(--muted);font-style:italic;margin:10px 0 0;line-height:1.5}
+.src a,.notes a,.price-state a{color:var(--chat-c)}
+
+/* ---------- add bar ---------- */
+.addbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.seg{display:flex;gap:4px}
+.kq{flex:1;min-width:0;width:auto;margin-left:0}
+.kq:disabled{opacity:.6}
+.price-state{font:17px 'VT323',monospace;color:var(--muted);margin:8px 2px 0}
+.price-state.err{color:var(--parch);background:var(--lost-bg);border:1px solid var(--lost);padding:8px 10px}
+.price-state.err b{font:10px 'Silkscreen',monospace;color:var(--lost);margin-right:6px;font-weight:normal}
+.price-state .tab{margin-left:6px;vertical-align:middle}
+.results{list-style:none;margin:6px 0 0;padding:0;background:#0b090e;border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px}
+.results li button{display:flex;align-items:center;gap:8px;width:100%;min-height:44px;padding:6px 10px;background:none;border:0;border-bottom:1px solid #000;color:var(--parch);font:19px 'VT323',monospace;text-align:left;cursor:pointer}
+.results li button:hover,.results li button.act{background:rgba(139,92,246,.18)}
+.results li.none{font:17px 'VT323',monospace;color:var(--muted);padding:10px}
+
+/* ---------- toggles ---------- */
+.toggles{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.tog{display:flex;align-items:center;gap:8px;min-height:40px}
+.tog .box{width:14px;height:14px;border:2px solid var(--muted);background:#0b090e;flex:none}
+.tog.on .box{background:var(--chat-y);border-color:var(--chat-y);box-shadow:inset 0 0 0 2px #000}
+#t-skull.on{background:linear-gradient(#5a1418,#3a0c10);outline-color:var(--lost)}
+.clear{margin-left:auto;min-height:40px}
+
+/* ---------- loadout ---------- */
+.slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:10px}
+.slots h4{font:10px 'Silkscreen',monospace;color:var(--gold);margin:6px 0;font-weight:normal;letter-spacing:1px;display:flex;justify-content:space-between}
+.slots h4 span{color:var(--muted)}
+.load,.list{list-style:none;margin:0;padding:0}
+.load li,.list li{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px dotted var(--edge);min-width:0}
+.load li.none,.list li.none{font:17px 'VT323',monospace;color:var(--muted);display:block}
+.ic{width:28px;height:28px;flex:none;object-fit:contain;image-rendering:pixelated;display:block}
+.nm{flex:1;min-width:0;font:19px/1.1 'VT323',monospace;color:var(--parch);overflow-wrap:anywhere}
+.nm small{display:block;font-size:15px;color:var(--muted)}
+.nm .x{color:var(--chat-y);font-weight:normal}
+.qty{display:flex;align-items:center;flex:none}
+.qty input{width:64px;height:32px;background:#0b090e;border:1px solid var(--edge);color:var(--chat-y);font:18px 'VT323',monospace;text-align:center;-moz-appearance:textfield;padding:0 2px}
+.qty input::-webkit-inner-spin-button,.qty input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.qb,.rm{width:32px;height:32px;flex:none;background:linear-gradient(#2e2838,#211c29);border:1px solid #000;color:var(--parch);font:18px/1 'VT323',monospace;cursor:pointer;padding:0}
+.rm{color:var(--lost);margin-left:2px}
+
+/* ---------- outcome ---------- */
+.verdict{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.verdict .big{background:#0b090e;border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px;padding:12px;min-width:0}
+.verdict .big b{display:block;font:40px/1 'VT323',monospace;color:var(--gold);text-shadow:2px 2px 0 #000}
+.verdict .big b.kept-c{color:var(--kept)} .verdict .big b.lost-c{color:var(--lost)}
+.verdict .big span{font:9px/1.5 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px;display:block;margin-top:4px}
+.warn{grid-column:1/-1;margin:0;font:17px 'VT323',monospace;color:var(--parch);background:#2f2608;border:1px solid #8a6d10;padding:8px 10px}
+.warn b{color:var(--chat-y);font-weight:normal}
+.outcome{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.outcome .frame.kept{outline-color:var(--kept);background:linear-gradient(var(--kept-bg),var(--stone) 120px)}
+.outcome .frame.lost{outline-color:var(--lost);background:linear-gradient(var(--lost-bg),var(--stone) 120px)}
+.outcome .kept h3{color:var(--kept)} .outcome .lost h3{color:var(--lost)}
+.outcome h3 span{color:var(--muted);font-family:'VT323',monospace;font-size:18px;letter-spacing:0}
+.outcome .list{padding:4px 16px 10px}
+.list .v{flex:none;font:20px 'VT323',monospace;color:var(--gold)}
+.lost .list .v{color:var(--lost)} .kept .list .v{color:var(--kept)}
+.notes ul{margin:0;padding-left:20px;line-height:1.55}
+.notes li{margin:6px 0}
+.notes b{color:var(--gold-soft)}
+
+/* four nav links on this page: 2x2 on phones (site.css lays out 3) */
+@media (max-width:980px){
+  .slots,.outcome{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  body[data-page=kept] .nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kq{flex-basis:100%;margin-top:0}
+  .seg{flex:1}.seg .tab{flex:1}
+  .verdict{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .verdict .big:first-child{grid-column:1/-1}
+  .verdict .big b{font-size:34px}
+  .rules{padding-left:18px;font-size:15px}
+  .notes{font-size:15px}
+  .outcome .list{padding:4px 12px 10px}
+  .qty input{width:64px}
+  /* loadout rows: name on top, quantity controls underneath */
+  .load li{flex-wrap:wrap;row-gap:4px}
+  .load .nm{flex-basis:calc(100% - 36px)}
+  .load .qty{margin-left:36px}
+  .load .rm{margin-left:auto}
+}
+@media (min-width:761px) and (max-width:980px){
+  body[data-page=kept] .nav a{padding:8px 8px}
+}
