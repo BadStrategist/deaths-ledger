@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is it safe? · Hardcore Worlds: Death Toll</title>
+<meta property="og:site_name" content="Hardcore Worlds: Death Toll">
+<meta property="og:title" content="Is it safe? · Hardcore Worlds: Death Toll">
+<meta property="og:description" content="Look up any OSRS activity, minigame, boss or area: is a death there safe, or does it end your Hardcore Worlds run?">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deathtoll.gg/safe.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://deathtoll.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hardcore Worlds: Death Toll, three gravestones under a full moon">
+<meta name="twitter:image" content="https://deathtoll.gg/assets/og.png">
+<meta name="theme-color" content="#0c0a08">
+<link rel="canonical" href="https://deathtoll.gg/safe.html">
+<meta name="description" content="Safe and unsafe deaths on OSRS Hardcore Worlds: search any minigame, boss or area to see if a death there counts as your one life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css?v=20261030e">
+<link rel="stylesheet" href="assets/safe.css?v=20261030a">
+</head>
+<body data-page="safe">
+<header class="top" id="top"></header>
+<main class="wrap" id="main">
+  <section class="frame page-head"><h1>Is it safe?</h1><p>Search a minigame, boss, quest or area. Find out whether dying there ends your Hardcore Worlds run.</p></section>
+
+  <div class="safe-search">
+    <input class="search" id="q" type="search" placeholder="Try NMZ, Jad, Castle Wars..." aria-label="Search activities, minigames, bosses and areas" autocomplete="off" spellcheck="false">
+    <div class="filters" id="chips" role="group" aria-label="Filter by verdict">
+      <button class="tab on" data-v="all" aria-pressed="true">All</button><button class="tab" data-v="safe" aria-pressed="false">Safe</button><button class="tab" data-v="unsafe" aria-pressed="false">Unsafe</button><button class="tab" data-v="conditional" aria-pressed="false">Conditional</button>
+    </div>
+  </div>
+  <p class="note" id="status" aria-live="polite"></p>
+  <div class="verdicts" id="list"></div>
+
+  <h2 class="title">How a Hardcore death works</h2>
+  <section class="frame explain">
+    <div class="body">
+      <p>Hardcore Worlds use the <b>Hardcore Group Ironman</b> death ruleset. An unsafe death happens in two stages:</p>
+      <ol>
+        <li><b>You lose almost everything you carried.</b> You keep your 3 most valuable items (4 with Protect Item). Anything that would normally go to your gravestone is deleted.</li>
+        <li><b>You choose: Reset or Transfer.</b> Reset starts the character over. Transfer moves the character off Hardcore Worlds for good.</li>
+      </ol>
+      <p class="src">Source: <a href="https://secure.runescape.com/m=news/hardcore-worlds-are-coming-on-november-4th?oldschool=1" rel="noopener">Jagex, "Hardcore Worlds are coming on November 4th"</a></p>
+    </div>
+  </section>
+
+  <h2 class="title">Escape crystals</h2>
+  <section class="frame explain crystal">
+    <div class="body">
+      <img class="pix" src="assets/art/escape-crystal.png" alt="" width="11" height="27">
+      <div>
+        <p>An escape crystal costs <b>10,000 gp</b>. Once set up, it activates on its own after a period of inactivity and teleports you away.</p>
+        <p class="src">Source: <a href="https://secure.runescape.com/m=news/hardcore-worlds-are-coming-on-november-4th?oldschool=1" rel="noopener">Jagex, "Hardcore Worlds are coming on November 4th"</a></p>
+      </div>
+    </div>
+  </section>
+
+  <p class="note" id="checked"></p>
+</main>
+<footer>Created using intellectual property belonging to Jagex Limited under the terms of Jagex's Fan Content Policy.
+This content is not endorsed by or affiliated with Jagex.<br>Rules: the official Hardcore Worlds announcement and the OSRS Wiki. In-game images via the OSRS Wiki.</footer>
+<script src="assets/safe.js?v=20261030a"></script>
+</body>
+</html>

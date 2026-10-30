@@ -1,0 +1,51 @@
+/* "Is it safe?" page — extends site.css, loaded only by safe.html. */
+:root{--safe:#1f7a2e; --safe-hi:#5dff7a; --cond:#8a6a10; --cond-hi:#ffd84a}
+
+/* this page's header carries a 4th nav link */
+@media (max-width:760px){
+  body[data-page="safe"] .nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+.safe-search{margin:16px 0 4px}
+.safe-search .search{display:block;width:100%;margin:0 0 10px;font-size:24px;padding:10px 12px}
+.safe-search .filters{margin:0}
+.safe-search .tab{font-size:11px;padding:10px 14px;min-height:40px}
+
+.verdicts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:10px;margin-bottom:8px}
+.verdict{display:flex;gap:14px;align-items:flex-start;padding:12px 14px;min-width:0;
+  background:linear-gradient(var(--stone2),var(--stone));border:2px solid #000;outline:1px solid var(--edge);outline-offset:-4px;border-left:6px solid var(--edge)}
+.verdict .badge{flex:none;width:104px;text-align:center;font:30px/1 'VT323',monospace;padding:8px 4px 6px;border:2px solid #000;color:#fff;text-shadow:2px 2px 0 #000;letter-spacing:1px}
+.verdict .vt{min-width:0;flex:1}
+.verdict h3{font:700 17px/1.2 'Cinzel',serif;color:#f1e8d6;margin:2px 0 4px;overflow-wrap:anywhere}
+.verdict p{margin:0 0 4px;color:#d4c9e0;font-size:15px;line-height:1.4}
+.verdict p b{color:var(--parch)}
+.verdict .src,.explain .src a,#checked a{color:var(--chat-c)}
+.verdict .src{font:17px 'VT323',monospace}
+
+.v-safe{border-left-color:var(--safe-hi)}
+.v-safe .badge{background:var(--safe);color:#eaffea}
+.v-unsafe{border-left-color:var(--blood-hi)}
+.v-unsafe .badge{background:var(--blood)}
+.v-conditional{border-left-color:var(--cond-hi)}
+.v-conditional .badge{background:var(--cond);color:#fff6cc;font-size:22px;padding:12px 4px 10px}
+.v-disabled{border-left-color:#777}
+.v-disabled .badge{background:#3a3a3a;color:#ddd;font-size:22px;padding:12px 4px 10px}
+.v-unlisted{grid-column:1/-1}
+.v-none{grid-column:1/-1}
+
+.explain .body p{margin:0 0 10px;line-height:1.5}
+.explain ol{margin:0 0 10px;padding-left:22px;line-height:1.5}
+.explain li{margin-bottom:8px}
+.explain b{color:var(--gold)}
+.explain .src{font:17px 'VT323',monospace;color:var(--muted);margin:0}
+.crystal .body{display:flex;gap:16px;align-items:flex-start}
+.crystal img{width:22px;height:54px;flex:none;filter:drop-shadow(0 0 10px rgba(139,92,246,.6))}
+#checked{margin-top:18px}
+
+@media (max-width:760px){
+  .verdict{gap:10px;padding:10px 10px 10px 10px}
+  .verdict .badge{width:88px;font-size:26px}
+  .v-conditional .badge,.v-disabled .badge{font-size:19px}
+  .verdict h3{font-size:16px}
+  .verdict p{font-size:14px}
+}
