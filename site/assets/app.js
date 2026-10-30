@@ -175,10 +175,39 @@
       <span class="candle" style="left:26px"></span><span class="candle" style="right:26px;height:26px"></span>`;
   }
 
+  /* Until the Hardcore hiscores are live, show clearly labelled sample graves.
+     The moment graveyard.json reports status "live", real data replaces them with no code change. */
+  async function withPreview(real) {
+    if (real && real.status === "live") return real;
+    let sample;
+    try { sample = await (await fetch("assets/sample-graveyard.json")).json(); } catch (e) { return real; }
+    const now = Date.now();
+    const deaths = sample.deaths.map(d => {
+      const time = now - d.age_min * 60000;
+      return { ...d, time, window_start: d.window_minutes ? time - d.window_minutes * 60000 : undefined };
+    });
+    const hours = new Array(24).fill(0);
+    deaths.forEach(d => { const a = Math.floor((now - d.time) / 36e5); if (a < 24) hours[23 - a]++; });
+    return {
+      status: "preview", sample: true, deaths, deaths_per_hour: hours,
+      counts: {
+        today: deaths.filter(d => d.time >= now - 864e5).length,
+        all_time: deaths.length,
+        resets: deaths.filter(d => d.fate === "reset").length,
+        highest_total: Math.max(...deaths.map(d => d.total)),
+      },
+    };
+  }
+
   async function graveyard() {
-    const [gy, pop, w] = await Promise.all([load("graveyard.json"), load("population.json"), load("watcher.json")]);
-    chrome(pop, gy);
-    $("#rail").innerHTML = popCard(pop) + watchCard(w, gy) + deathSpeaks;
+    const [real, pop, w] = await Promise.all([load("graveyard.json"), load("population.json"), load("watcher.json")]);
+    const gy = await withPreview(real);
+    chrome(pop, gy.sample ? null : gy);
+    if (gy.sample) {
+      document.querySelector("main").insertAdjacentHTML("afterbegin",
+        `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE GRAVES</b> Every name and number below is made up. Hardcore Worlds open 4 November; real deaths from the official hiscores replace these automatically.</div>`);
+    }
+    $("#rail").innerHTML = popCard(pop) + watchCard(w, gy.sample ? real : gy) + deathSpeaks;
     const deaths = (gy && gy.deaths) || [];
     const c = (gy && gy.counts) || {};
     $("#memorial").innerHTML = memorial(deaths);
@@ -241,7 +270,7 @@
     }
     $("#listing").innerHTML = gy && gy.status === "live"
       ? `Listing players with total level <b>${fmt(gy.min_total || 0)}+</b> · ${fmt(gy.ranked_players)} on the hiscores${gy.last_full_scan ? ` · last full scan ${ago(Date.parse(gy.last_full_scan))}` : ""}. <b>FALLEN</b> = left the hiscores; exact cause unknown.`
-      : "";
+      : gy.sample ? `Showing <b>sample graves</b> until the Hardcore Worlds hiscores go live.` : "";
     draw();
   }
 

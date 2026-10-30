@@ -1,0 +1,463 @@
+{
+ "note": "SAMPLE DATA for the pre-launch preview. Every name and number is made up. Shown only while data/graveyard.json is not live.",
+ "deaths": [
+  {
+   "name": "Placeholder One",
+   "total": 1904,
+   "combat": 121,
+   "fate": "died",
+   "run": 1,
+   "age_min": 35,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Slayer",
+     96
+    ],
+    [
+     "Ranged",
+     94
+    ],
+    [
+     "Magic",
+     92
+    ]
+   ],
+   "top_boss": [
+    "Vorkath",
+    41
+   ],
+   "world": 512,
+   "notable": true
+  },
+  {
+   "name": "Sample Name",
+   "total": 742,
+   "combat": 64,
+   "fate": "died",
+   "run": 4,
+   "age_min": 80,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Attack",
+     60
+    ],
+    [
+     "Strength",
+     58
+    ],
+    [
+     "Hitpoints",
+     55
+    ]
+   ],
+   "top_boss": [
+    "Barrows Chests",
+    3
+   ],
+   "world": 523,
+   "notable": false
+  },
+  {
+   "name": "Example Iron",
+   "total": 388,
+   "combat": 41,
+   "fate": "died",
+   "run": 9,
+   "age_min": 140,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Fishing",
+     50
+    ],
+    [
+     "Cooking",
+     48
+    ],
+    [
+     "Woodcutting",
+     45
+    ]
+   ],
+   "top_boss": null,
+   "world": 519,
+   "notable": false
+  },
+  {
+   "name": "Test Account",
+   "total": 1566,
+   "combat": 110,
+   "fate": "died",
+   "run": 1,
+   "age_min": 200,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Slayer",
+     88
+    ],
+    [
+     "Magic",
+     85
+    ],
+    [
+     "Ranged",
+     84
+    ]
+   ],
+   "top_boss": [
+    "Zulrah",
+    57
+   ],
+   "world": 512,
+   "notable": false,
+   "location": {
+    "on_map": false
+   }
+  },
+  {
+   "name": "Demo Skiller",
+   "total": 1020,
+   "combat": 52,
+   "fate": "fallen",
+   "run": 1,
+   "age_min": 260,
+   "time_exact": false,
+   "top_skills": [
+    [
+     "Agility",
+     80
+    ],
+    [
+     "Thieving",
+     78
+    ],
+    [
+     "Farming",
+     75
+    ]
+   ],
+   "top_boss": null,
+   "world": null,
+   "notable": false,
+   "window_minutes": 60
+  },
+  {
+   "name": "Mock Noob",
+   "total": 212,
+   "combat": 23,
+   "fate": "died",
+   "run": 2,
+   "age_min": 330,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Attack",
+     30
+    ],
+    [
+     "Defence",
+     25
+    ],
+    [
+     "Hitpoints",
+     28
+    ]
+   ],
+   "top_boss": null,
+   "world": 530,
+   "notable": false
+  },
+  {
+   "name": "Filler Name",
+   "total": 903,
+   "combat": 88,
+   "fate": "reset",
+   "run": 1,
+   "age_min": 410,
+   "time_exact": false,
+   "top_skills": [
+    [
+     "Defence",
+     72
+    ],
+    [
+     "Hitpoints",
+     70
+    ],
+    [
+     "Strength",
+     70
+    ]
+   ],
+   "top_boss": [
+    "Giant Mole",
+    12
+   ],
+   "world": null,
+   "notable": false,
+   "window_minutes": 60
+  },
+  {
+   "name": "Preview Pker",
+   "total": 1288,
+   "combat": 99,
+   "fate": "died",
+   "run": 3,
+   "age_min": 520,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Ranged",
+     90
+    ],
+    [
+     "Prayer",
+     77
+    ],
+    [
+     "Hitpoints",
+     88
+    ]
+   ],
+   "top_boss": null,
+   "world": 525,
+   "notable": false
+  },
+  {
+   "name": "Stand In",
+   "total": 1811,
+   "combat": 118,
+   "fate": "died",
+   "run": 1,
+   "age_min": 700,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Slayer",
+     93
+    ],
+    [
+     "Magic",
+     92
+    ],
+    [
+     "Hitpoints",
+     92
+    ]
+   ],
+   "top_boss": [
+    "The Fractured Archive",
+    1
+   ],
+   "world": 512,
+   "notable": true,
+   "location": {
+    "on_map": false
+   }
+  },
+  {
+   "name": "Sample Two",
+   "total": 655,
+   "combat": 58,
+   "fate": "died",
+   "run": 6,
+   "age_min": 900,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Mining",
+     61
+    ],
+    [
+     "Smithing",
+     59
+    ],
+    [
+     "Crafting",
+     55
+    ]
+   ],
+   "top_boss": null,
+   "world": 519,
+   "notable": false
+  },
+  {
+   "name": "Example Main",
+   "total": 1452,
+   "combat": 106,
+   "fate": "died",
+   "run": 2,
+   "age_min": 1100,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Slayer",
+     84
+    ],
+    [
+     "Magic",
+     82
+    ],
+    [
+     "Ranged",
+     80
+    ]
+   ],
+   "top_boss": null,
+   "world": 523,
+   "notable": false,
+   "location": {
+    "on_map": false
+   }
+  },
+  {
+   "name": "Not Real",
+   "total": 477,
+   "combat": 47,
+   "fate": "died",
+   "run": 11,
+   "age_min": 1300,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Firemaking",
+     55
+    ],
+    [
+     "Woodcutting",
+     52
+    ],
+    [
+     "Fletching",
+     50
+    ]
+   ],
+   "top_boss": null,
+   "world": 530,
+   "notable": false
+  },
+  {
+   "name": "Dummy Name",
+   "total": 1199,
+   "combat": 95,
+   "fate": "died",
+   "run": 1,
+   "age_min": 1700,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Hunter",
+     79
+    ],
+    [
+     "Slayer",
+     76
+    ],
+    [
+     "Ranged",
+     74
+    ]
+   ],
+   "top_boss": [
+    "Kalphite Queen",
+    6
+   ],
+   "world": 512,
+   "notable": false
+  },
+  {
+   "name": "Mock Mage",
+   "total": 1630,
+   "combat": 112,
+   "fate": "died",
+   "run": 1,
+   "age_min": 2600,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Magic",
+     94
+    ],
+    [
+     "Runecraft",
+     77
+    ],
+    [
+     "Slayer",
+     86
+    ]
+   ],
+   "top_boss": [
+    "Nightmare",
+    2
+   ],
+   "world": 525,
+   "notable": false,
+   "location": {
+    "on_map": false
+   }
+  },
+  {
+   "name": "Template",
+   "total": 822,
+   "combat": 70,
+   "fate": "fallen",
+   "run": 1,
+   "age_min": 3900,
+   "time_exact": false,
+   "top_skills": [
+    [
+     "Strength",
+     70
+    ],
+    [
+     "Attack",
+     68
+    ],
+    [
+     "Hitpoints",
+     69
+    ]
+   ],
+   "top_boss": null,
+   "world": null,
+   "notable": false,
+   "window_minutes": 60
+  },
+  {
+   "name": "Placeholder Two",
+   "total": 2014,
+   "combat": 124,
+   "fate": "died",
+   "run": 1,
+   "age_min": 6000,
+   "time_exact": true,
+   "top_skills": [
+    [
+     "Slayer",
+     99
+    ],
+    [
+     "Ranged",
+     97
+    ],
+    [
+     "Magic",
+     96
+    ]
+   ],
+   "top_boss": [
+    "Vardorvis",
+    88
+   ],
+   "world": 512,
+   "notable": true,
+   "location": {
+    "on_map": false
+   }
+  }
+ ]
+}

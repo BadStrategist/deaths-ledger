@@ -267,3 +267,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 20px 40p
 .pill.no{background:#4a1414;color:#ffb0b0}
 button.tab{line-height:normal;border-radius:0}
 @media (max-width:760px){.t-obelisk .inner{padding:0 17%}.t-obelisk .face{min-height:280px}}
+.preview-flag{margin:0 0 14px;padding:10px 14px;font-family:'VT323',monospace;font-size:19px;color:var(--parch);
+  background:repeating-linear-gradient(45deg,#3a2a00,#3a2a00 10px,#2a1f00 10px,#2a1f00 20px);border:2px solid #000;outline:1px solid #6b5a00;outline-offset:-4px}
+.preview-flag b{font-family:'Silkscreen',monospace;font-size:11px;color:var(--chat-yellow);margin-right:8px;font-weight:normal}
