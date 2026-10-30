@@ -1,4 +1,4 @@
-"""One pipeline run: population -> watcher -> graveyard.
+"""One pipeline run: population -> watcher -> hiscores -> graveyard.
 
 Each step is isolated: one failing never stops the others. Results go to data/status.json
 (the site's Data watcher page shows them). Exits 1 if any step failed, so the failure is
@@ -8,6 +8,7 @@ import sys
 import traceback
 
 import graveyard
+import hiscores
 import population
 import watcher
 from common import now_ms, iso, read_json, write_json
@@ -32,6 +33,7 @@ def main():
     w = step("watcher", lambda: watcher.run(world_types=(pop or {}).get("world_types")), results)
     if w is None:
         w = read_json("watcher.json", {})
+    step("hiscores", lambda: hiscores.run(watcher=w), results)
     g = step("graveyard", lambda: graveyard.run(watcher=w), results)
 
     status = read_json("status.json", {})
