@@ -1,0 +1,46 @@
+/* Hardcore Worlds: Death Toll — Hiscores page. Builds on site.css. */
+.hs-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hs-tiles div{min-width:0}
+.hs-tiles span{display:block;letter-spacing:1px}
+.hs-tiles b{margin:6px 0 4px}
+.hs-tiles b.red{color:var(--blood-hi)}
+.hs-tiles em{display:block;font:17px 'VT323',monospace;font-style:normal;color:var(--parch);overflow-wrap:anywhere}
+.hs-tiles em a{color:#bbb}
+.hs-tiles em i{font-style:normal;white-space:nowrap;color:var(--muted)}
+
+.hs-skills{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.hs-skills .tab{flex:none}
+
+.hs-table{table-layout:fixed}
+.hs-table .c-rank{width:11%}
+.hs-table .c-name{width:35%}
+.hs-table .c-num{width:14%}
+.hs-table .c-xp{width:18%}
+.hs-table .c-state{width:22%}
+.hs-table td{overflow-wrap:anywhere;vertical-align:middle}
+.hs-table td.c-rank{color:var(--muted)}
+.hs-table th.c-num,.hs-table td.c-num,.hs-table th.c-xp,.hs-table td.c-xp{text-align:right}
+.hs-table td.c-xp{color:var(--parch)}
+.hs-name{color:inherit;text-decoration:underline dotted var(--edge-hi);text-underline-offset:3px}
+.hs-name:hover{color:var(--gold)}
+.hs-table tr.dead td{color:#8c8494!important;background:rgba(0,0,0,.25)}
+.hs-table tr.dead .c-name{color:#b5adbd!important}
+.hs-dead{display:inline-flex;align-items:center;gap:6px;color:#c9c0cf}
+.hs-dead img{width:18px;height:18px;flex:none;filter:grayscale(.3)}
+
+/* four links in the nav on this page */
+@media (max-width:760px){
+  .nav{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .nav a{font-size:11px;padding:9px 2px}
+  .hs-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hs-tiles div:last-child{grid-column:1/-1}
+  .hs-tiles em{font-size:16px}
+  .hs-skills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+  .hs-table .c-rank{width:15%}
+  .hs-table .c-name{width:41%}
+  .hs-table .c-num{width:18%}
+  .hs-table .c-state{width:26%}
+  .hs-table th.c-rank,.hs-table td.c-rank{padding-left:10px}
+  .hs-dead{gap:4px}
+  .hs-dead img{width:14px;height:14px}
+}
