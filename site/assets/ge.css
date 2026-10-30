@@ -1,0 +1,86 @@
+/* GE tracker — page-only styles on top of site.css. */
+body[data-page="ge"] .nav{flex-wrap:wrap}
+.ge-badge{display:inline-block;vertical-align:middle;font:11px 'Silkscreen',monospace;padding:4px 8px;margin-left:8px;border:1px solid #000;text-shadow:none;letter-spacing:1px}
+.ge-badge.live{background:var(--ok);color:#bfffbf}
+.ge-badge.preview{background:#3a2560;color:var(--chat-y)}
+.ge-error{margin:0 0 16px;padding:12px 14px;font:18px 'VT323',monospace;background:#2a0f12;border:2px solid #000;outline:1px solid var(--blood);outline-offset:-4px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ge-error b{font:11px 'Silkscreen',monospace;color:var(--blood-hi);font-weight:normal;flex-basis:100%}
+
+/* ---------- search ---------- */
+.ge-search{position:relative;margin:16px 0}
+.ge-label{display:block;font:9px 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px;margin:0 0 6px}
+.search.ge-q{width:100%;margin:0;font-size:22px;padding:10px 12px}
+.search.ge-q:disabled{opacity:.6}
+.ge-hits{position:absolute;z-index:5;left:0;right:0;top:100%;margin:4px 0 0;padding:0;list-style:none;background:#0b090e;border:2px solid #000;outline:1px solid var(--edge-hi);outline-offset:-3px;box-shadow:0 10px 24px rgba(0,0,0,.7)}
+.ge-hits li{display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;font:19px 'VT323',monospace;border-bottom:1px solid #1d1924}
+.ge-hits li:last-child{border-bottom:0}
+.ge-hits li.on,.ge-hits li:hover{background:#24183d}
+.ge-hits .nm{flex:1;min-width:0;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ge-hits .pr{color:var(--chat-y)}
+.ge-hits .none{color:var(--muted);cursor:default}
+.ge-ic{width:24px;height:24px;flex:none;object-fit:contain;display:inline-block}
+
+/* ---------- item panel ---------- */
+.ge-item{margin-bottom:6px;scroll-margin-top:12px}
+.ge-head{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--edge);flex-wrap:wrap}
+.ge-big{width:36px;height:32px;object-fit:contain}
+.ge-name{flex:1;min-width:0}
+.ge-name h3{padding:0;border:0;font-size:20px;letter-spacing:1px;text-transform:none}
+.ge-name p{margin:2px 0 0;color:var(--muted);font-style:italic;font-size:14px}
+.ge-head .tag{margin:0}
+.ge-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;padding:14px}
+.ge-tiles div{background:#0b090e;border:2px solid #000;outline:1px solid var(--edge);outline-offset:-3px;padding:10px 12px;min-width:0}
+.ge-tiles span{display:block;font:9px 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px}
+.ge-tiles b{display:block;font:30px/1.1 'VT323',monospace;color:var(--parch);text-shadow:2px 2px 0 #000;overflow-wrap:anywhere}
+.ge-tiles i{display:block;font:16px 'VT323',monospace;font-style:normal;color:#b9ad95}
+.y{color:var(--chat-y)!important}.c{color:var(--chat-c)!important}
+.up{color:#4cff6a!important}.down{color:var(--chat-red)!important}
+.ge-bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.ge-bar .range{margin:0}
+section.frame > .ge-bar{padding:12px 14px}
+.chart-wrap .ge-bar{margin-bottom:6px}
+.ge-key{display:flex;align-items:center;gap:6px;font:9px 'Silkscreen',monospace;color:var(--muted)}
+.ge-key .k{width:14px;height:3px;display:inline-block;margin-left:6px}
+.ge-key .k.y{background:var(--chat-y)}.ge-key .k.c{background:var(--chat-c)}.ge-key .k.v{background:#4a4152;height:8px}
+.ge-read{font:18px 'VT323',monospace;color:var(--muted);min-height:24px;line-height:1.2}
+.ge-read b{font-weight:normal;margin-right:6px}
+.ge-chart{touch-action:pan-y;cursor:crosshair}
+.ge-chart .vol rect{fill:#4a4152}
+
+/* ---------- tables ---------- */
+.ge-t{table-layout:fixed}
+.ge-t td.n a{display:flex;align-items:center;gap:8px;text-decoration:none;min-width:0}
+.ge-t td.n a span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.ge-t td.n a:hover span{color:var(--gold);text-decoration:underline}
+.ge-t th:not(:first-child),.ge-t td:not(:first-child){text-align:right;white-space:nowrap}
+.ge-t th:last-child,.ge-t td:last-child{padding-right:18px}
+.ge-t td.note{text-align:left}
+.ge-t th:first-child{width:46%}
+.ge-foot{padding:0 16px 12px;font-size:16px}
+
+@media (max-width:760px){
+  body[data-page="ge"] .nav{grid-template-columns:repeat(4,minmax(0,1fr))}
+  body[data-page="ge"] .nav a{font-size:11px;padding:9px 2px}
+  .ge-name h3{font-size:18px}
+  .ge-tiles{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px;gap:6px}
+  .ge-tiles b{font-size:24px}
+  .ge-tiles div{padding:8px}
+  .ge-head{padding:12px}
+  .ge-share{margin-left:auto}
+  .ge-t th:first-child{width:50%}
+  .ge-t.has-sp th:first-child{width:40%}
+  .ge-t td:not(:first-child){padding-left:2px;padding-right:4px}
+  .ge-t th:last-child,.ge-t td:last-child{padding-right:12px}
+  .ge-t.has-sp th.sp{width:17%}
+  .ge-t td.n a{gap:6px;align-items:flex-start}
+  .ge-t td.n a span{white-space:normal;overflow-wrap:break-word;line-height:1.05}
+  .ge-ic{width:20px;height:20px}
+  .ge-read{font-size:16px}
+  .ge-foot{padding:0 12px 10px;font-size:15px}
+}
+@media (max-width:420px){
+  .ge-t.has-sp td.n .ge-ic{display:none}
+}
+@media (max-width:380px){
+  body[data-page="ge"] .nav a{font-size:10px;letter-spacing:0}
+}
