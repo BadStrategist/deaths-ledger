@@ -48,6 +48,13 @@ def run(http=None, world_types=None):
 
     # --- hiscores ---
     status, body = http.get(HISCORE_INDEX)
+    # Reachability check from wherever this runs: the graveyard is useless if these fail.
+    probe = {"index": status}
+    for name, url in (("ranking_json", RANKING_JSON.format(mode="hiscore_oldschool")),
+                      ("page", "https://secure.runescape.com/m=hiscore_oldschool/overall?table=0&page=2")):
+        s, b = http.get(url, follow_redirects=False)
+        probe[name] = s
+        probe[name + "_head"] = b[:160]
     linked = sorted(set(re.findall(r"m=(hiscore_oldschool[a-z_]*)", body))) if status == 200 else []
     new_modes = [m for m in linked if m not in cfg["hiscore"]["known_modes"]]
     probed = [m for m in cfg["hiscore"]["candidate_modes"] if mode_exists(http, m)]
@@ -72,6 +79,7 @@ def run(http=None, world_types=None):
     out = {
         "checked": iso(now),
         "hiscore_index_ok": status == 200,
+        "hiscore_probe": probe,
         "hiscore_modes_linked": linked,
         "new_hiscore_modes": new_modes,
         "hiscore_mode": hc_mode,
