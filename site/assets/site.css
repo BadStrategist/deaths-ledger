@@ -35,16 +35,16 @@ header.top .hg{width:22px;height:52px;flex:none}
              linear-gradient(0deg,var(--void) 0%,transparent 35%),
              url('art/Deaths_Office.webp') center 35%/cover no-repeat}
 .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 72% 30%,rgba(139,92,246,.25),transparent 70%);pointer-events:none}
-.hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:46px 22px 18px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px;align-items:end}
+.hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:46px 22px 6px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px;align-items:end}
 .eyebrow{font:11px 'Silkscreen',monospace;letter-spacing:4px;color:var(--violet-soft)}
 .hero h1{font:900 clamp(40px,6vw,74px)/.95 'Cinzel',serif;margin:8px 0 12px;color:var(--parch);text-shadow:4px 4px 0 #000}
 .hero h1 em{font-style:normal;color:var(--gold)}
 .lede{font-size:17px;color:#d4c9e0;max-width:470px;font-style:italic;margin:0 0 18px}
-.tally{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:520px}
-.tally div{background:rgba(11,9,14,.85);border:1px solid var(--edge);padding:10px}
-.tally b{display:block;font:34px/1 'VT323',monospace;color:var(--gold);text-shadow:2px 2px 0 #000}
+.tally{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:660px}
+.tally div{background:rgba(11,9,14,.85);border:1px solid var(--edge);padding:18px 16px 16px}
+.tally b{display:block;font:52px/1 'VT323',monospace;color:var(--gold);text-shadow:2px 2px 0 #000;margin-bottom:6px}
 .tally b.red{color:var(--blood-hi)} .tally b.yel{color:var(--chat-y)}
-.tally span{font:9px 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px}
+.tally span{font:11px 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px}
 .death{justify-self:end;width:min(330px,100%);height:auto;filter:drop-shadow(0 0 30px rgba(139,92,246,.45)) drop-shadow(0 20px 20px #000)}
 /* border of small OSRS dead trees under the stats */
 .treeline{position:relative;z-index:1;height:118px;display:flex;align-items:flex-end;justify-content:space-between;
@@ -157,7 +157,9 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 18px 40p
   .hero h1{font-size:44px}
   .lede{font-size:15px}
   .tally{gap:6px}
-  .tally b{font-size:26px}
+  .tally div{padding:12px 10px}
+  .tally b{font-size:32px;margin-bottom:4px}
+  .tally span{font-size:9px}
   .treeline{height:84px}
   .wrap{padding:16px 12px}
   .preview-flag{font-size:16px;padding:8px 10px}
