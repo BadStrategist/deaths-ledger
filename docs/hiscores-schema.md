@@ -50,5 +50,4 @@ Until the file exists **and** has `"status": "live"`, the page shows `site/asset
 
 - Write the file atomically (temp file + rename) like the other `data/*.json`, so the page never reads half a file.
 - The page escapes every string, so names need no HTML escaping.
-- Dead rows link to `tombstone.html?name=<name>&total=<overall total>`, so keep names exactly as the hiscores show them.
 - Extra fields are ignored, so adding more later is safe.

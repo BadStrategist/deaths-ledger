@@ -104,7 +104,6 @@ async function audit(page) {
         preview: !!document.querySelector(".preview-flag"),
         tabs: !document.querySelector("#skills").hidden,
         rows: document.querySelectorAll("#rows tr").length,
-        deadLinks: [...document.querySelectorAll("#rows tr.dead a.hs-name")].map(a => [a.getAttribute("href"), a.rel]),
         tiles: document.querySelector("#tiles").innerText.replace(/\s+/g, " "),
       }));
       const problems = await audit(page);
@@ -116,9 +115,6 @@ async function audit(page) {
         if (!facts.preview) problems.push("missing preview banner");
         if (!facts.tabs) problems.push("sample has skills but no tabs");
       }
-      if (!facts.deadLinks.length) problems.push("no dead rows linked");
-      for (const [href, rel] of facts.deadLinks)
-        if (!/^tombstone\.html\?name=[^&]+&total=\d+$/.test(href) || rel !== "nofollow") problems.push(`bad tombstone link ${href} rel=${rel}`);
 
       // interactions: search, then a skill tab (re-audit each)
       await page.fill("#search", "zzzz-no-match");

@@ -21,8 +21,6 @@
 .hs-table td.c-rank{color:var(--muted)}
 .hs-table th.c-num,.hs-table td.c-num,.hs-table th.c-xp,.hs-table td.c-xp{text-align:right}
 .hs-table td.c-xp{color:var(--parch)}
-.hs-name{color:inherit;text-decoration:underline dotted var(--edge-hi);text-underline-offset:3px}
-.hs-name:hover{color:var(--gold)}
 .hs-table tr.dead td{color:#8c8494!important;background:rgba(0,0,0,.25)}
 .hs-table tr.dead .c-name{color:#b5adbd!important}
 .hs-dead{display:inline-flex;align-items:center;gap:6px;color:#c9c0cf}

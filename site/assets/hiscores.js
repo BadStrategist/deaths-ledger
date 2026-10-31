@@ -37,11 +37,6 @@
     return { ...s, updated: move(s.updated), overall: (s.overall || []).map(r => ({ ...r, died_at: move(r.died_at) })) };
   }
 
-  function tomb(r, total) {
-    const q = `name=${encodeURIComponent(r.name)}${total != null ? `&total=${encodeURIComponent(total)}` : ""}`;
-    return `<a class="hs-name" href="tombstone.html?${q}" rel="nofollow" title="Tombstone for ${esc(r.name)}">${esc(r.name)}</a>`;
-  }
-
   function state(r) {
     if (!r.dead) return `<span class="pill ok">ALIVE</span>`;
     const t = Date.parse(r.died_at);
@@ -65,13 +60,12 @@
 
     const overall = Array.isArray(hs.overall) ? hs.overall : [];
     const skills = hs.skills && typeof hs.skills === "object" ? hs.skills : null;
-    const totals = new Map(overall.map(r => [r.name, r.total]));
     const ui = { board: "Overall", q: "" };
 
     const alive = overall.find(r => !r.dead), fallen = overall.find(r => r.dead);
     const deadCount = overall.filter(r => r.dead).length;
     const tile = (label, r, cls) => `<div><span>${label}</span><b class="${cls}">${r ? fmt(r.total) : "—"}</b>
-      <em>${r ? `${r.dead ? tomb(r, r.total) : esc(r.name)} <i>· rank ${fmt(r.rank)}</i>` : "Nobody yet"}</em></div>`;
+      <em>${r ? `${esc(r.name)} <i>· rank ${fmt(r.rank)}</i>` : "Nobody yet"}</em></div>`;
     $("#tiles").innerHTML = tile("HIGHEST ALIVE", alive, "") + tile("HIGHEST FALLEN", fallen, "red") +
       `<div><span>FALLEN IN THE TOP ${fmt(overall.length)}</span><b class="red">${fmt(deadCount)}</b><em>${overall.length ? Math.round((deadCount / overall.length) * 100) + "% of these ranks" : "—"}</em></div>`;
 
@@ -100,7 +94,7 @@
       const list = all.filter(r => !ui.q || String(r.name).toLowerCase().includes(ui.q));
       $("#rows").innerHTML = list.map(r => `<tr class="${r.dead ? "dead" : ""}">
         <td class="c-rank">${fmt(r.rank)}</td>
-        <td class="c-name n">${r.dead ? tomb(r, isOverall ? r.total : totals.get(r.name)) : esc(r.name)}</td>
+        <td class="c-name n">${esc(r.name)}</td>
         <td class="c-num y">${fmt(isOverall ? r.total : r.level)}</td>
         <td class="c-xp hide-sm">${fmt(r.xp)}</td>
         <td class="c-state">${state(isOverall ? r : { ...r, died_at: (overall.find(o => o.name === r.name) || {}).died_at })}</td></tr>`).join("") ||
