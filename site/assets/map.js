@@ -21,15 +21,9 @@
     return Math.round(s / 86400) + "d ago";
   }
 
-  /* ---------------- shared header (same markup as chrome() in app.js) ---------------- */
-  const NAV = [["index.html", "graveyard", "Graveyard"], ["population.html", "population", "Population"], ["watcher.html", "watcher", "Data watcher"]];
+  /* ---------------- shared header: assets/nav.js ---------------- */
   function chrome(gy) {
-    const fallen = gy && gy.counts ? gy.counts.all_time : 0;
-    $("#top").innerHTML = `
-      <img class="hg pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
-      <a class="brand" href="index.html"><small>HARDCORE WORLDS</small><b>Death Toll</b></a>
-      <nav class="nav" aria-label="Main">${NAV.map(([href, , label]) => `<a href="${href}">${label}</a>`).join("")}</nav>
-      <div class="count" title="Deaths recorded from the Hardcore Worlds hiscores"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">${fmt(fallen)} fallen</div>`;
+    deathTollHeader(gy && gy.counts ? gy.counts.all_time : 0);
   }
 
   /* ---------------- map tiles ----------------

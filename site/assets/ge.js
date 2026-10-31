@@ -57,16 +57,9 @@
     } catch (e) { return null; }
   }
 
-  /* ---------------- shared header (same markup as chrome() in app.js) ---------------- */
-  const NAV = [["index.html", "graveyard", "Graveyard"], ["population.html", "population", "Population"], ["ge.html", "ge", "GE tracker"], ["watcher.html", "watcher", "Data watcher"]];
+  /* ---------------- shared header: assets/nav.js ---------------- */
   function chrome(gy) {
-    const fallen = gy && gy.status === "live" && gy.counts ? gy.counts.all_time : 0;
-    $("#top").innerHTML = `
-      <img class="hg pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
-      <a class="brand" href="index.html"><small>HARDCORE WORLDS</small><b>Death Toll</b></a>
-      <nav class="nav" aria-label="Main">${NAV.map(([href, id, label]) =>
-        `<a href="${href}"${id === "ge" ? ' class="on" aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
-      <div class="count" title="Deaths recorded from the Hardcore Worlds hiscores"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">${fmt(fallen)} fallen</div>`;
+    deathTollHeader(gy && gy.status === "live" && gy.counts ? gy.counts.all_time : 0);
   }
 
   /* ---------------- state ---------------- */
@@ -107,7 +100,17 @@
       $("#flag").innerHTML = `<p class="note">Showing <b>Hardcore Worlds</b> prices (feed <b>/${esc(S.route)}</b>). The <b>VS MAIN</b> column compares each item with the main game.</p>`;
     }
     wire();
+    jumpToHash();
     await loadCore();
+  }
+
+  /* ge.html#trending (homepage card): content above the anchor loads late, so re-apply the jump
+     until the reader scrolls on their own. */
+  let readerScrolled = false;
+  ["wheel", "touchstart", "keydown"].forEach(t => window.addEventListener(t, () => { readerScrolled = true; }, { once: true, passive: true }));
+  function jumpToHash() {
+    const t = location.hash.length > 1 && document.getElementById(location.hash.slice(1));
+    if (t && !readerScrolled) t.scrollIntoView({ block: "start" });
   }
 
   async function loadCore() {
@@ -129,8 +132,8 @@
     S.items.forEach(it => { it._n = it.name.toLowerCase(); it._v = S.vol ? S.vol[it.id] || 0 : 0; });
     const q = $("#q");
     q.disabled = false;
-    drawMovers();
-    drawTraded();
+    jumpToHash();
+    Promise.all([drawMovers(), drawTraded()]).then(jumpToHash, jumpToHash);
     fromUrl();
   }
 

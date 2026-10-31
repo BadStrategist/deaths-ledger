@@ -71,12 +71,10 @@
 .notes li{margin:6px 0}
 .notes b{color:var(--gold-soft)}
 
-/* four nav links on this page: 2x2 on phones (site.css lays out 3) */
 @media (max-width:980px){
   .slots,.outcome{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:760px){
-  body[data-page=kept] .nav{grid-template-columns:repeat(2,minmax(0,1fr))}
   .kq{flex-basis:100%;margin-top:0}
   .seg{flex:1}.seg .tab{flex:1}
   .verdict{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
@@ -91,7 +89,4 @@
   .load .nm{flex-basis:calc(100% - 36px)}
   .load .qty{margin-left:36px}
   .load .rm{margin-left:auto}
-}
-@media (min-width:761px) and (max-width:980px){
-  body[data-page=kept] .nav a{padding:8px 8px}
 }

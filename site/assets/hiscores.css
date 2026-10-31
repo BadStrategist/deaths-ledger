@@ -28,10 +28,7 @@
 .hs-dead{display:inline-flex;align-items:center;gap:6px;color:#c9c0cf}
 .hs-dead img{width:18px;height:18px;flex:none;filter:grayscale(.3)}
 
-/* four links in the nav on this page */
 @media (max-width:760px){
-  .nav{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .nav a{font-size:11px;padding:9px 2px}
   .hs-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hs-tiles div:last-child{grid-column:1/-1}
   .hs-tiles em{font-size:16px}

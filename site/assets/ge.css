@@ -1,5 +1,4 @@
 /* GE tracker — page-only styles on top of site.css. */
-body[data-page="ge"] .nav{flex-wrap:wrap}
 .ge-badge{display:inline-block;vertical-align:middle;font:11px 'Silkscreen',monospace;padding:4px 8px;margin-left:8px;border:1px solid #000;text-shadow:none;letter-spacing:1px}
 .ge-badge.live{background:var(--ok);color:#bfffbf}
 .ge-badge.preview{background:#3a2560;color:var(--chat-y)}
@@ -59,8 +58,6 @@ section.frame > .ge-bar{padding:12px 14px}
 .ge-foot{padding:0 16px 12px;font-size:16px}
 
 @media (max-width:760px){
-  body[data-page="ge"] .nav{grid-template-columns:repeat(4,minmax(0,1fr))}
-  body[data-page="ge"] .nav a{font-size:11px;padding:9px 2px}
   .ge-name h3{font-size:18px}
   .ge-tiles{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px;gap:6px}
   .ge-tiles b{font-size:24px}
@@ -80,7 +77,4 @@ section.frame > .ge-bar{padding:12px 14px}
 }
 @media (max-width:420px){
   .ge-t.has-sp td.n .ge-ic{display:none}
-}
-@media (max-width:380px){
-  body[data-page="ge"] .nav a{font-size:10px;letter-spacing:0}
 }

@@ -20,17 +20,9 @@
   // Coins are not on the GE, so the price API has no entry for them; their value is fixed at 1 gp each.
   const COINS = { id: 995, name: "Coins", icon: "Coins_10000.png", price: 1 };
 
-  /* ---------------- shared header (copied from chrome() in app.js) ---------------- */
-  const NAV = [["index.html", "graveyard", "Graveyard"], ["population.html", "population", "Population"],
-    ["watcher.html", "watcher", "Data watcher"], ["kept.html", "kept", "Kept on death"]];
+  /* ---------------- shared header: assets/nav.js ---------------- */
   function chrome(gy) {
-    const fallen = gy && gy.counts ? gy.counts.all_time : 0;
-    $("#top").innerHTML = `
-      <img class="hg pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
-      <a class="brand" href="index.html"><small>HARDCORE WORLDS</small><b>Death Toll</b></a>
-      <nav class="nav" aria-label="Main">${NAV.map(([href, id, label]) =>
-        `<a href="${href}"${id === "kept" ? ' class="on" aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
-      <div class="count" title="Deaths recorded from the Hardcore Worlds hiscores"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">${fmt(fallen)} fallen</div>`;
+    deathTollHeader(gy && gy.counts ? gy.counts.all_time : 0);
   }
 
   async function local(name) {

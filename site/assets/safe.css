@@ -1,10 +1,6 @@
 /* "Is it safe?" page — extends site.css, loaded only by safe.html. */
 :root{--safe:#1f7a2e; --safe-hi:#5dff7a; --cond:#8a6a10; --cond-hi:#ffd84a}
 
-/* this page's header carries a 4th nav link */
-@media (max-width:760px){
-  body[data-page="safe"] .nav{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
 
 .safe-search{margin:16px 0 4px}
 .safe-search .search{display:block;width:100%;margin:0 0 10px;font-size:24px;padding:10px 12px}
