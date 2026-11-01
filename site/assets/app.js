@@ -114,11 +114,42 @@
         <div><b>${w && w.hiscore_mode ? "LIVE" : "WAITING"}</b><span>HARDCORE WORLDS HISCORES</span><a href="watcher.html">Data watcher →</a></div></div>`;
   }
 
+  /* ---------------- track a player (Cloudflare Worker, see worker/) ---------------- */
+  const API = (document.querySelector('meta[name="dt-api"]') || {}).content || "";
+  const NAME_OK = /^[A-Za-z0-9 _-]{1,12}$/;
+
+  function trackBox(live) {
+    const box = $("#track");
+    if (!box || !API) return;            // no API configured: keep the box hidden rather than show a dead form
+    box.hidden = false;
+    const form = $("#track-form"), input = $("#track-name"), go = $("#track-go"), msg = $("#track-msg");
+    const say = (text, kind) => { msg.textContent = text; msg.className = "track-msg" + (kind ? " " + kind : ""); };
+    form.addEventListener("submit", async e => {
+      e.preventDefault();
+      const name = input.value.replace(/\s+/g, " ").trim();
+      if (!NAME_OK.test(name)) { say("RuneScape names are 1 to 12 letters, numbers, spaces, - or _.", "bad"); input.focus(); return; }
+      go.disabled = true; say("Adding…");
+      try {
+        const r = await fetch(API.replace(/\/$/, "") + "/track", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name }) });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || !j.ok) { say(j.error || "That didn't work. Try again in a minute.", "bad"); return; }
+        const who = j.name || name;
+        say(j.already ? `${who} is already being tracked.`
+          : live ? `Now tracking ${who}. If they fall, their grave goes up here.`
+          : `Now tracking ${who}. We start checking the moment the Hardcore Worlds hiscores open.`, "ok");
+        input.value = "";
+      } catch (err) {
+        say("Couldn't reach the tracker. Check your connection and try again.", "bad");
+      } finally { go.disabled = false; }
+    });
+  }
+
   async function graveyard() {
     const [real, pop, w] = await Promise.all([load("graveyard.json"), load("population.json"), load("watcher.json")]);
     const gy = await withPreview(real);
     chrome(gy.sample ? real : gy);
     treeline();
+    trackBox(!!(real && real.status === "live"));
     let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(treeline, 200); });
     if (gy.sample) {
       $("#main").insertAdjacentHTML("afterbegin",

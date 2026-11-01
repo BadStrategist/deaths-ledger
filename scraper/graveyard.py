@@ -16,6 +16,11 @@ the stats at death.
 
 Scans stop at the page where total level drops below the listing threshold, which rises
 as the hiscores grow (config.json -> listing.scale_steps). The scan resumes across runs.
+
+Tracked players (tracking.py) are a second, independent path: every run polls a slice of
+players by personal lookup, which still works where the ranking pages are blocked (GitHub's
+servers get a Cloudflare 403 on those pages). A blocked page scan is skipped and tracking
+carries on alone.
 """
 import html
 import json
@@ -25,6 +30,7 @@ import urllib.parse
 from datetime import datetime, timezone
 
 from common import Http, load_config, now_ms, read_json, write_json, iso
+import tracking
 
 BASE = "https://secure.runescape.com/m={mode}"
 PAGE = BASE + "/overall?table=0&page={page}"
@@ -82,6 +88,8 @@ def parse_page(body):
 def fetch_page(http, mode, page):
     """Returns rows, or None when the page is past the end (the site then serves page 1)."""
     status, body = http.get(PAGE.format(mode=mode, page=page))
+    if status == 403:
+        raise PagesBlocked(f"hiscore page {page} -> HTTP 403")
     if status != 200:
         raise RuntimeError(f"hiscore page {page} -> HTTP {status}")
     rows = parse_page(body)
@@ -90,6 +98,10 @@ def fetch_page(http, mode, page):
     if page > 1 and rows[0]["rank"] != (page - 1) * PER_PAGE + 1:
         return None
     return rows
+
+
+class PagesBlocked(RuntimeError):
+    """Jagex's Cloudflare refuses the ranking pages from this network."""
 
 
 def fetch_player(http, mode, name):
@@ -256,6 +268,26 @@ def run(http=None, watcher=None):
         new_deaths += 1
         return rec
 
+    try:
+        scan_pages(http, mode, st, deaths, by_key, add_death, lcfg, since, now, deadline)
+        st["page_scan"] = "ok"
+    except PagesBlocked:
+        st["page_scan"] = "blocked"    # expected on GitHub's servers; tracking below still runs
+
+    track = tracking.run(http, mode, st, add_death, since, now, deadline, conf.get("tracking", {}))
+
+    deaths.sort(key=lambda d: -d["time"])
+    write_json("deaths.json", deaths, compact=True)
+    write_json("state.json", st, compact=True)
+    publish(deaths, st, now, lcfg, status="live")
+    return {"mode": mode, "page_scan": st["page_scan"], "pages": st["pages"],
+            "stop": (st["cycle"] or {}).get("stop"), "min_total": st["min_total"],
+            "new_deaths": new_deaths, "requests": http.requests,
+            "cycle_page": (st["cycle"] or {}).get("page"), "tracking": track}
+
+
+def scan_pages(http, mode, st, deaths, by_key, add_death, lcfg, since, now, deadline):
+    """The full ranking-page scan: skull rows, disappearances, XP drops. Raises PagesBlocked."""
     # --- start a cycle: size the table and pick the cutoff ---
     if not st["cycle"]:
         st["pages"] = last_page(http, mode, st.get("pages") or 1)
@@ -345,17 +377,14 @@ def run(http=None, watcher=None):
         st["cycle"] = None
         st["last_cycle_done"] = now
 
-    deaths.sort(key=lambda d: -d["time"])
-    write_json("deaths.json", deaths, compact=True)
-    write_json("state.json", st, compact=True)
-    publish(deaths, st, now, lcfg, status="live")
-    return {"mode": mode, "pages": st["pages"], "stop": (st["cycle"] or {}).get("stop"),
-            "min_total": st["min_total"], "new_deaths": new_deaths, "requests": http.requests,
-            "cycle_page": (st["cycle"] or {}).get("page")}
+
+PUBLISH_MAX = 5000   # newest graves sent to the site; the site was load-tested fine at 28,000
 
 
 def publish(deaths, st, now, lcfg, status):
-    listed = [d for d in deaths if (d.get("total") or 0) >= ((st or {}).get("min_total") or 0)]
+    # A player someone chose to track always gets a grave, whatever the listing threshold.
+    floor = (st or {}).get("min_total") or 0
+    listed = [d for d in deaths if d.get("tracked") or (d.get("total") or 0) >= floor]
     day = now - 86400000
     hours = [0] * 24
     for d in listed:
@@ -376,7 +405,7 @@ def publish(deaths, st, now, lcfg, status):
             "highest_total": max((d.get("total") or 0 for d in listed), default=0),
         },
         "deaths_per_hour": hours,
-        "deaths": [{k: v for k, v in d.items() if k != "key"} for d in listed[:400]],
+        "deaths": [{k: v for k, v in d.items() if k != "key"} for d in listed[:PUBLISH_MAX]],
     })
 
 

@@ -16,6 +16,12 @@
     "request_delay_seconds": 0.5,
     "run_budget_seconds": 1500
   },
+  "tracking": {
+    "comment": "Players polled one by one (scraper/tracking.py). api = the Cloudflare Worker that stores names visitors track on the site (worker/). null = top-50 seeds only.",
+    "api": null,
+    "seed_tables_per_run": 10,
+    "budget_seconds": 420
+  },
   "listing": {
     "comment": "Who gets a gravestone. min_total rises with the size of the hiscores; the scan stops at the page where total level falls below it.",
     "scale_steps": [

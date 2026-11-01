@@ -17,11 +17,12 @@
 <meta name="twitter:image" content="https://deathtoll.gg/assets/og.png">
 <meta name="theme-color" content="#0c0a08">
 <link rel="canonical" href="https://deathtoll.gg/">
+<meta name="dt-api" content="">
 <meta name="description" content="Live graveyard for Old School RuneScape Hardcore Worlds: every death from the official hiscores, with total level, time, world and stats at death.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/art/Deaths_Office.webp">
-<link rel="stylesheet" href="assets/site.css?v=20261031b">
+<link rel="stylesheet" href="assets/site.css?v=20261101b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
 </head>
 <body data-page="graveyard">
@@ -39,6 +40,20 @@
   <div class="treeline" id="treeline" aria-hidden="true"></div>
 </section>
 <main class="wrap" id="main">
+  <section class="frame track" id="track" hidden>
+    <form class="track-form" id="track-form" novalidate>
+      <div class="track-copy">
+        <h2>Track a player</h2>
+        <p>Add any Hardcore Worlds account. If they fall, their grave goes up here.</p>
+      </div>
+      <div class="track-row">
+        <input class="search" id="track-name" name="name" maxlength="12" autocomplete="off" spellcheck="false"
+          placeholder="RuneScape name" aria-label="RuneScape name to track" aria-describedby="track-msg">
+        <button class="tab track-go" type="submit" id="track-go">Track</button>
+      </div>
+    </form>
+    <p class="track-msg" id="track-msg" role="status" aria-live="polite"></p>
+  </section>
   <h2 class="title" id="graveyard">The Graveyard</h2>
   <div class="filters" id="filters">
     <button class="tab" data-k="range" data-v="today">Today</button><button class="tab" data-k="range" data-v="week">Week</button><button class="tab" data-k="range" data-v="all">All time</button>
@@ -83,7 +98,7 @@
 </main>
 <footer>Created using intellectual property belonging to Jagex Limited under the terms of Jagex's Fan Content Policy.
 This content is not endorsed by or affiliated with Jagex.<br>Data: the official Old School hiscores and RuneLite's public world list. In-game images via the OSRS Wiki.</footer>
-<script src="assets/nav.js?v=20261031b"></script>
-<script src="assets/app.js?v=20261031b"></script>
+<script src="assets/nav.js?v=20261101b"></script>
+<script src="assets/app.js?v=20261101b"></script>
 </body>
 </html>

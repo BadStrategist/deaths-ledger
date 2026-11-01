@@ -241,3 +241,21 @@ a.card:hover,a.card:focus-visible{outline-color:var(--gold)}
   .nav-all{left:12px;right:12px;min-width:0}
   .nav-menu,.nav + .nav-menu{order:3;width:100%;margin:0;padding:9px 12px;font-size:13px;border:1px solid var(--edge)}
 }
+/* track a player (homepage) */
+.track{padding:16px 18px;margin:0 0 6px}
+.track-form{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.track-copy{flex:1 1 280px;min-width:0}
+.track-copy h2{font:900 20px 'Cinzel',serif;color:var(--gold);margin:0 0 2px;text-shadow:2px 2px 0 #000}
+.track-copy p{margin:0;color:var(--muted);font-style:italic}
+.track-row{display:flex;gap:8px;flex:0 1 360px;min-width:0}
+.track-row .search{margin:0;flex:1;min-width:0;width:auto}
+.track-go{flex:none;padding:8px 18px;font-size:11px}
+.track-go:disabled{opacity:.6;cursor:wait}
+.track-msg{margin:10px 0 0;font:18px 'VT323',monospace;color:var(--muted);min-height:0}
+.track-msg:empty{display:none}
+.track-msg.ok{color:#9be59b}.track-msg.bad{color:var(--chat-red)}
+@media (max-width:760px){
+  .track{padding:12px}
+  .track-row{flex-basis:100%}
+  .track-row .search{flex-basis:auto}
+}

@@ -1,0 +1,9 @@
+name = "deathtoll-api"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "deathtoll-tracked"
+database_id = "REPLACE_AFTER_CREATE"
