@@ -53,6 +53,15 @@
   const SURFACE = L.latLngBounds([2496, 1024], [4224, 4096]);   // generous box around the surface map; keeps requests off empty sea
 
   const toLatLng = (x, y) => L.latLng(y + 0.5, x + 0.5);   // centre of the game tile
+  // Most dungeons sit exactly 6400 tiles north of the ground above them (Taverley Dungeon under Taverley,
+  // the Barrows crypts under the mounds), so an underground death is drawn at the spot above it.
+  // Anything that still falls outside the drawn map (instances, unmapped areas) is counted, never drawn in the void.
+  const UNDERGROUND = 6400;
+  function place({ x, y }) {
+    const under = y >= UNDERGROUND;
+    const py = under ? y - UNDERGROUND : y;
+    return SURFACE.contains(toLatLng(x, py)) ? { x, y: py, under } : null;
+  }
   const regionOf = (x, y) => ((x >> 6) << 8) | (y >> 6);
 
   /* ---------------- data ---------------- */
@@ -76,12 +85,13 @@
     }
 
     const located = deaths.filter(d => d.location && Number.isFinite(d.location.x) && Number.isFinite(d.location.y));
-    const plotted = located.filter(d => d.location.on_map === true);
-    const instanced = located.filter(d => d.location.on_map === false);
+    const plotted = located.map(d => ({ ...d, at: place(d.location) })).filter(d => d.at);
+    const unplaced = located.length - plotted.length;
+    const underground = plotted.filter(d => d.at.under).length;
 
     const map = L.map("map", {
       crs: L.CRS.Simple, minZoom: -3, maxZoom: 5, zoomSnap: 1, attributionControl: false,
-      maxBounds: plotted.reduce((b, d) => b.extend(toLatLng(d.location.x, d.location.y)), L.latLngBounds(SURFACE.getSouthWest(), SURFACE.getNorthEast())).pad(0.15),
+      maxBounds: SURFACE.pad(0.15),
       maxBoundsViscosity: 0.8,
     });
     L.control.attribution({ prefix: '<a href="https://leafletjs.com">Leaflet</a>' }).addTo(map);
@@ -105,7 +115,7 @@
     });
 
     if (plotted.length) {
-      const heatPts = plotted.map(d => { const p = toLatLng(d.location.x, d.location.y); return [p.lat, p.lng, 1]; });
+      const heatPts = plotted.map(d => { const p = toLatLng(d.at.x, d.at.y); return [p.lat, p.lng, 1]; });
       L.heatLayer(heatPts, {
         radius: 22, blur: 18, minOpacity: 0.3, maxZoom: -3, max: Math.max(2, Math.round(Math.sqrt(plotted.length) / 2)),
         gradient: { 0.25: "#5b3fa0", 0.55: "#b3121b", 0.8: "#ff981f", 1: "#ffff00" },
@@ -115,37 +125,40 @@
         const { x, y, plane } = d.location;
         const [label, color] = FATE[d.fate] || FATE.died;
         const rid = regionOf(x, y);
-        L.circleMarker(toLatLng(x, y), { renderer, radius: 5, weight: 1.5, color: "#000", fillColor: color, fillOpacity: 0.95 })
+        L.circleMarker(toLatLng(d.at.x, d.at.y), { renderer, radius: 5, weight: 1.5, color: "#000", fillColor: color, fillOpacity: 0.95 })
           .bindPopup(`<div class="dp">${sample ? '<span class="tag gold">SAMPLE</span>' : ""}
             <b>${esc(d.name)}</b>
             <span class="l">${fmt(d.total)} <small>total</small> · <em style="color:${color}">${label}</em></span>
             <span>${d.time ? ago(d.time) : ""}${d.world ? ` · W${d.world}` : ""}</span>
-            <span>${esc(names[rid] || "")}${names[rid] ? " · " : ""}${x}, ${y}${plane ? ` · floor ${plane}` : ""}</span></div>`,
+            <span>${esc(names[rid] || "")}${names[rid] ? " · " : ""}${x}, ${y}${plane ? ` · floor ${plane}` : ""}</span>
+            ${d.at.under ? "<span>Underground · shown at the spot above</span>" : ""}</div>`,
             { maxWidth: 240, autoPanPadding: [12, 12] })
           .addTo(map);
       }
       // Open on where most deaths are: trim the outer tenth on each side so one far-off grave can't zoom a phone out to a speck.
       const pct = (vals, q) => vals.sort((a, b) => a - b)[Math.floor(q * (vals.length - 1))];
-      const xs = plotted.map(d => d.location.x), ys = plotted.map(d => d.location.y);
+      const xs = plotted.map(d => d.at.x), ys = plotted.map(d => d.at.y);
       const core = L.latLngBounds(toLatLng(pct(xs, 0.1), pct(ys, 0.1)), toLatLng(pct(xs, 0.9), pct(ys, 0.9))).pad(0.15);
       map.fitBounds(core, { maxZoom: 1 });
       if (map.getZoom() < -2) map.setView(core.getCenter(), -2);
     } else {
       map.setView([3300, 3100], -1);
-      $("#map-msg").textContent = located.length ? "Every recorded death so far was in an instance, so there is nothing to plot yet." : "No death locations recorded yet.";
+      $("#map-msg").textContent = located.length ? "Every recorded death so far was in an instance or an area off the map, so there is nothing to plot yet." : "No death locations recorded yet.";
       $("#map-msg").hidden = false;
     }
 
     /* ---------------- counts + deadliest regions ---------------- */
-    const groups = new Map();
+    // Regions use the real tile (so a dungeon keeps its own name); "fly" goes to where its graves are drawn.
+    const groups = new Map(), drawnAt = new Map();
     for (const d of plotted) {
       const rid = regionOf(d.location.x, d.location.y);
       groups.set(rid, (groups.get(rid) || 0) + 1);
+      if (!drawnAt.has(rid)) drawnAt.set(rid, [d.at.x - d.at.x % 64, d.at.y - d.at.y % 64]);
     }
     const top = [...groups].sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, 10);
     $("#counts").innerHTML = `
-      <div><b>${fmt(plotted.length)}</b><span>PLOTTED ON THE MAP</span></div>
-      <div><b>${fmt(instanced.length)}</b><span>IN INSTANCES · NOT PLOTTED</span></div>
+      <div><b>${fmt(plotted.length)}</b><span>ON THE MAP${underground ? ` · ${fmt(underground)} UNDERGROUND` : ""}</span></div>
+      <div><b>${fmt(unplaced)}</b><span>IN INSTANCES (BOSSES, RAIDS, MINIGAMES) OR OFF THE MAP</span></div>
       <div><b>${fmt(deaths.length - located.length)}</b><span>NO LOCATION RECORDED</span></div>
       <div><b>${fmt(groups.size)}</b><span>REGIONS WITH A DEATH</span></div>`;
     $("#regions").innerHTML = top.map(([rid, n], i) => {
@@ -156,9 +169,9 @@
     }).join("") || `<tr><td colspan="3" class="note">Nothing plotted yet.</td></tr>`;
     function fly(row) {
       if (!row) return;
-      const rid = +row.dataset.r, rx = rid >> 8, ry = rid & 255;
+      const [bx, by] = drawnAt.get(+row.dataset.r);
       $(".map-shell").scrollIntoView({ behavior: "smooth", block: "start" });
-      map.flyToBounds([[ry * 64, rx * 64], [ry * 64 + 64, rx * 64 + 64]], { maxZoom: 2 });
+      map.flyToBounds([[by, bx], [by + 64, bx + 64]], { maxZoom: 2 });
     }
     $("#regions").addEventListener("click", e => fly(e.target.closest("[data-r]")));
     $("#regions").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fly(e.target.closest("[data-r]")); } });
