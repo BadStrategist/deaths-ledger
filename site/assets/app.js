@@ -123,6 +123,15 @@
     if (!box || !API) return;            // no API configured: keep the box hidden rather than show a dead form
     box.hidden = false;
     const form = $("#track-form"), input = $("#track-name"), go = $("#track-go"), msg = $("#track-msg");
+    const card = $("#track-card");             // homepage card: jump up to the box and put the cursor in it
+    if (card) {
+      card.hidden = false;
+      card.addEventListener("click", e => {
+        e.preventDefault();
+        box.scrollIntoView({ behavior: "smooth", block: "center" });
+        input.focus({ preventScroll: true });
+      });
+    }
     const say = (text, kind) => { msg.textContent = text; msg.className = "track-msg" + (kind ? " " + kind : ""); };
     form.addEventListener("submit", async e => {
       e.preventDefault();
