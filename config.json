@@ -18,7 +18,7 @@
   },
   "tracking": {
     "comment": "Players polled one by one (scraper/tracking.py). api = the Cloudflare Worker that stores names visitors track on the site (worker/). null = top-50 seeds only.",
-    "api": null,
+    "api": "https://deathtoll-api.deathtoll.workers.dev",
     "seed_tables_per_run": 10,
     "budget_seconds": 420
   },

@@ -6,4 +6,4 @@ workers_dev = true
 [[d1_databases]]
 binding = "DB"
 database_name = "deathtoll-tracked"
-database_id = "REPLACE_AFTER_CREATE"
+database_id = "230ab089-a182-49e4-a19a-acdfead79a44"
