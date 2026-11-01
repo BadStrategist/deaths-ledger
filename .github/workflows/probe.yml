@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Probe endpoints
+        env:
+          RELAY_KEY: ${{ secrets.LEDGER_RELAY_KEY }}
         run: |
           UA="DeathToll/1.0 (+https://deathtoll.gg)"
           H=https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman
@@ -24,5 +26,9 @@ jobs:
             grep -o -i -m3 'cloudflare\|just a moment\|cf-ray\|access denied\|attention required\|akamai\|reference #[0-9a-f.]*' body.txt | sort -u | tr '\n' ' '
             echo; head -c 200 body.txt; echo
           done
+          echo "== relay (Cloudflare Worker) with the pipeline's key"
+          code=$(curl -s -H "X-Ledger-Key: $RELAY_KEY" -o relay.txt -w "%{http_code}" \
+            "https://deathtoll-api.deathtoll.workers.dev/hs?mode=hiscore_oldschool_hardcore_ironman&table=0&page=2")
+          echo "relay status $code, ranking rows: $(grep -c 'personal-hiscores__row' relay.txt)"
           echo "== headers of a blocked page"
           curl -s -A "$UA" -D - -o /dev/null "$H/overall?table=0&page=2" | head -20
