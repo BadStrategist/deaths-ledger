@@ -77,14 +77,14 @@ class Http:
             time.sleep(self.delay - gap)
         self._last = time.monotonic()
 
-    def get(self, url, follow_redirects=True):
+    def get(self, url, follow_redirects=True, headers=None):
         """Returns (status, body_text). Status 0 means the request never got an answer."""
         opener = urllib.request.build_opener() if follow_redirects else urllib.request.build_opener(_NoRedirect)
         backoff = 5
         for attempt in range(self.retries + 1):
             self._wait()
             self.requests += 1
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*", **(headers or {})})
             try:
                 with opener.open(req, timeout=self.timeout) as r:
                     return r.status, r.read().decode("utf-8", "replace")

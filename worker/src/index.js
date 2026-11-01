@@ -3,6 +3,8 @@
 //   GET  /names                    every tracked name, for the pipeline to poll
 //   GET  /count                    how many players are tracked (for the site)
 //   GET  /probe                    which Jagex hiscore endpoints answer from Cloudflare's network
+//   GET  /hs?mode=&table=&page=    one hiscore ranking page, for the pipeline only (X-Ledger-Key header).
+//                                  GitHub's servers get a 403 on these pages; Cloudflare's network does not.
 const SITE_ORIGINS = ["https://deathtoll.gg", "https://www.deathtoll.gg"];
 const NAME_RE = /^[A-Za-z0-9 _-]{1,12}$/;                 // OSRS display names: 12 chars, letters, digits, space, - and _
 const PER_VISITOR_PER_HOUR = 20;
@@ -70,6 +72,23 @@ async function probe(req) {
   return json(req, { from: "cloudflare-worker", at: new Date().toISOString(), results: out }, 200, { "Cache-Control": "no-store" });
 }
 
+// Locked to one URL shape on Jagex's hiscores and to the pipeline's key, so it can't be used as an open proxy.
+async function hiscorePage(req, env) {
+  const given = req.headers.get("X-Ledger-Key") || "";
+  if (!env.LEDGER_KEY || given.length !== env.LEDGER_KEY.length ||
+      !crypto.subtle.timingSafeEqual(new TextEncoder().encode(given), new TextEncoder().encode(env.LEDGER_KEY))) {
+    return new Response("Forbidden", { status: 403 });
+  }
+  const q = new URL(req.url).searchParams;
+  const mode = q.get("mode") || "", table = q.get("table") || "0", page = q.get("page") || "1";
+  if (!/^hiscore_oldschool[a-z_]{0,40}$/.test(mode) || !/^\d{1,3}$/.test(table) || !/^\d{1,6}$/.test(page)) {
+    return new Response("Bad request", { status: 400 });
+  }
+  const r = await fetch(`https://secure.runescape.com/m=${mode}/overall?table=${table}&page=${page}`, {
+    headers: { "User-Agent": "DeathToll/1.0 (+https://deathtoll.gg)" }, redirect: "manual" });
+  return new Response(await r.text(), { status: r.status, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
+}
+
 export default {
   async fetch(req, env) {
     const { pathname } = new URL(req.url);
@@ -79,6 +98,7 @@ export default {
       if (pathname === "/names" && req.method === "GET") return await names(req, env);
       if (pathname === "/count" && req.method === "GET") return await count(req, env);
       if (pathname === "/probe" && req.method === "GET") return await probe(req);
+      if (pathname === "/hs" && req.method === "GET") return await hiscorePage(req, env);
       return json(req, { ok: false, error: "Not found." }, 404);
     } catch (e) {
       return json(req, { ok: false, error: "Something went wrong. Try again in a minute." }, 500);

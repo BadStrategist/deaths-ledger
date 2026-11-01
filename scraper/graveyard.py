@@ -24,6 +24,7 @@ carries on alone.
 """
 import html
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -85,9 +86,21 @@ def parse_page(body):
     return rows
 
 
+# Relay for the ranking pages: Jagex's Cloudflare answers 403 to GitHub's servers but not to
+# Cloudflare's own network, so the Worker (worker/, GET /hs) fetches the page for us. Used only
+# after a direct 403, and only with the key in LEDGER_RELAY_KEY (a GitHub Actions secret).
+RELAY = {"url": None, "key": os.environ.get("LEDGER_RELAY_KEY"), "on": False}
+
+
 def fetch_page(http, mode, page):
     """Returns rows, or None when the page is past the end (the site then serves page 1)."""
-    status, body = http.get(PAGE.format(mode=mode, page=page))
+    if RELAY["on"]:
+        status, body = _relay_page(http, mode, page)
+    else:
+        status, body = http.get(PAGE.format(mode=mode, page=page))
+        if status == 403 and RELAY["url"] and RELAY["key"]:
+            RELAY["on"] = True                      # stays on for the rest of this run
+            status, body = _relay_page(http, mode, page)
     if status == 403:
         raise PagesBlocked(f"hiscore page {page} -> HTTP 403")
     if status != 200:
@@ -98,6 +111,11 @@ def fetch_page(http, mode, page):
     if page > 1 and rows[0]["rank"] != (page - 1) * PER_PAGE + 1:
         return None
     return rows
+
+
+def _relay_page(http, mode, page):
+    url = f'{RELAY["url"].rstrip("/")}/hs?mode={mode}&table=0&page={page}'
+    return http.get(url, headers={"X-Ledger-Key": RELAY["key"]})
 
 
 class PagesBlocked(RuntimeError):
@@ -268,8 +286,12 @@ def run(http=None, watcher=None):
         new_deaths += 1
         return rec
 
+    RELAY["url"] = hcfg.get("relay")
+    # Cap the page scan per run so tracking always gets its turn (and the relay stays inside
+    # Cloudflare's free 100k requests/day: ~600 s / ~1.5 s per page = ~400 pages per run).
+    scan_deadline = min(deadline, time.monotonic() + hcfg.get("page_budget_seconds", 600))
     try:
-        scan_pages(http, mode, st, deaths, by_key, add_death, lcfg, since, now, deadline)
+        scan_pages(http, mode, st, deaths, by_key, add_death, lcfg, since, now, scan_deadline)
         st["page_scan"] = "ok"
     except PagesBlocked:
         st["page_scan"] = "blocked"    # expected on GitHub's servers; tracking below still runs
@@ -280,7 +302,7 @@ def run(http=None, watcher=None):
     write_json("deaths.json", deaths, compact=True)
     write_json("state.json", st, compact=True)
     publish(deaths, st, now, lcfg, status="live")
-    return {"mode": mode, "page_scan": st["page_scan"], "pages": st["pages"],
+    return {"mode": mode, "page_scan": st["page_scan"], "relay": RELAY["on"], "pages": st["pages"],
             "stop": (st["cycle"] or {}).get("stop"), "min_total": st["min_total"],
             "new_deaths": new_deaths, "requests": http.requests,
             "cycle_page": (st["cycle"] or {}).get("page"), "tracking": track}

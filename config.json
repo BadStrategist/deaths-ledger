@@ -14,7 +14,10 @@
     ],
     "deaths_since": "2026-11-04T00:00:00Z",
     "request_delay_seconds": 0.5,
-    "run_budget_seconds": 1500
+    "run_budget_seconds": 1500,
+    "page_budget_seconds": 600,
+    "relay": "https://deathtoll-api.deathtoll.workers.dev",
+    "relay_comment": "Used only when a ranking page answers 403 (GitHub's servers). Needs the LEDGER_RELAY_KEY secret, shared with the Worker's LEDGER_KEY."
   },
   "tracking": {
     "comment": "Players polled one by one (scraper/tracking.py). api = the Cloudflare Worker that stores names visitors track on the site (worker/). null = top-50 seeds only.",
