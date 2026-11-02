@@ -232,6 +232,21 @@ def send(text, keys):
         return False, 0, str(e)[:300]
 
 
+def whoami(keys):
+    """GET /2/users/me: proves the keys work without posting anything."""
+    url = "https://api.x.com/2/users/me"
+    ck, cs, tk, ts = keys
+    oauth = {"oauth_consumer_key": ck, "oauth_nonce": secrets.token_hex(16), "oauth_signature_method": "HMAC-SHA1",
+             "oauth_timestamp": str(int(time.time())), "oauth_token": tk, "oauth_version": "1.0"}
+    oauth["oauth_signature"] = sign("GET", url, oauth, cs, ts)
+    auth = "OAuth " + ", ".join(f'{_pct(k)}="{_pct(v)}"' for k, v in sorted(oauth.items()))
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"Authorization": auth}), timeout=30) as r:
+            return r.status, json.loads(r.read().decode()).get("data", {}).get("username")
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode("utf-8", "replace")[:300]
+
+
 def run(now=None, http=None):
     cfg = {**DEFAULTS, **(load_config().get("x") or {})}
     now = now or now_ms()
@@ -292,4 +307,11 @@ def run(now=None, http=None):
 
 
 if __name__ == "__main__":
-    print(json.dumps(run(), indent=1))
+    import sys
+    if "--check" in sys.argv:
+        k = _keys()
+        print("keys present:", bool(k))
+        if k:
+            print("users/me ->", *whoami(k))
+    else:
+        print(json.dumps(run(), indent=1))
