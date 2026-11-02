@@ -12,7 +12,7 @@
   try {
     when.textContent = new Date(at).toLocaleString(undefined, {
       weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short"
-    }).toUpperCase();
+    });
   } catch (e) { /* keep the static text */ }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   var timer;
@@ -21,9 +21,9 @@
     if (left <= -2 * 3600e3) { box.hidden = true; clearInterval(timer); return; }
     if (left <= 0) {
       box.classList.add("now");
-      box.querySelector(".cd-k").textContent = "HARDCORE WORLDS";
+      box.querySelector(".cd-k").textContent = "Hardcore Worlds";
       ["d", "h", "m", "s"].forEach(function (k) { el[k].textContent = "00"; });
-      when.textContent = "OPENING NOW";
+      when.textContent = "Opening now";
       return;
     }
     var s = Math.floor(left / 1000);

@@ -269,27 +269,28 @@ a.card:hover,a.card:focus-visible{outline-color:var(--gold)}
 /* player names link to their Track a player page */
 a.pl-link{color:inherit;text-decoration:underline dotted var(--edge-hi);text-underline-offset:3px}
 a.pl-link:hover{color:var(--gold)}
-/* hero countdown to Hardcore Worlds opening, beside Death */
-.death-side{justify-self:end;display:flex;align-items:center;gap:16px;min-width:0}
-.death-side .death{justify-self:auto;flex:0 1 330px;min-width:0}
-.countdown{flex:0 0 auto;background:rgba(11,9,14,.85);border:1px solid var(--edge);padding:12px 12px 10px;text-align:center;
-  box-shadow:0 0 24px rgba(139,92,246,.18)}
+/* hero countdown to Hardcore Worlds opening: an in-game style interface panel in the hero's top right */
+.hero-inner>div:first-child{grid-column:1;grid-row:1 / span 2}
+.hero-inner .death{grid-column:2;grid-row:2;width:min(300px,100%)}
+.countdown{grid-column:2;grid-row:1;align-self:start;justify-self:end;margin-top:-26px;position:relative;z-index:2;text-align:center;padding:7px 14px 6px;
+  background:linear-gradient(#3e3529,#2b251d);border:2px solid #0b0906;
+  box-shadow:inset 0 0 0 1px #6b5d48,inset 0 0 0 3px #1c1813,0 6px 18px rgba(0,0,0,.6)}
 .countdown[hidden]{display:none}
-.cd-k,.cd-when{display:block;font:10px 'Silkscreen',monospace;letter-spacing:1px;color:var(--violet-soft);max-width:130px;margin:0 auto}
-.cd-when{color:var(--muted);margin-top:8px}
-.cd-units{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;margin-top:8px}
-.cd-units div{border-top:1px solid var(--edge);padding-top:4px}
-.cd-units div:first-child{border-top:0;padding-top:0}
-.cd-units b{display:block;font:44px/1 'VT323',monospace;color:var(--gold);text-shadow:2px 2px 0 #000}
-.cd-units span{font:10px 'Silkscreen',monospace;color:var(--muted);letter-spacing:1px}
-.countdown.now .cd-units b{color:var(--blood-hi)}
+.cd-k{display:block;font:20px/1 'VT323',monospace;color:#ff981f;text-shadow:1px 1px 0 #000;letter-spacing:.5px}
+.cd-units{display:flex;align-items:flex-start;justify-content:center;gap:4px;margin:3px 0 1px}
+.cd-units div{min-width:42px}
+.cd-units b{display:block;font:40px/1 'VT323',monospace;color:#ffff00;text-shadow:2px 2px 0 #000}
+.cd-units i{font:34px/1 'VT323',monospace;font-style:normal;color:#c8b48a;text-shadow:2px 2px 0 #000}
+.cd-units span{display:block;font:9px 'Silkscreen',monospace;color:#c8b48a;letter-spacing:1px}
+.cd-when{display:block;font:16px/1 'VT323',monospace;color:#d8ccb4;text-shadow:1px 1px 0 #000;border-top:1px solid #4d4234;padding-top:4px;margin-top:3px}
+.countdown.now .cd-units b{color:#ff3b45}
 @media (max-width:760px){
-  .death-side{justify-self:center;flex-direction:column;gap:10px;order:-1;width:100%}
-  .death-side .death{flex:none;width:min(220px,62vw)}
-  .countdown{width:100%;max-width:360px;padding:10px 10px 8px}
-  .cd-k,.cd-when{max-width:none}
-  .cd-units{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .cd-units div{border-top:0;padding-top:0;border-left:1px solid var(--edge)}
-  .cd-units div:first-child{border-left:0}
-  .cd-units b{font-size:36px}
+  .countdown{grid-column:auto;grid-row:auto;order:-2;justify-self:center;margin:0 auto 2px}
+  .hero-inner>div:first-child{grid-column:auto;grid-row:auto}
+  .hero-inner .death{grid-column:auto;grid-row:auto;width:min(220px,62vw)}
+  .cd-units div{min-width:38px}
+  .cd-units b{font-size:34px}
+  .cd-units i{font-size:28px}
 }
+/* tablet: hero tally tiles are narrow, keep six-digit counts inside them */
+@media (min-width:761px) and (max-width:1000px){.tally b{font-size:32px}}
