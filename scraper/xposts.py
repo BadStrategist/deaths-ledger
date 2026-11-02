@@ -126,8 +126,12 @@ def candidates(g, pop, st, cfg, now, http):
             continue
         at = _ms(sp.get("at"))
         if sp.get("on") == "worlds_listed":
-            due = bool((pop or {}).get("hardcore_worlds_listed")) and (not at or now >= at)
-            fresh = True
+            # Fires when the HC worlds appear in the world list, or at fallback_at if the world-type
+            # guess never matches (Jagex's label is unknown until launch); at most 3h after the fallback.
+            fb = _ms(sp.get("fallback_at"))
+            listed = bool((pop or {}).get("hardcore_worlds_listed")) and (not at or now >= at)
+            due = listed or (bool(fb) and now >= fb)
+            fresh = not fb or now - fb < 3 * HOUR or listed and now - at < 12 * HOUR
         else:
             due, fresh = bool(at) and now >= at, bool(at) and now - at < 3 * HOUR
         if due and fresh:
