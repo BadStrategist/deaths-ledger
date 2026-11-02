@@ -45,7 +45,15 @@ DEFAULTS = {
     "daily_recap_hour_utc": 0,
     "ge_post_hour_utc": 17,
     "ge_min_price": 1000000,
+    "world_firsts_per_day": 10,
+    "leader_hour_utc": 20,
+    "place_hour_utc": 21,
+    "place_min_deaths": 10,
+    "deadliest_hour_min": 25,
+    "deadliest_hour_cooldown_hours": 6,
+    "reset_milestones": [100, 500, 1000, 2500, 5000, 10000, 25000, 50000],
 }
+REGIONS_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site", "assets", "map-regions.json")
 
 
 # ---------- text helpers ----------
@@ -79,6 +87,27 @@ def death_line(d):
 
 def cap(s):
     return s[:1].upper() + s[1:]
+
+
+def names_line(names):
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def est(ms):
+    """'7pm' style hour in US Eastern (the main audience); falls back to UTC if no tz database."""
+    try:
+        from zoneinfo import ZoneInfo
+        t, zone = datetime.fromtimestamp(ms / 1000, tz=ZoneInfo("America/New_York")), "ET"
+    except Exception:  # noqa: BLE001
+        t, zone = datetime.fromtimestamp(ms / 1000, tz=timezone.utc), "UTC"
+    h = t.hour % 12 or 12
+    return f"{h}{'am' if t.hour < 12 else 'pm'}", zone, t
+
+
+def region_name(loc, regions):
+    if not loc or not loc.get("on_map"):
+        return None
+    return regions.get(str(((loc["x"] >> 6) << 8) | (loc["y"] >> 6)))
 
 
 def ordinal(n):
@@ -156,6 +185,71 @@ def candidates(g, pop, st, cfg, now, http):
                 out.append((f"recap-{day:%Y-%m-%d}", f"The last 24 hours on Hardcore Worlds:\n\n"
                             f"☠ {num(len(last24))} fell\n⬆ Highest total lost: {num(hi['total'])} ({hi['name']})\n"
                             f"⚰ {num(total)} graves in all", "recap"))
+
+    if live:
+        counts = g.get("counts") or {}
+        # Deadliest hour so far: once the hour is over, when it beats the last one posted.
+        dh = counts.get("deadliest_hour")
+        if dh and dh.get("deaths", 0) >= cfg["deadliest_hour_min"]:
+            start = _ms(dh["start"])
+            cool = now - (st.get("dh_at") or 0) >= cfg["deadliest_hour_cooldown_hours"] * HOUR
+            if start + HOUR <= now and dh["deaths"] > (st.get("dh_posted") or 0) and cool:
+                a, zone, t = est(start)
+                b, _, _ = est(start + HOUR)
+                out.append((f"dh-{dh['deaths']}", f"Deadliest hour on Hardcore Worlds so far: {num(dh['deaths'])} deaths "
+                            f"between {a} and {b} {zone} on {t:%a %d %b}.", "deadliest-hour"))
+        # Resets: players who died and started again.
+        hit = [m for m in cfg["reset_milestones"] if (counts.get("resets") or 0) >= m]
+        if hit:
+            out.append((f"resets-{hit[-1]}", f"{num(hit[-1])} players have already died on Hardcore Worlds and started again.\n\n"
+                        "One life. Then another.", "resets"))
+        # Deadliest place of the last 24 hours, once a day.
+        day = datetime.fromtimestamp(now / 1000, tz=timezone.utc)
+        if day.hour == cfg["place_hour_utc"] and now - launch > 12 * HOUR:
+            try:
+                regions = json.load(open(REGIONS_FILE, encoding="utf-8")).get("regions") or {}
+            except (OSError, ValueError):
+                regions = {}
+            tally = {}
+            for d in deaths:
+                if now - d["time"] < DAY:
+                    name = region_name(d.get("location"), regions)
+                    if name:
+                        tally[name] = tally.get(name, 0) + 1
+            if tally:
+                name, n = max(tally.items(), key=lambda kv: kv[1])
+                if n >= cfg["place_min_deaths"]:
+                    out.append((f"place-{day:%Y-%m-%d}", f"Deadliest place on Hardcore Worlds today: {name}.\n\n"
+                                f"{num(n)} graves there in the last 24 hours.", "place"))
+        # Highest total still alive, once a day.
+        hs = read_json("hiscores.json", {})
+        if day.hour == cfg["leader_hour_utc"] and hs.get("status") == "live":
+            top = [r for r in hs.get("overall") or [] if r.get("total")]
+            alive = [r for r in top if not r.get("dead")]
+            if alive:
+                dead = sum(1 for r in top if r.get("dead"))
+                tail = f"\n\n{dead} of the top {len(top)} have already died." if dead else ""
+                out.append((f"leader-{day:%Y-%m-%d}", f"Highest total still alive on Hardcore Worlds: {alive[0]['name']}, "
+                            f"total level {num(alive[0]['total'])}.{tail}", "leader"))
+
+    # World firsts (firsts.py): headline ones only, oldest first, never more than 2 days late.
+    fs = read_json("firsts.json", {})
+    if fs.get("status") == "live":
+        for f in sorted((fs.get("firsts") or {}).values(), key=lambda f: f["seen"]):
+            if not f.get("headline") or now - _ms(f["seen"]) > 2 * DAY:
+                continue
+            who, many = names_line(f["names"]), len(f["names"]) > 1
+            if f["cat"] == "total" and f["id"] == f"total-{fs.get('max_total')}":
+                text = f"World first: {who} {'have' if many else 'has'} maxed on Hardcore Worlds. Every skill 99. One life."
+            elif f["cat"] == "total":
+                text = f"World first: {who} {'have' if many else 'has'} reached {f['label']} on Hardcore Worlds."
+            elif f["cat"] == "99":
+                text = f"World first {f['label']} on Hardcore Worlds: {who}."
+            else:
+                text = f"World first on the {f['label']} hiscores on Hardcore Worlds: {who}."
+            if many:
+                text += " First spotted together."
+            out.append((f"wf-{f['id']}", text, "world-first"))
 
     # Player count: a new all-time peak, at least peak_step above the last posted one.
     hc = (pop or {}).get("hardcore_total")
@@ -278,6 +372,7 @@ def run(now=None, http=None):
     today = datetime.fromtimestamp(now / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
     sent_today = [s for s in st["sent"] if s["day"] == today]
     big_today = sum(1 for s in sent_today if s["kind"] == "big")
+    wf_today = sum(1 for s in sent_today if s["kind"] == "world-first")
     made = []
     for key, text, kind in candidates(g, pop, st, cfg, now, http or Http()):
         if key in st["done"]:
@@ -285,6 +380,8 @@ def run(now=None, http=None):
         if len(made) >= cfg["max_per_run"] or len(sent_today) + len(made) >= cfg["max_per_day"]:
             break
         if kind == "big" and big_today >= cfg["big_deaths_per_day"]:
+            continue
+        if kind == "world-first" and wf_today >= cfg["world_firsts_per_day"]:
             continue
         if dry:
             ok, status, detail = True, None, "dry run"
@@ -300,6 +397,11 @@ def run(now=None, http=None):
                      "dry": dry, "status": status, "id": detail if ok and not dry else None})
         if kind == "big":
             big_today += 1
+        if kind == "world-first":
+            wf_today += 1
+        if kind == "deadliest-hour":
+            st["dh_posted"] = int(key.split("-")[1])
+            st["dh_at"] = now
         if kind == "first":
             first = min((d for d in g["deaths"] if d.get("fate") == "died" and d.get("time")), key=lambda d: d["time"])
             st["record_total"] = max(st.get("record_total") or 0, first.get("total") or 0)

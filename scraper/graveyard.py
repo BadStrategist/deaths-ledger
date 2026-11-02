@@ -413,6 +413,13 @@ def publish(deaths, st, now, lcfg, status):
         age = (now - d["time"]) // 3600000
         if 0 <= age < 24:
             hours[23 - age] += 1
+    # Deadliest clock hour ever, from exact death times only (resets carry the time they were noticed).
+    by_hour = {}
+    for d in listed:
+        if d.get("time_exact"):
+            h = d["time"] // 3600000
+            by_hour[h] = by_hour.get(h, 0) + 1
+    worst = max(by_hour.items(), key=lambda kv: (kv[1], -kv[0])) if by_hour else None
     write_json("graveyard.json", {
         "updated": iso(now),
         "status": status,
@@ -425,6 +432,7 @@ def publish(deaths, st, now, lcfg, status):
             "all_time": len(listed),
             "resets": sum(1 for d in listed if d["fate"] == "reset"),
             "highest_total": max((d.get("total") or 0 for d in listed), default=0),
+            "deadliest_hour": {"start": iso(worst[0] * 3600000), "deaths": worst[1]} if worst else None,
         },
         "deaths_per_hour": hours,
         "deaths": [{k: v for k, v in d.items() if k != "key"} for d in listed[:PUBLISH_MAX]],

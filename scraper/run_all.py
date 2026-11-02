@@ -1,4 +1,4 @@
-"""One pipeline run: population -> watcher -> hiscores -> graveyard -> X posts.
+"""One pipeline run: population -> watcher -> hiscores -> world firsts -> graveyard -> X posts.
 
 Each step is isolated: one failing never stops the others. Results go to data/status.json
 (the site's Data watcher page shows them). Exits 1 if any step failed, so the failure is
@@ -7,6 +7,7 @@ visible in GitHub Actions, while the workflow still publishes whatever succeeded
 import sys
 import traceback
 
+import firsts
 import graveyard
 import hiscores
 import population
@@ -35,6 +36,7 @@ def main():
     if w is None:
         w = read_json("watcher.json", {})
     step("hiscores", lambda: hiscores.run(watcher=w), results)
+    step("firsts", lambda: firsts.run(watcher=w), results)
     g = step("graveyard", lambda: graveyard.run(watcher=w), results)
     step("xposts", xposts.run, results)
 

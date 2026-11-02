@@ -71,7 +71,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp -r site/. _site/
-          for f in graveyard population watcher status hiscores; do
+          for f in graveyard population watcher status hiscores firsts; do
             [ -f "statedir/$f.json" ] && cp "statedir/$f.json" _site/data/
           done
           touch _site/.nojekyll
