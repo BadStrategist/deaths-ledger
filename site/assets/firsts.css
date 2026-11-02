@@ -1,0 +1,65 @@
+/* Hardcore Worlds: Death Toll — World firsts page. Builds on site.css. */
+.fx-head{display:flex;align-items:center;gap:18px}
+.fx-head img{width:48px;height:52px;flex:none;filter:drop-shadow(0 0 12px rgba(255,152,31,.35)) drop-shadow(2px 2px 0 #000)}
+.fx-head div{min-width:0}
+
+.fx-waiting{margin:14px 0 0;padding:10px 14px;font:19px/1.3 'VT323',monospace;color:var(--parch);
+  background:repeating-linear-gradient(45deg,#2c1d4a,#2c1d4a 10px,#211539 10px,#211539 20px);border:2px solid #000;outline:1px solid #5b3fa0;outline-offset:-4px}
+.fx-waiting b{font:11px 'Silkscreen',monospace;color:var(--chat-y);margin-right:10px;font-weight:normal;white-space:nowrap}
+
+.fx-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fx-tiles div{min-width:0}
+.fx-tiles span{display:block;letter-spacing:1px}
+.fx-tiles b{margin:6px 0 4px}
+.fx-tiles b.gold{color:var(--gold)}
+.fx-tiles b.fx-latest{font-size:28px;line-height:1.05;overflow-wrap:anywhere;color:var(--parch)}
+.fx-tiles em{display:block;font:17px 'VT323',monospace;font-style:normal;color:var(--muted);overflow-wrap:anywhere}
+
+.fx-sec{margin:0 0 16px}
+.fx-sec h3{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.fx-count{font:10px 'Silkscreen',monospace;letter-spacing:1px;color:var(--muted);text-transform:none}
+
+.fx-table{table-layout:fixed}
+.fx-table .c-first{width:30%}
+.fx-table .c-who{width:32%}
+.fx-table .c-val{width:18%}
+.fx-table .c-when{width:20%}
+.fx-table td{overflow-wrap:anywhere;vertical-align:middle}
+.fx-table th.c-val,.fx-table td.c-val{text-align:right}
+.fx-table td.c-val{color:var(--chat-y)}
+.fx-table small{font-size:15px;color:var(--muted)}
+.fx-label{color:var(--parch)}
+.fx-table tr.got .fx-label{color:var(--gold)}
+.fx-sub{display:block;font-size:15px;line-height:1.1;color:var(--muted)}
+.fx-table .show-sm{display:none}
+.fx-table td.c-when b{font-weight:normal;color:var(--chat-c)}
+.fx-who{color:#fff;white-space:nowrap}
+.fx-who img{display:inline-block;width:16px;height:16px;margin-left:5px;vertical-align:-2px}
+.fx-who.fell a{color:#c9c0cf}
+.fx-and{color:var(--muted)}
+.fx-open{color:#8f8599;font-style:italic;font-family:Georgia,"Times New Roman",serif;font-size:15px}
+.fx-table tr.open td{background:rgba(0,0,0,.18)}
+.fx-table tr.open .tag{margin:0}
+.fx-ver{display:inline-block;font:9px 'Silkscreen',monospace;color:#bfffbf;background:var(--ok);border:1px solid #000;padding:2px 6px;margin-left:4px;text-decoration:none;white-space:nowrap;vertical-align:2px}
+.fx-ver:hover{color:#fff}
+.fx-foot{margin-top:4px}
+
+@media (max-width:760px){
+  .fx-head{gap:12px}
+  .fx-head img{width:36px;height:39px}
+  .fx-waiting{font-size:17px;padding:9px 11px}
+  .fx-waiting b{display:block;margin:0 0 3px}
+  .fx-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fx-tiles div:last-child{grid-column:1/-1}
+  .fx-tiles b.fx-latest{font-size:24px}
+  .fx-tiles em{font-size:16px}
+  .fx-table .c-first{width:38%}
+  .fx-table .c-who{width:37%}
+  .fx-table .c-when{width:25%}
+  .fx-table .show-sm{display:block;color:var(--chat-y)}
+  .fx-table .show-sm small{font-size:13px}
+  .fx-sub{font-size:13px}
+  .fx-open{font-size:13px}
+  .fx-who{white-space:normal}
+  .fx-table td.c-when .tag{font-size:9px;padding:2px 4px}
+}

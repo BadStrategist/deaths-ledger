@@ -207,7 +207,24 @@
     $("#listing").innerHTML = gy && gy.status === "live"
       ? `Listing players with total level <b>${fmt(gy.min_total || 0)}+</b> · ${fmt(gy.ranked_players)} on the hiscores${gy.last_full_scan ? ` · last full scan ${ago(Date.parse(gy.last_full_scan))}` : ""}. <b>BANISHED</b> = died, then transferred to the main game; <b>BANISHED?</b> = left the Hardcore hiscores, transfer not confirmed yet.`
       : gy.sample ? `Showing <b>sample graves</b> until the Hardcore Worlds hiscores go live.` : "";
+    const dh = $("#deadliest"), worst = gy && gy.status === "live" && gy.counts ? gy.counts.deadliest_hour : null;
+    const dhStart = worst && Date.parse(worst.start);
+    dh.hidden = !(dhStart && worst.deaths);
+    if (!dh.hidden) dh.innerHTML = `Deadliest hour so far: <b>${fmt(worst.deaths)}</b> ${worst.deaths === 1 ? "death" : "deaths"}, ${hourSpan(dhStart)}.`;
     draw();
+  }
+
+  /* "Wed 4 Nov 7–8pm" (or "Wed 4 Nov 19:00–20:00") in the viewer's own time zone and clock style. */
+  function hourSpan(start) {
+    const a = new Date(start), b = new Date(start + 3600000);
+    const date = a.toLocaleDateString([], { weekday: "short", day: "numeric", month: "short" }).replace(/,/g, "");
+    const h12 = new Intl.DateTimeFormat([], { hour: "numeric" }).resolvedOptions().hour12;
+    if (!h12) {
+      const hm = d => d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
+      return `${date} ${hm(a)}–${hm(b)}`;
+    }
+    const h = d => (d.getHours() % 12 || 12), ap = d => (d.getHours() < 12 ? "am" : "pm");
+    return `${date} ${h(a)}${ap(a) === ap(b) ? "" : ap(a)}–${h(b)}${ap(b)}`;
   }
 
   /* ---------------- population ---------------- */
