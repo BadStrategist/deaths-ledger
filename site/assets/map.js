@@ -80,7 +80,7 @@
     chrome(real && real.status === "live" ? real : null);
     const names = (regionFile && regionFile.regions) || {};
     if (sample) {
-      $("#flag").innerHTML = `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE POINTS</b> Every point on this map is made up: invented names on hand-picked spots. Hardcore Worlds open 4 November; real death locations from the official hiscores replace these automatically.</div>`;
+      $("#flag").innerHTML = `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE POINTS</b> Every point on this map is made up: invented names on hand-picked spots. Hardcore Worlds open 4 November; real death locations replace these automatically.</div>`;
       $("#badge").hidden = false;
     }
 

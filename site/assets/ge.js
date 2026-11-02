@@ -79,7 +79,7 @@
   function friendly(where, e, retry) {
     const el = $("#err");
     el.innerHTML = `<div class="ge-error" role="alert"><b>THE GE CLERK IS BUSY</b>
-      Couldn't reach the OSRS Wiki price feed (${esc(where)}: ${esc(e && e.message || "network error")}). Prices will be back shortly.
+      Couldn't reach the price feed (${esc(where)}: ${esc(e && e.message || "network error")}). Prices will be back shortly.
       <button class="tab" type="button">Try again</button></div>`;
     $("button", el).addEventListener("click", () => { el.innerHTML = ""; retry(); });
   }
@@ -95,7 +95,7 @@
     badge.textContent = S.live ? "LIVE" : "PREVIEW";
     badge.className = "ge-badge " + (S.live ? "live" : "preview");
     if (!S.live) {
-      $("#flag").innerHTML = `<div class="preview-flag" role="note"><b>PREVIEW · these are MAIN-GAME prices.</b> Hardcore Worlds has its own economy; its prices replace these automatically when the OSRS Wiki publishes a Hardcore Worlds price feed.</div>`;
+      $("#flag").innerHTML = `<div class="preview-flag" role="note"><b>PREVIEW · these are MAIN-GAME prices.</b> Hardcore Worlds has its own economy; its prices replace these automatically as soon as they are available.</div>`;
     } else {
       $("#flag").innerHTML = `<p class="note">Showing <b>Hardcore Worlds</b> prices (feed <b>/${esc(S.route)}</b>). The <b>VS MAIN</b> column compares each item with the main game.</p>`;
     }

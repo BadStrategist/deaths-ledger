@@ -105,7 +105,7 @@
     const t = Date.parse(hs.updated);
     $("#meta").innerHTML = hs.sample
       ? `Showing <b>sample rankings</b> until the Hardcore Worlds hiscores go live.`
-      : [`Top <b>${fmt(overall.length)}</b> from the official hiscores`, t ? `updated ${ago(t)}` : "", hs.mode ? `table ${esc(hs.mode)}` : "", hs.notes ? esc(hs.notes) : ""]
+      : [`Top <b>${fmt(overall.length)}</b> on Hardcore Worlds`, t ? `updated ${ago(t)}` : "", hs.mode ? `table ${esc(hs.mode)}` : "", hs.notes ? esc(hs.notes) : ""]
           .filter(Boolean).join(" · ") + ".";
   }
 

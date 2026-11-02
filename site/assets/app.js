@@ -162,7 +162,7 @@
     let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(treeline, 200); });
     if (gy.sample) {
       $("#main").insertAdjacentHTML("afterbegin",
-        `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE GRAVES</b> Every name and number below is made up. Hardcore Worlds open 4 November; real deaths from the official hiscores replace these automatically.</div>`);
+        `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE GRAVES</b> Every name and number below is made up. Hardcore Worlds open 4 November; real deaths replace these automatically.</div>`);
     }
     const deaths = (gy && gy.deaths) || [];
     const c = (gy && gy.counts) || {};
@@ -277,9 +277,9 @@
     chrome(gy && gy.status === "live" ? gy : null);
     const row = (label, ok, detail) => `<tr><td class="n">${label}</td><td>${ok ? '<span class="pill ok">FOUND</span>' : '<span class="pill wait">WAITING</span>'}</td><td>${detail}</td></tr>`;
     $("#sources").innerHTML =
-      row("World list (RuneLite)", pop && pop.hardcore_worlds_listed, pop && pop.hardcore_worlds_listed ? `${(pop.worlds || []).length} Hardcore worlds listed` : "Live, but no Hardcore worlds on it yet") +
+      row("World list", pop && pop.hardcore_worlds_listed, pop && pop.hardcore_worlds_listed ? `${(pop.worlds || []).length} Hardcore worlds listed` : "Live, but no Hardcore worlds on it yet") +
       row("Hardcore Worlds hiscores", w && w.hiscore_mode, w && w.hiscore_mode ? esc(w.hiscore_mode) : "Not published yet") +
-      row("Hardcore GE prices (OSRS Wiki)", w && w.price_route, w && w.price_route ? "/api/v1/" + esc(w.price_route) : "Not published yet");
+      row("Hardcore GE prices", w && w.price_route, w && w.price_route ? "Live" : "Not published yet");
     const steps = (s && s.steps) || {};
     $("#steps").innerHTML = Object.entries(steps).map(([k, r]) =>
       `<tr><td class="n">${esc(k)}</td><td>${r.ok ? '<span class="pill ok">OK</span>' : '<span class="pill no">FAILED</span>'}</td><td>${ago(Date.parse(r.at))} · ${(r.ms / 1000).toFixed(1)}s${r.error ? " · " + esc(r.error) : ""}</td></tr>`).join("")

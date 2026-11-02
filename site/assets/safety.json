@@ -1,36 +1,294 @@
 {
-  "updated": "2026-10-30",
-  "ruleset": "Hardcore Worlds use the Hardcore Group Ironman death ruleset.",
-  "sources": {
-    "news": "https://secure.runescape.com/m=news/hardcore-worlds-are-coming-on-november-4th?oldschool=1",
-    "wiki": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+ "updated": "2026-10-30",
+ "ruleset": "Hardcore Worlds use the Hardcore Group Ironman death ruleset.",
+ "sources": {
+  "news": "https://secure.runescape.com/m=news/hardcore-worlds-are-coming-on-november-4th?oldschool=1",
+  "wiki": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+ },
+ "entries": [
+  {
+   "name": "Barbarian Assault",
+   "aka": [
+    "BA",
+    "minigame",
+    "penance queen"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
   },
-  "entries": [
-    { "name": "Barbarian Assault", "aka": ["BA", "minigame", "penance queen"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Camelot training room", "aka": ["knight waves", "king arthur", "training ground"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Chambers of Xeric", "aka": ["CoX", "raids 1", "olm", "raid"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Dream World (Lunar Diplomacy)", "aka": ["lunar diplomacy", "dream world", "quest"], "verdict": "unsafe", "rule": "Dying in the Dream World during Lunar Diplomacy counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Fishing Trawler", "aka": ["trawler", "minigame"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Inferno", "aka": ["zuk", "tzkal-zuk", "infernal cape", "mor ul rek"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Magic Training Arena", "aka": ["MTA", "mage training arena", "minigame"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Nightmare Zone", "aka": ["NMZ", "dominic onion", "minigame"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Pest Control", "aka": ["PC", "void", "minigame"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Player-owned house", "aka": ["POH", "house", "construction", "combat ring", "dungeon"], "verdict": "unsafe", "rule": "Dying inside a player-owned house counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "PvM Arena", "aka": ["pvm arena", "arena"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "TzHaar Fight Cave", "aka": ["fight caves", "jad", "tztok-jad", "fire cape"], "verdict": "unsafe", "rule": "Dying here counts as your one Hardcore death. See the Karamja Elite diary entry for the one exception.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Random events", "aka": ["random event", "randoms", "evil bob", "freaky forester"], "verdict": "unsafe", "rule": "Dying during a random event counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Rogues' Den maze", "aka": ["rogues den", "rogue outfit", "maze"], "verdict": "unsafe", "rule": "Dying in the maze counts as your one Hardcore death.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-
-    { "name": "Castle Wars", "aka": ["CW", "cwars", "minigame"], "verdict": "safe", "rule": "A death here is safe and does not end your Hardcore run.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Clan Wars", "aka": ["clan wars", "ffa portal", "white portal"], "verdict": "safe", "rule": "A death here is safe and does not end your Hardcore run.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Soul Wars", "aka": ["SW", "minigame"], "verdict": "safe", "rule": "A death here is safe and does not end your Hardcore run.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "TzHaar Fight Pit", "aka": ["fight pit", "fight pits", "tzhaar"], "verdict": "safe", "rule": "A death here is safe. Not the same place as the TzHaar Fight Cave, which is unsafe.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "The Fremennik Trials (Koschei)", "aka": ["fremennik trials", "koschei", "koschei the deathless", "quest"], "verdict": "conditional", "rule": "Only a death in Koschei's 4th phase is safe.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Karamja Elite diary: Fight Cave resurrection", "aka": ["karamja diary", "fight caves", "jad", "resurrection"], "verdict": "conditional", "rule": "Being resurrected in the Fight Cave by the Karamja Elite diary reward is safe. Otherwise a Fight Cave death is unsafe.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Western Provinces Elite diary: Zulrah resurrection", "aka": ["western provinces diary", "zulrah", "resurrection", "snakeling"], "verdict": "conditional", "rule": "Being resurrected at Zulrah by the Western Provinces Elite diary reward is safe.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Galvek and Glough replays", "aka": ["galvek", "glough", "boss replay", "song of the elves", "dragon slayer ii", "quest"], "verdict": "conditional", "rule": "Replays of these boss fights are safe.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-
-    { "name": "Last Man Standing", "aka": ["LMS", "pvp", "minigame"], "verdict": "disabled", "rule": "Disabled on Hardcore Worlds at launch.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" },
-    { "name": "Bounty Hunter", "aka": ["BH", "pvp"], "verdict": "disabled", "rule": "Disabled on Hardcore Worlds at launch.", "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds" }
-  ]
+  {
+   "name": "Camelot training room",
+   "aka": [
+    "knight waves",
+    "king arthur",
+    "training ground"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Chambers of Xeric",
+   "aka": [
+    "CoX",
+    "raids 1",
+    "olm",
+    "raid"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Dream World (Lunar Diplomacy)",
+   "aka": [
+    "lunar diplomacy",
+    "dream world",
+    "quest"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying in the Dream World during Lunar Diplomacy counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Fishing Trawler",
+   "aka": [
+    "trawler",
+    "minigame"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Inferno",
+   "aka": [
+    "zuk",
+    "tzkal-zuk",
+    "infernal cape",
+    "mor ul rek"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Magic Training Arena",
+   "aka": [
+    "MTA",
+    "mage training arena",
+    "minigame"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Nightmare Zone",
+   "aka": [
+    "NMZ",
+    "dominic onion",
+    "minigame"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Pest Control",
+   "aka": [
+    "PC",
+    "void",
+    "minigame"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Player-owned house",
+   "aka": [
+    "POH",
+    "house",
+    "construction",
+    "combat ring",
+    "dungeon"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying inside a player-owned house counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "PvM Arena",
+   "aka": [
+    "pvm arena",
+    "arena"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "TzHaar Fight Cave",
+   "aka": [
+    "fight caves",
+    "jad",
+    "tztok-jad",
+    "fire cape"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying here counts as your one Hardcore death. See the Karamja Elite diary entry for the one exception.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Random events",
+   "aka": [
+    "random event",
+    "randoms",
+    "evil bob",
+    "freaky forester"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying during a random event counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Rogues' Den maze",
+   "aka": [
+    "rogues den",
+    "rogue outfit",
+    "maze"
+   ],
+   "verdict": "unsafe",
+   "rule": "Dying in the maze counts as your one Hardcore death.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Castle Wars",
+   "aka": [
+    "CW",
+    "cwars",
+    "minigame"
+   ],
+   "verdict": "safe",
+   "rule": "A death here is safe and does not end your Hardcore run.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Clan Wars",
+   "aka": [
+    "clan wars",
+    "ffa portal",
+    "white portal"
+   ],
+   "verdict": "safe",
+   "rule": "A death here is safe and does not end your Hardcore run.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Soul Wars",
+   "aka": [
+    "SW",
+    "minigame"
+   ],
+   "verdict": "safe",
+   "rule": "A death here is safe and does not end your Hardcore run.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Emir's Arena",
+   "aka": [
+    "emirs arena",
+    "duel arena",
+    "pvp arena",
+    "arena"
+   ],
+   "verdict": "safe",
+   "rule": "A death here is safe and does not end your Hardcore run.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "TzHaar Fight Pit",
+   "aka": [
+    "fight pit",
+    "fight pits",
+    "tzhaar"
+   ],
+   "verdict": "safe",
+   "rule": "A death here is safe. Not the same place as the TzHaar Fight Cave, which is unsafe.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "The Fremennik Trials (Koschei)",
+   "aka": [
+    "fremennik trials",
+    "koschei",
+    "koschei the deathless",
+    "quest"
+   ],
+   "verdict": "conditional",
+   "rule": "Only a death in Koschei's 4th phase is safe.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Karamja Elite diary: Fight Cave resurrection",
+   "aka": [
+    "karamja diary",
+    "fight caves",
+    "jad",
+    "resurrection"
+   ],
+   "verdict": "conditional",
+   "rule": "Being resurrected in the Fight Cave by the Karamja Elite diary reward is safe. Otherwise a Fight Cave death is unsafe.",
+   "source": "https://secure.runescape.com/m=news/hardcore-worlds-are-coming-on-november-4th?oldschool=1"
+  },
+  {
+   "name": "Western Provinces Elite diary: Zulrah resurrection",
+   "aka": [
+    "western provinces diary",
+    "zulrah",
+    "resurrection",
+    "snakeling"
+   ],
+   "verdict": "conditional",
+   "rule": "Being resurrected at Zulrah by the Western Provinces Elite diary reward is safe.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Galvek and Glough replays",
+   "aka": [
+    "galvek",
+    "glough",
+    "boss replay",
+    "song of the elves",
+    "dragon slayer ii",
+    "quest"
+   ],
+   "verdict": "conditional",
+   "rule": "Replays of these boss fights are safe.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Last Man Standing",
+   "aka": [
+    "LMS",
+    "pvp",
+    "minigame"
+   ],
+   "verdict": "disabled",
+   "rule": "Disabled on Hardcore Worlds at launch.",
+   "source": "https://oldschool.runescape.wiki/w/Hardcore_Worlds"
+  },
+  {
+   "name": "Bounty Hunter",
+   "aka": [
+    "BH",
+    "pvp"
+   ],
+   "verdict": "disabled",
+   "rule": "Disabled on Hardcore Worlds at launch.",
+   "source": "https://secure.runescape.com/m=news/hardcore-worlds-are-coming-on-november-4th?oldschool=1"
+  }
+ ]
 }

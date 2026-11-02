@@ -72,7 +72,7 @@
     chrome(null);
     json(`data/graveyard.json?t=${Math.floor(Date.now() / 60000)}`).then(gy => { if (gy && gy.status === "live") chrome(gy); });
 
-    data = await json("assets/safety.json?v=20261030a");
+    data = await json("assets/safety.json?v=20261102a");
     if (!data) {
       $("#list").innerHTML = `<div class="verdict v-none"><div class="vt"><h3>Could not load the safe list</h3><p>Treat every death as <b>UNSAFE</b> and check the <a href="${WIKI}" rel="noopener">OSRS Wiki</a>.</p></div></div>`;
       return;

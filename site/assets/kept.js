@@ -77,7 +77,7 @@
       items.clear();
       priceInfo = null;
       box.className = "price-state err";
-      box.innerHTML = `<b>PRICES UNAVAILABLE</b> We couldn't reach the OSRS Wiki price API, so items can't be searched or valued right now. Your saved loadout is kept. <button class="tab" type="button" id="retry">Try again</button>`;
+      box.innerHTML = `<b>PRICES UNAVAILABLE</b> We couldn't reach the price feed, so items can't be searched or valued right now. Your saved loadout is kept. <button class="tab" type="button" id="retry">Try again</button>`;
       $("#retry").addEventListener("click", loadPrices);
       $("#q").disabled = true;
       draw();
@@ -90,8 +90,8 @@
 
   function priceLabel() {
     if (!priceInfo) return "";
-    if (priceInfo.hardcore) return `<b>Prices:</b> Hardcore Worlds GE prices from the OSRS Wiki (/api/v1/${esc(priceInfo.route)}). Each price is the middle of the latest buy and sell.`;
-    const fb = priceInfo.fallback ? ` The Hardcore price feed (/api/v1/${esc(priceInfo.fallback)}) didn't answer, so these are the main-game prices for now.` : "";
+    if (priceInfo.hardcore) return `<b>Prices:</b> Hardcore Worlds GE prices. Each price is the middle of the latest buy and sell.`;
+    const fb = priceInfo.fallback ? ` The Hardcore Worlds prices didn't load, so these are the main-game prices for now.` : "";
     return `<b>Prices:</b> main-game GE prices. Hardcore Worlds has its own economy, and its prices replace these automatically once they're published.${fb} Each price is the middle of the latest buy and sell (OSRS Wiki).`;
   }
 
