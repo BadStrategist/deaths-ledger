@@ -31,7 +31,7 @@
     "Woodcutting", "Fletching", "Fishing", "Firemaking", "Crafting", "Smithing", "Mining",
     "Herblore", "Agility", "Thieving", "Slayer", "Farming", "Runecraft", "Hunter", "Construction", "Sailing"];
   const RAIDS = { 31: "Chambers of Xeric", 32: "Chambers of Xeric: Challenge Mode", 76: "Theatre of Blood",
-    77: "Theatre of Blood: Hard Mode", 80: "Tombs of Amascut", 81: "Tombs of Amascut: Expert Mode" };
+    77: "Theatre of Blood: Hard Mode", 80: "Tombs of Amascut", 81: "Tombs of Amascut: Expert Mode", 78: "The Fractured Archive" };
   const BOSSES = { 20: "Abyssal Sire", 21: "Alchemical Hydra", 22: "Amoxliatl", 23: "Araxxor", 24: "Artio",
     25: "Barrows Chests", 26: "Brutus", 27: "Bryophyta", 28: "Callisto", 29: "Calvar'ion", 30: "Cerberus",
     33: "Chaos Elemental", 34: "Chaos Fanatic", 35: "Commander Zilyana", 36: "Corporeal Beast",
@@ -43,7 +43,7 @@
     61: "Phantom Muspah", 62: "Sarachnis", 63: "Scorpia", 64: "Scurrius", 65: "Shellbane Gryphon",
     66: "Skotizo", 67: "Sol Heredit", 68: "Spindel", 69: "Tempoross", 70: "The Gauntlet",
     71: "The Corrupted Gauntlet", 72: "The Hueycoatl", 73: "The Leviathan", 74: "The Royal Titans",
-    75: "The Whisperer", 78: "The Fractured Archive", 79: "Thermonuclear Smoke Devil", 82: "TzKal-Zuk",
+    75: "The Whisperer", 79: "Thermonuclear Smoke Devil", 82: "TzKal-Zuk",
     83: "TzTok-Jad", 84: "Vardorvis", 85: "Venenatis", 86: "Vet'ion", 87: "Vorkath", 88: "Wintertodt",
     89: "Yama", 90: "Zalcano", 91: "Zulrah" };
 
