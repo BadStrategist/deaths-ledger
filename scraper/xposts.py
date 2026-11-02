@@ -26,7 +26,7 @@ from datetime import datetime, timezone
 from common import Http, iso, load_config, now_ms, read_json, write_json
 
 POST_URL = "https://api.x.com/2/tweets"
-GE_API = "https://prices.runescape.wiki/api/v1/osrs/"
+GE_API = "https://prices.runescape.wiki/api/v1/{route}/"
 HOUR = 3600000
 DAY = 24 * HOUR
 DEFAULTS = {
@@ -166,19 +166,22 @@ def candidates(g, pop, st, cfg, now, http):
         if hc >= last * (1 + cfg["peak_step"]) and cool:
             out.append((f"peak-{hc}", f"{num(hc)} players are on Hardcore Worlds right now. A new high.\n\nEvery one of them has one life.", "peak"))
 
-    # GE: the most expensive item that actually traded in the latest hour, once a day.
+    # GE: the most expensive items that actually traded in the latest hour, once a day. Only on the
+    # Hardcore Worlds price feed (set by the watcher once it exists): main-game prices are never posted.
+    route = (read_json("watcher.json", {}) or {}).get("price_route")
     day = datetime.fromtimestamp(now / 1000, tz=timezone.utc)
     key = f"ge-{day:%Y-%m-%d}"
-    if day.hour == cfg["ge_post_hour_utc"] and key not in st["done"]:
-        txt = ge_post(http, cfg)
+    if route and day.hour == cfg["ge_post_hour_utc"] and key not in st["done"]:
+        txt = ge_post(http, cfg, route)
         if txt:
             out.append((key, txt, "ge"))
     return out
 
 
-def ge_post(http, cfg):
-    s1, hour = http.get(GE_API + "1h")
-    s2, mapping = http.get(GE_API + "mapping")
+def ge_post(http, cfg, route):
+    base = GE_API.format(route=route)
+    s1, hour = http.get(base + "1h")
+    s2, mapping = http.get(base + "mapping")
     if s1 != 200 or s2 != 200:
         return None
     names = {str(m["id"]): m["name"] for m in json.loads(mapping) if m.get("name")}
@@ -198,7 +201,7 @@ def ge_post(http, cfg):
         if len(top) == 3:
             break
     lines = "\n".join(f"{i}. {n}: {gp(p)} gp" for i, (p, n) in enumerate(top, 1))
-    return f"Most expensive items sold on the Grand Exchange in the last hour:\n\n{lines}\n\nOne mistake and it's someone else's."
+    return f"Most expensive items sold on the Hardcore Worlds Grand Exchange in the last hour:\n\n{lines}\n\nOne mistake and it's someone else's."
 
 
 # ---------- sending ----------
