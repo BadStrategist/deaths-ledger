@@ -78,3 +78,8 @@ section.frame > .ge-bar{padding:12px 14px}
 @media (max-width:420px){
   .ge-t.has-sp td.n .ge-ic{display:none}
 }
+/* Most expensive sold: rank column + roomy name */
+.ge-top5 .ge-rank{width:44px;color:var(--muted)}
+.ge-top5 th:first-child{width:44px}
+.ge-top5 th:nth-child(2){width:58%;text-align:left}
+.ge-top5 td.n{text-align:left;white-space:normal}

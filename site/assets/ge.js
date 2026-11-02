@@ -122,7 +122,7 @@
       S.hour = hour;
     } catch (e) {
       friendly("prices", e, loadCore);
-      for (const t of ["#movers", "#traded"]) body($(t), `<tr><td class="note">Prices unavailable right now.</td></tr>`);
+      for (const t of ["#priciest", "#movers", "#traded"]) body($(t), `<tr><td class="note">Prices unavailable right now.</td></tr>`);
       return;
     }
     // Optional extras: the page still works without them.
@@ -133,6 +133,7 @@
     const q = $("#q");
     q.disabled = false;
     jumpToHash();
+    drawPriciest();
     Promise.all([drawMovers(), drawTraded()]).then(jumpToHash, jumpToHash);
     fromUrl();
   }
@@ -413,6 +414,24 @@
     head(t, ["ITEM", "PRICE", ["TRADED", "hide-sm"], "GP TRADED"]);
     body(t, rows.slice(0, 15).map(r => `<tr>${name(r.it)}<td class="y">${short(r.price)}</td><td class="hide-sm">${fmt(r.trades)}</td><td>${short(r.gp)}</td>${spreadCell(r.it.id)}</tr>`).join("")
       || `<tr><td colspan="9" class="note">No trades recorded yet.</td></tr>`);
+  }
+
+  /* The 5 highest prices actually paid in the latest complete hour. Uses the hour's average for
+     each side that really traded (volume > 0), so an unfilled listing can't top the card. */
+  function drawPriciest() {
+    const t = $("#priciest");
+    const d = (S.hour && S.hour.data) || {};
+    const rows = Object.entries(d).map(([id, h]) => {
+      const it = S.byId.get(+id);
+      const sides = [[h.avgHighPrice, h.highPriceVolume], [h.avgLowPrice, h.lowPriceVolume]].filter(([p, v]) => p && v > 0);
+      if (!it || !sides.length) return null;
+      return { it, price: Math.max(...sides.map(s => s[0])), trades: sides.reduce((n, s) => n + s[1], 0) };
+    }).filter(Boolean).sort((a, b) => b.price - a.price).slice(0, 5);
+    head(t, ["#", "ITEM", "PRICE", ["SOLD", "hide-sm"]]);
+    body(t, rows.map((r, i) => `<tr><td class="ge-rank">${i + 1}</td>${name(r.it)}<td class="y" title="${fmt(Math.round(r.price))} gp">${short(r.price)}</td><td class="hide-sm">${fmt(r.trades)}</td>${spreadCell(r.it.id)}</tr>`).join("")
+      || `<tr><td colspan="9" class="note">No trades in the last hour yet.</td></tr>`);
+    const at = S.hour && S.hour.timestamp ? new Date(S.hour.timestamp * 1000) : null;
+    $("#priciest + .ge-foot").textContent = `Highest prices paid in the last complete hour${at ? ` (from ${at.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })})` : ""}. Only items that actually traded count.`;
   }
 
   /* ---------------- table helpers ---------------- */
