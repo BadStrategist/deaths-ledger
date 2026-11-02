@@ -1,0 +1,41 @@
+{
+ "updated": "2026-11-02T04:32:07Z",
+ "status": "waiting",
+ "mode": null,
+ "ranked_players": null,
+ "min_total": null,
+ "last_full_scan": null,
+ "counts": {
+  "today": 0,
+  "all_time": 0,
+  "resets": 0,
+  "highest_total": 0
+ },
+ "deaths_per_hour": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "deaths": []
+}

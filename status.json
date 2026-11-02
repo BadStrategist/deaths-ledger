@@ -1,0 +1,40 @@
+{
+ "last_run": "2026-11-02T04:32:07Z",
+ "steps": {
+  "population": {
+   "ok": true,
+   "at": "2026-11-02T04:31:58Z",
+   "ms": 321
+  },
+  "watcher": {
+   "ok": true,
+   "at": "2026-11-02T04:31:58Z",
+   "ms": 8728
+  },
+  "hiscores": {
+   "ok": true,
+   "at": "2026-11-02T04:32:07Z",
+   "ms": 1
+  },
+  "graveyard": {
+   "ok": true,
+   "at": "2026-11-02T04:32:07Z",
+   "ms": 13
+  },
+  "xposts": {
+   "ok": true,
+   "at": "2026-11-02T04:32:07Z",
+   "ms": 0
+  }
+ },
+ "graveyard": {
+  "status": "waiting for the Hardcore Worlds hiscores"
+ },
+ "last_ok": {
+  "population": "2026-11-02T04:31:58Z",
+  "watcher": "2026-11-02T04:31:58Z",
+  "graveyard": "2026-11-02T04:32:07Z",
+  "hiscores": "2026-11-02T04:32:07Z",
+  "xposts": "2026-11-02T04:32:07Z"
+ }
+}

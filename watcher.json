@@ -1,0 +1,29 @@
+{
+ "checked": "2026-11-02T04:31:58Z",
+ "hiscore_index_ok": true,
+ "hiscore_probe": {
+  "index": 200,
+  "index_via": "relay",
+  "ranking_json": 200,
+  "ranking_json_head": "[{\"name\":\"FasT 07\",\"score\":\"4,800,000,000\",\"isMember\":false,\"preSailingRank\":\"37\",\"rank\":\"1\"}]",
+  "page": 403,
+  "page_head": ""
+ },
+ "hiscore_modes_linked": [
+  "hiscore_oldschool",
+  "hiscore_oldschool_deadman",
+  "hiscore_oldschool_fresh_start",
+  "hiscore_oldschool_hardcore_ironman",
+  "hiscore_oldschool_ironman",
+  "hiscore_oldschool_seasonal",
+  "hiscore_oldschool_skiller",
+  "hiscore_oldschool_skiller_defence",
+  "hiscore_oldschool_tournament",
+  "hiscore_oldschool_ultimate"
+ ],
+ "new_hiscore_modes": [],
+ "hiscore_mode": null,
+ "price_route": null,
+ "new_world_types": [],
+ "events": []
+}
