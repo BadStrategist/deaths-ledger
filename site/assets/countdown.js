@@ -9,10 +9,10 @@
   var el = {};
   ["d", "h", "m", "s"].forEach(function (k) { el[k] = document.getElementById("cd-" + k); });
   try {
-    box.title = "Opens " + new Date(at).toLocaleString(undefined, {
+    box.title = "Launches " + new Date(at).toLocaleString(undefined, {
       weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short"
     });
-  } catch (e) { box.title = "Opens Wed 4 Nov, 6:30 AM EST"; }
+  } catch (e) { box.title = "Launches Wed 4 Nov, 6:30 AM EST"; }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   var timer;
   function tick() {
@@ -20,8 +20,8 @@
     if (left <= -2 * 3600e3) { box.hidden = true; clearInterval(timer); return; }
     if (left <= 0) {
       box.classList.add("now");
-      box.querySelector(".cd-k").textContent = "Hardcore Worlds";
-      box.querySelector(".cd-units").textContent = "Opening now";
+      box.querySelector(".cd-k").textContent = "Hardcore Worlds launch";
+      box.querySelector(".cd-units").textContent = "now";
       clearInterval(timer);
       return;
     }
