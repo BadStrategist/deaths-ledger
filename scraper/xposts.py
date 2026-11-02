@@ -26,6 +26,8 @@ from datetime import datetime, timezone
 from common import Http, iso, load_config, now_ms, read_json, write_json
 
 POST_URL = "https://api.x.com/2/tweets"
+MEDIA_URL = "https://api.x.com/2/media/upload"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GE_API = "https://prices.runescape.wiki/api/v1/{route}/"
 HOUR = 3600000
 DAY = 24 * HOUR
@@ -328,14 +330,49 @@ def sign(method, url, params, consumer_secret, token_secret):
     return base64.b64encode(hmac.new(key, base.encode(), hashlib.sha1).digest()).decode()
 
 
-def send(text, keys):
+def _oauth_header(method, url, keys):
+    ck, cs, tk, ts = keys
+    oauth = {"oauth_consumer_key": ck, "oauth_nonce": secrets.token_hex(16), "oauth_signature_method": "HMAC-SHA1",
+             "oauth_timestamp": str(int(time.time())), "oauth_token": tk, "oauth_version": "1.0"}
+    oauth["oauth_signature"] = sign(method, url, oauth, cs, ts)
+    return "OAuth " + ", ".join(f'{_pct(k)}="{_pct(v)}"' for k, v in sorted(oauth.items()))
+
+
+def upload_media(path, keys):
+    """Uploads an image (multipart; the body is not part of the OAuth signature). Posts nothing.
+    Returns (ok, status, media_id_or_detail)."""
+    with open(path, "rb") as f:
+        data = f.read()
+    boundary = "----dt" + secrets.token_hex(12)
+    mime = "image/png" if path.lower().endswith(".png") else "image/jpeg"
+    crlf = "\r\n"
+    body = (f"--{boundary}{crlf}Content-Disposition: form-data; name=\"media_category\"{crlf}{crlf}tweet_image{crlf}"
+            f"--{boundary}{crlf}Content-Disposition: form-data; name=\"media\"; filename=\"{os.path.basename(path)}\"{crlf}"
+            f"Content-Type: {mime}{crlf}{crlf}").encode() + data + f"{crlf}--{boundary}--{crlf}".encode()
+    req = urllib.request.Request(MEDIA_URL, data=body, method="POST", headers={
+        "Authorization": _oauth_header("POST", MEDIA_URL, keys), "Content-Type": f"multipart/form-data; boundary={boundary}"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            d = json.loads(r.read().decode() or "{}")
+            mid = (d.get("data") or {}).get("id") or d.get("media_id_string")
+            return bool(mid), r.status, mid or str(d)[:300]
+    except urllib.error.HTTPError as e:
+        return False, e.code, e.read().decode("utf-8", "replace")[:300]
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        return False, 0, str(e)[:300]
+
+
+def send(text, keys, media_ids=None):
     """POST /2/tweets with OAuth 1.0a user context. Returns (ok, status, detail)."""
     ck, cs, tk, ts = keys
     oauth = {"oauth_consumer_key": ck, "oauth_nonce": secrets.token_hex(16), "oauth_signature_method": "HMAC-SHA1",
              "oauth_timestamp": str(int(time.time())), "oauth_token": tk, "oauth_version": "1.0"}
     oauth["oauth_signature"] = sign("POST", POST_URL, oauth, cs, ts)
     auth = "OAuth " + ", ".join(f'{_pct(k)}="{_pct(v)}"' for k, v in sorted(oauth.items()))
-    req = urllib.request.Request(POST_URL, data=json.dumps({"text": text}).encode(), method="POST",
+    payload = {"text": text}
+    if media_ids:
+        payload["media"] = {"media_ids": media_ids}
+    req = urllib.request.Request(POST_URL, data=json.dumps(payload).encode(), method="POST",
                                  headers={"Authorization": auth, "Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -378,6 +415,7 @@ def run(now=None, http=None):
     big_today = sum(1 for s in sent_today if s["kind"] == "big")
     wf_today = sum(1 for s in sent_today if s["kind"] == "world-first")
     made = []
+    images = {f"sched-{sp['key']}": sp["image"] for sp in cfg.get("scheduled") or [] if sp.get("image")}
     for key, text, kind in candidates(g, pop, st, cfg, now, http or Http()):
         if key in st["done"]:
             continue
@@ -387,10 +425,18 @@ def run(now=None, http=None):
             continue
         if kind == "world-first" and wf_today >= cfg["world_firsts_per_day"]:
             continue
+        image = images.get(key)
         if dry:
-            ok, status, detail = True, None, "dry run"
+            ok, status, detail = True, None, "dry run" + (f" (+image {image})" if image else "")
         else:
-            ok, status, detail = send(text, keys)
+            media = None
+            if image:
+                mok, mstatus, mid = upload_media(os.path.join(ROOT, image), keys)
+                if not mok:
+                    print(f"xposts: image upload failed {mstatus} {mid}; posting text only")
+                else:
+                    media = [mid]
+            ok, status, detail = send(text, keys, media)
             if not ok and not (status == 403 and "duplicate" in str(detail).lower()):  # duplicate = already out
                 print(f"xposts: send failed {status} {detail}")
                 if status in (401, 402, 403, 429):
@@ -435,5 +481,8 @@ if __name__ == "__main__":
         print("keys present:", bool(k))
         if k:
             print("users/me ->", *whoami(k))
+            img = os.path.join(ROOT, "site", "assets", "social", "world-firsts.png")
+            if "--media" in sys.argv and os.path.exists(img):
+                print("media upload (nothing is posted) ->", *upload_media(img, k))
     else:
         print(json.dumps(run(), indent=1))
