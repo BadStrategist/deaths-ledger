@@ -161,7 +161,7 @@
       <div><b class="yel">${pop ? fmt(hc ? pop.hardcore_total : pop.all_worlds_total) : "—"}</b><span>${hc ? "ON HARDCORE NOW" : "ONLINE NOW"}</span></div>`;
     $("#cards").innerHTML = cards(pop, w);
 
-    const state = { range: "all", tier: "any", fate: "any", q: "", shown: 48 };
+    const state = { range: "today", tier: "any", fate: "any", q: "", shown: 48 };   // opens on today's dead
     const filters = $("#filters");
     filters.addEventListener("click", e => {
       const b = e.target.closest("[data-k]");
@@ -190,8 +190,9 @@
         yard.innerHTML = `<div class="empty"><h3>The gates open on 4 November</h3>
           <p>The moment Jagex publishes the Hardcore Worlds hiscores, this page starts reading them and the first stone goes up here, automatically.</p></div>`;
       } else if (!list.length) {
-        yard.innerHTML = `<div class="empty"><h3>${deaths.length ? "No graves match" : "No graves yet"}</h3>
-          <p>${deaths.length ? "Try a wider filter." : "The hiscores are being read. Everyone above the listing line is still alive."}</p></div>`;
+        const quietToday = deaths.length && state.range === "today" && state.tier === "any" && state.fate === "any" && !state.q;
+        yard.innerHTML = `<div class="empty"><h3>${quietToday ? "No one has fallen today. Yet." : deaths.length ? "No graves match" : "No graves yet"}</h3>
+          <p>${quietToday ? "Tap Week or All time to see earlier graves." : deaths.length ? "Try a wider filter." : "The hiscores are being read. Everyone above the listing line is still alive."}</p></div>`;
       } else {
         yard.innerHTML = list.slice(0, state.shown).map(grave).join("");
       }
