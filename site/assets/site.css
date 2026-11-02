@@ -285,3 +285,9 @@ a.pl-link:hover{color:var(--gold)}
 }
 /* tablet: hero tally tiles are narrow, keep six-digit counts inside them */
 @media (min-width:761px) and (max-width:1000px){.tally b{font-size:32px}}
+/* World firsts: the featured homepage card spans the full row, so the other six sit 3+3 on desktop and 2+2+2 on tablets */
+.explore .card.featured{grid-column:1/-1;outline-color:#8a6a2c;
+  background:radial-gradient(420px 120px at 8% 50%,rgba(255,152,31,.12),transparent 70%),linear-gradient(var(--stone2),var(--stone))}
+.explore .card.featured:hover,.explore .card.featured:focus-visible{outline-color:var(--gold)}
+.explore .card.featured img{filter:drop-shadow(0 0 10px rgba(255,152,31,.4))}
+.explore .card.featured b{color:var(--gold)}
