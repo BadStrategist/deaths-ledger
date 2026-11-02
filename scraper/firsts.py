@@ -59,7 +59,8 @@ def run(http=None, watcher=None, now=None):
     mode = conf["hiscore"]["mode"] if conf["hiscore"]["mode"] != "auto" else (watcher or {}).get("hiscore_mode")
     if not mode or hs.get("status") != "live":
         write_json("firsts.json", {"status": "waiting", "updated": iso(now), "mode": None, "firsts": firsts,
-                                   "cursor": st.get("cursor", 0), "max_total": MAX_TOTAL})
+                                   "cursor": st.get("cursor", 0), "max_total": MAX_TOTAL,
+                               "total_categories": len(TOTALS) + 1 + len(SKILLS) + len(RAIDS) + len(BOSSES)})
         return {"status": "waiting"}
 
     new = 0
@@ -90,7 +91,8 @@ def run(http=None, watcher=None, now=None):
     cursor = (cursor + polled) % max(1, len(open_tables))
 
     write_json("firsts.json", {"status": "live", "updated": iso(now), "mode": mode, "firsts": firsts,
-                               "cursor": cursor, "max_total": MAX_TOTAL})
+                               "cursor": cursor, "max_total": MAX_TOTAL,
+                               "total_categories": len(TOTALS) + 1 + len(SKILLS) + len(RAIDS) + len(BOSSES)})
     return {"status": "live", "claimed": len(firsts), "new": new, "polled": polled}
 
 

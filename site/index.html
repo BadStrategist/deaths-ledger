@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/art/Deaths_Office.webp">
-<link rel="stylesheet" href="assets/site.css?v=20261102i">
+<link rel="stylesheet" href="assets/site.css?v=20261102j">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
 </head>
 <body data-page="graveyard">
@@ -58,6 +58,27 @@
     </form>
     <p class="track-msg" id="track-msg" role="status" aria-live="polite"></p>
   </section>
+  <a class="frame wf-feature" id="wf-feature" href="firsts.html" aria-label="World firsts: see who claims every first on Hardcore Worlds">
+    <div class="wf-glow" aria-hidden="true"></div>
+    <img class="pix wf-trophy" src="assets/art/trophy.png" width="72" height="78" alt="">
+    <div class="wf-copy">
+      <span class="wf-eyebrow">WORLD FIRSTS</span>
+      <h2><span id="wf-total">100</span> firsts. One life to claim them.</h2>
+      <p>First to 2,000 total. First to max. The first 99 in every skill. The first name on every raid and boss, The Fractured Archive included. Every claim lands here, live.</p>
+      <ul class="wf-chips" id="wf-chips">
+        <li data-id="total-2376"><b>Max total</b><span>Unclaimed</span></li>
+        <li data-id="total-2000"><b>2,000 total</b><span>Unclaimed</span></li>
+        <li data-id="kc-78"><b>The Fractured Archive</b><span>Unclaimed</span></li>
+        <li data-id="kc-82"><b>TzKal-Zuk</b><span>Unclaimed</span></li>
+      </ul>
+    </div>
+    <div class="wf-side">
+      <div class="wf-stat"><b id="wf-claimed">0</b><span>CLAIMED</span></div>
+      <div class="wf-stat gold"><b id="wf-open">100</b><span>UP FOR GRABS</span></div>
+      <p class="wf-latest" id="wf-latest">The race starts Wed 4 Nov, 11:00 UTC</p>
+      <span class="wf-cta">See the race &rarr;</span>
+    </div>
+  </a>
   <h2 class="title" id="graveyard">The Graveyard</h2>
   <div class="filters" id="filters">
     <button class="tab" data-k="range" data-v="today">Today</button><button class="tab" data-k="range" data-v="week">Week</button><button class="tab" data-k="range" data-v="all">All time</button>
@@ -84,8 +105,6 @@
 
   <h2 class="title">More from the ledger</h2>
   <nav class="cards explore" aria-label="More pages">
-    <a class="frame card featured" href="firsts.html"><img class="pix" src="assets/art/trophy.png" width="24" height="26" alt="">
-      <div><b>World firsts</b><span>FIRST TO 2,000 TOTAL, FIRST MAX, THE FIRST 99 IN EVERY SKILL AND THE FIRST NAME ON EVERY BOSS AND RAID</span><em>See who got there first →</em></div></a>
     <a class="frame card" href="hiscores.html"><img src="assets/art/Gravestone_Draynor_Manor.webp" width="44" height="44" alt="">
       <div><b>Hiscores</b><span>THE TOP OF THE HARDCORE WORLDS HISCORES, THE LIVING AND THE DEAD</span><em>See the rankings →</em></div></a>
     <a class="frame card" href="ge.html#trending"><img class="pix" src="assets/art/escape-crystal.png" width="11" height="27" alt="">
@@ -113,6 +132,7 @@
 This content is not endorsed by or affiliated with Jagex.<br>In-game images via the OSRS Wiki.</footer>
 <script src="assets/nav.js?v=20261102d"></script>
 <script src="assets/app.js?v=20261102e"></script>
+<script src="assets/firsts-home.js?v=20261102a"></script>
 <script src="assets/countdown.js?v=20261102a"></script>
 <!-- Cloudflare Web Analytics: cookieless page views -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3ae3c5051ad8409bb287336b8f16a1b1"}'></script>
