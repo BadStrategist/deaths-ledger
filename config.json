@@ -127,8 +127,8 @@
         "key": "cd-open",
         "at": "2026-11-04T00:00:00Z",
         "on": "worlds_listed",
-        "approved": false,
-        "text": "Hardcore Worlds are live.\n\nThe graveyard is empty. For now."
+        "approved": true,
+        "text": "Hardcore Worlds are live. First death incoming."
       }
     ]
   },
