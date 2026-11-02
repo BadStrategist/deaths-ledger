@@ -102,7 +102,7 @@
       {
         "key": "cd-2days",
         "at": "2026-11-02T15:00:00Z",
-        "approved": false,
+        "approved": true,
         "text": "2 days.\n\nOn 4 November, Old School RuneScape opens Hardcore Worlds. Everyone starts together. Everyone gets one life.\n\nDeath has already cleared his schedule."
       },
       {
@@ -114,7 +114,7 @@
       {
         "key": "cd-eve",
         "at": "2026-11-03T23:30:00Z",
-        "approved": false,
+        "approved": true,
         "text": "Last night before Hardcore Worlds.\n\nTomorrow thousands of fresh characters log in with one life each. By tomorrow night, some of them will be names on a gravestone.\n\nSleep well."
       },
       {
@@ -128,7 +128,7 @@
         "at": "2026-11-04T00:00:00Z",
         "on": "worlds_listed",
         "approved": false,
-        "text": "The worlds are open.\n\nOne life. Death is patient.\n\nHe won't have to be for long."
+        "text": "Hardcore Worlds are live.\n\nThe graveyard is empty. For now."
       }
     ]
   },
