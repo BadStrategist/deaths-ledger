@@ -7,6 +7,7 @@
 Writes data/watcher.json. `hiscore_mode` in it is what the graveyard uses when config mode is "auto".
 """
 import json
+import os
 import re
 
 from common import Http, load_config, now_ms, read_json, write_json, iso
@@ -49,7 +50,15 @@ def run(http=None, world_types=None):
     # --- hiscores ---
     status, body = http.get(HISCORE_INDEX)
     # Reachability check from wherever this runs: the graveyard is useless if these fail.
-    probe = {"index": status}
+    probe = {"index": status, "index_via": "direct"}
+    if status == 403:
+        # GitHub's servers get a 403 here. Page 1 of the main rankings links every hiscore table
+        # too, and the Cloudflare relay (worker/, GET /hs) can fetch it.
+        relay, key = cfg["hiscore"].get("relay"), os.environ.get("LEDGER_RELAY_KEY")
+        if relay and key:
+            status, body = http.get(f"{relay.rstrip('/')}/hs?mode=hiscore_oldschool&table=0&page=1",
+                                    headers={"X-Ledger-Key": key})
+            probe.update(index=status, index_via="relay")
     for name, url in (("ranking_json", RANKING_JSON.format(mode="hiscore_oldschool")),
                       ("page", "https://secure.runescape.com/m=hiscore_oldschool/overall?table=0&page=2")):
         s, b = http.get(url, follow_redirects=False)
