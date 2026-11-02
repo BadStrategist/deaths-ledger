@@ -1,5 +1,5 @@
-/* Hero countdown to Hardcore Worlds opening. Jagex gave the date (4 Nov) but no hour; 11:30 UTC is
-   when OSRS game updates normally go live (6:30am EST). Change data-at in index.html if Jagex posts a time.
+/* Hero countdown to Hardcore Worlds opening: 11:00 UTC on Wed 4 Nov 2026 (6am ET), per Jagex's
+   @OldSchoolRS post of 2 Nov 2026. If Jagex moves it, change data-at in index.html.
    After the moment it says "opening now" for two hours, then hides. Hover shows the time in the visitor's zone. */
 (function () {
   var box = document.getElementById("countdown");
@@ -12,7 +12,7 @@
     box.title = "Launches " + new Date(at).toLocaleString(undefined, {
       weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short"
     });
-  } catch (e) { box.title = "Launches Wed 4 Nov, 6:30 AM EST"; }
+  } catch (e) { box.title = "Launches Wed 4 Nov, 6:00 AM EST"; }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   var timer;
   function tick() {
