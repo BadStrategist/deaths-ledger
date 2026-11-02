@@ -3,14 +3,23 @@
     "mode": "auto",
     "mode_comment": "auto = use the Hardcore Worlds table once the watcher finds it. Or set a mode name, e.g. hiscore_oldschool_hardcore_ironman for testing.",
     "known_modes": [
-      "hiscore_oldschool", "hiscore_oldschool_deadman", "hiscore_oldschool_fresh_start",
-      "hiscore_oldschool_hardcore_ironman", "hiscore_oldschool_ironman", "hiscore_oldschool_seasonal",
-      "hiscore_oldschool_skiller", "hiscore_oldschool_skiller_defence", "hiscore_oldschool_tournament",
+      "hiscore_oldschool",
+      "hiscore_oldschool_deadman",
+      "hiscore_oldschool_fresh_start",
+      "hiscore_oldschool_hardcore_ironman",
+      "hiscore_oldschool_ironman",
+      "hiscore_oldschool_seasonal",
+      "hiscore_oldschool_skiller",
+      "hiscore_oldschool_skiller_defence",
+      "hiscore_oldschool_tournament",
       "hiscore_oldschool_ultimate"
     ],
     "candidate_modes": [
-      "hiscore_oldschool_hardcore_worlds", "hiscore_oldschool_hardcore_world", "hiscore_oldschool_hardcore",
-      "hiscore_oldschool_hcw", "hiscore_oldschool_hardcore_mode"
+      "hiscore_oldschool_hardcore_worlds",
+      "hiscore_oldschool_hardcore_world",
+      "hiscore_oldschool_hardcore",
+      "hiscore_oldschool_hcw",
+      "hiscore_oldschool_hardcore_mode"
     ],
     "deaths_since": "2026-11-04T00:00:00Z",
     "request_delay_seconds": 0.5,
@@ -28,23 +37,58 @@
   "listing": {
     "comment": "Who gets a gravestone. min_total rises with the size of the hiscores; the scan stops at the page where total level falls below it.",
     "scale_steps": [
-      { "ranked_players": 0,      "min_total": 0 },
-      { "ranked_players": 25000,  "min_total": 300 },
-      { "ranked_players": 75000,  "min_total": 750 },
-      { "ranked_players": 200000, "min_total": 1000 },
-      { "ranked_players": 400000, "min_total": 1250 },
-      { "ranked_players": 700000, "min_total": 1500 }
+      {
+        "ranked_players": 0,
+        "min_total": 0
+      },
+      {
+        "ranked_players": 25000,
+        "min_total": 300
+      },
+      {
+        "ranked_players": 75000,
+        "min_total": 750
+      },
+      {
+        "ranked_players": 200000,
+        "min_total": 1000
+      },
+      {
+        "ranked_players": 400000,
+        "min_total": 1250
+      },
+      {
+        "ranked_players": 700000,
+        "min_total": 1500
+      }
     ],
     "min_total_override": null,
     "notable_total": 1800
   },
   "population": {
-    "hardcore_world_types": ["HARDCORE", "HARDCORE_WORLD", "HARDCORE_WORLDS"],
+    "hardcore_world_types": [
+      "HARDCORE",
+      "HARDCORE_WORLD",
+      "HARDCORE_WORLDS"
+    ],
     "hardcore_activity_regex": "(?i)hard ?core",
     "known_world_types": [
-      "MEMBERS", "PVP", "BOUNTY", "PVP_ARENA", "SKILL_TOTAL", "HIGH_RISK", "LAST_MAN_STANDING",
-      "QUEST_SPEEDRUNNING", "FRESH_START_WORLD", "DEADMAN", "SEASONAL", "NOSAVE_MODE", "TOURNAMENT",
-      "BETA_WORLD", "PVP_ARENA", "BETA"
+      "MEMBERS",
+      "PVP",
+      "BOUNTY",
+      "PVP_ARENA",
+      "SKILL_TOTAL",
+      "HIGH_RISK",
+      "LAST_MAN_STANDING",
+      "QUEST_SPEEDRUNNING",
+      "FRESH_START_WORLD",
+      "DEADMAN",
+      "SEASONAL",
+      "NOSAVE_MODE",
+      "TOURNAMENT",
+      "BETA_WORLD",
+      "PVP_ARENA",
+      "BETA"
     ],
     "history_days_full": 3,
     "history_days_hourly": 120
@@ -52,10 +96,53 @@
   "x": {
     "comment": "Automatic posts to X (scraper/xposts.py). dry_run true = write would-be posts to xposts.json on the state branch, send nothing. Live also needs the secrets X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET. launch_at drives the first-hour post. Other knobs and their defaults are in DEFAULTS at the top of xposts.py.",
     "dry_run": false,
-    "launch_at": "2026-11-04T11:30:00Z"
+    "launch_at": "2026-11-04T11:30:00Z",
+    "scheduled_comment": "Countdown/hype posts. Each needs approved: true to go out. 'at' is UTC; a post more than 3h late is skipped. on: worlds_listed fires once when Hardcore Worlds appear in the world list (not before 'at').",
+    "scheduled": [
+      {
+        "key": "cd-2days",
+        "at": "2026-11-02T15:00:00Z",
+        "approved": false,
+        "text": "2 days.\n\nOn 4 November, Old School RuneScape opens Hardcore Worlds. Everyone starts together. Everyone gets one life.\n\nDeath has already cleared his schedule."
+      },
+      {
+        "key": "cd-1day",
+        "at": "2026-11-03T15:00:00Z",
+        "approved": false,
+        "text": "Tomorrow, Hardcore Worlds open.\n\nPlan your route. Know what you keep on death. Don't trust the Wilderness, a dark cave or a full inventory of food you'll never eat in time.\n\nOne life. Death is patient."
+      },
+      {
+        "key": "cd-eve",
+        "at": "2026-11-03T23:30:00Z",
+        "approved": false,
+        "text": "Last night before Hardcore Worlds.\n\nTomorrow thousands of fresh characters log in with one life each. By tomorrow night, some of them will be names on a gravestone.\n\nSleep well."
+      },
+      {
+        "key": "cd-today",
+        "at": "2026-11-04T10:30:00Z",
+        "approved": false,
+        "text": "Today.\n\nHardcore Worlds open on Old School RuneScape. Fresh start, one life, no safety net.\n\nThe ledger is open. The first grave is coming."
+      },
+      {
+        "key": "cd-open",
+        "at": "2026-11-04T00:00:00Z",
+        "on": "worlds_listed",
+        "approved": false,
+        "text": "The worlds are open.\n\nOne life. Death is patient.\n\nHe won't have to be for long."
+      }
+    ]
   },
   "prices": {
-    "known_routes": ["osrs", "dmm"],
-    "candidate_routes": ["hardcore", "hcw", "hc", "hardcoreworlds", "hardcore-worlds"]
+    "known_routes": [
+      "osrs",
+      "dmm"
+    ],
+    "candidate_routes": [
+      "hardcore",
+      "hcw",
+      "hc",
+      "hardcoreworlds",
+      "hardcore-worlds"
+    ]
   }
 }

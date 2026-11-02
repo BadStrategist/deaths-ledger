@@ -90,6 +90,19 @@ def ordinal(n):
 def candidates(g, pop, st, cfg, now, http):
     """Yields (key, text, kind) in priority order. Keys already in st["done"] are skipped later."""
     out = []
+    # Scheduled posts from config (countdown etc.). Only ones the owner approved; each one fires once,
+    # at its time, or on its trigger; never more than 3 hours late, so a stalled pipeline can't post stale hype.
+    for sp in cfg.get("scheduled") or []:
+        if not sp.get("approved") or not sp.get("key") or not sp.get("text"):
+            continue
+        at = _ms(sp.get("at"))
+        if sp.get("on") == "worlds_listed":
+            due = bool((pop or {}).get("hardcore_worlds_listed")) and (not at or now >= at)
+            fresh = True
+        else:
+            due, fresh = bool(at) and now >= at, bool(at) and now - at < 3 * HOUR
+        if due and fresh:
+            out.append((f"sched-{sp['key']}", sp["text"], "scheduled"))
     live = g.get("status") == "live"
     deaths = [d for d in (g.get("deaths") or []) if d.get("fate") == "died" and d.get("time")]
     recent = [d for d in deaths if now - d["time"] < 2 * DAY]
