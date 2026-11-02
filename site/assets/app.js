@@ -70,7 +70,7 @@
     return `<div class="grave${d.notable ? " notable" : ""}${isBanished(d) ? " banished" : ""}">
       <div class="art"><img src="assets/art/${ART(t)}.webp" alt="" loading="lazy"></div><div class="mound"></div>
       <div class="plate">${d.run > 1 ? `<span class="run">#${d.run}</span>` : ""}
-        <div class="n">${esc(d.name)}</div>
+        <div class="n">${(d.sample ? esc(d.name) : `<a class="pl-link" href="player.html?name=${encodeURIComponent(d.name)}">${esc(d.name)}</a>`)}</div>
         <div class="l">${fmt(t)} <small>total</small></div>
         ${sk ? `<div class="s">${esc(sk.toUpperCase())}${boss}</div>` : ""}
         ${d.player_killer ? `<div class="k">SLAIN BY A PLAYER</div>` : ""}
@@ -123,15 +123,8 @@
     if (!box || !API) return;            // no API configured: keep the box hidden rather than show a dead form
     box.hidden = false;
     const form = $("#track-form"), input = $("#track-name"), go = $("#track-go"), msg = $("#track-msg");
-    const card = $("#track-card");             // homepage card: jump up to the box and put the cursor in it
-    if (card) {
-      card.hidden = false;
-      card.addEventListener("click", e => {
-        e.preventDefault();
-        box.scrollIntoView({ behavior: "smooth", block: "center" });
-        input.focus({ preventScroll: true });
-      });
-    }
+    const card = $("#track-card");             // homepage card: opens the Track a player page
+    if (card) card.hidden = false;
     const say = (text, kind) => { msg.textContent = text; msg.className = "track-msg" + (kind ? " " + kind : ""); };
     form.addEventListener("submit", async e => {
       e.preventDefault();
@@ -143,10 +136,8 @@
         const j = await r.json().catch(() => ({}));
         if (!r.ok || !j.ok) { say(j.error || "That didn't work. Try again in a minute.", "bad"); return; }
         const who = j.name || name;
-        say(j.already ? `${who} is already being tracked.`
-          : live ? `Now tracking ${who}. If they fall, their grave goes up here.`
-          : `Now tracking ${who}. We start checking the moment the Hardcore Worlds hiscores open.`, "ok");
-        input.value = "";
+        say(j.already ? `${who} is already being tracked. Opening their page…` : `Now tracking ${who}. Opening their page…`, "ok");
+        location.href = `player.html?name=${encodeURIComponent(who)}`;   // the player's own page, like Wise Old Man
       } catch (err) {
         say("Couldn't reach the tracker. Check your connection and try again.", "bad");
       } finally { go.disabled = false; }
@@ -206,7 +197,7 @@
       }
       $("#more").hidden = list.length <= state.shown;
       $("#ledger").innerHTML = list.slice(0, state.shown).map(d => `<tr>
-        <td class="n">${esc(d.name)}${d.sample ? ` <span class="tag sample">SAMPLE</span>` : ""}</td><td class="y">${fmt(d.total)}</td><td class="hide-sm">${d.combat ?? "—"}</td>
+        <td class="n">${(d.sample ? esc(d.name) : `<a class="pl-link" href="player.html?name=${encodeURIComponent(d.name)}">${esc(d.name)}</a>`)}${d.sample ? ` <span class="tag sample">SAMPLE</span>` : ""}</td><td class="y">${fmt(d.total)}</td><td class="hide-sm">${d.combat ?? "—"}</td>
         <td class="hide-sm">${esc((d.top_skills || []).map(s => s[0] + " " + s[1]).join(", "))}</td>
         <td style="color:${isBanished(d) ? "var(--violet-soft)" : "var(--chat-red)"}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${d.fate === "died" ? "Died" : d.fate === "reset" ? "Reset" : d.fate === "banished" ? "Banished" : "Banished?"}</td>
         <td class="hide-sm">${d.world ? "W" + d.world : "—"}</td><td>${when(d)}</td></tr>`).join("") ||

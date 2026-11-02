@@ -91,7 +91,7 @@
       const list = all.filter(r => !ui.q || String(r.name).toLowerCase().includes(ui.q));
       $("#rows").innerHTML = list.map(r => `<tr class="${r.dead ? "dead" : ""}">
         <td class="c-rank">${fmt(r.rank)}</td>
-        <td class="c-name n">${esc(r.name)}${S}</td>
+        <td class="c-name n">${S ? esc(r.name) : `<a class="pl-link" href="player.html?name=${encodeURIComponent(r.name)}">${esc(r.name)}</a>`}${S}</td>
         <td class="c-num y">${fmt(isOverall ? r.total : r.level)}</td>
         <td class="c-xp hide-sm">${fmt(r.xp)}</td>
         <td class="c-state">${state(isOverall ? r : { ...r, died_at: (overall.find(o => o.name === r.name) || {}).died_at })}</td></tr>`).join("") ||

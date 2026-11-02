@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track a player · Hardcore Worlds: Death Toll</title>
+<meta property="og:site_name" content="Hardcore Worlds: Death Toll">
+<meta property="og:title" content="Track a player · Hardcore Worlds: Death Toll">
+<meta property="og:description" content="Track any OSRS Hardcore Worlds account. Stats, skills and bosses while they live; their grave if they fall.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deathtoll.gg/player.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://deathtoll.gg/assets/og-2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="deathtoll.gg, the OSRS Hardcore Worlds Graveyard, with a faint hooded figure of Death">
+<meta name="twitter:image" content="https://deathtoll.gg/assets/og-2.png">
+<meta name="theme-color" content="#0c0a08">
+<link rel="canonical" href="https://deathtoll.gg/player.html">
+<meta name="dt-api" content="https://deathtoll-api.deathtoll.workers.dev">
+<meta name="description" content="Track any OSRS Hardcore Worlds account on Death Toll: total level, skills and bosses while they live, and their grave if they fall.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css?v=20261102c">
+<link rel="stylesheet" href="assets/player.css?v=20261102c">
+</head>
+<body data-page="player">
+<header class="top" id="top"></header>
+<main class="wrap" id="main">
+  <section class="frame track pl-search">
+    <form class="track-form" id="find" novalidate>
+      <div class="track-copy">
+        <h1>Track a player</h1>
+        <p>Look up any Hardcore Worlds account and track it. If they fall, their grave goes up on the Graveyard.</p>
+      </div>
+      <div class="track-row">
+        <input class="search" id="find-name" name="name" maxlength="12" autocomplete="off" spellcheck="false"
+          placeholder="RuneScape name" aria-label="RuneScape name">
+        <button class="tab track-go" type="submit">Look up</button>
+      </div>
+    </form>
+    <p class="track-msg" id="find-msg" role="status" aria-live="polite"></p>
+  </section>
+
+  <section id="profile" hidden>
+    <div class="frame pl-head">
+      <div class="pl-who">
+        <h2 id="pl-name"></h2>
+        <div class="pl-badges" id="pl-badges"></div>
+        <p class="pl-sub" id="pl-sub"></p>
+      </div>
+      <div class="pl-actions">
+        <button class="tab track-go" type="button" id="pl-track" hidden>Track this player</button>
+        <button class="tab" type="button" id="pl-copy">Copy link</button>
+      </div>
+    </div>
+    <p class="track-msg" id="pl-msg" role="status" aria-live="polite"></p>
+
+    <div class="big-row" id="pl-tiles"></div>
+
+    <section class="frame pl-death" id="pl-death" hidden>
+      <h3>Death record</h3>
+      <div class="body" id="pl-death-body"></div>
+    </section>
+
+    <section class="frame" id="pl-graves-wrap" hidden>
+      <h3>Graves</h3>
+      <table class="ledger"><thead><tr><th>FATE</th><th>TOTAL</th><th class="hide-sm">WORLD</th><th>WHEN</th></tr></thead><tbody id="pl-graves"></tbody></table>
+    </section>
+
+    <div class="pl-cols">
+      <section class="frame" id="pl-skills-wrap" hidden>
+        <h3>Skills</h3>
+        <table class="ledger pl-skills"><thead><tr><th>SKILL</th><th>LEVEL</th><th>XP</th><th class="hide-sm">RANK</th></tr></thead><tbody id="pl-skills"></tbody></table>
+      </section>
+      <section class="frame" id="pl-bosses-wrap" hidden>
+        <h3>Bosses &amp; activities</h3>
+        <table class="ledger pl-skills"><thead><tr><th>NAME</th><th>SCORE</th><th class="hide-sm">RANK</th></tr></thead><tbody id="pl-bosses"></tbody></table>
+      </section>
+    </div>
+  </section>
+</main>
+<footer>Created using intellectual property belonging to Jagex Limited under the terms of Jagex's Fan Content Policy.
+This content is not endorsed by or affiliated with Jagex.<br>In-game images via the OSRS Wiki.</footer>
+<script src="assets/nav.js?v=20261102c"></script>
+<script src="assets/player.js?v=20261102c"></script>
+</body>
+</html>

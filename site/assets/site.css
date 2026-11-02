@@ -266,3 +266,6 @@ a.card:hover,a.card:focus-visible{outline-color:var(--gold)}
 /* small label on every made-up sample row before launch */
 .tag.sample{background:#3a2f4d;color:var(--violet-soft);font-style:normal;margin-right:4px}
 .big-row .tag.sample{display:inline-block;margin:0 6px 4px 0;vertical-align:middle}
+/* player names link to their Track a player page */
+a.pl-link{color:inherit;text-decoration:underline dotted var(--edge-hi);text-underline-offset:3px}
+a.pl-link:hover{color:var(--gold)}
