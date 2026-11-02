@@ -49,6 +49,11 @@
     "history_days_full": 3,
     "history_days_hourly": 120
   },
+  "x": {
+    "comment": "Automatic posts to X (scraper/xposts.py). dry_run true = write would-be posts to xposts.json on the state branch, send nothing. Live also needs the secrets X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET. launch_at drives the first-hour post. Other knobs and their defaults are in DEFAULTS at the top of xposts.py.",
+    "dry_run": true,
+    "launch_at": "2026-11-04T11:30:00Z"
+  },
   "prices": {
     "known_routes": ["osrs", "dmm"],
     "candidate_routes": ["hardcore", "hcw", "hc", "hardcoreworlds", "hardcore-worlds"]
