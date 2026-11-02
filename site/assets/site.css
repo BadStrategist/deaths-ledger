@@ -263,3 +263,6 @@ a.card:hover,a.card:focus-visible{outline-color:var(--gold)}
 @media (min-width:981px){ .explore{grid-template-columns:repeat(4,minmax(0,1fr))} }
 @media (min-width:600px) and (max-width:980px){ .explore{grid-template-columns:repeat(2,minmax(0,1fr))} }
 #track{scroll-margin-top:16px}
+/* small label on every made-up sample row before launch */
+.tag.sample{background:#3a2f4d;color:var(--violet-soft);font-style:normal;margin-right:4px}
+.big-row .tag.sample{display:inline-block;margin:0 6px 4px 0;vertical-align:middle}

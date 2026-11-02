@@ -53,10 +53,7 @@
       const sample = await load("assets/sample-hiscores.json");
       hs = sample ? { ...shiftSample(sample), sample: true } : { status: "waiting", overall: [] };
     }
-    if (hs.sample) {
-      $("#main").insertAdjacentHTML("afterbegin",
-        `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE RANKINGS</b> The real Hardcore Worlds hiscores replace these automatically when Jagex publishes them. Every name and number below is made up.</div>`);
-    }
+    const S = hs.sample ? ` <span class="tag sample">SAMPLE</span>` : "";   // every made-up row and tile carries it
 
     const overall = Array.isArray(hs.overall) ? hs.overall : [];
     const skills = hs.skills && typeof hs.skills === "object" ? hs.skills : null;
@@ -65,9 +62,9 @@
     const alive = overall.find(r => !r.dead), fallen = overall.find(r => r.dead);
     const deadCount = overall.filter(r => r.dead).length;
     const tile = (label, r, cls) => `<div><span>${label}</span><b class="${cls}">${r ? fmt(r.total) : "—"}</b>
-      <em>${r ? `${esc(r.name)} <i>· rank ${fmt(r.rank)}</i>` : "Nobody yet"}</em></div>`;
+      <em>${r ? `${esc(r.name)} <i>· rank ${fmt(r.rank)}</i>${S}` : "Nobody yet"}</em></div>`;
     $("#tiles").innerHTML = tile("HIGHEST ALIVE", alive, "") + tile("HIGHEST FALLEN", fallen, "red") +
-      `<div><span>FALLEN IN THE TOP ${fmt(overall.length)}</span><b class="red">${fmt(deadCount)}</b><em>${overall.length ? Math.round((deadCount / overall.length) * 100) + "% of these ranks" : "—"}</em></div>`;
+      `<div><span>FALLEN IN THE TOP ${fmt(overall.length)}</span><b class="red">${fmt(deadCount)}</b><em>${hs.sample ? "SAMPLE · " : ""}${overall.length ? Math.round((deadCount / overall.length) * 100) + "% of these ranks" : "—"}</em></div>`;
 
     const boards = skills ? ["Overall", ...Object.keys(skills).filter(k => Array.isArray(skills[k]) && skills[k].length)] : [];
     const tabs = $("#skills");
@@ -94,7 +91,7 @@
       const list = all.filter(r => !ui.q || String(r.name).toLowerCase().includes(ui.q));
       $("#rows").innerHTML = list.map(r => `<tr class="${r.dead ? "dead" : ""}">
         <td class="c-rank">${fmt(r.rank)}</td>
-        <td class="c-name n">${esc(r.name)}</td>
+        <td class="c-name n">${esc(r.name)}${S}</td>
         <td class="c-num y">${fmt(isOverall ? r.total : r.level)}</td>
         <td class="c-xp hide-sm">${fmt(r.xp)}</td>
         <td class="c-state">${state(isOverall ? r : { ...r, died_at: (overall.find(o => o.name === r.name) || {}).died_at })}</td></tr>`).join("") ||

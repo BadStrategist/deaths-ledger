@@ -76,7 +76,7 @@
         ${d.player_killer ? `<div class="k">SLAIN BY A PLAYER</div>` : ""}
         <div class="t" title="${new Date(d.time).toString()}">${when(d)}</div>
         ${where(d) ? `<div class="t">${esc(where(d))}</div>` : ""}
-        ${d.notable ? `<span class="tag gold">NOTABLE</span> ` : ""}<span class="tag ${cls}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${label}</span>
+        ${d.sample ? `<span class="tag sample">SAMPLE</span> ` : ""}${d.notable ? `<span class="tag gold">NOTABLE</span> ` : ""}<span class="tag ${cls}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${label}</span>
       </div></div>`;
   }
 
@@ -89,7 +89,7 @@
     const now = Date.now();
     const deaths = sample.deaths.map(d => {
       const time = now - d.age_min * 60000;
-      return { ...d, time, window_start: d.window_minutes ? time - d.window_minutes * 60000 : undefined };
+      return { ...d, sample: true, time, window_start: d.window_minutes ? time - d.window_minutes * 60000 : undefined };
     });
     return {
       status: "preview", sample: true, deaths,
@@ -160,16 +160,13 @@
     treeline();
     trackBox(!!(real && real.status === "live"));
     let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(treeline, 200); });
-    if (gy.sample) {
-      $("#main").insertAdjacentHTML("afterbegin",
-        `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE GRAVES</b> Every name and number below is made up. Hardcore Worlds open 4 November; real deaths replace these automatically.</div>`);
-    }
     const deaths = (gy && gy.deaths) || [];
     const c = (gy && gy.counts) || {};
     const hc = pop && pop.hardcore_worlds_listed;
+    // Sample graves never feed the hero numbers: before launch these read 0 and a dash.
     $("#tally").innerHTML = `
-      <div><b class="red">${fmt(c.today || 0)}</b><span>FALLEN TODAY</span></div>
-      <div><b>${c.highest_total ? fmt(c.highest_total) : "—"}</b><span>HIGHEST TOTAL LOST</span></div>
+      <div><b class="red">${gy.sample ? "0" : fmt(c.today || 0)}</b><span>FALLEN TODAY</span></div>
+      <div><b>${!gy.sample && c.highest_total ? fmt(c.highest_total) : "—"}</b><span>HIGHEST TOTAL LOST</span></div>
       <div><b class="yel">${pop ? fmt(hc ? pop.hardcore_total : pop.all_worlds_total) : "—"}</b><span>${hc ? "ON HARDCORE NOW" : "ONLINE NOW"}</span></div>`;
     $("#cards").innerHTML = cards(pop, w);
 
@@ -209,7 +206,7 @@
       }
       $("#more").hidden = list.length <= state.shown;
       $("#ledger").innerHTML = list.slice(0, state.shown).map(d => `<tr>
-        <td class="n">${esc(d.name)}</td><td class="y">${fmt(d.total)}</td><td class="hide-sm">${d.combat ?? "—"}</td>
+        <td class="n">${esc(d.name)}${d.sample ? ` <span class="tag sample">SAMPLE</span>` : ""}</td><td class="y">${fmt(d.total)}</td><td class="hide-sm">${d.combat ?? "—"}</td>
         <td class="hide-sm">${esc((d.top_skills || []).map(s => s[0] + " " + s[1]).join(", "))}</td>
         <td style="color:${isBanished(d) ? "var(--violet-soft)" : "var(--chat-red)"}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${d.fate === "died" ? "Died" : d.fate === "reset" ? "Reset" : d.fate === "banished" ? "Banished" : "Banished?"}</td>
         <td class="hide-sm">${d.world ? "W" + d.world : "—"}</td><td>${when(d)}</td></tr>`).join("") ||

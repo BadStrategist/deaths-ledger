@@ -80,7 +80,6 @@
     chrome(real && real.status === "live" ? real : null);
     const names = (regionFile && regionFile.regions) || {};
     if (sample) {
-      $("#flag").innerHTML = `<div class="preview-flag" role="note"><b>PREVIEW · SAMPLE POINTS</b> Every point on this map is made up: invented names on hand-picked spots. Hardcore Worlds open 4 November; real death locations replace these automatically.</div>`;
       $("#badge").hidden = false;
     }
 
@@ -155,17 +154,18 @@
       groups.set(rid, (groups.get(rid) || 0) + 1);
       if (!drawnAt.has(rid)) drawnAt.set(rid, [d.at.x - d.at.x % 64, d.at.y - d.at.y % 64]);
     }
+    const S = sample ? `<em class="tag sample">SAMPLE</em>` : "";   // made-up numbers are always labelled
     const top = [...groups].sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, 10);
     $("#counts").innerHTML = `
-      <div><b>${fmt(plotted.length)}</b><span>ON THE MAP${underground ? ` · ${fmt(underground)} UNDERGROUND` : ""}</span></div>
-      <div><b>${fmt(unplaced)}</b><span>IN INSTANCES (BOSSES, RAIDS, MINIGAMES) OR OFF THE MAP</span></div>
-      <div><b>${fmt(deaths.length - located.length)}</b><span>NO LOCATION RECORDED</span></div>
-      <div><b>${fmt(groups.size)}</b><span>REGIONS WITH A DEATH</span></div>`;
+      <div><b>${fmt(plotted.length)}</b><span>${S}ON THE MAP${underground ? ` · ${fmt(underground)} UNDERGROUND` : ""}</span></div>
+      <div><b>${fmt(unplaced)}</b><span>${S}IN INSTANCES (BOSSES, RAIDS, MINIGAMES) OR OFF THE MAP</span></div>
+      <div><b>${fmt(deaths.length - located.length)}</b><span>${S}NO LOCATION RECORDED</span></div>
+      <div><b>${fmt(groups.size)}</b><span>${S}REGIONS WITH A DEATH</span></div>`;
     $("#regions").innerHTML = top.map(([rid, n], i) => {
       const rx = rid >> 8, ry = rid & 255;
       const coords = `x ${rx * 64}–${rx * 64 + 63}, y ${ry * 64}–${ry * 64 + 63}`;
       return `<tr data-r="${rid}" tabindex="0" role="button" aria-label="Show ${esc(names[rid] || coords)} on the map">
-        <td>${i + 1}</td><td class="n">${names[rid] ? `${esc(names[rid])}<small>${coords}</small>` : `Region ${rx}, ${ry}<small>${coords}</small>`}</td><td class="y">${fmt(n)}</td></tr>`;
+        <td>${i + 1}</td><td class="n">${names[rid] ? `${esc(names[rid])}<small>${coords}</small>` : `Region ${rx}, ${ry}<small>${coords}</small>`}${S}</td><td class="y">${fmt(n)}</td></tr>`;
     }).join("") || `<tr><td colspan="3" class="note">Nothing plotted yet.</td></tr>`;
     function fly(row) {
       if (!row) return;
