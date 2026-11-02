@@ -53,13 +53,17 @@
       { cat: "total", title: "Total level", unit: "TOTAL",
         rows: [1000, 1500, 2000].map(t => ({ id: `total-${t}`, label: `${fmt(t)} total level` }))
           .concat({ id: `total-${maxTotal}`, label: "Max total level", sub: `${fmt(maxTotal)} total` }) },
+      { cat: "death", title: "First to fall", unit: "TOTAL",
+        rows: [1000, 1500, 2000].map(t => ({ id: `death-${t}`, label: `First ${fmt(t)}+ total to fall` }))
+          .concat({ id: `death-${maxTotal}`, label: "First maxed player to fall", sub: `${fmt(maxTotal)} total` }) },
       { cat: "99", title: "First 99s", unit: "XP", rows: SKILLS.map(s => ({ id: `99-${s.toLowerCase()}`, label: `99 ${s}` })) },
       { cat: "raid", title: "Raids", unit: "KC", rows: byName(RAIDS) },
       { cat: "boss", title: "Bosses", unit: "KC", rows: byName(BOSSES) },
+      { cat: "clue", title: "Clue scrolls", unit: "KC", rows: [{ id: "kc-13", label: "Master clue scroll" }] },
     ];
   }
 
-  const unitText = { total: "total", "99": "xp", raid: "kc", boss: "kc" };
+  const unitText = { total: "total", death: "total", "99": "xp", raid: "kc", boss: "kc", clue: "kc" };
 
   async function main() {
     const [fx, gy, pins] = await Promise.all([load(fresh("firsts.json")), load(fresh("graveyard.json")), load("assets/firsts-verified.json")]);

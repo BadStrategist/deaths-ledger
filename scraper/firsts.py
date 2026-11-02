@@ -1,5 +1,6 @@
 """World firsts on Hardcore Worlds (data/firsts.json): the first players seen at 1000/1500/2000 total,
-maxed, 99 in each skill, and on each boss and raid hiscore.
+maxed, 99 in each skill, on each boss and raid hiscore and the master clue hiscore, plus the first
+player at 1000+/1500+/2000+/max total to fall (from the graveyard).
 
 "First" means first spotted: the pipeline looks every ~10 minutes, so a first is the player (or players,
 when several qualified between two looks) found when the threshold was first met. Boss and raid tables
@@ -16,6 +17,8 @@ from common import Http, iso, load_config, now_ms, read_json, write_json
 from hiscores import SKILLS, num
 
 TOTALS = [1000, 1500, 2000]
+DEATH_TOTALS = [1000, 1500, 2000]          # plus the max total: first player at or above each to fall
+CLUES = {13: "Master clue scroll"}          # activity table ids (category=1), polled like bosses
 MAX_TOTAL = 99 * len(SKILLS)
 RAIDS = {31: "Chambers of Xeric", 32: "Chambers of Xeric: Challenge Mode", 76: "Theatre of Blood",
          77: "Theatre of Blood: Hard Mode", 80: "Tombs of Amascut", 81: "Tombs of Amascut: Expert Mode",
@@ -50,6 +53,33 @@ def _claim(firsts, fid, cat, label, rows, value_key, now, headline):
     return True
 
 
+TOTAL_CATEGORIES = len(TOTALS) + 1 + len(SKILLS) + len(RAIDS) + len(BOSSES) + len(CLUES) + len(DEATH_TOTALS) + 1
+
+
+def claim_deaths(firsts, now):
+    """First player at or above each total level to die, from the published graveyard (previous run).
+    Once claimed it is kept even if that grave later drops out of the published list."""
+    g = read_json("graveyard.json", {})
+    if g.get("status") != "live":
+        return 0
+    deaths = [d for d in g.get("deaths") or [] if d.get("time") and d.get("total")]
+    new = 0
+    for t in DEATH_TOTALS + [MAX_TOTAL]:
+        fid = f"death-{t}"
+        if fid in firsts:
+            continue
+        hit = [d for d in deaths if d["total"] >= t]
+        if not hit:
+            continue
+        first_t = min(d["time"] for d in hit)
+        tied = sorted((d for d in hit if d["time"] == first_t), key=lambda d: -d["total"])[:NAMES_KEPT]
+        label = "First maxed player to fall" if t == MAX_TOTAL else f"First {t:,}+ total to fall"
+        firsts[fid] = {"id": fid, "cat": "death", "label": label, "names": [d["name"] for d in tied],
+                       "value": tied[0]["total"], "seen": iso(first_t), "headline": True}
+        new += 1
+    return new
+
+
 def run(http=None, watcher=None, now=None):
     now = now or now_ms()
     st = read_json("firsts.json", {})
@@ -60,10 +90,10 @@ def run(http=None, watcher=None, now=None):
     if not mode or hs.get("status") != "live":
         write_json("firsts.json", {"status": "waiting", "updated": iso(now), "mode": None, "firsts": firsts,
                                    "cursor": st.get("cursor", 0), "max_total": MAX_TOTAL,
-                               "total_categories": len(TOTALS) + 1 + len(SKILLS) + len(RAIDS) + len(BOSSES)})
+                               "total_categories": TOTAL_CATEGORIES})
         return {"status": "waiting"}
 
-    new = 0
+    new = claim_deaths(firsts, now)
     overall = [r for r in hs.get("overall") or [] if r.get("total")]
     for t in TOTALS + [MAX_TOTAL]:
         label = "Max total level" if t == MAX_TOTAL else f"{t:,} total level"
@@ -74,7 +104,7 @@ def run(http=None, watcher=None, now=None):
 
     # Boss and raid tables in rotation; claimed tables drop out.
     http = http or Http(delay=conf["hiscore"]["request_delay_seconds"])
-    open_tables = [t for t in sorted({**RAIDS, **BOSSES}) if f"kc-{t}" not in firsts]
+    open_tables = [t for t in sorted({**RAIDS, **BOSSES, **CLUES}) if f"kc-{t}" not in firsts]
     cursor = st.get("cursor", 0)
     polled = 0
     for i in range(min(TABLES_PER_RUN, len(open_tables))):
@@ -85,14 +115,14 @@ def run(http=None, watcher=None, now=None):
         except RuntimeError:
             continue
         rows = [{"name": r["name"], "kc": num(r["score"])} for r in rows if num(r["score"]) > 0]
-        raid = t in RAIDS
-        new += _claim(firsts, f"kc-{t}", "raid" if raid else "boss", RAIDS.get(t) or BOSSES[t], rows, "kc", now,
-                      raid or t in HEADLINE_BOSSES)
+        cat = "raid" if t in RAIDS else "clue" if t in CLUES else "boss"
+        new += _claim(firsts, f"kc-{t}", cat, RAIDS.get(t) or CLUES.get(t) or BOSSES[t], rows, "kc", now,
+                      cat != "boss" or t in HEADLINE_BOSSES)
     cursor = (cursor + polled) % max(1, len(open_tables))
 
     write_json("firsts.json", {"status": "live", "updated": iso(now), "mode": mode, "firsts": firsts,
                                "cursor": cursor, "max_total": MAX_TOTAL,
-                               "total_categories": len(TOTALS) + 1 + len(SKILLS) + len(RAIDS) + len(BOSSES)})
+                               "total_categories": TOTAL_CATEGORIES})
     return {"status": "live", "claimed": len(firsts), "new": new, "polled": polled}
 
 

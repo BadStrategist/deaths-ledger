@@ -11,7 +11,7 @@
   };
   fetch(`data/firsts.json?t=${Math.floor(Date.now() / 60000)}`).then(r => (r.ok ? r.json() : null)).then(fx => {
     if (!fx || !fx.firsts) return;
-    const total = fx.total_categories || 100;
+    const total = fx.total_categories || 105;
     const list = Object.values(fx.firsts);
     document.getElementById("wf-total").textContent = fmt(total);
     document.getElementById("wf-claimed").textContent = fmt(list.length);

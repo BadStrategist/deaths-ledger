@@ -251,6 +251,12 @@ def candidates(g, pop, st, cfg, now, http):
                 text = f"World first: {who} {'have' if many else 'has'} reached {f['label']} on Hardcore Worlds."
             elif f["cat"] == "99":
                 text = f"World first {f['label']} on Hardcore Worlds: {who}."
+            elif f["cat"] == "death" and f["id"] == f"death-{fs.get('max_total')}":
+                text = f"The first maxed player has fallen on Hardcore Worlds: {who}.\n\nEvery skill 99. One life. Gone."
+            elif f["cat"] == "death":
+                text = f"{f['label']} on Hardcore Worlds: {who}, total level {num(f.get('value') or 0)}.\n\nDeath is patient."
+            elif f["cat"] == "clue":
+                text = f"World first master clue on Hardcore Worlds: {who}."
             else:
                 text = f"World first on the {f['label']} hiscores on Hardcore Worlds: {who}."
             if many:
