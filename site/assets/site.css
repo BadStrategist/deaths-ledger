@@ -269,28 +269,19 @@ a.card:hover,a.card:focus-visible{outline-color:var(--gold)}
 /* player names link to their Track a player page */
 a.pl-link{color:inherit;text-decoration:underline dotted var(--edge-hi);text-underline-offset:3px}
 a.pl-link:hover{color:var(--gold)}
-/* hero countdown to Hardcore Worlds opening: an in-game style interface panel in the hero's top right */
-.hero-inner>div:first-child{grid-column:1;grid-row:1 / span 2}
-.hero-inner .death{grid-column:2;grid-row:2;width:min(300px,100%)}
-.countdown{grid-column:2;grid-row:1;align-self:start;justify-self:end;margin-top:-26px;position:relative;z-index:2;text-align:center;padding:7px 14px 6px;
-  background:linear-gradient(#3e3529,#2b251d);border:2px solid #0b0906;
-  box-shadow:inset 0 0 0 1px #6b5d48,inset 0 0 0 3px #1c1813,0 6px 18px rgba(0,0,0,.6)}
+/* hero countdown to Hardcore Worlds opening: a small in-game style panel pinned to the hero's top right */
+.countdown{position:absolute;top:10px;right:22px;z-index:2;display:flex;align-items:baseline;gap:7px;white-space:nowrap;padding:3px 10px 4px;
+  background:linear-gradient(#3e3529,#2b251d);border:1px solid #0b0906;
+  box-shadow:inset 0 0 0 1px #6b5d48,0 3px 10px rgba(0,0,0,.55)}
 .countdown[hidden]{display:none}
-.cd-k{display:block;font:20px/1 'VT323',monospace;color:#ff981f;text-shadow:1px 1px 0 #000;letter-spacing:.5px}
-.cd-units{display:flex;align-items:flex-start;justify-content:center;gap:4px;margin:3px 0 1px}
-.cd-units div{min-width:42px}
-.cd-units b{display:block;font:40px/1 'VT323',monospace;color:#ffff00;text-shadow:2px 2px 0 #000}
-.cd-units i{font:34px/1 'VT323',monospace;font-style:normal;color:#c8b48a;text-shadow:2px 2px 0 #000}
-.cd-units span{display:block;font:9px 'Silkscreen',monospace;color:#c8b48a;letter-spacing:1px}
-.cd-when{display:block;font:16px/1 'VT323',monospace;color:#d8ccb4;text-shadow:1px 1px 0 #000;border-top:1px solid #4d4234;padding-top:4px;margin-top:3px}
-.countdown.now .cd-units b{color:#ff3b45}
+.cd-k{font:17px/1 'VT323',monospace;color:#ff981f;text-shadow:1px 1px 0 #000}
+.cd-units{font:22px/1 'VT323',monospace;color:#ffff00;text-shadow:1px 1px 0 #000;white-space:nowrap}
+.cd-units b{font-weight:400}
+.cd-units i{font-style:normal;font-size:15px;color:#c8b48a;margin-left:1px}
+.countdown.now .cd-units{color:#ff3b45}
 @media (max-width:760px){
-  .countdown{grid-column:auto;grid-row:auto;order:-2;justify-self:center;margin:0 auto 2px}
-  .hero-inner>div:first-child{grid-column:auto;grid-row:auto}
-  .hero-inner .death{grid-column:auto;grid-row:auto;width:min(220px,62vw)}
-  .cd-units div{min-width:38px}
-  .cd-units b{font-size:34px}
-  .cd-units i{font-size:28px}
+  .hero-inner{padding-top:52px}
+  .countdown{right:12px;top:8px}
 }
 /* tablet: hero tally tiles are narrow, keep six-digit counts inside them */
 @media (min-width:761px) and (max-width:1000px){.tally b{font-size:32px}}

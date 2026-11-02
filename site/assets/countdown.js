@@ -1,6 +1,6 @@
 /* Hero countdown to Hardcore Worlds opening. Jagex gave the date (4 Nov) but no hour; 11:30 UTC is
    when OSRS game updates normally go live (6:30am EST). Change data-at in index.html if Jagex posts a time.
-   After the moment it says "opening now" for two hours, then hides. */
+   After the moment it says "opening now" for two hours, then hides. Hover shows the time in the visitor's zone. */
 (function () {
   var box = document.getElementById("countdown");
   if (!box) return;
@@ -8,12 +8,11 @@
   if (isNaN(at)) { box.hidden = true; return; }
   var el = {};
   ["d", "h", "m", "s"].forEach(function (k) { el[k] = document.getElementById("cd-" + k); });
-  var when = document.getElementById("cd-when");
   try {
-    when.textContent = new Date(at).toLocaleString(undefined, {
+    box.title = "Opens " + new Date(at).toLocaleString(undefined, {
       weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short"
     });
-  } catch (e) { /* keep the static text */ }
+  } catch (e) { box.title = "Opens Wed 4 Nov, 6:30 AM EST"; }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   var timer;
   function tick() {
@@ -22,8 +21,8 @@
     if (left <= 0) {
       box.classList.add("now");
       box.querySelector(".cd-k").textContent = "Hardcore Worlds";
-      ["d", "h", "m", "s"].forEach(function (k) { el[k].textContent = "00"; });
-      when.textContent = "Opening now";
+      box.querySelector(".cd-units").textContent = "Opening now";
+      clearInterval(timer);
       return;
     }
     var s = Math.floor(left / 1000);
