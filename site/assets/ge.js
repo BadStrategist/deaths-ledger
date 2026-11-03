@@ -431,7 +431,12 @@
     body(t, rows.map((r, i) => `<tr><td class="ge-rank">${i + 1}</td>${name(r.it)}<td class="y" title="${fmt(Math.round(r.price))} gp">${short(r.price)}</td><td class="hide-sm">${fmt(r.trades)}</td>${spreadCell(r.it.id)}</tr>`).join("")
       || `<tr><td colspan="9" class="note">No trades in the last hour yet.</td></tr>`);
     const at = S.hour && S.hour.timestamp ? new Date(S.hour.timestamp * 1000) : null;
-    $("#priciest + .ge-foot").textContent = `Highest prices paid in the last complete hour${at ? ` (from ${at.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })})` : ""}. Only items that actually traded count.`;
+    // The price feed publishes each hour's averages a while after the hour ends, so this window is
+    // usually 1-2 hours behind the clock; say so instead of looking stale.
+    const hm = d => d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    $("#priciest + .ge-foot").textContent = at
+      ? `Highest prices paid between ${hm(at)} and ${hm(new Date(at.getTime() + 3600000))}, the newest full hour of trades published so far (it usually lags the clock by 1-2 hours). Only items that actually traded count.`
+      : "Highest prices paid in the newest full hour of trades published so far. Only items that actually traded count.";
   }
 
   /* ---------------- table helpers ---------------- */
