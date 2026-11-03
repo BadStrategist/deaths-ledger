@@ -26,6 +26,16 @@ Every death comes from the official hiscores. No plugin and no player input.
 
 `config.json -> listing.scale_steps` raises the minimum total level as the hiscores grow. The overall ranking is sorted by total level, so a higher threshold also shortens the scan. Set `min_total_override` to pin it.
 
+## World-first cards on X
+
+Every world first (`scraper/firsts.py`, 105 of them) is posted to X by `scraper/xposts.py` with a 1600x900 card. Templates live in `cards/firsts/`, previews in `cards/examples/` and the full list with post text in `cards/README.md`. `scraper/cards.py` draws the claimant's name, value and date onto the template at post time; any card failure means a text-only post, never a missed one.
+
+```
+py -3 scraper/card_templates.py   # fetch missing wiki art, rebuild templates, examples and cards/README.md
+py -3 tools/test_cards.py         # every card with 1-char, 12-char and 3 names: no text overflow
+py -3 tools/test_xposts_firsts.py # dry run of the world-first posts (fakes X; never posts)
+```
+
 ## Local run
 
 ```
