@@ -3,13 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hardcore Worlds: Death Toll</title>
-<meta property="og:site_name" content="Hardcore Worlds: Death Toll">
-<meta property="og:title" content="Hardcore Worlds: Death Toll">
-<meta property="og:description" content="The OSRS Hardcore Worlds Graveyard. One life. Death is patient. A ledger of the fallen, with hiscores, a death map and tools for staying alive.">
+<title>OSRS Hardcore Worlds graveyard: deaths, world firsts, hiscores</title>
+<meta property="og:site_name" content="Death Toll">
+<meta property="og:title" content="OSRS Hardcore Worlds graveyard: deaths, world firsts, hiscores">
+<meta property="og:description" content="Every death on OSRS Hardcore Worlds, the race for world firsts and the hiscores of the living and the dead. Track a player, check what you keep, stay alive.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://deathtoll.gg/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OSRS Hardcore Worlds graveyard: deaths, world firsts, hiscores">
+<meta name="twitter:description" content="Every death on OSRS Hardcore Worlds, the race for world firsts and the hiscores of the living and the dead. Track a player, check what you keep, stay alive.">
 <meta property="og:image" content="https://deathtoll.gg/assets/og-2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -18,13 +20,45 @@
 <meta name="theme-color" content="#0c0a08">
 <link rel="canonical" href="https://deathtoll.gg/">
 <meta name="dt-api" content="https://deathtoll-api.deathtoll.workers.dev">
-<meta name="description" content="The OSRS Hardcore Worlds Graveyard: the fallen, their total level, when and where they fell, and what they had.">
+<meta name="description" content="Every death on OSRS Hardcore Worlds, the race for world firsts and the hiscores of the living and the dead. Track a player, check what you keep, stay alive.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/art/Deaths_Office.webp">
-<link rel="stylesheet" href="assets/site.css?v=20261103d">
+<link rel="stylesheet" href="assets/site.css?v=20261103e">
 <link rel="stylesheet" href="assets/graveyard.css?v=20261103a">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 8c0 14 10 18 14 24-4 6-14 10-14 24h28c0-14-10-18-14-24 4-6 14-10 14-24z' fill='%231a1511' stroke='%23d4a65a' stroke-width='4'/%3E%3Cpath d='M24 50c2-6 6-8 8-9 2 1 6 3 8 9z' fill='%23e8323c'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://deathtoll.gg/#website",
+   "name": "Death Toll",
+   "alternateName": "deathtoll.gg",
+   "url": "https://deathtoll.gg/",
+   "description": "Every death on OSRS Hardcore Worlds, the race for world firsts and the hiscores of the living and the dead. Track a player, check what you keep, stay alive.",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://deathtoll.gg/#org"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://deathtoll.gg/#org",
+   "name": "Death Toll",
+   "alternateName": "deathtoll.gg",
+   "url": "https://deathtoll.gg/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://deathtoll.gg/assets/logo.png",
+    "width": 512,
+    "height": 512
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body data-page="home">
 <header class="top" id="top"></header>
@@ -33,7 +67,7 @@
     <div>
       <div class="eyebrow">ONE LIFE · DEATH IS PATIENT</div>
       <h1 class="dead-msg">Oh dear, you are <em>dead!</em></h1>
-      <p class="lede">Death keeps a ledger. We just publish it.</p>
+      <p class="lede">Death keeps a ledger of OSRS Hardcore Worlds. We just publish it.</p>
       <div class="tally" id="tally"></div>
     </div>
     <img class="death" src="assets/art/Death.webp" width="657" height="720" alt="Death seated in his office">
@@ -89,6 +123,8 @@
 
   <h2 class="title">More from the ledger</h2>
   <nav class="cards explore" aria-label="More pages">
+    <a class="frame card featured" href="/hardcore-worlds"><img class="pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
+      <div><b>Hardcore Worlds guide</b><span>LAUNCH TIME, THE DEATH RULES AND EVERYTHING DEATH TOLL TRACKS</span><em>Read the guide →</em></div></a>
     <a class="frame card" href="/hiscores"><img src="assets/art/Gravestone_Draynor_Manor.webp" width="44" height="44" alt="">
       <div><b>Hiscores</b><span>THE TOP OF THE HARDCORE WORLDS HISCORES, THE LIVING AND THE DEAD</span><em>See the rankings →</em></div></a>
     <a class="frame card" href="/ge#trending"><img class="pix" src="assets/art/escape-crystal.png" width="11" height="27" alt="">
@@ -107,7 +143,7 @@
 </main>
 <footer>Created using intellectual property belonging to Jagex Limited under the terms of Jagex's Fan Content Policy.
 This content is not endorsed by or affiliated with Jagex.<br>In-game images via the OSRS Wiki.</footer>
-<script src="assets/nav.js?v=20261103c"></script>
+<script src="assets/nav.js?v=20261103d"></script>
 <script src="assets/graveyard.js?v=20261103b"></script>
 <script src="assets/app.js?v=20261103b"></script>
 <script src="assets/firsts-home.js?v=20261102b"></script>

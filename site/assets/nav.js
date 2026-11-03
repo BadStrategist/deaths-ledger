@@ -5,7 +5,7 @@
   "use strict";
   const MAIN = [["/firsts", "firsts", "World firsts"], ["/graveyard", "graveyard", "Graveyard"], ["/player", "player", "Track a player"], ["/hiscores", "hiscores", "Hiscores"], ["/map", "map", "Death map"],
     ["/ge", "ge", "GE tracker"]];
-  const MORE = [["/population", "population", "Population"], ["/kept", "kept", "Kept on death"], ["/safe", "safe", "Is it safe?"]];
+  const MORE = [["/population", "population", "Population"], ["/kept", "kept", "Kept on death"], ["/safe", "safe", "Is it safe?"], ["/hardcore-worlds", "guide", "Hardcore Worlds guide"]];
   const page = document.body.dataset.page;
   const link = ([href, id, label]) => `<a href="${href}"${page === id ? ' class="on" aria-current="page"' : ""}>${label}</a>`;
   const inMore = MORE.some(([, id]) => id === page);
@@ -28,7 +28,7 @@
         <div class="nav-drop-wrap"><button class="nav-btn${inMore ? " on" : ""}" type="button" aria-expanded="false" aria-controls="nav-more">More <span aria-hidden="true">▾</span></button>
           <div class="nav-drop" id="nav-more" hidden>${MORE.map(link).join("")}</div></div>
       </nav>
-      ${fallen == null ? "" : `<div class="count" title="Deaths recorded from the Hardcore Worlds hiscores"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">${Number(fallen).toLocaleString("en-US")} fallen</div>`}
+      ${fallen == null ? "" : `<div class="count" title="Deaths recorded on Hardcore Worlds"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">${Number(fallen).toLocaleString("en-US")} fallen</div>`}
       <button class="nav-btn nav-menu" type="button" aria-expanded="false" aria-controls="nav-all">Menu <span aria-hidden="true">▾</span></button>
       <nav class="nav-drop nav-all" id="nav-all" aria-label="All pages" hidden>${MAIN.concat(MORE).map(link).join("")}</nav>`;
     top.querySelectorAll(".nav-btn").forEach(b => b.addEventListener("click", e => {
