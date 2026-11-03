@@ -292,3 +292,6 @@ a.pl-link:hover{color:var(--gold)}
   .wf-chips{grid-template-columns:repeat(2,minmax(0,1fr))}
   .wf-copy p{font-size:15px}
 }
+/* Owner's rule: no explanatory/how-we-run-it lines under sections. */
+.ge-foot,.fx-foot,.gy-foot,#regions-note,#checked,#latest-note,#price-label,
+body[data-page=firsts] #meta,body[data-page=hiscores] #meta{display:none!important}
