@@ -40,10 +40,19 @@
     <div class="rf-tile"><b>1</b><span>entry just for logging in</span></div>
   </div>
 
+  <div class="rf-prog">
+    <div class="rf-track"><div id="bar"></div></div>
+    <div class="rf-progrow">
+      <p class="note" id="progress" aria-live="polite">Nothing ticked yet. Your progress saves in this browser.</p>
+      <button class="rf-reset" id="reset" type="button">Reset progress</button>
+    </div>
+  </div>
+
   <div class="rf-bar">
     <div class="rf-tabs" id="tabs" role="group" aria-label="Filter by board"></div>
     <input class="rf-search" id="search" type="search" placeholder="Search tasks, bosses, items..." aria-label="Search tasks">
     <label class="rf-check"><input type="checkbox" id="bonus"> Bonus entries only</label>
+    <label class="rf-check"><input type="checkbox" id="hideDone"> Hide completed</label>
   </div>
 
   <p class="note" id="count" aria-live="polite"></p>

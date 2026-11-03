@@ -15,7 +15,23 @@
 .rf-search:focus{outline:2px solid var(--gold-soft);outline-offset:1px}
 .rf-check{font:16px 'VT323',monospace;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer}
 .rf-board{margin:18px 0 6px;font:900 18px 'Cinzel',serif;color:var(--violet-soft);border-bottom:1px solid var(--edge);padding-bottom:6px}
-.rf-row{display:grid;grid-template-columns:76px 1fr auto;gap:12px;align-items:center;padding:9px 10px;border:1px solid #221d29;background:#0d0a10;margin-top:6px}
+.rf-prog{margin:0 0 14px}
+.rf-progrow{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.rf-track{height:10px;background:#0d0a10;border:1px solid var(--edge);overflow:hidden}
+.rf-track>div{height:100%;width:0;background:linear-gradient(90deg,#7d5b22,var(--gold));transition:width .25s ease}
+.rf-prog .note{margin:6px 0 0}
+.rf-check input{accent-color:var(--gold)}
+.rf-reset{font:700 12px 'Cinzel',serif;color:var(--muted);background:none;border:1px solid var(--edge);padding:6px 10px;cursor:pointer}
+.rf-reset:hover{color:#e8323c;border-color:#e8323c}
+.rf-pin{background:none;border:0;padding:0;width:22px;font:20px/1 'VT323',monospace;color:#5d5468;cursor:pointer}
+.rf-pin.on{color:var(--gold)}
+.rf-pin:hover{color:var(--gold)}
+.rf-tick{width:17px;height:17px;accent-color:#8fbf6a;cursor:pointer;margin:0}
+.rf-mid{display:flex;flex-direction:column;gap:2px;min-width:0}
+.rf-row.done{opacity:.55}
+.rf-row.done .rf-task{text-decoration:line-through}
+.rf-board{margin-top:22px}
+.rf-row{display:grid;grid-template-columns:auto auto 76px minmax(0,1fr) auto;gap:12px;align-items:center;padding:9px 10px;border:1px solid #221d29;background:#0d0a10;margin-top:6px}
 .rf-row:hover{border-color:var(--edge-hi);background:#120e16}
 .rf-id{white-space:nowrap;font:13px 'Silkscreen',monospace;color:var(--muted)}
 .rf-task{font:18px/1.35 Georgia,serif;color:var(--parch)}
@@ -32,6 +48,10 @@
   .rf-head{gap:10px}
   .rf-head img{width:34px;height:34px}
   .rf-head h1{font-size:24px}
-  .rf-row{grid-template-columns:1fr auto;row-gap:4px}
-  .rf-id{grid-column:1/-1;order:-1}
+  .rf-row{grid-template-columns:auto auto minmax(0,1fr) auto;gap:8px;padding:8px}
+  .rf-id{display:none}
+  .rf-task{font-size:17px}
+}
+@media (max-width:520px){
+  .rf-ent{font-size:12px;padding:3px 6px}
 }
