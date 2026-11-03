@@ -5,7 +5,7 @@
   "use strict";
   const MAIN = [["/firsts", "firsts", "World firsts"], ["/graveyard", "graveyard", "Graveyard"], ["/player", "player", "Track a player"], ["/hiscores", "hiscores", "Hiscores"], ["/map", "map", "Death map"],
     ["/ge", "ge", "GE tracker"]];
-  const MORE = [["/population", "population", "Population"], ["/kept", "kept", "Kept on death"], ["/safe", "safe", "Is it safe?"], ["/watcher", "watcher", "Data watcher"]];
+  const MORE = [["/population", "population", "Population"], ["/kept", "kept", "Kept on death"], ["/safe", "safe", "Is it safe?"]];
   const page = document.body.dataset.page;
   const link = ([href, id, label]) => `<a href="${href}"${page === id ? ' class="on" aria-current="page"' : ""}>${label}</a>`;
   const inMore = MORE.some(([, id]) => id === page);

@@ -51,7 +51,7 @@
       <div class="frame card"><img class="pix" src="assets/art/escape-crystal.png" width="11" height="27" alt="">
         <div><b>10,000 gp</b><span>ESCAPE CRYSTAL · FIRES WHEN YOU GO IDLE · SOLD BY DEATH, RICK &amp; THE MYSTERIOUS STRANGER</span></div></div>
       <div class="frame card"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">
-        <div><b>${w && w.hiscore_mode ? "LIVE" : "WAITING"}</b><span>HARDCORE WORLDS HISCORES</span><a href="/watcher">Data watcher →</a></div></div>`;
+        <div><b>${w && w.hiscore_mode ? "LIVE" : "WAITING"}</b><span>HARDCORE WORLDS HISCORES</span><a href="/hiscores">Hiscores →</a></div></div>`;
   }
 
   /* ---------------- track a player (Cloudflare Worker, see worker/) ---------------- */
