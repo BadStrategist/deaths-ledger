@@ -3,9 +3,9 @@
    Wide screens: main links inline plus a "More" dropdown. Phones and tablets: one "Menu" dropdown with every page. */
 (function () {
   "use strict";
-  const MAIN = [["firsts.html", "firsts", "World firsts"], ["graveyard.html", "graveyard", "Graveyard"], ["player.html", "player", "Track a player"], ["hiscores.html", "hiscores", "Hiscores"], ["map.html", "map", "Death map"],
-    ["ge.html", "ge", "GE tracker"]];
-  const MORE = [["population.html", "population", "Population"], ["kept.html", "kept", "Kept on death"], ["safe.html", "safe", "Is it safe?"], ["watcher.html", "watcher", "Data watcher"]];
+  const MAIN = [["/firsts", "firsts", "World firsts"], ["/graveyard", "graveyard", "Graveyard"], ["/player", "player", "Track a player"], ["/hiscores", "hiscores", "Hiscores"], ["/map", "map", "Death map"],
+    ["/ge", "ge", "GE tracker"]];
+  const MORE = [["/population", "population", "Population"], ["/kept", "kept", "Kept on death"], ["/safe", "safe", "Is it safe?"], ["/watcher", "watcher", "Data watcher"]];
   const page = document.body.dataset.page;
   const link = ([href, id, label]) => `<a href="${href}"${page === id ? ' class="on" aria-current="page"' : ""}>${label}</a>`;
   const inMore = MORE.some(([, id]) => id === page);
@@ -23,7 +23,7 @@
     if (!top) return;
     top.innerHTML = `
       <img class="hg pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
-      <a class="brand" href="index.html"><small>HARDCORE WORLDS</small><b>Death Toll</b></a>
+      <a class="brand" href="/"><small>HARDCORE WORLDS</small><b>Death Toll</b></a>
       <nav class="nav" aria-label="Main">${MAIN.map(link).join("")}
         <div class="nav-drop-wrap"><button class="nav-btn${inMore ? " on" : ""}" type="button" aria-expanded="false" aria-controls="nav-more">More <span aria-hidden="true">▾</span></button>
           <div class="nav-drop" id="nav-more" hidden>${MORE.map(link).join("")}</div></div>

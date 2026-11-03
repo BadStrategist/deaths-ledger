@@ -47,11 +47,11 @@
     const online = pop ? (hc ? pop.hardcore_total : pop.all_worlds_total) : null;
     return `
       <div class="frame card"><img class="pix" src="assets/art/hourglass.png" width="13" height="31" alt="">
-        <div><b>${fmt(online)}</b><span>${hc ? "ON HARDCORE WORLDS NOW" : "ONLINE · ALL WORLDS (HARDCORE NOT LISTED YET)"}</span><a href="population.html">Population →</a></div></div>
+        <div><b>${fmt(online)}</b><span>${hc ? "ON HARDCORE WORLDS NOW" : "ONLINE · ALL WORLDS (HARDCORE NOT LISTED YET)"}</span><a href="/population">Population →</a></div></div>
       <div class="frame card"><img class="pix" src="assets/art/escape-crystal.png" width="11" height="27" alt="">
         <div><b>10,000 gp</b><span>ESCAPE CRYSTAL · FIRES WHEN YOU GO IDLE · SOLD BY DEATH, RICK &amp; THE MYSTERIOUS STRANGER</span></div></div>
       <div class="frame card"><img class="pix" src="assets/art/skull.png" width="25" height="25" alt="">
-        <div><b>${w && w.hiscore_mode ? "LIVE" : "WAITING"}</b><span>HARDCORE WORLDS HISCORES</span><a href="watcher.html">Data watcher →</a></div></div>`;
+        <div><b>${w && w.hiscore_mode ? "LIVE" : "WAITING"}</b><span>HARDCORE WORLDS HISCORES</span><a href="/watcher">Data watcher →</a></div></div>`;
   }
 
   /* ---------------- track a player (Cloudflare Worker, see worker/) ---------------- */
@@ -77,7 +77,7 @@
         if (!r.ok || !j.ok) { say(j.error || "That didn't work. Try again in a minute.", "bad"); return; }
         const who = j.name || name;
         say(j.already ? `${who} is already being tracked. Opening their page…` : `Now tracking ${who}. Opening their page…`, "ok");
-        location.href = `player.html?name=${encodeURIComponent(who)}`;   // the player's own page, like Wise Old Man
+        location.href = `/player?name=${encodeURIComponent(who)}`;   // the player's own page, like Wise Old Man
       } catch (err) {
         say("Couldn't reach the tracker. Check your connection and try again.", "bad");
       } finally { go.disabled = false; }

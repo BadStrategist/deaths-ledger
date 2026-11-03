@@ -39,7 +39,7 @@
     e.preventDefault();
     const n = $("#find-name").value.replace(/\s+/g, " ").trim();
     if (!NAME_OK.test(n)) { say($("#find-msg"), "RuneScape names are 1 to 12 letters, numbers, spaces, - or _.", "bad"); return; }
-    location.href = `player.html?name=${encodeURIComponent(n)}`;
+    location.href = `/player?name=${encodeURIComponent(n)}`;
   });
 
   async function main() {

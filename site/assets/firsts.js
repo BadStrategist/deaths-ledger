@@ -103,7 +103,7 @@
     function who(f) {
       return (f.names || []).map(n => {
         const fell = dead.has(String(n).toLowerCase());
-        return `<span class="fx-who${fell ? " fell" : ""}"><a class="pl-link" href="player.html?name=${encodeURIComponent(n)}">${esc(n)}</a>` +
+        return `<span class="fx-who${fell ? " fell" : ""}"><a class="pl-link" href="/player?name=${encodeURIComponent(n)}">${esc(n)}</a>` +
           (fell ? `<img class="pix" src="assets/art/skull.png" width="25" height="25" alt="has since fallen" title="Has since fallen">` : "") + `</span>`;
       }).join(`<span class="fx-and">, </span>`);
     }

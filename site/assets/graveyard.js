@@ -99,7 +99,7 @@
     const big = !opts.small && isBig(d);
     const skills = (d.top_skills || []).slice(0, big ? 3 : 1).map(s => `${esc(s[0])} <b>${fmt(s[1])}</b>`).join(" · ");
     const place = where(d, names);
-    const name = d.sample ? esc(d.name) : `<a class="pl-link" href="player.html?name=${encodeURIComponent(d.name)}">${esc(d.name)}</a>`;
+    const name = d.sample ? esc(d.name) : `<a class="pl-link" href="/player?name=${encodeURIComponent(d.name)}">${esc(d.name)}</a>`;
     return `<article class="stone${big ? " big" : ""}${isBig(d) ? " gilded" : ""} f-${fcls}">
       <img class="stone-art" src="assets/art/${art}.webp" width="${w}" height="320" alt="" loading="lazy">
       <div class="stone-body">
