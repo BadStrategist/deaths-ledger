@@ -1,0 +1,37 @@
+/* The Reaper's Raffle task list. Reuses site.css tokens. */
+.rf-head{display:flex;gap:16px;align-items:flex-start}
+.rf-head h1{margin:0 0 6px;font:900 30px/1.1 'Cinzel',serif;color:var(--gold);text-shadow:2px 2px 0 #000}
+.rf-head p{margin:0;max-width:72ch;color:var(--parch)}
+.rf-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0 16px}
+.rf-tile{background:linear-gradient(#17131c,#0f0c12);border:1px solid var(--edge);box-shadow:0 2px 0 #000;padding:12px 14px}
+.rf-tile b{display:block;font:900 28px/1 'Cinzel',serif;color:var(--gold)}
+.rf-tile span{display:block;margin-top:4px;font:16px 'VT323',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.rf-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:6px 0 4px}
+.rf-tabs{display:flex;flex-wrap:wrap;gap:6px}
+.rf-tab{font:700 12px 'Cinzel',serif;color:var(--parch);background:#141019;border:1px solid var(--edge);padding:7px 11px;cursor:pointer}
+.rf-tab:hover{color:var(--gold);border-color:var(--edge-hi)}
+.rf-tab[aria-pressed=true]{background:var(--gold);color:#1a1206;border-color:var(--gold)}
+.rf-search{flex:1 1 240px;min-width:0;background:#0d0a10;border:1px solid var(--edge);color:var(--parch);font:17px 'VT323',monospace;padding:8px 10px}
+.rf-search:focus{outline:2px solid var(--gold-soft);outline-offset:1px}
+.rf-check{font:16px 'VT323',monospace;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer}
+.rf-board{margin:18px 0 6px;font:900 18px 'Cinzel',serif;color:var(--violet-soft);border-bottom:1px solid var(--edge);padding-bottom:6px}
+.rf-row{display:grid;grid-template-columns:76px 1fr auto;gap:12px;align-items:center;padding:9px 10px;border:1px solid #221d29;background:#0d0a10;margin-top:6px}
+.rf-row:hover{border-color:var(--edge-hi);background:#120e16}
+.rf-id{white-space:nowrap;font:13px 'Silkscreen',monospace;color:var(--muted)}
+.rf-task{font:18px/1.35 Georgia,serif;color:var(--parch)}
+.rf-tags{margin-top:3px;font:15px 'VT323',monospace;color:#8d8298}
+.rf-ent{font:700 14px 'Cinzel',serif;color:var(--parch);border:1px solid var(--edge);padding:4px 9px;white-space:nowrap}
+.rf-ent.hot{color:#0f1a0f;background:var(--chat-y);border-color:var(--chat-y)}
+.rf-foot{margin-top:22px;max-width:90ch}
+@media (max-width:820px){
+  .rf-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rf-tile b{font-size:22px}
+  .rf-tile span{font-size:14px;letter-spacing:0;line-height:1.2}
+  .rf-search{flex:1 1 100%}
+  .rf-check{font-size:15px}
+  .rf-head{gap:10px}
+  .rf-head img{width:34px;height:34px}
+  .rf-head h1{font-size:24px}
+  .rf-row{grid-template-columns:1fr auto;row-gap:4px}
+  .rf-id{grid-column:1/-1;order:-1}
+}
