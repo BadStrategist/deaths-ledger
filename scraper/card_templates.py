@@ -160,11 +160,18 @@ def art_candidates(c):
             yield "page", t
 
 
+# Art the owner doesn't want on cards: the Fractured Archive's only Wiki image is its logo, which
+# carries Jagex's Old School RuneScape trademark. Those cards keep the drawn medallion.
+NO_ART = {"the-fractured-archive"}
+
+
 def get_art(c, fetch=True, log=print):
     """Returns (RGBA image or None, source string). Cached art wins; fetches only what is missing."""
     global _offline
     P = pil()
     slug = _slug(c)
+    if slug in NO_ART:
+        return None, None
     cached = os.path.join(ART_DIR, f"{slug}.png")
     for kind, ref in art_candidates(c):
         if kind == "local":
@@ -384,8 +391,8 @@ def build_template(c, mt=None, fetch=True, log=print):
     xy, _ = place(d, "deathtoll.gg", ff, (COL_X0, 786, W - 90, 836), align="right")
     d.text(xy, "deathtoll.gg", font=ff, fill=GOLD)
     cf = font("vt323", 30)
-    xy, _ = place(d, "Images via the OSRS Wiki", cf, (90, 790, 700, 832))
-    d.text(xy, "Images via the OSRS Wiki", font=cf, fill=(110, 102, 124))
+    # owner: no Wiki credit line on cards  #     xy, _ = place(d, "Images via the OSRS Wiki", cf, (90, 790, 700, 832))
+    # owner: no Wiki credit line on cards  #     d.text(xy, "Images via the OSRS Wiki", font=cf, fill=(110, 102, 124))
     return img
 
 
