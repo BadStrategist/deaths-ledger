@@ -23,11 +23,6 @@
   }
   const clock = ms => new Date(ms).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
   const day = ms => new Date(ms).toLocaleDateString([], { month: "short", day: "numeric" });
-  function when(d) {
-    if (d.time_exact) return `${day(d.time)} ${clock(d.time)}`;
-    if (d.window_start) return `${clock(d.window_start)}–${clock(d.time)}`;
-    return `by ${clock(d.time)}`;
-  }
 
   /* ---------------- shared header: assets/nav.js ---------------- */
   function chrome(gy) {
@@ -45,61 +40,6 @@
     const count = Math.max(6, Math.round(el.clientWidth / (narrow ? 40 : 56)));
     el.innerHTML = Array.from({ length: count }, (_, i) =>
       `<img src="assets/art/trees/${TREES[i % TREES.length]}.webp" alt="" style="--h:${Math.round(TREE_H[i % TREE_H.length] * (narrow ? .7 : 1))}px">`).join("");
-  }
-
-  /* ---------------- graveyard ---------------- */
-  const ART = t => t >= 1800 ? "Gravestone_Draynor_Manor" : t >= 500 ? "Grave" : "Grave_Haunted_Woods";
-  // banished = died, then transferred to the main game (confirmed on the main-game hiscores).
-  // fallen = left the Hardcore hiscores but the transfer isn't confirmed yet -> shown as "BANISHED?".
-  const FATE = { died: ["", "DIED"], reset: ["", "RESET"], banished: ["violet", "BANISHED"], fallen: ["violet", "BANISHED?"] };
-  const isBanished = d => d.fate === "banished" || d.fate === "fallen";
-  const FATE_TIP = { banished: "Died, then transferred to the main game.", fallen: "Left the Hardcore Worlds hiscores after dying; the transfer to the main game is not confirmed yet." };
-
-  function where(d) {
-    if (d.location_text) return d.location_text;
-    const parts = [];
-    if (d.world) parts.push(`W${d.world}`);
-    if (d.location && !d.location.on_map) parts.push("instance");
-    return parts.join(" · ");
-  }
-
-  function grave(d) {
-    const t = d.total || 0, [cls, label] = FATE[d.fate] || FATE.died;
-    const sk = (d.top_skills || []).slice(0, 2).map(s => `${s[0]} ${s[1]}`).join(" · ");
-    const boss = d.top_boss ? `<br>${esc(d.top_boss[0].toUpperCase())} KC <b>${fmt(d.top_boss[1])}</b>` : "";
-    return `<div class="grave${d.notable ? " notable" : ""}${isBanished(d) ? " banished" : ""}">
-      <div class="art"><img src="assets/art/${ART(t)}.webp" alt="" loading="lazy"></div><div class="mound"></div>
-      <div class="plate">${d.run > 1 ? `<span class="run">#${d.run}</span>` : ""}
-        <div class="n">${(d.sample ? esc(d.name) : `<a class="pl-link" href="player.html?name=${encodeURIComponent(d.name)}">${esc(d.name)}</a>`)}</div>
-        <div class="l">${fmt(t)} <small>total</small></div>
-        ${sk ? `<div class="s">${esc(sk.toUpperCase())}${boss}</div>` : ""}
-        ${d.player_killer ? `<div class="k">SLAIN BY A PLAYER</div>` : ""}
-        <div class="t" title="${new Date(d.time).toString()}">${when(d)}</div>
-        ${where(d) ? `<div class="t">${esc(where(d))}</div>` : ""}
-        ${d.sample ? `<span class="tag sample">SAMPLE</span> ` : ""}${d.notable ? `<span class="tag gold">NOTABLE</span> ` : ""}<span class="tag ${cls}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${label}</span>
-      </div></div>`;
-  }
-
-  /* Until the Hardcore hiscores are live, show clearly labelled sample graves.
-     The moment graveyard.json reports status "live", real data replaces them with no code change. */
-  async function withPreview(real) {
-    if (real && real.status === "live") return real;
-    let sample;
-    try { sample = await (await fetch("assets/sample-graveyard.json")).json(); } catch (e) { return real; }
-    const now = Date.now();
-    const deaths = sample.deaths.map(d => {
-      const time = now - d.age_min * 60000;
-      return { ...d, sample: true, time, window_start: d.window_minutes ? time - d.window_minutes * 60000 : undefined };
-    });
-    return {
-      status: "preview", sample: true, deaths,
-      counts: {
-        today: deaths.filter(d => d.time >= now - 864e5).length,
-        all_time: deaths.length,
-        resets: deaths.filter(d => d.fate === "reset").length,
-        highest_total: Math.max(...deaths.map(d => d.total)),
-      },
-    };
   }
 
   function cards(pop, w) {
@@ -144,15 +84,16 @@
     });
   }
 
-  async function graveyard() {
-    const [real, pop, w] = await Promise.all([load("graveyard.json"), load("population.json"), load("watcher.json")]);
-    const gy = await withPreview(real);
+  /* ---------------- homepage ---------------- */
+  async function home() {
+    const G = window.DeathTollGraves;   // assets/graveyard.js: sample fallback + the headstone card
+    const [real, pop, w, names] = await Promise.all([load("graveyard.json"), load("population.json"), load("watcher.json"), G.regions()]);
+    const gy = (await G.withPreview(real)) || {};
     chrome(gy.sample ? real : gy);
     treeline();
     trackBox(!!(real && real.status === "live"));
     let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(treeline, 200); });
-    const deaths = (gy && gy.deaths) || [];
-    const c = (gy && gy.counts) || {};
+    const c = gy.counts || {};
     const hc = pop && pop.hardcore_worlds_listed;
     // Sample graves never feed the hero numbers: before launch these read 0 and a dash.
     $("#tally").innerHTML = `
@@ -161,70 +102,15 @@
       <div><b class="yel">${pop ? fmt(hc ? pop.hardcore_total : pop.all_worlds_total) : "—"}</b><span>${hc ? "ON HARDCORE NOW" : "ONLINE NOW"}</span></div>`;
     $("#cards").innerHTML = cards(pop, w);
 
-    const state = { range: "today", tier: "any", fate: "any", q: "", shown: 48 };   // opens on today's dead
-    const filters = $("#filters");
-    filters.addEventListener("click", e => {
-      const b = e.target.closest("[data-k]");
-      if (!b) return;
-      state[b.dataset.k] = state[b.dataset.k] === b.dataset.v && b.dataset.k !== "range" ? "any" : b.dataset.v;
-      state.shown = 48;
-      draw();
-    });
-    $("#search").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); state.shown = 48; draw(); });
-    $("#more").addEventListener("click", () => { state.shown += 48; draw(); });
-
-    function filtered() {
-      const now = Date.now();
-      return deaths.filter(d =>
-        (state.range === "all" || d.time >= now - (state.range === "today" ? 864e5 : 7 * 864e5)) &&
-        (state.tier === "any" || (state.tier === "2000" ? d.total >= 2000 : state.tier === "1500" ? d.total >= 1500 : d.total < 500)) &&
-        (state.fate === "any" || (state.fate === "banished" ? isBanished(d) : d.fate === state.fate)) &&
-        (!state.q || d.name.toLowerCase().includes(state.q)));
-    }
-
-    function draw() {
-      filters.querySelectorAll("[data-k]").forEach(b => b.classList.toggle("on", state[b.dataset.k] === b.dataset.v));
-      const list = filtered();
-      const yard = $("#rows");
-      if (!gy || gy.status === "waiting") {
-        yard.innerHTML = `<div class="empty"><h3>The gates open on 4 November</h3>
-          <p>The moment Jagex publishes the Hardcore Worlds hiscores, this page starts reading them and the first stone goes up here, automatically.</p></div>`;
-      } else if (!list.length) {
-        const quietToday = deaths.length && state.range === "today" && state.tier === "any" && state.fate === "any" && !state.q;
-        yard.innerHTML = `<div class="empty"><h3>${quietToday ? "No one has fallen today. Yet." : deaths.length ? "No graves match" : "No graves yet"}</h3>
-          <p>${quietToday ? "Tap Week or All time to see earlier graves." : deaths.length ? "Try a wider filter." : "The hiscores are being read. Everyone above the listing line is still alive."}</p></div>`;
-      } else {
-        yard.innerHTML = list.slice(0, state.shown).map(grave).join("");
-      }
-      $("#more").hidden = list.length <= state.shown;
-      $("#ledger").innerHTML = list.slice(0, state.shown).map(d => `<tr>
-        <td class="n">${(d.sample ? esc(d.name) : `<a class="pl-link" href="player.html?name=${encodeURIComponent(d.name)}">${esc(d.name)}</a>`)}${d.sample ? ` <span class="tag sample">SAMPLE</span>` : ""}</td><td class="y">${fmt(d.total)}</td><td class="hide-sm">${d.combat ?? "—"}</td>
-        <td class="hide-sm">${esc((d.top_skills || []).map(s => s[0] + " " + s[1]).join(", "))}</td>
-        <td style="color:${isBanished(d) ? "var(--violet-soft)" : "var(--chat-red)"}"${FATE_TIP[d.fate] ? ` title="${FATE_TIP[d.fate]}"` : ""}>${d.fate === "died" ? "Died" : d.fate === "reset" ? "Reset" : d.fate === "banished" ? "Banished" : "Banished?"}</td>
-        <td class="hide-sm">${d.world ? "W" + d.world : "—"}</td><td>${when(d)}</td></tr>`).join("") ||
-        `<tr><td colspan="7" class="note">Nothing recorded yet.</td></tr>`;
-    }
-    $("#listing").innerHTML = gy && gy.status === "live"
-      ? `Listing players with total level <b>${fmt(gy.min_total || 0)}+</b> · ${fmt(gy.ranked_players)} on the hiscores${gy.last_full_scan ? ` · last full scan ${ago(Date.parse(gy.last_full_scan))}` : ""}. <b>BANISHED</b> = died, then transferred to the main game; <b>BANISHED?</b> = left the Hardcore hiscores, transfer not confirmed yet.`
-      : gy.sample ? `Showing <b>sample graves</b> until the Hardcore Worlds hiscores go live.` : "";
-    const dh = $("#deadliest"), worst = gy && gy.status === "live" && gy.counts ? gy.counts.deadliest_hour : null;
-    const dhStart = worst && Date.parse(worst.start);
-    dh.hidden = !(dhStart && worst.deaths);
-    if (!dh.hidden) dh.innerHTML = `Deadliest hour so far: <b>${fmt(worst.deaths)}</b> ${worst.deaths === 1 ? "death" : "deaths"}, ${hourSpan(dhStart)}.`;
-    draw();
-  }
-
-  /* "Wed 4 Nov 7–8pm" (or "Wed 4 Nov 19:00–20:00") in the viewer's own time zone and clock style. */
-  function hourSpan(start) {
-    const a = new Date(start), b = new Date(start + 3600000);
-    const date = a.toLocaleDateString([], { weekday: "short", day: "numeric", month: "short" }).replace(/,/g, "");
-    const h12 = new Intl.DateTimeFormat([], { hour: "numeric" }).resolvedOptions().hour12;
-    if (!h12) {
-      const hm = d => d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
-      return `${date} ${hm(a)}–${hm(b)}`;
-    }
-    const h = d => (d.getHours() % 12 || 12), ap = d => (d.getHours() < 12 ? "am" : "pm");
-    return `${date} ${h(a)}${ap(a) === ap(b) ? "" : ap(a)}–${h(b)}${ap(b)}`;
+    // Latest graves: the newest six, full feed on graveyard.html.
+    const latest = (gy.deaths || []).filter(d => Number.isFinite(d.time)).sort((a, b) => b.time - a.time).slice(0, 6);
+    $("#latest-rows").innerHTML = latest.length
+      ? `<div class="stones">${latest.map(d => G.card(d, names, { small: true })).join("")}</div>`
+      : `<div class="frame empty"><h3>${gy.status === "live" ? "No graves yet" : "The gates open on 4 November"}</h3>
+          <p>${gy.status === "live" ? "The hiscores are being read. Everyone above the listing line is still alive." : "The moment Jagex publishes the Hardcore Worlds hiscores, the first stone goes up here, automatically."}</p></div>`;
+    const note = $("#latest-note");
+    note.hidden = !gy.sample;
+    if (gy.sample) note.innerHTML = `Showing <b>sample graves</b> until the Hardcore Worlds hiscores go live.`;
   }
 
   /* ---------------- population ---------------- */
@@ -297,5 +183,5 @@
     $("#checked").textContent = w && w.checked ? `Last checked ${ago(Date.parse(w.checked))}` : "";
   }
 
-  ({ graveyard, population, watcher: watcherPage })[PAGE]();
+  ({ home, population, watcher: watcherPage })[PAGE]();
 })();
