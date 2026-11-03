@@ -3,7 +3,7 @@
    Wide screens: main links inline plus a "More" dropdown. Phones and tablets: one "Menu" dropdown with every page. */
 (function () {
   "use strict";
-  const MAIN = [["index.html", "graveyard", "Graveyard"], ["player.html", "player", "Track a player"], ["hiscores.html", "hiscores", "Hiscores"], ["map.html", "map", "Death map"],
+  const MAIN = [["graveyard.html", "graveyard", "Graveyard"], ["player.html", "player", "Track a player"], ["hiscores.html", "hiscores", "Hiscores"], ["map.html", "map", "Death map"],
     ["ge.html", "ge", "GE tracker"]];
   const MORE = [["firsts.html", "firsts", "World firsts"], ["population.html", "population", "Population"], ["kept.html", "kept", "Kept on death"], ["safe.html", "safe", "Is it safe?"], ["watcher.html", "watcher", "Data watcher"]];
   const page = document.body.dataset.page;
