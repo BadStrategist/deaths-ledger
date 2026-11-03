@@ -120,16 +120,8 @@
       {
         "key": "cd-today",
         "at": "2026-11-04T10:30:00Z",
-        "approved": false,
-        "text": "Today.\n\nHardcore Worlds open on Old School RuneScape. Fresh start, one life, no safety net.\n\nThe ledger is open. The first grave is coming."
-      },
-      {
-        "key": "cd-open",
-        "at": "2026-11-04T00:00:00Z",
-        "on": "worlds_listed",
         "approved": true,
-        "text": "Hardcore Worlds are live. First death incoming.",
-        "fallback_at": "2026-11-04T11:05:00Z"
+        "text": "Today.\n\nHardcore Worlds open on Old School RuneScape. Fresh start, one life, no safety net.\n\nThe ledger is open. The first grave is coming."
       },
       {
         "key": "wf-tonight",
