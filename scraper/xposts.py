@@ -1,7 +1,7 @@
 """Automatic posts to X (@osrsdeathtoll) from the ledger's own data.
 
 Runs after the graveyard step. Every post has a dedupe key kept in xposts.json (state branch),
-so a post goes out once no matter how many runs see the same event. Text only, no links:
+so a post goes out once no matter how many runs see the same event. Text only (plus a card image on world firsts), no links:
 X charges ~13x more for a post with a URL, and deathtoll.gg is in the bio.
 
 Dry run (the default, and whenever the four X_* secrets are missing): nothing is sent; the posts
@@ -35,7 +35,7 @@ DEFAULTS = {
     "dry_run": True,
     "launch_at": "2026-11-04T11:30:00Z",
     "max_per_run": 3,
-    "max_per_day": 24,
+    "max_per_day": 60,
     "big_death_min_total": 1500,
     "big_deaths_per_day": 8,
     "record_min_total": 200,
@@ -47,7 +47,8 @@ DEFAULTS = {
     "daily_recap_hour_utc": 0,
     "ge_post_hour_utc": 17,
     "ge_min_price": 1000000,
-    "world_firsts_per_day": 10,
+    "world_firsts_per_day": 40,
+    "world_first_max_late_days": 7,
     "leader_hour_utc": 20,
     "place_hour_utc": 21,
     "place_min_deaths": 10,
@@ -114,6 +115,69 @@ def region_name(loc, regions):
 
 def ordinal(n):
     return f"{n:,}" + ("th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th"))
+
+
+# ---------- world-first post text ----------
+
+SKILL_LINES = {
+    "Attack": "Every swing made on one life.", "Defence": "Hit after hit. Never broken.",
+    "Strength": "All that power, and one life to lose it.", "Hitpoints": "All that health. Still only one life.",
+    "Ranged": "Every arrow loosed on one life.", "Prayer": "The gods are listening. So is Death.",
+    "Magic": "Every spell cast on one life.", "Cooking": "Thousands of meals. Never the last one.",
+    "Woodcutting": "The trees fell. They didn't.", "Fletching": "Every bow strung on one life.",
+    "Fishing": "The water took nothing.", "Firemaking": "Every log burned. Never got burned.",
+    "Crafting": "Every piece made on one life.", "Smithing": "Forged on one life.",
+    "Mining": "Deep in the dark. Still breathing.", "Herblore": "Every potion brewed on one life.",
+    "Agility": "Every ledge, every log. Never slipped.", "Thieving": "Every pocket picked. Death never caught them.",
+    "Slayer": "Every task, every monster. Still standing.", "Farming": "Patient work on one life.",
+    "Runecraft": "Through the Abyss and back. One life.", "Hunter": "The hunter, never the hunted.",
+    "Construction": "Built on one life.", "Sailing": "The sea couldn't claim them.",
+}
+# How a boss first reads when "has slain X" is wrong.
+BOSS_DEEDS = {
+    "Barrows Chests": "looted the Barrows chests", "Lunar Chests": "looted the Lunar Chests",
+    "Tempoross": "subdued Tempoross", "Wintertodt": "subdued the Wintertodt", "Zalcano": "brought down Zalcano",
+    "Hespori": "cut down Hespori", "Mimic": "slain the Mimic", "Nightmare": "slain the Nightmare",
+    "The Gauntlet": "completed The Gauntlet", "The Corrupted Gauntlet": "completed The Corrupted Gauntlet",
+}
+
+
+def world_first_text(f, max_total=None):
+    """Short, dramatic post text for a claimed world first. No hashtags, no links, no data sources."""
+    names = [" ".join(str(n).replace("\u00a0", " ").split()) for n in f.get("names") or []] or ["?"]
+    who, many = names_line(names), len(names) > 1
+    has = "have" if many else "has"
+    cat, label, fid = f.get("cat"), f.get("label") or "", f.get("id") or ""
+    if cat == "total" and fid == f"total-{max_total}":
+        text = f"World first: {who} {has} maxed on Hardcore Worlds.\n\nEvery skill 99. One life. Never died."
+    elif cat == "total":
+        text = f"World first: {who} {has} reached {label} on Hardcore Worlds.\n\nOne life, still standing."
+    elif cat == "99":
+        skill = label.split(" ", 1)[-1]
+        text = f"World first {label} on Hardcore Worlds: {who}.\n\n{SKILL_LINES.get(skill, 'One life. Never dropped.')}"
+    elif cat == "death" and fid == f"death-{max_total}":
+        text = f"The first maxed player has fallen on Hardcore Worlds: {who}.\n\nEvery skill 99. One life. Gone."
+    elif cat == "death":
+        text = f"{label} on Hardcore Worlds: {who}, total level {num(f.get('value') or 0)}.\n\nDeath is patient."
+    elif cat == "clue":
+        text = f"World first master clue on Hardcore Worlds: {who}.\n\nEvery step, every riddle, every risk. One life."
+    elif cat == "raid":
+        text = f"World first: {who} {has} conquered {label} on Hardcore Worlds.\n\nOne life in. Out alive."
+    else:
+        text = f"World first: {who} {has} {BOSS_DEEDS.get(label, 'slain ' + label)} on Hardcore Worlds.\n\nOne life. No second attempt."
+    if many:
+        text += "\n\nThey fell together." if cat == "death" else "\n\nFirst spotted together."
+    return text
+
+
+def world_first_card(f, max_total):
+    """The card for a world first, or None. Never raises: a missing card means a text-only post."""
+    try:
+        import cards
+        return cards.render_first_card(f, max_total)
+    except Exception as e:  # noqa: BLE001
+        print(f"xposts: card failed for {f.get('id')}: {type(e).__name__}: {e}")
+        return None
 
 
 # ---------- what to post ----------
@@ -238,30 +302,15 @@ def candidates(g, pop, st, cfg, now, http):
                 out.append((f"leader-{day:%Y-%m-%d}", f"Highest total still alive on Hardcore Worlds: {alive[0]['name']}, "
                             f"total level {num(alive[0]['total'])}.{tail}", "leader"))
 
-    # World firsts (firsts.py): headline ones only, oldest first, never more than 2 days late.
+    # World firsts (firsts.py): every one of them, oldest first, never more than world_first_max_late_days late.
+    # run() attaches each one's card (cards.py); the daily world_firsts_per_day cap queues the rest.
     fs = read_json("firsts.json", {})
     if fs.get("status") == "live":
-        for f in sorted((fs.get("firsts") or {}).values(), key=lambda f: f["seen"]):
-            if not f.get("headline") or now - _ms(f["seen"]) > 2 * DAY:
+        late = cfg["world_first_max_late_days"] * DAY
+        for f in sorted((fs.get("firsts") or {}).values(), key=lambda f: f.get("seen") or ""):
+            if not f.get("id") or not f.get("names") or now - _ms(f.get("seen")) > late:
                 continue
-            who, many = names_line(f["names"]), len(f["names"]) > 1
-            if f["cat"] == "total" and f["id"] == f"total-{fs.get('max_total')}":
-                text = f"World first: {who} {'have' if many else 'has'} maxed on Hardcore Worlds. Every skill 99. One life."
-            elif f["cat"] == "total":
-                text = f"World first: {who} {'have' if many else 'has'} reached {f['label']} on Hardcore Worlds."
-            elif f["cat"] == "99":
-                text = f"World first {f['label']} on Hardcore Worlds: {who}."
-            elif f["cat"] == "death" and f["id"] == f"death-{fs.get('max_total')}":
-                text = f"The first maxed player has fallen on Hardcore Worlds: {who}.\n\nEvery skill 99. One life. Gone."
-            elif f["cat"] == "death":
-                text = f"{f['label']} on Hardcore Worlds: {who}, total level {num(f.get('value') or 0)}.\n\nDeath is patient."
-            elif f["cat"] == "clue":
-                text = f"World first master clue on Hardcore Worlds: {who}."
-            else:
-                text = f"World first on the {f['label']} hiscores on Hardcore Worlds: {who}."
-            if many:
-                text += " First spotted together."
-            out.append((f"wf-{f['id']}", text, "world-first"))
+            out.append((f"wf-{f['id']}", world_first_text(f, fs.get("max_total")), "world-first"))
 
     # Player count: a new all-time peak, at least peak_step above the last posted one.
     hc = (pop or {}).get("hardcore_total")
@@ -422,6 +471,8 @@ def run(now=None, http=None):
     wf_today = sum(1 for s in sent_today if s["kind"] == "world-first")
     made = []
     images = {f"sched-{sp['key']}": sp["image"] for sp in cfg.get("scheduled") or [] if sp.get("image")}
+    fs = read_json("firsts.json", {})
+    wf = {f"wf-{f['id']}": f for f in (fs.get("firsts") or {}).values() if f.get("id")}
     for key, text, kind in candidates(g, pop, st, cfg, now, http or Http()):
         if key in st["done"]:
             continue
@@ -431,13 +482,19 @@ def run(now=None, http=None):
             continue
         if kind == "world-first" and wf_today >= cfg["world_firsts_per_day"]:
             continue
-        image = images.get(key)
+        image = os.path.join(ROOT, images[key]) if key in images else None
+        card = None
+        if kind == "world-first" and key in wf:
+            image = card = world_first_card(wf[key], fs.get("max_total"))   # None: text only
         if dry:
-            ok, status, detail = True, None, "dry run" + (f" (+image {image})" if image else "")
+            ok, status, detail = True, None, "dry run" + (f" (+image {os.path.basename(image)})" if image else "")
         else:
             media = None
             if image:
-                mok, mstatus, mid = upload_media(os.path.join(ROOT, image), keys)
+                try:
+                    mok, mstatus, mid = upload_media(image, keys)
+                except Exception as e:  # noqa: BLE001 - an unreadable image must not stop the post
+                    mok, mstatus, mid = False, 0, f"{type(e).__name__}: {e}"
                 if not mok:
                     print(f"xposts: image upload failed {mstatus} {mid}; posting text only")
                 else:
@@ -451,6 +508,10 @@ def run(now=None, http=None):
         st["done"][key] = now
         made.append({"key": key, "kind": kind, "day": today, "at": iso(now), "text": text,
                      "dry": dry, "status": status, "id": detail if ok and not dry else None})
+        if kind == "world-first":
+            made[-1]["card"] = os.path.basename(card) if card else None
+            if not dry:
+                made[-1]["media"] = bool(media)
         if kind == "big":
             big_today += 1
         if kind == "world-first":
