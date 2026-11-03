@@ -1,0 +1,23 @@
+# Death Toll (deathtoll.gg)
+
+> Death Toll is a fan site for Old School RuneScape Hardcore Worlds, the one-life game mode that launches on Wednesday 4 November 2026 at 11:00 UTC. It keeps a graveyard of every Hardcore Worlds death, tracks the race for world firsts, and has tools for staying alive.
+
+Each Hardcore Worlds character has one life. After an unsafe death you keep your 3 most valuable items (4 with Protect Item), anything that would go to your gravestone is deleted, and the character either starts over on Hardcore Worlds or moves to the main game for good.
+
+Before launch the site shows sample data so the pages can be previewed; real deaths, firsts and rankings replace it once Hardcore Worlds opens.
+
+## Pages
+
+- [Home](https://deathtoll.gg/): the latest graves, the world firsts race and links to every tool.
+- [Hardcore Worlds guide](https://deathtoll.gg/hardcore-worlds): launch time, the death rules, safe deaths, kept items and common questions.
+- [Graveyard](https://deathtoll.gg/graveyard): every Hardcore Worlds death, newest first, with total level, best skill, place and time.
+- [World firsts](https://deathtoll.gg/firsts): the first players to reach each milestone, from 2,000 total and max to every 99, boss and raid.
+- [Hiscores](https://deathtoll.gg/hiscores): Hardcore Worlds rankings overall and by skill, with the living and the dead side by side.
+- [Track a player](https://deathtoll.gg/player): look up any Hardcore Worlds account; if they fall, their grave goes up in the Graveyard.
+- [Death map](https://deathtoll.gg/map): where players die across Gielinor, and the deadliest regions.
+- [GE tracker](https://deathtoll.gg/ge): Grand Exchange prices, margins, buy limits and the biggest movers.
+- [Population](https://deathtoll.gg/population): players online on each Hardcore world, with history.
+- [Kept on death](https://deathtoll.gg/kept): build a loadout and see which items you keep and which you lose.
+- [Is it safe?](https://deathtoll.gg/safe): search a minigame, boss, quest or area to see whether a death there ends your run.
+
+Death Toll is not endorsed by or affiliated with Jagex. It uses Jagex intellectual property under the Jagex Fan Content Policy.

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://deathtoll.gg/</loc></url>
-  <url><loc>https://deathtoll.gg/graveyard</loc></url>
-  <url><loc>https://deathtoll.gg/hiscores</loc></url>
-  <url><loc>https://deathtoll.gg/player</loc></url>
-  <url><loc>https://deathtoll.gg/map</loc></url>
-  <url><loc>https://deathtoll.gg/ge</loc></url>
-  <url><loc>https://deathtoll.gg/firsts</loc></url>
-  <url><loc>https://deathtoll.gg/population</loc></url>
-  <url><loc>https://deathtoll.gg/kept</loc></url>
-  <url><loc>https://deathtoll.gg/safe</loc></url>
+  <url><loc>https://deathtoll.gg/</loc><lastmod>2026-11-03</lastmod><priority>1.0</priority></url>
+  <url><loc>https://deathtoll.gg/hardcore-worlds</loc><lastmod>2026-11-03</lastmod><priority>0.9</priority></url>
+  <url><loc>https://deathtoll.gg/graveyard</loc><lastmod>2026-11-03</lastmod><priority>0.9</priority></url>
+  <url><loc>https://deathtoll.gg/firsts</loc><lastmod>2026-11-03</lastmod><priority>0.9</priority></url>
+  <url><loc>https://deathtoll.gg/hiscores</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority></url>
+  <url><loc>https://deathtoll.gg/player</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://deathtoll.gg/safe</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://deathtoll.gg/kept</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://deathtoll.gg/map</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://deathtoll.gg/ge</loc><lastmod>2026-11-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://deathtoll.gg/population</loc><lastmod>2026-11-03</lastmod><priority>0.6</priority></url>
 </urlset>
