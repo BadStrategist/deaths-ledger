@@ -130,7 +130,7 @@
     const deaths = ((gy && gy.deaths) || []).filter(d => Number.isFinite(d.time)).sort((a, b) => b.time - a.time);
     const sample = !!(gy && gy.sample);
     const live = !!(gy && gy.status === "live");
-    $("#preview").hidden = !sample;
+    // No preview banner: the owner wants sample graves marked only by their SAMPLE tags.
 
     // True toll per clock hour, from every published death, whatever the filters show.
     const hourKey = ms => { const x = new Date(ms); x.setMinutes(0, 0, 0); return x.getTime(); };
