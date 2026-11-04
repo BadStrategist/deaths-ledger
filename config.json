@@ -15,16 +15,17 @@
       "hiscore_oldschool_ultimate"
     ],
     "candidate_modes": [
+      "hiscore_oldschool_hardcore_mains",
       "hiscore_oldschool_hardcore_worlds",
       "hiscore_oldschool_hardcore_world",
       "hiscore_oldschool_hardcore",
       "hiscore_oldschool_hcw",
       "hiscore_oldschool_hardcore_mode"
     ],
-    "deaths_since": "2026-11-04T00:00:00Z",
+    "deaths_since": "2026-11-04T11:00:00Z",
     "request_delay_seconds": 0.5,
-    "run_budget_seconds": 1500,
-    "page_budget_seconds": 600,
+    "run_budget_seconds": 200,
+    "page_budget_seconds": 120,
     "relay": "https://deathtoll-api.deathtoll.workers.dev",
     "relay_comment": "Used only when a ranking page answers 403 (GitHub's servers). Needs the LEDGER_RELAY_KEY secret, shared with the Worker's LEDGER_KEY."
   },
@@ -67,6 +68,7 @@
   },
   "population": {
     "hardcore_world_types": [
+      "HARDCORE_MAIN",
       "HARDCORE",
       "HARDCORE_WORLD",
       "HARDCORE_WORLDS"

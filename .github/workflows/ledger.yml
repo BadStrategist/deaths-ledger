@@ -95,7 +95,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          wait=$(( 600 - ($(date +%s) - LEDGER_START) ))
+          wait=$(( ${{ vars.LEDGER_WAIT || 600 }} - ($(date +%s) - LEDGER_START) ))
           if [ "$wait" -gt 0 ]; then sleep "$wait"; fi
           gh workflow run ledger.yml --repo "${{ github.repository }}" --ref main
 
