@@ -1,0 +1,33 @@
+name: x-delete
+
+# One-off correction tool: deletes a single post from the shop account using the
+# same X_* user-context secrets the pipeline posts with. Manual dispatch only.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tweet_id:
+        description: "Post id to delete"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Delete post
+        env:
+          TWEET_ID: ${{ inputs.tweet_id }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python scraper/x_delete.py
