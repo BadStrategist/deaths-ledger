@@ -20,13 +20,23 @@
 .rf-track{height:10px;background:#0d0a10;border:1px solid var(--edge);overflow:hidden}
 .rf-track>div{height:100%;width:0;background:linear-gradient(90deg,#7d5b22,var(--gold));transition:width .25s ease}
 .rf-prog .note{margin:6px 0 0}
-.rf-check input{accent-color:var(--gold)}
+.rf-check input{appearance:none;-webkit-appearance:none;width:15px;height:15px;margin:0;flex:none;cursor:pointer;
+  border:1px solid #4a4056;background:#120e16;position:relative}
+.rf-check input:checked{background:var(--gold);border-color:#f0d17a}
+.rf-check input:checked::after{content:"";position:absolute;left:4px;top:1px;width:5px;height:9px;
+  border:solid #140d02;border-width:0 2px 2px 0;transform:rotate(45deg)}
 .rf-reset{font:700 12px 'Cinzel',serif;color:var(--muted);background:none;border:1px solid var(--edge);padding:6px 10px;cursor:pointer}
 .rf-reset:hover{color:#e8323c;border-color:#e8323c}
 .rf-pin{background:none;border:0;padding:0;width:22px;font:20px/1 'VT323',monospace;color:#5d5468;cursor:pointer}
 .rf-pin.on{color:var(--gold)}
 .rf-pin:hover{color:var(--gold)}
-.rf-tick{width:17px;height:17px;accent-color:#8fbf6a;cursor:pointer;margin:0}
+.rf-tick{appearance:none;-webkit-appearance:none;width:19px;height:19px;margin:0;flex:none;cursor:pointer;
+  border:1px solid #4a4056;background:#120e16;position:relative;transition:border-color .12s,background .12s}
+.rf-tick:hover{border-color:#8fbf6a}
+.rf-tick:checked{background:#7ea85c;border-color:#a8d47f}
+.rf-tick:checked::after{content:"";position:absolute;left:5px;top:1px;width:6px;height:11px;
+  border:solid #0d0a10;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.rf-tick:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .rf-mid{display:flex;flex-direction:column;gap:2px;min-width:0}
 .rf-row.done{opacity:.55}
 .rf-row.done .rf-task{text-decoration:line-through}
