@@ -123,7 +123,7 @@
         "key": "cd-today",
         "at": "2026-11-04T10:30:00Z",
         "approved": true,
-        "text": "Today.\n\nHardcore Worlds open on Old School RuneScape. Fresh start, one life, no safety net.\n\nThe ledger is open. The first grave is coming."
+        "text": "Today.\n\nHardcore Worlds open on Old School RuneScape. Fresh start, one life, no safety net.\n\nThe ledger is open. The first grave is coming. #OSRS"
       },
       {
         "key": "wf-tonight",
@@ -155,7 +155,7 @@
         "key": "wf-promo-live",
         "at": "2026-11-04T13:00:00Z",
         "approved": true,
-        "text": "OSRS Hardcore Worlds is live. 105 world firsts are up for grabs and the clock is running.\n\nWho claims the first one?\n\ndeathtoll.gg/firsts"
+        "text": "OSRS Hardcore Worlds is live. 105 world firsts are up for grabs and the clock is running.\n\nWho claims the first one?\n\ndeathtoll.gg/firsts #OSRS"
       },
       {
         "key": "wf-promo-99",
@@ -167,7 +167,19 @@
         "key": "wf-promo-day1",
         "at": "2026-11-05T04:00:00Z",
         "approved": true,
-        "text": "Day one of OSRS Hardcore Worlds is almost over. The race for world firsts has only started.\n\nFirst to max. First master clue. First 2,000 total to fall.\n\ndeathtoll.gg/firsts"
+        "text": "Day one of OSRS Hardcore Worlds is almost over. The race for world firsts has only started.\n\nFirst to max. First master clue. First 2,000 total to fall.\n\ndeathtoll.gg/firsts #OSRS"
+      },
+      {
+        "key": "raffle-launch",
+        "at": "2026-11-04T03:50:00Z",
+        "approved": true,
+        "text": "Hardcore Worlds end. The raffle does not.\n\nOSRS Reaper's Raffle opens tomorrow: 443 tasks, 1,383 entries, six boards, and Jagex's live draw on 8 December.\n\nTick what you are grinding. Your entries carry over when your account does not.\n\ndeathtoll.gg/raffle #OSRS"
+      },
+      {
+        "key": "raffle-fyi",
+        "at": "2026-11-04T11:20:00Z",
+        "approved": true,
+        "text": "FYI: Jagex's Reaper's Raffle is live. 443 tasks, 1,383 entries, runs to 30 November, draw on 8 December.\n\nTick them off as you go: deathtoll.gg/raffle #OSRS"
       }
     ]
   },
