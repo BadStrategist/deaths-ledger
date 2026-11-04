@@ -108,24 +108,6 @@
         "text": "2 days.\n\nOn 4 November, Old School RuneScape opens Hardcore Worlds. Everyone starts together. Everyone gets one life.\n\nDeath has already cleared his schedule."
       },
       {
-        "key": "cd-1day",
-        "at": "2026-11-03T15:00:00Z",
-        "approved": false,
-        "text": "Tomorrow, Hardcore Worlds open.\n\nPlan your route. Know what you keep on death. Don't trust the Wilderness, a dark cave or a full inventory of food you'll never eat in time.\n\nOne life. Death is patient."
-      },
-      {
-        "key": "cd-eve",
-        "at": "2026-11-03T23:00:00Z",
-        "approved": true,
-        "text": "12 hours until Hardcore Worlds.\n\nTomorrow, everyone starts at level 3 with one life. No bank to fall back on, no second attempt, no warning.\n\nThe ledger is ready."
-      },
-      {
-        "key": "cd-today",
-        "at": "2026-11-04T10:30:00Z",
-        "approved": true,
-        "text": "Today.\n\nHardcore Worlds open on Old School RuneScape. Fresh start, one life, no safety net.\n\nThe ledger is open. The first grave is coming. #OSRS"
-      },
-      {
         "key": "wf-tonight",
         "at": "2026-11-03T03:00:00Z",
         "approved": true,
@@ -140,22 +122,16 @@
         "image": "site/assets/social/world-firsts.png"
       },
       {
+        "key": "cd-1day",
+        "at": "2026-11-03T15:00:00Z",
+        "approved": false,
+        "text": "Tomorrow, Hardcore Worlds open.\n\nPlan your route. Know what you keep on death. Don't trust the Wilderness, a dark cave or a full inventory of food you'll never eat in time.\n\nOne life. Death is patient."
+      },
+      {
         "key": "wf-promo-bosses",
         "at": "2026-11-03T17:25:00Z",
         "approved": true,
         "text": "Every boss on Hardcore Worlds has a first kill waiting. Jad. Zulrah. Vorkath. The Fractured Archive.\n\nOne name each, forever. Old School RuneScape Hardcore Worlds opens Wednesday, 11:00 UTC.\n\ndeathtoll.gg/firsts"
-      },
-      {
-        "key": "wf-promo-fall",
-        "at": "2026-11-04T02:30:00Z",
-        "approved": true,
-        "text": "Someone will be the first to die on OSRS Hardcore Worlds.\n\nSomeone will be the first to fall with 1,000 total. Then 1,500. Then 2,000.\n\nEvery one of them goes in the ledger.\n\ndeathtoll.gg/firsts"
-      },
-      {
-        "key": "wf-promo-live",
-        "at": "2026-11-04T13:00:00Z",
-        "approved": true,
-        "text": "OSRS Hardcore Worlds is live. 105 world firsts are up for grabs and the clock is running.\n\nWho claims the first one?\n\ndeathtoll.gg/firsts #OSRS"
       },
       {
         "key": "wf-promo-99",
@@ -164,10 +140,16 @@
         "text": "First 99 on Hardcore Worlds. 24 skills, 24 names that will never change.\n\nWho gets there with their one life intact?\n\ndeathtoll.gg/firsts"
       },
       {
-        "key": "wf-promo-day1",
-        "at": "2026-11-05T04:00:00Z",
+        "key": "cd-eve",
+        "at": "2026-11-03T23:00:00Z",
         "approved": true,
-        "text": "Day one of OSRS Hardcore Worlds is almost over. The race for world firsts has only started.\n\nFirst to max. First master clue. First 2,000 total to fall.\n\ndeathtoll.gg/firsts #OSRS"
+        "text": "12 hours until Hardcore Worlds.\n\nTomorrow, everyone starts at level 3 with one life. No bank to fall back on, no second attempt, no warning.\n\nThe ledger is ready."
+      },
+      {
+        "key": "wf-promo-fall",
+        "at": "2026-11-04T02:30:00Z",
+        "approved": true,
+        "text": "Someone will be the first to die on OSRS Hardcore Worlds.\n\nSomeone will be the first to fall with 1,000 total. Then 1,500. Then 2,000.\n\nEvery one of them goes in the ledger.\n\ndeathtoll.gg/firsts"
       },
       {
         "key": "raffle-launch",
@@ -176,10 +158,34 @@
         "text": "Hardcore Worlds end. The raffle does not.\n\nOSRS Reaper's Raffle opens tomorrow: 443 tasks, 1,383 entries, six boards, and Jagex's live draw on 8 December.\n\nTick what you are grinding. Your entries carry over when your account does not.\n\ndeathtoll.gg/raffle #OSRS"
       },
       {
+        "key": "raffle-v2",
+        "at": "2026-11-04T05:46:00Z",
+        "approved": true,
+        "text": "One life. 443 tasks. 1,383 entries.\n\nThe Reaper's Raffle runs 4 to 30 November, tasks completed on OSRS Hardcore Worlds only. Over 100 prizes, drawn live on 8 December.\n\nYour tasks and entries carry over between deaths.\n\ndeathtoll.gg/raffle #OSRS"
+      },
+      {
+        "key": "cd-today",
+        "at": "2026-11-04T10:30:00Z",
+        "approved": true,
+        "text": "Today.\n\nHardcore Worlds open on Old School RuneScape. Fresh start, one life, no safety net.\n\nThe ledger is open. The first grave is coming. #OSRS"
+      },
+      {
         "key": "raffle-fyi",
         "at": "2026-11-04T11:20:00Z",
         "approved": true,
         "text": "FYI: Hardcore Worlds Reaper's Raffle is live. 443 tasks, 1,383 entries, runs to 30 November, draw on 8 December.\n\nTick them off as you go: deathtoll.gg/raffle #OSRS"
+      },
+      {
+        "key": "wf-promo-live",
+        "at": "2026-11-04T13:00:00Z",
+        "approved": true,
+        "text": "OSRS Hardcore Worlds is live. 105 world firsts are up for grabs and the clock is running.\n\nWho claims the first one?\n\ndeathtoll.gg/firsts #OSRS"
+      },
+      {
+        "key": "wf-promo-day1",
+        "at": "2026-11-05T04:00:00Z",
+        "approved": true,
+        "text": "Day one of OSRS Hardcore Worlds is almost over. The race for world firsts has only started.\n\nFirst to max. First master clue. First 2,000 total to fall.\n\ndeathtoll.gg/firsts #OSRS"
       }
     ]
   },
