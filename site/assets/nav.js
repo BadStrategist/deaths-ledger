@@ -3,9 +3,9 @@
    Wide screens: main links inline plus a "More" dropdown. Phones and tablets: one "Menu" dropdown with every page. */
 (function () {
   "use strict";
-  const MAIN = [["/firsts", "firsts", "World firsts"], ["/graveyard", "graveyard", "Graveyard"], ["/player", "player", "Track a player"], ["/hiscores", "hiscores", "Hiscores"], ["/map", "map", "Death map"],
+  const MAIN = [["/firsts", "firsts", "World firsts"], ["/raffle", "raffle", "Reaper's Raffle"], ["/graveyard", "graveyard", "Graveyard"], ["/player", "player", "Track a player"], ["/hiscores", "hiscores", "Hiscores"], ["/map", "map", "Death map"],
     ["/ge", "ge", "GE tracker"]];
-  const MORE = [["/raffle", "raffle", "Reaper's Raffle"], ["/population", "population", "Population"], ["/kept", "kept", "Kept on death"], ["/safe", "safe", "Is it safe?"]];
+  const MORE = [["/population", "population", "Population"], ["/kept", "kept", "Kept on death"], ["/safe", "safe", "Is it safe?"]];
   const page = document.body.dataset.page;
   const link = ([href, id, label]) => `<a href="${href}"${page === id ? ' class="on" aria-current="page"' : ""}>${label}</a>`;
   const inMore = MORE.some(([, id]) => id === page);
