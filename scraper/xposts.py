@@ -203,7 +203,7 @@ def candidates(g, pop, st, cfg, now, http):
         if due and fresh:
             out.append((f"sched-{sp['key']}", sp["text"], "scheduled"))
     live = g.get("status") == "live"
-    deaths = [d for d in (g.get("deaths") or []) if d.get("fate") == "died" and d.get("time")]
+    deaths = [d for d in (g.get("deaths") or []) if d.get("time")]
     recent = [d for d in deaths if now - d["time"] < 2 * DAY]
     launch = _ms(cfg["launch_at"])
 
@@ -246,15 +246,21 @@ def candidates(g, pop, st, cfg, now, http):
             if n:
                 out.append(("first-hour", f"{num(n)} {'player' if n == 1 else 'players'} died in the first hour of Hardcore Worlds.\n\nOne life. They spent it fast.", "first-hour"))
 
-        # Daily recap of the last 24 hours, once per UTC day at the configured hour.
+        # Daily recap, once per UTC day at the configured hour. Every grave counts: a reset,
+        # a move to the main game and an unconfirmed transfer all began with a death.
         day = datetime.fromtimestamp(now / 1000, tz=timezone.utc)
         if day.hour == cfg["daily_recap_hour_utc"] and now - launch > 6 * HOUR:
             last24 = [d for d in deaths if now - d["time"] < DAY]
             if last24:
                 hi = max(last24, key=lambda d: d.get("total") or 0)
-                out.append((f"recap-{day:%Y-%m-%d}", f"The last 24 hours on Hardcore Worlds:\n\n"
-                            f"☠ {num(len(last24))} fell\n⬆ Highest total lost: {num(hi['total'])} ({hi['name']})\n"
-                            f"⚰ {num(total)} graves in all", "recap"))
+                since = now - launch
+                head = (f"The first {int(since // HOUR)} hours on Hardcore Worlds:" if since < DAY
+                        else "The last 24 hours on Hardcore Worlds:")
+                lines = [head, "", f"⚰ {num(len(last24))} graves",
+                         f"⬆ Highest total at a grave: {num(hi.get('total') or 0)} ({hi['name']})"]
+                if since >= DAY:
+                    lines.append(f"⚰ {num(total)} in all")
+                out.append((f"recap-{day:%Y-%m-%d}", "\n".join(lines), "recap"))
 
     if live:
         counts = g.get("counts") or {}
