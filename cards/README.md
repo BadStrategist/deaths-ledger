@@ -43,78 +43,78 @@ Post text shown for a single claimant, Iron Ridley (`<br>` = blank line). With s
 | `99-construction` | [99 Construction](examples/99-construction.png) | World first 99 Construction on Hardcore Worlds: Iron Ridley.<br>Built on one life. |
 | `99-sailing` | [99 Sailing](examples/99-sailing.png) | World first 99 Sailing on Hardcore Worlds: Iron Ridley.<br>The sea couldn't claim them. |
 | `kc-13` | [Master clue scroll](examples/kc-13.png) | World first master clue on Hardcore Worlds: Iron Ridley.<br>Every step, every riddle, every risk. One life. |
-| `kc-20` | [Abyssal Sire](examples/kc-20.png) | World first: Iron Ridley has slain Abyssal Sire on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-21` | [Alchemical Hydra](examples/kc-21.png) | World first: Iron Ridley has slain Alchemical Hydra on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-22` | [Amoxliatl](examples/kc-22.png) | World first: Iron Ridley has slain Amoxliatl on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-23` | [Araxxor](examples/kc-23.png) | World first: Iron Ridley has slain Araxxor on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-24` | [Artio](examples/kc-24.png) | World first: Iron Ridley has slain Artio on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-25` | [Barrows Chests](examples/kc-25.png) | World first: Iron Ridley has looted the Barrows chests on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-26` | [Brutus](examples/kc-26.png) | World first: Iron Ridley has slain Brutus on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-27` | [Bryophyta](examples/kc-27.png) | World first: Iron Ridley has slain Bryophyta on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-28` | [Callisto](examples/kc-28.png) | World first: Iron Ridley has slain Callisto on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-29` | [Calvar'ion](examples/kc-29.png) | World first: Iron Ridley has slain Calvar'ion on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-30` | [Cerberus](examples/kc-30.png) | World first: Iron Ridley has slain Cerberus on Hardcore Worlds.<br>One life. No second attempt. |
+| `kc-20` | [Abyssal Sire](examples/kc-20.png) | World first: Iron Ridley has slain Abyssal Sire on Hardcore Worlds. |
+| `kc-21` | [Alchemical Hydra](examples/kc-21.png) | World first: Iron Ridley has slain Alchemical Hydra on Hardcore Worlds. |
+| `kc-22` | [Amoxliatl](examples/kc-22.png) | World first: Iron Ridley has slain Amoxliatl on Hardcore Worlds. |
+| `kc-23` | [Araxxor](examples/kc-23.png) | World first: Iron Ridley has slain Araxxor on Hardcore Worlds. |
+| `kc-24` | [Artio](examples/kc-24.png) | World first: Iron Ridley has slain Artio on Hardcore Worlds. |
+| `kc-25` | [Barrows Chests](examples/kc-25.png) | World first: Iron Ridley has looted the Barrows chests on Hardcore Worlds. |
+| `kc-26` | [Brutus](examples/kc-26.png) | World first: Iron Ridley has slain Brutus on Hardcore Worlds. |
+| `kc-27` | [Bryophyta](examples/kc-27.png) | World first: Iron Ridley has slain Bryophyta on Hardcore Worlds. |
+| `kc-28` | [Callisto](examples/kc-28.png) | World first: Iron Ridley has slain Callisto on Hardcore Worlds. |
+| `kc-29` | [Calvar'ion](examples/kc-29.png) | World first: Iron Ridley has slain Calvar'ion on Hardcore Worlds. |
+| `kc-30` | [Cerberus](examples/kc-30.png) | World first: Iron Ridley has slain Cerberus on Hardcore Worlds. |
 | `kc-31` | [Chambers of Xeric](examples/kc-31.png) | World first: Iron Ridley has conquered Chambers of Xeric on Hardcore Worlds.<br>One life in. Out alive. |
 | `kc-32` | [Chambers of Xeric: Challenge Mode](examples/kc-32.png) | World first: Iron Ridley has conquered Chambers of Xeric: Challenge Mode on Hardcore Worlds.<br>One life in. Out alive. |
-| `kc-33` | [Chaos Elemental](examples/kc-33.png) | World first: Iron Ridley has slain Chaos Elemental on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-34` | [Chaos Fanatic](examples/kc-34.png) | World first: Iron Ridley has slain Chaos Fanatic on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-35` | [Commander Zilyana](examples/kc-35.png) | World first: Iron Ridley has slain Commander Zilyana on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-36` | [Corporeal Beast](examples/kc-36.png) | World first: Iron Ridley has slain Corporeal Beast on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-37` | [Crazy Archaeologist](examples/kc-37.png) | World first: Iron Ridley has slain Crazy Archaeologist on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-38` | [Dagannoth Prime](examples/kc-38.png) | World first: Iron Ridley has slain Dagannoth Prime on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-39` | [Dagannoth Rex](examples/kc-39.png) | World first: Iron Ridley has slain Dagannoth Rex on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-40` | [Dagannoth Supreme](examples/kc-40.png) | World first: Iron Ridley has slain Dagannoth Supreme on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-41` | [Deranged Archaeologist](examples/kc-41.png) | World first: Iron Ridley has slain Deranged Archaeologist on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-42` | [Doom of Mokhaiotl](examples/kc-42.png) | World first: Iron Ridley has slain Doom of Mokhaiotl on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-43` | [Duke Sucellus](examples/kc-43.png) | World first: Iron Ridley has slain Duke Sucellus on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-44` | [General Graardor](examples/kc-44.png) | World first: Iron Ridley has slain General Graardor on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-45` | [Giant Mole](examples/kc-45.png) | World first: Iron Ridley has slain Giant Mole on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-46` | [Grotesque Guardians](examples/kc-46.png) | World first: Iron Ridley has slain Grotesque Guardians on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-47` | [Hespori](examples/kc-47.png) | World first: Iron Ridley has cut down Hespori on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-48` | [Kalphite Queen](examples/kc-48.png) | World first: Iron Ridley has slain Kalphite Queen on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-49` | [King Black Dragon](examples/kc-49.png) | World first: Iron Ridley has slain King Black Dragon on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-50` | [Kraken](examples/kc-50.png) | World first: Iron Ridley has slain Kraken on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-51` | [Kree'Arra](examples/kc-51.png) | World first: Iron Ridley has slain Kree'Arra on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-52` | [K'ril Tsutsaroth](examples/kc-52.png) | World first: Iron Ridley has slain K'ril Tsutsaroth on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-53` | [Lunar Chests](examples/kc-53.png) | World first: Iron Ridley has looted the Lunar Chests on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-54` | [Mad Angel](examples/kc-54.png) | World first: Iron Ridley has slain Mad Angel on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-55` | [Maggot King](examples/kc-55.png) | World first: Iron Ridley has slain Maggot King on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-56` | [Mimic](examples/kc-56.png) | World first: Iron Ridley has slain the Mimic on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-57` | [Nex](examples/kc-57.png) | World first: Iron Ridley has slain Nex on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-58` | [Nightmare](examples/kc-58.png) | World first: Iron Ridley has slain the Nightmare on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-59` | [Phosani's Nightmare](examples/kc-59.png) | World first: Iron Ridley has slain Phosani's Nightmare on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-60` | [Obor](examples/kc-60.png) | World first: Iron Ridley has slain Obor on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-61` | [Phantom Muspah](examples/kc-61.png) | World first: Iron Ridley has slain Phantom Muspah on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-62` | [Sarachnis](examples/kc-62.png) | World first: Iron Ridley has slain Sarachnis on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-63` | [Scorpia](examples/kc-63.png) | World first: Iron Ridley has slain Scorpia on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-64` | [Scurrius](examples/kc-64.png) | World first: Iron Ridley has slain Scurrius on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-65` | [Shellbane Gryphon](examples/kc-65.png) | World first: Iron Ridley has slain Shellbane Gryphon on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-66` | [Skotizo](examples/kc-66.png) | World first: Iron Ridley has slain Skotizo on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-67` | [Sol Heredit](examples/kc-67.png) | World first: Iron Ridley has slain Sol Heredit on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-68` | [Spindel](examples/kc-68.png) | World first: Iron Ridley has slain Spindel on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-69` | [Tempoross](examples/kc-69.png) | World first: Iron Ridley has subdued Tempoross on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-70` | [The Gauntlet](examples/kc-70.png) | World first: Iron Ridley has completed The Gauntlet on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-71` | [The Corrupted Gauntlet](examples/kc-71.png) | World first: Iron Ridley has completed The Corrupted Gauntlet on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-72` | [The Hueycoatl](examples/kc-72.png) | World first: Iron Ridley has slain The Hueycoatl on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-73` | [The Leviathan](examples/kc-73.png) | World first: Iron Ridley has slain The Leviathan on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-74` | [The Royal Titans](examples/kc-74.png) | World first: Iron Ridley has slain The Royal Titans on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-75` | [The Whisperer](examples/kc-75.png) | World first: Iron Ridley has slain The Whisperer on Hardcore Worlds.<br>One life. No second attempt. |
+| `kc-33` | [Chaos Elemental](examples/kc-33.png) | World first: Iron Ridley has slain Chaos Elemental on Hardcore Worlds. |
+| `kc-34` | [Chaos Fanatic](examples/kc-34.png) | World first: Iron Ridley has slain Chaos Fanatic on Hardcore Worlds. |
+| `kc-35` | [Commander Zilyana](examples/kc-35.png) | World first: Iron Ridley has slain Commander Zilyana on Hardcore Worlds. |
+| `kc-36` | [Corporeal Beast](examples/kc-36.png) | World first: Iron Ridley has slain Corporeal Beast on Hardcore Worlds. |
+| `kc-37` | [Crazy Archaeologist](examples/kc-37.png) | World first: Iron Ridley has slain Crazy Archaeologist on Hardcore Worlds. |
+| `kc-38` | [Dagannoth Prime](examples/kc-38.png) | World first: Iron Ridley has slain Dagannoth Prime on Hardcore Worlds. |
+| `kc-39` | [Dagannoth Rex](examples/kc-39.png) | World first: Iron Ridley has slain Dagannoth Rex on Hardcore Worlds. |
+| `kc-40` | [Dagannoth Supreme](examples/kc-40.png) | World first: Iron Ridley has slain Dagannoth Supreme on Hardcore Worlds. |
+| `kc-41` | [Deranged Archaeologist](examples/kc-41.png) | World first: Iron Ridley has slain Deranged Archaeologist on Hardcore Worlds. |
+| `kc-42` | [Doom of Mokhaiotl](examples/kc-42.png) | World first: Iron Ridley has slain Doom of Mokhaiotl on Hardcore Worlds. |
+| `kc-43` | [Duke Sucellus](examples/kc-43.png) | World first: Iron Ridley has slain Duke Sucellus on Hardcore Worlds. |
+| `kc-44` | [General Graardor](examples/kc-44.png) | World first: Iron Ridley has slain General Graardor on Hardcore Worlds. |
+| `kc-45` | [Giant Mole](examples/kc-45.png) | World first: Iron Ridley has slain Giant Mole on Hardcore Worlds. |
+| `kc-46` | [Grotesque Guardians](examples/kc-46.png) | World first: Iron Ridley has slain Grotesque Guardians on Hardcore Worlds. |
+| `kc-47` | [Hespori](examples/kc-47.png) | World first: Iron Ridley has cut down Hespori on Hardcore Worlds. |
+| `kc-48` | [Kalphite Queen](examples/kc-48.png) | World first: Iron Ridley has slain Kalphite Queen on Hardcore Worlds. |
+| `kc-49` | [King Black Dragon](examples/kc-49.png) | World first: Iron Ridley has slain King Black Dragon on Hardcore Worlds. |
+| `kc-50` | [Kraken](examples/kc-50.png) | World first: Iron Ridley has slain Kraken on Hardcore Worlds. |
+| `kc-51` | [Kree'Arra](examples/kc-51.png) | World first: Iron Ridley has slain Kree'Arra on Hardcore Worlds. |
+| `kc-52` | [K'ril Tsutsaroth](examples/kc-52.png) | World first: Iron Ridley has slain K'ril Tsutsaroth on Hardcore Worlds. |
+| `kc-53` | [Lunar Chests](examples/kc-53.png) | World first: Iron Ridley has looted the Lunar Chests on Hardcore Worlds. |
+| `kc-54` | [Mad Angel](examples/kc-54.png) | World first: Iron Ridley has slain Mad Angel on Hardcore Worlds. |
+| `kc-55` | [Maggot King](examples/kc-55.png) | World first: Iron Ridley has slain Maggot King on Hardcore Worlds. |
+| `kc-56` | [Mimic](examples/kc-56.png) | World first: Iron Ridley has slain the Mimic on Hardcore Worlds. |
+| `kc-57` | [Nex](examples/kc-57.png) | World first: Iron Ridley has slain Nex on Hardcore Worlds. |
+| `kc-58` | [Nightmare](examples/kc-58.png) | World first: Iron Ridley has slain the Nightmare on Hardcore Worlds. |
+| `kc-59` | [Phosani's Nightmare](examples/kc-59.png) | World first: Iron Ridley has slain Phosani's Nightmare on Hardcore Worlds. |
+| `kc-60` | [Obor](examples/kc-60.png) | World first: Iron Ridley has slain Obor on Hardcore Worlds. |
+| `kc-61` | [Phantom Muspah](examples/kc-61.png) | World first: Iron Ridley has slain Phantom Muspah on Hardcore Worlds. |
+| `kc-62` | [Sarachnis](examples/kc-62.png) | World first: Iron Ridley has slain Sarachnis on Hardcore Worlds. |
+| `kc-63` | [Scorpia](examples/kc-63.png) | World first: Iron Ridley has slain Scorpia on Hardcore Worlds. |
+| `kc-64` | [Scurrius](examples/kc-64.png) | World first: Iron Ridley has slain Scurrius on Hardcore Worlds. |
+| `kc-65` | [Shellbane Gryphon](examples/kc-65.png) | World first: Iron Ridley has slain Shellbane Gryphon on Hardcore Worlds. |
+| `kc-66` | [Skotizo](examples/kc-66.png) | World first: Iron Ridley has slain Skotizo on Hardcore Worlds. |
+| `kc-67` | [Sol Heredit](examples/kc-67.png) | World first: Iron Ridley has slain Sol Heredit on Hardcore Worlds. |
+| `kc-68` | [Spindel](examples/kc-68.png) | World first: Iron Ridley has slain Spindel on Hardcore Worlds. |
+| `kc-69` | [Tempoross](examples/kc-69.png) | World first: Iron Ridley has subdued Tempoross on Hardcore Worlds. |
+| `kc-70` | [The Gauntlet](examples/kc-70.png) | World first: Iron Ridley has completed The Gauntlet on Hardcore Worlds. |
+| `kc-71` | [The Corrupted Gauntlet](examples/kc-71.png) | World first: Iron Ridley has completed The Corrupted Gauntlet on Hardcore Worlds. |
+| `kc-72` | [The Hueycoatl](examples/kc-72.png) | World first: Iron Ridley has slain The Hueycoatl on Hardcore Worlds. |
+| `kc-73` | [The Leviathan](examples/kc-73.png) | World first: Iron Ridley has slain The Leviathan on Hardcore Worlds. |
+| `kc-74` | [The Royal Titans](examples/kc-74.png) | World first: Iron Ridley has slain The Royal Titans on Hardcore Worlds. |
+| `kc-75` | [The Whisperer](examples/kc-75.png) | World first: Iron Ridley has slain The Whisperer on Hardcore Worlds. |
 | `kc-76` | [Theatre of Blood](examples/kc-76.png) | World first: Iron Ridley has conquered Theatre of Blood on Hardcore Worlds.<br>One life in. Out alive. |
 | `kc-77` | [Theatre of Blood: Hard Mode](examples/kc-77.png) | World first: Iron Ridley has conquered Theatre of Blood: Hard Mode on Hardcore Worlds.<br>One life in. Out alive. |
 | `kc-78` | [The Fractured Archive](examples/kc-78.png) | World first: Iron Ridley has conquered The Fractured Archive on Hardcore Worlds.<br>One life in. Out alive. |
-| `kc-79` | [Thermonuclear Smoke Devil](examples/kc-79.png) | World first: Iron Ridley has slain Thermonuclear Smoke Devil on Hardcore Worlds.<br>One life. No second attempt. |
+| `kc-79` | [Thermonuclear Smoke Devil](examples/kc-79.png) | World first: Iron Ridley has slain Thermonuclear Smoke Devil on Hardcore Worlds. |
 | `kc-80` | [Tombs of Amascut](examples/kc-80.png) | World first: Iron Ridley has conquered Tombs of Amascut on Hardcore Worlds.<br>One life in. Out alive. |
 | `kc-81` | [Tombs of Amascut: Expert Mode](examples/kc-81.png) | World first: Iron Ridley has conquered Tombs of Amascut: Expert Mode on Hardcore Worlds.<br>One life in. Out alive. |
-| `kc-82` | [TzKal-Zuk](examples/kc-82.png) | World first: Iron Ridley has slain TzKal-Zuk on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-83` | [TzTok-Jad](examples/kc-83.png) | World first: Iron Ridley has slain TzTok-Jad on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-84` | [Vardorvis](examples/kc-84.png) | World first: Iron Ridley has slain Vardorvis on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-85` | [Venenatis](examples/kc-85.png) | World first: Iron Ridley has slain Venenatis on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-86` | [Vet'ion](examples/kc-86.png) | World first: Iron Ridley has slain Vet'ion on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-87` | [Vorkath](examples/kc-87.png) | World first: Iron Ridley has slain Vorkath on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-88` | [Wintertodt](examples/kc-88.png) | World first: Iron Ridley has subdued the Wintertodt on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-89` | [Yama](examples/kc-89.png) | World first: Iron Ridley has slain Yama on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-90` | [Zalcano](examples/kc-90.png) | World first: Iron Ridley has brought down Zalcano on Hardcore Worlds.<br>One life. No second attempt. |
-| `kc-91` | [Zulrah](examples/kc-91.png) | World first: Iron Ridley has slain Zulrah on Hardcore Worlds.<br>One life. No second attempt. |
+| `kc-82` | [TzKal-Zuk](examples/kc-82.png) | World first: Iron Ridley has slain TzKal-Zuk on Hardcore Worlds. |
+| `kc-83` | [TzTok-Jad](examples/kc-83.png) | World first: Iron Ridley has slain TzTok-Jad on Hardcore Worlds. |
+| `kc-84` | [Vardorvis](examples/kc-84.png) | World first: Iron Ridley has slain Vardorvis on Hardcore Worlds. |
+| `kc-85` | [Venenatis](examples/kc-85.png) | World first: Iron Ridley has slain Venenatis on Hardcore Worlds. |
+| `kc-86` | [Vet'ion](examples/kc-86.png) | World first: Iron Ridley has slain Vet'ion on Hardcore Worlds. |
+| `kc-87` | [Vorkath](examples/kc-87.png) | World first: Iron Ridley has slain Vorkath on Hardcore Worlds. |
+| `kc-88` | [Wintertodt](examples/kc-88.png) | World first: Iron Ridley has subdued the Wintertodt on Hardcore Worlds. |
+| `kc-89` | [Yama](examples/kc-89.png) | World first: Iron Ridley has slain Yama on Hardcore Worlds. |
+| `kc-90` | [Zalcano](examples/kc-90.png) | World first: Iron Ridley has brought down Zalcano on Hardcore Worlds. |
+| `kc-91` | [Zulrah](examples/kc-91.png) | World first: Iron Ridley has slain Zulrah on Hardcore Worlds. |
 | `death-1000` | [1,000+ Total to Fall](examples/death-1000.png) | First 1,000+ total to fall on Hardcore Worlds: Iron Ridley, total level 1,012.<br>Death is patient. |
 | `death-1500` | [1,500+ Total to Fall](examples/death-1500.png) | First 1,500+ total to fall on Hardcore Worlds: Iron Ridley, total level 1,512.<br>Death is patient. |
 | `death-2000` | [2,000+ Total to Fall](examples/death-2000.png) | First 2,000+ total to fall on Hardcore Worlds: Iron Ridley, total level 2,012.<br>Death is patient. |
