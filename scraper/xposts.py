@@ -164,7 +164,7 @@ def world_first_text(f, max_total=None):
     elif cat == "raid":
         text = f"World first: {who} {has} conquered {label} on Hardcore Worlds.\n\nOne life in. Out alive."
     else:
-        text = f"World first: {who} {has} {BOSS_DEEDS.get(label, 'slain ' + label)} on Hardcore Worlds.\n\nOne life. No second attempt."
+        text = f"World first: {who} {has} {BOSS_DEEDS.get(label, 'slain ' + label)} on Hardcore Worlds."
     if many:
         text += "\n\nThey fell together." if cat == "death" else "\n\nFirst spotted together."
     return text
