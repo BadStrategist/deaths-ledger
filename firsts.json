@@ -1,0 +1,218 @@
+{
+ "status": "live",
+ "updated": "2026-11-07T18:01:41Z",
+ "mode": "hiscore_oldschool_hardcore_mains",
+ "firsts": {
+  "kc-26": {
+   "id": "kc-26",
+   "cat": "boss",
+   "label": "Brutus",
+   "names": [
+    "1Life1Foot",
+    "RiskySoul",
+    "Im3stepsahea",
+    "Babylon Baby",
+    "HCM God"
+   ],
+   "value": 17,
+   "seen": "2026-11-04T12:10:36Z",
+   "headline": false
+  },
+  "kc-69": {
+   "id": "kc-69",
+   "cat": "boss",
+   "label": "Tempoross",
+   "names": [
+    "Meripeto",
+    "Barry Goated",
+    "Wig on HCW"
+   ],
+   "value": 7,
+   "seen": "2026-11-04T14:13:55Z",
+   "headline": false
+  },
+  "kc-88": {
+   "id": "kc-88",
+   "cat": "boss",
+   "label": "Wintertodt",
+   "names": [
+    "SoloMillion",
+    "billybob39",
+    "jimmyhcw",
+    "Pyromanimak2"
+   ],
+   "value": 8,
+   "seen": "2026-11-04T15:28:30Z",
+   "headline": false
+  },
+  "kc-37": {
+   "id": "kc-37",
+   "cat": "boss",
+   "label": "Crazy Archaeologist",
+   "names": [
+    "1 Life Dusky"
+   ],
+   "value": 7,
+   "seen": "2026-11-04T16:34:03Z",
+   "headline": false
+  },
+  "kc-64": {
+   "id": "kc-64",
+   "cat": "boss",
+   "label": "Scurrius",
+   "names": [
+    "DJ Reborn",
+    "Hard Zurk"
+   ],
+   "value": 13,
+   "seen": "2026-11-05T03:28:05Z",
+   "headline": false
+  },
+  "kc-25": {
+   "id": "kc-25",
+   "cat": "boss",
+   "label": "Barrows Chests",
+   "names": [
+    "Furry Taiyl"
+   ],
+   "value": 5,
+   "seen": "2026-11-05T03:48:49Z",
+   "headline": false
+  },
+  "total-1000": {
+   "id": "total-1000",
+   "cat": "total",
+   "label": "1,000 total level",
+   "names": [
+    "SoloMssion"
+   ],
+   "value": 1000,
+   "seen": "2026-11-05T17:41:56Z",
+   "headline": true
+  },
+  "kc-39": {
+   "id": "kc-39",
+   "cat": "boss",
+   "label": "Dagannoth Rex",
+   "names": [
+    "gooner neet"
+   ],
+   "value": 15,
+   "seen": "2026-11-05T18:12:37Z",
+   "headline": false
+  },
+  "kc-27": {
+   "id": "kc-27",
+   "cat": "boss",
+   "label": "Bryophyta",
+   "names": [
+    "Loch i"
+   ],
+   "value": 6,
+   "seen": "2026-11-06T00:00:00Z",
+   "headline": false
+  },
+  "kc-72": {
+   "id": "kc-72",
+   "cat": "boss",
+   "label": "The Hueycoatl",
+   "names": [
+    "hcw atm"
+   ],
+   "value": 6,
+   "seen": "2026-11-06T03:43:40Z",
+   "headline": false
+  },
+  "99-firemaking": {
+   "id": "99-firemaking",
+   "cat": "99",
+   "label": "99 Firemaking",
+   "names": [
+    "Lunny HCW"
+   ],
+   "value": 13034688,
+   "seen": "2026-11-06T08:08:40Z",
+   "headline": true
+  },
+  "kc-60": {
+   "id": "kc-60",
+   "cat": "boss",
+   "label": "Obor",
+   "names": [
+    "I Luv Froppy"
+   ],
+   "value": 5,
+   "seen": "2026-11-06T13:10:18Z",
+   "headline": false
+  },
+  "kc-45": {
+   "id": "kc-45",
+   "cat": "boss",
+   "label": "Giant Mole",
+   "names": [
+    "IWilNevarDie"
+   ],
+   "value": 5,
+   "seen": "2026-11-06T15:02:46Z",
+   "headline": false
+  },
+  "kc-29": {
+   "id": "kc-29",
+   "cat": "boss",
+   "label": "Calvar'ion",
+   "names": [
+    "SocksThe Cat"
+   ],
+   "value": 10,
+   "seen": "2026-11-07T02:04:49Z",
+   "headline": false
+  },
+  "kc-24": {
+   "id": "kc-24",
+   "cat": "boss",
+   "label": "Artio",
+   "names": [
+    "not incline"
+   ],
+   "value": 50,
+   "seen": "2026-11-07T03:56:41Z",
+   "headline": false
+  },
+  "99-thieving": {
+   "id": "99-thieving",
+   "cat": "99",
+   "label": "99 Thieving",
+   "names": [
+    "L2ggs 07"
+   ],
+   "value": 13034660,
+   "seen": "2026-11-07T10:34:20Z",
+   "headline": true
+  },
+  "kc-22": {
+   "id": "kc-22",
+   "cat": "boss",
+   "label": "Amoxliatl",
+   "names": [
+    "Cave Guard"
+   ],
+   "value": 6,
+   "seen": "2026-11-07T13:26:37Z",
+   "headline": false
+  },
+  "kc-91": {
+   "id": "kc-91",
+   "cat": "boss",
+   "label": "Zulrah",
+   "names": [
+    "bonebolts"
+   ],
+   "value": 5,
+   "seen": "2026-11-07T17:10:55Z",
+   "headline": true
+  }
+ },
+ "cursor": 30,
+ "max_total": 2376,
+ "total_categories": 105
+}

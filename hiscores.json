@@ -1,0 +1,8858 @@
+{
+ "status": "live",
+ "updated": "2026-11-07T18:00:00Z",
+ "mode": "hiscore_oldschool_hardcore_mains",
+ "overall": [
+  {
+   "rank": 1,
+   "name": "HCW Alfie",
+   "total": 1292,
+   "xp": 5572053,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 2,
+   "name": "SoloMssion",
+   "total": 1267,
+   "xp": 4485106,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 3,
+   "name": "Corun HCW",
+   "total": 1219,
+   "xp": 4237443,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 4,
+   "name": "LaserFart89",
+   "total": 1179,
+   "xp": 5009826,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 5,
+   "name": "mooky wooky1",
+   "total": 1169,
+   "xp": 3613534,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 6,
+   "name": "HC Guarded",
+   "total": 1144,
+   "xp": 3401355,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 7,
+   "name": "Dan tini",
+   "total": 1129,
+   "xp": 2549567,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 8,
+   "name": "Savikuono",
+   "total": 1118,
+   "xp": 3638622,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 9,
+   "name": "RankOneHC",
+   "total": 1113,
+   "xp": 3849693,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 10,
+   "name": "Slayer 3",
+   "total": 1109,
+   "xp": 3511551,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 11,
+   "name": "3a egirl",
+   "total": 1089,
+   "xp": 2491369,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 12,
+   "name": "Endanger Rod",
+   "total": 1088,
+   "xp": 2277616,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 13,
+   "name": "Crabguy2",
+   "total": 1082,
+   "xp": 6305605,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 14,
+   "name": "Goatman Stan",
+   "total": 1081,
+   "xp": 2964471,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 15,
+   "name": "eenter",
+   "total": 1079,
+   "xp": 2956968,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 16,
+   "name": "Overcooking",
+   "total": 1075,
+   "xp": 2353718,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 17,
+   "name": "TickTaxation",
+   "total": 1058,
+   "xp": 3101330,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 18,
+   "name": "mooky wooky5",
+   "total": 1050,
+   "xp": 2358484,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 19,
+   "name": "maanantai1",
+   "total": 1043,
+   "xp": 2263402,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 20,
+   "name": "Grokelator",
+   "total": 1040,
+   "xp": 2664603,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 21,
+   "name": "HC Vanc",
+   "total": 1040,
+   "xp": 2005986,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 22,
+   "name": "MisTickTimmy",
+   "total": 1035,
+   "xp": 1894500,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 23,
+   "name": "Puppy HCW",
+   "total": 1029,
+   "xp": 4295764,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 24,
+   "name": "Mm Foood",
+   "total": 1028,
+   "xp": 1991054,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 25,
+   "name": "Fe the 1st",
+   "total": 1025,
+   "xp": 3016364,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 26,
+   "name": "yamaball121",
+   "total": 1025,
+   "xp": 2349131,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 27,
+   "name": "No Resetting",
+   "total": 1024,
+   "xp": 2636346,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 28,
+   "name": "R ui rr",
+   "total": 1021,
+   "xp": 1930222,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 29,
+   "name": "hc dough boy",
+   "total": 1020,
+   "xp": 1955566,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 30,
+   "name": "Maztism",
+   "total": 1018,
+   "xp": 3205670,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 31,
+   "name": "pet bnuuy",
+   "total": 1016,
+   "xp": 3495751,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 32,
+   "name": "HcM Lurk",
+   "total": 1012,
+   "xp": 2141536,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 33,
+   "name": "Karst Hardon",
+   "total": 1011,
+   "xp": 2051577,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 34,
+   "name": "Weird Dog",
+   "total": 1009,
+   "xp": 2159561,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 35,
+   "name": "XayahFeet",
+   "total": 1008,
+   "xp": 2624659,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 36,
+   "name": "Oispa Hp",
+   "total": 1007,
+   "xp": 2053751,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 37,
+   "name": "Fk Shades",
+   "total": 1005,
+   "xp": 1633521,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 38,
+   "name": "Pesky Toads",
+   "total": 1004,
+   "xp": 4215383,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 39,
+   "name": "OTB7",
+   "total": 1004,
+   "xp": 2136473,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 40,
+   "name": "Munchey xD",
+   "total": 1000,
+   "xp": 3199538,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 41,
+   "name": "The Deino",
+   "total": 1000,
+   "xp": 2301890,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 42,
+   "name": "Zero Traces",
+   "total": 1000,
+   "xp": 2003411,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 43,
+   "name": "AMERlCAF1RST",
+   "total": 999,
+   "xp": 2860751,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 44,
+   "name": "JoeRoonScape",
+   "total": 998,
+   "xp": 2007515,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 45,
+   "name": "Fury HCW",
+   "total": 995,
+   "xp": 1723532,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 46,
+   "name": "HCW DeadSwap",
+   "total": 994,
+   "xp": 2560179,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 47,
+   "name": "Scottcore",
+   "total": 994,
+   "xp": 2123675,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 48,
+   "name": "Feardisconet",
+   "total": 994,
+   "xp": 1533188,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 49,
+   "name": "Hard Rak",
+   "total": 992,
+   "xp": 2069580,
+   "dead": false,
+   "died_at": null
+  },
+  {
+   "rank": 50,
+   "name": "Rusty Flush",
+   "total": 991,
+   "xp": 2173186,
+   "dead": false,
+   "died_at": null
+  }
+ ],
+ "skills": {
+  "Attack": [
+   {
+    "rank": 1,
+    "name": "Hxc Paladin",
+    "level": 72,
+    "xp": 950468,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "OneWayTrip",
+    "level": 70,
+    "xp": 770739,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HChelli",
+    "level": 70,
+    "xp": 737728,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "HCW Devanir",
+    "level": 69,
+    "xp": 684486,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Slow Shrimp",
+    "level": 66,
+    "xp": 522486,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Doomaniacal",
+    "level": 66,
+    "xp": 505529,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "hcw atm",
+    "level": 66,
+    "xp": 500999,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Kinji Kay",
+    "level": 66,
+    "xp": 499954,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "7 Harsh Cry",
+    "level": 66,
+    "xp": 496507,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "HC AW Chance",
+    "level": 65,
+    "xp": 492229,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "XarthSimpson",
+    "level": 65,
+    "xp": 476766,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "eS2L",
+    "level": 65,
+    "xp": 474236,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Ebp9T",
+    "level": 65,
+    "xp": 470329,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "HCW Crabbin",
+    "level": 65,
+    "xp": 469811,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "ApathyApa",
+    "level": 65,
+    "xp": 468924,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "HCbtw Hands",
+    "level": 65,
+    "xp": 468808,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "alch boomers",
+    "level": 65,
+    "xp": 466448,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "ResetRandy",
+    "level": 65,
+    "xp": 464451,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Unlucky Seal",
+    "level": 65,
+    "xp": 463976,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "DingleBongo7",
+    "level": 65,
+    "xp": 462151,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Epuf HCW",
+    "level": 65,
+    "xp": 460929,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "SMH Redbar",
+    "level": 65,
+    "xp": 459410,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Lino de Hond",
+    "level": 65,
+    "xp": 459287,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "58DMG",
+    "level": 65,
+    "xp": 459034,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "1 Life Jimmy",
+    "level": 65,
+    "xp": 456834,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "HCWPM07",
+    "level": 65,
+    "xp": 456119,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "ButWhen",
+    "level": 65,
+    "xp": 455762,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Market Reset",
+    "level": 65,
+    "xp": 455433,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "BorkPlanker",
+    "level": 65,
+    "xp": 455392,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Zygs1",
+    "level": 65,
+    "xp": 454946,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "World of HC",
+    "level": 65,
+    "xp": 454673,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "bam 92 92",
+    "level": 65,
+    "xp": 454629,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Pur8te",
+    "level": 65,
+    "xp": 454517,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "HelpfulHandy",
+    "level": 65,
+    "xp": 454505,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "HCKILLER69",
+    "level": 65,
+    "xp": 454353,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "FredaWillDie",
+    "level": 65,
+    "xp": 454042,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "died to ass",
+    "level": 65,
+    "xp": 453366,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "XayahFeet",
+    "level": 65,
+    "xp": 453035,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "HCM Bob Ross",
+    "level": 65,
+    "xp": 452996,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "Guild Taxer",
+    "level": 65,
+    "xp": 452811,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Icepa",
+    "level": 65,
+    "xp": 452793,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "Deck Sealant",
+    "level": 65,
+    "xp": 452548,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Fc Tertiary",
+    "level": 65,
+    "xp": 452423,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Cheek Oiler",
+    "level": 65,
+    "xp": 452403,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Fook Irons",
+    "level": 65,
+    "xp": 452289,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "REVFARMER666",
+    "level": 65,
+    "xp": 452274,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "basics hc",
+    "level": 65,
+    "xp": 451605,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "HC IP",
+    "level": 65,
+    "xp": 451493,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "We Escelated",
+    "level": 65,
+    "xp": 451311,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Estiom",
+    "level": 65,
+    "xp": 451249,
+    "dead": false
+   }
+  ],
+  "Defence": [
+   {
+    "rank": 1,
+    "name": "BUILT 4 DN",
+    "level": 71,
+    "xp": 842600,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "HCW Cameron",
+    "level": 71,
+    "xp": 818344,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "WhiteLightGn",
+    "level": 70,
+    "xp": 758098,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Doomaniacal",
+    "level": 70,
+    "xp": 745459,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Lomp lauren",
+    "level": 70,
+    "xp": 740129,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Puppy HCW",
+    "level": 70,
+    "xp": 739324,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Crabguy2",
+    "level": 70,
+    "xp": 738406,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "innvandreren",
+    "level": 70,
+    "xp": 737979,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Ebp9T",
+    "level": 70,
+    "xp": 737922,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Burn Pump",
+    "level": 69,
+    "xp": 676322,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "hc zinnia",
+    "level": 68,
+    "xp": 657058,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "bam 92 92",
+    "level": 68,
+    "xp": 628129,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "MainingSwap",
+    "level": 68,
+    "xp": 606564,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Lit ButtPlug",
+    "level": 66,
+    "xp": 544935,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "anycolor",
+    "level": 66,
+    "xp": 544596,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "eS2L",
+    "level": 66,
+    "xp": 526878,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Hallowtrader",
+    "level": 66,
+    "xp": 502756,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "OneWayTrip",
+    "level": 65,
+    "xp": 463108,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "BUILT 4 BA",
+    "level": 65,
+    "xp": 451563,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Kinji Kay",
+    "level": 64,
+    "xp": 409170,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "30USDBlueElf",
+    "level": 63,
+    "xp": 384207,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "ReformNow",
+    "level": 62,
+    "xp": 367563,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "AC Mike",
+    "level": 62,
+    "xp": 355059,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "LaserFart89",
+    "level": 62,
+    "xp": 351778,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "prodigy875",
+    "level": 62,
+    "xp": 348358,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "hard limez",
+    "level": 62,
+    "xp": 340806,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "i_afk_crab_2",
+    "level": 62,
+    "xp": 339991,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Faux Reborn",
+    "level": 61,
+    "xp": 315392,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "1t calls",
+    "level": 61,
+    "xp": 303414,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "KapeinXx",
+    "level": 61,
+    "xp": 302438,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "REVFARMER666",
+    "level": 61,
+    "xp": 302411,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "SocksThe Cat",
+    "level": 61,
+    "xp": 302335,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "HCW Mate",
+    "level": 60,
+    "xp": 293724,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "TarrominSeed",
+    "level": 60,
+    "xp": 291872,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "HC Adder",
+    "level": 60,
+    "xp": 287800,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "Entao Pega",
+    "level": 60,
+    "xp": 282403,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "kiimakoira35",
+    "level": 60,
+    "xp": 281801,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "HC Skatty",
+    "level": 60,
+    "xp": 279709,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Zygs1",
+    "level": 60,
+    "xp": 279651,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "505 LIVES",
+    "level": 60,
+    "xp": 277615,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "hc mixiy",
+    "level": 60,
+    "xp": 277539,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "Cheek Oiler",
+    "level": 60,
+    "xp": 277108,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Market Reset",
+    "level": 60,
+    "xp": 277058,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Epuf HCW",
+    "level": 60,
+    "xp": 276779,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Lamb Taco",
+    "level": 60,
+    "xp": 276332,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "HCW Crabbin",
+    "level": 60,
+    "xp": 276297,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Misterburga",
+    "level": 60,
+    "xp": 276063,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "HC IP",
+    "level": 60,
+    "xp": 275850,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "BorkPlanker",
+    "level": 60,
+    "xp": 275804,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Hard GBA",
+    "level": 60,
+    "xp": 275586,
+    "dead": false
+   }
+  ],
+  "Strength": [
+   {
+    "rank": 1,
+    "name": "Vannakarma",
+    "level": 79,
+    "xp": 1864515,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "1 Life Jimmy",
+    "level": 79,
+    "xp": 1863236,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HC 99thief",
+    "level": 79,
+    "xp": 1860211,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Lamb Taco",
+    "level": 79,
+    "xp": 1854716,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "HC_GOYlM",
+    "level": 78,
+    "xp": 1753509,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "onyahswinny",
+    "level": 77,
+    "xp": 1579510,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Vannakama",
+    "level": 76,
+    "xp": 1447327,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "HCW Wimpie",
+    "level": 76,
+    "xp": 1401651,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "bimcollectr1",
+    "level": 76,
+    "xp": 1336541,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Fightrage391",
+    "level": 75,
+    "xp": 1330362,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Entao Pega",
+    "level": 75,
+    "xp": 1299697,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Ebp9T",
+    "level": 75,
+    "xp": 1252026,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "zsap",
+    "level": 75,
+    "xp": 1237374,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "mooky wooky2",
+    "level": 75,
+    "xp": 1228188,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "bam 92 92",
+    "level": 75,
+    "xp": 1212938,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "REVFARMER666",
+    "level": 74,
+    "xp": 1105596,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "SoySauce277",
+    "level": 74,
+    "xp": 1103891,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Ymoo",
+    "level": 74,
+    "xp": 1100813,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Crab Rush",
+    "level": 74,
+    "xp": 1096322,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Faux Reborn",
+    "level": 74,
+    "xp": 1096294,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "DpsHungryDas",
+    "level": 73,
+    "xp": 1044794,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Big Netyhu",
+    "level": 73,
+    "xp": 1027375,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "HC Skatty",
+    "level": 73,
+    "xp": 1026972,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "putma party",
+    "level": 73,
+    "xp": 1003344,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "HC-Dupsy",
+    "level": 72,
+    "xp": 991036,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "Hallowtrader",
+    "level": 72,
+    "xp": 954091,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Zxy X",
+    "level": 72,
+    "xp": 951581,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "BimCollectr2",
+    "level": 72,
+    "xp": 944305,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "so bad hc",
+    "level": 72,
+    "xp": 941727,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Hallyu",
+    "level": 72,
+    "xp": 939339,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "ChrisspyMan",
+    "level": 72,
+    "xp": 937037,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Jiggy John",
+    "level": 72,
+    "xp": 924258,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "dedZuku3",
+    "level": 72,
+    "xp": 923233,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "JewderDied",
+    "level": 72,
+    "xp": 922801,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "baoxing",
+    "level": 72,
+    "xp": 914644,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "hcw atm",
+    "level": 72,
+    "xp": 899357,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Trouble Tom",
+    "level": 72,
+    "xp": 899310,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "LightDaBeam",
+    "level": 71,
+    "xp": 897534,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "dedZuku1",
+    "level": 71,
+    "xp": 890529,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "HCW Datting",
+    "level": 71,
+    "xp": 876027,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Lopiusdopius",
+    "level": 71,
+    "xp": 869447,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "Ashleys Hard",
+    "level": 71,
+    "xp": 867746,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Hard GBA",
+    "level": 71,
+    "xp": 862105,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HCW Pain",
+    "level": 71,
+    "xp": 861443,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Hcm Otter",
+    "level": 71,
+    "xp": 859519,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Epuf HCW",
+    "level": 71,
+    "xp": 848419,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Vargen96HC",
+    "level": 71,
+    "xp": 833042,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "wolk away",
+    "level": 71,
+    "xp": 828067,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "VinceIsHard",
+    "level": 71,
+    "xp": 827377,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "HcM BX",
+    "level": 71,
+    "xp": 826059,
+    "dead": false
+   }
+  ],
+  "Hitpoints": [
+   {
+    "rank": 1,
+    "name": "MainingSwap",
+    "level": 75,
+    "xp": 1297807,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Vilma Kytty",
+    "level": 74,
+    "xp": 1181305,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Rako Keisari",
+    "level": 72,
+    "xp": 957225,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "anycolor",
+    "level": 71,
+    "xp": 880370,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Lamb Taco",
+    "level": 71,
+    "xp": 851244,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "1 Life Jimmy",
+    "level": 71,
+    "xp": 849758,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "HC Boone HC",
+    "level": 70,
+    "xp": 798841,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Ebp9T",
+    "level": 70,
+    "xp": 787392,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Run Its DBU",
+    "level": 70,
+    "xp": 780203,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Completineer",
+    "level": 70,
+    "xp": 752510,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "bam 92 92",
+    "level": 69,
+    "xp": 724006,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Vannakarma",
+    "level": 69,
+    "xp": 707868,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Fried Rhys",
+    "level": 69,
+    "xp": 698948,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "OneWayTrip",
+    "level": 69,
+    "xp": 689716,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "HC 99thief",
+    "level": 69,
+    "xp": 675678,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Doomaniacal",
+    "level": 68,
+    "xp": 667191,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HC_GOYlM",
+    "level": 68,
+    "xp": 664587,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Crabguy2",
+    "level": 68,
+    "xp": 659757,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "eS2L",
+    "level": 68,
+    "xp": 635936,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Klusj",
+    "level": 68,
+    "xp": 617760,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "LaserFart89",
+    "level": 68,
+    "xp": 615323,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Entao Pega",
+    "level": 68,
+    "xp": 609861,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "HC PureSpam",
+    "level": 68,
+    "xp": 605995,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "innvandreren",
+    "level": 67,
+    "xp": 592516,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Hallowtrader",
+    "level": 67,
+    "xp": 590352,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "65NORTHSOUTH",
+    "level": 67,
+    "xp": 588770,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "REVFARMER666",
+    "level": 67,
+    "xp": 586096,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "not incline",
+    "level": 67,
+    "xp": 578905,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "DlTTERBITTER",
+    "level": 67,
+    "xp": 578047,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Faux Reborn",
+    "level": 67,
+    "xp": 577157,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "HCW Cameron",
+    "level": 67,
+    "xp": 572995,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Dinobear6000",
+    "level": 67,
+    "xp": 572199,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Kinji Kay",
+    "level": 67,
+    "xp": 570689,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Vannakama",
+    "level": 67,
+    "xp": 565861,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "fat rat rick",
+    "level": 67,
+    "xp": 558192,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "hc mixiy",
+    "level": 67,
+    "xp": 558176,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "AC Mike",
+    "level": 67,
+    "xp": 555168,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "HCW Wimpie",
+    "level": 67,
+    "xp": 549236,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "baoxing",
+    "level": 67,
+    "xp": 548784,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "onyahswinny",
+    "level": 66,
+    "xp": 547645,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Ymoo",
+    "level": 66,
+    "xp": 538098,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "HChelli",
+    "level": 66,
+    "xp": 537789,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "hcw atm",
+    "level": 66,
+    "xp": 535368,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HC Skatty",
+    "level": 66,
+    "xp": 522385,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Fightrage391",
+    "level": 66,
+    "xp": 522240,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "KULLIKUOLEMA",
+    "level": 66,
+    "xp": 521659,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Epuf HCW",
+    "level": 66,
+    "xp": 511434,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Market Reset",
+    "level": 66,
+    "xp": 510735,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "IceHCW",
+    "level": 66,
+    "xp": 510696,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Im3stepsahea",
+    "level": 66,
+    "xp": 509286,
+    "dead": false
+   }
+  ],
+  "Ranged": [
+   {
+    "rank": 1,
+    "name": "MainingSwap",
+    "level": 85,
+    "xp": 3497893,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Fried Rhys",
+    "level": 79,
+    "xp": 1841194,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Klusj",
+    "level": 78,
+    "xp": 1648002,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "not incline",
+    "level": 78,
+    "xp": 1641573,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Run Its DBU",
+    "level": 77,
+    "xp": 1518809,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "ER3NYEAGERR",
+    "level": 76,
+    "xp": 1420443,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Crabguy2",
+    "level": 76,
+    "xp": 1406539,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "karri huppu",
+    "level": 75,
+    "xp": 1229010,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "HC PureSpam",
+    "level": 74,
+    "xp": 1201365,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "CH0PP3R READ",
+    "level": 74,
+    "xp": 1184154,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "carldontdie",
+    "level": 74,
+    "xp": 1162991,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "HC Safebox",
+    "level": 74,
+    "xp": 1134925,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "fat rat rick",
+    "level": 74,
+    "xp": 1131317,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "the gazelle",
+    "level": 73,
+    "xp": 1077479,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "65NORTHSOUTH",
+    "level": 73,
+    "xp": 1049293,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "ApatheticApa",
+    "level": 73,
+    "xp": 1037640,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HCW Bowlcut",
+    "level": 73,
+    "xp": 1033771,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "KULLIKUOLEMA",
+    "level": 72,
+    "xp": 988197,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Dinobear6000",
+    "level": 72,
+    "xp": 962815,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "PeasentMaker",
+    "level": 72,
+    "xp": 907221,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "hc mixiy",
+    "level": 71,
+    "xp": 891676,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "MeCarl",
+    "level": 71,
+    "xp": 888384,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Daddy Range",
+    "level": 71,
+    "xp": 881538,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "thissystembs",
+    "level": 71,
+    "xp": 836215,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "DlTTERBITTER",
+    "level": 70,
+    "xp": 804833,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "HCM Tris",
+    "level": 70,
+    "xp": 800609,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "BlG Brother",
+    "level": 70,
+    "xp": 789611,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "tism-screech",
+    "level": 70,
+    "xp": 777341,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "super coin",
+    "level": 70,
+    "xp": 771587,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "HC W Pure",
+    "level": 70,
+    "xp": 764840,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Hc Soberish",
+    "level": 70,
+    "xp": 762898,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Vilma Kytty",
+    "level": 70,
+    "xp": 758497,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "HCW Deviate",
+    "level": 70,
+    "xp": 753869,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "HCW Jill",
+    "level": 70,
+    "xp": 752017,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "HC Boone HC",
+    "level": 70,
+    "xp": 746950,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "hc jason w",
+    "level": 70,
+    "xp": 740356,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "HW RRobert",
+    "level": 70,
+    "xp": 740340,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "TickTaxation",
+    "level": 70,
+    "xp": 739415,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Stiff Raikes",
+    "level": 70,
+    "xp": 738710,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "Roblox8",
+    "level": 70,
+    "xp": 738306,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "mattdafuuuuh",
+    "level": 70,
+    "xp": 738094,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "Rako Keisari",
+    "level": 70,
+    "xp": 737696,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "HC ZWARTE",
+    "level": 69,
+    "xp": 670225,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "ZullZOZED",
+    "level": 69,
+    "xp": 669155,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Harder Jay",
+    "level": 68,
+    "xp": 634661,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "reste souple",
+    "level": 68,
+    "xp": 615211,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "alch boomers",
+    "level": 67,
+    "xp": 602074,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "DIDNT DYE",
+    "level": 67,
+    "xp": 601042,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "HCLords",
+    "level": 67,
+    "xp": 596284,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "a tea stick",
+    "level": 67,
+    "xp": 595021,
+    "dead": false
+   }
+  ],
+  "Prayer": [
+   {
+    "rank": 1,
+    "name": "Slayer 3",
+    "level": 71,
+    "xp": 814487,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Crabguy2",
+    "level": 70,
+    "xp": 772073,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Doomaniacal",
+    "level": 70,
+    "xp": 746514,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Puppy HCW",
+    "level": 70,
+    "xp": 745904,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "hard limez",
+    "level": 70,
+    "xp": 739864,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Pesky Poodle",
+    "level": 70,
+    "xp": 738750,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Ebp9T",
+    "level": 70,
+    "xp": 738143,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Checkmage",
+    "level": 64,
+    "xp": 415065,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Faux Reborn",
+    "level": 62,
+    "xp": 340419,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "HCW C8",
+    "level": 60,
+    "xp": 300060,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "innvandreren",
+    "level": 60,
+    "xp": 298768,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "S0FTCORE BTW",
+    "level": 60,
+    "xp": 286680,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "hc mixiy",
+    "level": 60,
+    "xp": 280565,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "DailySharter",
+    "level": 60,
+    "xp": 279940,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Hallowtrader",
+    "level": 60,
+    "xp": 279759,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "gatorgobbler",
+    "level": 60,
+    "xp": 275611,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HardRClipper",
+    "level": 60,
+    "xp": 274990,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "eS2L",
+    "level": 60,
+    "xp": 274000,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Kinji Kay",
+    "level": 59,
+    "xp": 255665,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "tall tree17",
+    "level": 58,
+    "xp": 247828,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Hc4aMoment",
+    "level": 57,
+    "xp": 223630,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "HCW Bobicles",
+    "level": 57,
+    "xp": 217341,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "BIG J P",
+    "level": 56,
+    "xp": 196325,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "SoloMssion",
+    "level": 56,
+    "xp": 188943,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "LiT Docta HC",
+    "level": 56,
+    "xp": 188077,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "swapgoblin",
+    "level": 56,
+    "xp": 187612,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "lmRestarted",
+    "level": 56,
+    "xp": 185671,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "HCW Goat",
+    "level": 55,
+    "xp": 180292,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "anycolor",
+    "level": 55,
+    "xp": 167761,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "11042026",
+    "level": 55,
+    "xp": 167599,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "BenardosCake",
+    "level": 55,
+    "xp": 166948,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "CarlosXXI",
+    "level": 55,
+    "xp": 166796,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "GnoWayIDie",
+    "level": 54,
+    "xp": 158121,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "HC Suqi Suqi",
+    "level": 54,
+    "xp": 154736,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "1 Life Jimmy",
+    "level": 54,
+    "xp": 152880,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "Dead bat foy",
+    "level": 53,
+    "xp": 149572,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Alt D K 99",
+    "level": 53,
+    "xp": 148680,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "Promas Jr",
+    "level": 53,
+    "xp": 143705,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "HCW Mate",
+    "level": 53,
+    "xp": 138002,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "P4CK3TG41N5",
+    "level": 52,
+    "xp": 135693,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "HC Gousheng",
+    "level": 52,
+    "xp": 131793,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "wolk away",
+    "level": 52,
+    "xp": 129753,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "HC Boone HC",
+    "level": 52,
+    "xp": 129177,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HC SaK",
+    "level": 52,
+    "xp": 128656,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Fried Rhys",
+    "level": 52,
+    "xp": 125834,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "DlTTERBITTER",
+    "level": 52,
+    "xp": 125579,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "B a HC",
+    "level": 52,
+    "xp": 125158,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "WoW Fornever",
+    "level": 52,
+    "xp": 125120,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "howardnutlik",
+    "level": 52,
+    "xp": 125035,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Run Its DBU",
+    "level": 52,
+    "xp": 125025,
+    "dead": false
+   }
+  ],
+  "Magic": [
+   {
+    "rank": 1,
+    "name": "TinkerTitan",
+    "level": 85,
+    "xp": 3378700,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "DlTTERBITTER",
+    "level": 85,
+    "xp": 3316985,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "READING B00K",
+    "level": 84,
+    "xp": 3232946,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "rustythistle",
+    "level": 84,
+    "xp": 3043762,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "55m for OFF",
+    "level": 83,
+    "xp": 2857020,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "PeasentMaker",
+    "level": 83,
+    "xp": 2779951,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Kucs",
+    "level": 82,
+    "xp": 2672261,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Fried Rhys",
+    "level": 82,
+    "xp": 2671993,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "GAPING SLAVE",
+    "level": 82,
+    "xp": 2498774,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "HCW Peta",
+    "level": 82,
+    "xp": 2475130,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "HC DIVORCE",
+    "level": 82,
+    "xp": 2461630,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Kim Wuu2",
+    "level": 81,
+    "xp": 2417737,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "HC Boone HC",
+    "level": 81,
+    "xp": 2309677,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Vilma Kytty",
+    "level": 81,
+    "xp": 2306395,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "WILDYOFFlCER",
+    "level": 81,
+    "xp": 2222113,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "HardMagician",
+    "level": 81,
+    "xp": 2216647,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "WlIDYOFFICER",
+    "level": 81,
+    "xp": 2215972,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Dinobear6000",
+    "level": 81,
+    "xp": 2198488,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "WILDY0FFICER",
+    "level": 79,
+    "xp": 1961515,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "WILDY0FFIC3R",
+    "level": 79,
+    "xp": 1932624,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "ikillDbones",
+    "level": 79,
+    "xp": 1870087,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Run Its DBU",
+    "level": 79,
+    "xp": 1855546,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Roblox8",
+    "level": 79,
+    "xp": 1814704,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Rako Keisari",
+    "level": 79,
+    "xp": 1806969,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "possufarmi20",
+    "level": 79,
+    "xp": 1801579,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "rev killa2",
+    "level": 78,
+    "xp": 1779529,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "fat rat rick",
+    "level": 78,
+    "xp": 1666147,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Whips your B",
+    "level": 78,
+    "xp": 1664158,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "LaserFart89",
+    "level": 78,
+    "xp": 1657646,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "anycolor",
+    "level": 78,
+    "xp": 1655541,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "HcJimbo",
+    "level": 77,
+    "xp": 1625845,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "jamaican maa",
+    "level": 77,
+    "xp": 1599899,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Completineer",
+    "level": 77,
+    "xp": 1585558,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Globe Hard",
+    "level": 76,
+    "xp": 1454851,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "le moi kappa",
+    "level": 76,
+    "xp": 1363226,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "bonebolts",
+    "level": 75,
+    "xp": 1251500,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "karri huppu",
+    "level": 75,
+    "xp": 1213081,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "CrystalBow",
+    "level": 75,
+    "xp": 1212177,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Pwn Man 2338",
+    "level": 75,
+    "xp": 1211695,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "HAVENT DlED",
+    "level": 74,
+    "xp": 1185341,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "HardRClipper",
+    "level": 74,
+    "xp": 1177953,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "INEEDRELIC",
+    "level": 74,
+    "xp": 1162987,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "HC Suqi Suqi",
+    "level": 74,
+    "xp": 1153115,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Hardcore 33B",
+    "level": 74,
+    "xp": 1136404,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Click Reset",
+    "level": 74,
+    "xp": 1112369,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "HectorIsHard",
+    "level": 73,
+    "xp": 1095115,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Harder Jay",
+    "level": 73,
+    "xp": 1048290,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "AJ 96",
+    "level": 73,
+    "xp": 1041635,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "PLAYER34977",
+    "level": 73,
+    "xp": 1026681,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "hard coxie",
+    "level": 73,
+    "xp": 1021210,
+    "dead": false
+   }
+  ],
+  "Cooking": [
+   {
+    "rank": 1,
+    "name": "HC Captn",
+    "level": 91,
+    "xp": 6371715,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Clamy-HC",
+    "level": 90,
+    "xp": 5786050,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "carldead",
+    "level": 88,
+    "xp": 4393500,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "LiT Duncy HC",
+    "level": 86,
+    "xp": 3926310,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Acquire Goop",
+    "level": 83,
+    "xp": 2889202,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Fistinas",
+    "level": 83,
+    "xp": 2787954,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Camflip",
+    "level": 81,
+    "xp": 2292100,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Herbinox",
+    "level": 81,
+    "xp": 2194443,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Skelen7",
+    "level": 80,
+    "xp": 2065146,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "HC Deceit",
+    "level": 80,
+    "xp": 2016576,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "FrigidSleep",
+    "level": 78,
+    "xp": 1775380,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "DEAD B0LT",
+    "level": 77,
+    "xp": 1540270,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "HCW Edesia",
+    "level": 77,
+    "xp": 1518580,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Ska the 3rd",
+    "level": 76,
+    "xp": 1420210,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "OurNamesFaiI",
+    "level": 75,
+    "xp": 1324630,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Fistin Furry",
+    "level": 75,
+    "xp": 1307300,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "No Flukes",
+    "level": 75,
+    "xp": 1253180,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "HCW Aped",
+    "level": 75,
+    "xp": 1214370,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "hcwuber",
+    "level": 75,
+    "xp": 1211930,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "BQuinlan",
+    "level": 74,
+    "xp": 1170175,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "HC2sleep",
+    "level": 74,
+    "xp": 1164490,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Im DJ Audits",
+    "level": 73,
+    "xp": 1003127,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Mvc2 Ironman",
+    "level": 72,
+    "xp": 946910,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "A Hard Crab",
+    "level": 72,
+    "xp": 936990,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Crazy Koi",
+    "level": 72,
+    "xp": 931930,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "Karambwanted",
+    "level": 72,
+    "xp": 928692,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Alt Flicker",
+    "level": 72,
+    "xp": 914670,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Camelini",
+    "level": 71,
+    "xp": 881582,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "HC M00",
+    "level": 71,
+    "xp": 826500,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Hyphonixooo",
+    "level": 70,
+    "xp": 801820,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "ReturningUNC",
+    "level": 70,
+    "xp": 778650,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "BKcrown alt",
+    "level": 70,
+    "xp": 777350,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "AMERlCAF1RST",
+    "level": 70,
+    "xp": 754455,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "HC U3",
+    "level": 70,
+    "xp": 754177,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "Paul 1205",
+    "level": 70,
+    "xp": 752310,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "Pesky Toads",
+    "level": 70,
+    "xp": 750865,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "DR HYPEEE",
+    "level": 70,
+    "xp": 739325,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "eenter",
+    "level": 70,
+    "xp": 737742,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "HC W Mike",
+    "level": 70,
+    "xp": 737696,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "Hdrondogmage",
+    "level": 69,
+    "xp": 733515,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Nimbus2OO1",
+    "level": 69,
+    "xp": 722060,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "sahara camel",
+    "level": 69,
+    "xp": 713694,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "KayBD",
+    "level": 69,
+    "xp": 702080,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HC Oak Plank",
+    "level": 69,
+    "xp": 700310,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "L V X",
+    "level": 69,
+    "xp": 681060,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Carabwanji",
+    "level": 69,
+    "xp": 670220,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "BlG PlSSER",
+    "level": 69,
+    "xp": 669700,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Fru Frantsen",
+    "level": 68,
+    "xp": 651980,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Wet Chambers",
+    "level": 68,
+    "xp": 649630,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Krazy Koi",
+    "level": 68,
+    "xp": 638480,
+    "dead": false
+   }
+  ],
+  "Woodcutting": [
+   {
+    "rank": 1,
+    "name": "hc not iron",
+    "level": 90,
+    "xp": 5419445,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "K77P",
+    "level": 83,
+    "xp": 2709090,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "camels hc",
+    "level": 81,
+    "xp": 2225776,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "an exiled",
+    "level": 81,
+    "xp": 2205972,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "shibai zhe",
+    "level": 79,
+    "xp": 1905491,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "HCW Fleur",
+    "level": 78,
+    "xp": 1730980,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "HCW June",
+    "level": 78,
+    "xp": 1729367,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Minus 5below",
+    "level": 78,
+    "xp": 1692882,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "HCWChopper69",
+    "level": 78,
+    "xp": 1660047,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "HCW Chopper",
+    "level": 78,
+    "xp": 1649729,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "DeadFastBub",
+    "level": 78,
+    "xp": 1632562,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "HC OneWish",
+    "level": 77,
+    "xp": 1551930,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "HC Lachy",
+    "level": 77,
+    "xp": 1531215,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Shibutoi",
+    "level": 76,
+    "xp": 1466367,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "xd maik3",
+    "level": 76,
+    "xp": 1451095,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "H Pieterjan",
+    "level": 76,
+    "xp": 1441290,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Loaded Kai",
+    "level": 76,
+    "xp": 1439688,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "K Pieterjan",
+    "level": 76,
+    "xp": 1436207,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "xd maik4",
+    "level": 76,
+    "xp": 1414035,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "ErnstysNut",
+    "level": 76,
+    "xp": 1404601,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "shrmpfryr1ce",
+    "level": 76,
+    "xp": 1401291,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Karambass",
+    "level": 76,
+    "xp": 1393103,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "xd maik1",
+    "level": 76,
+    "xp": 1391375,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "F LlCK ME",
+    "level": 76,
+    "xp": 1374575,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Mueletta",
+    "level": 76,
+    "xp": 1367436,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "Abyssal Bass",
+    "level": 76,
+    "xp": 1367357,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Vorkbass",
+    "level": 76,
+    "xp": 1358132,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Ectogroove",
+    "level": 76,
+    "xp": 1351870,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "HC DlV0RCE",
+    "level": 76,
+    "xp": 1342754,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "mooky wooky3",
+    "level": 75,
+    "xp": 1328984,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Zheu hasLife",
+    "level": 75,
+    "xp": 1311472,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Tightest Fan",
+    "level": 75,
+    "xp": 1308841,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "tank steve",
+    "level": 75,
+    "xp": 1302659,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "umberlit ble",
+    "level": 75,
+    "xp": 1288825,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "DuoMillion",
+    "level": 75,
+    "xp": 1270258,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "MistaTick",
+    "level": 75,
+    "xp": 1268562,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "og moffe",
+    "level": 75,
+    "xp": 1257014,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "CrazyBosnian",
+    "level": 75,
+    "xp": 1233746,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Malzberg",
+    "level": 75,
+    "xp": 1226573,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "hc factz",
+    "level": 75,
+    "xp": 1225233,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Chop Goy",
+    "level": 75,
+    "xp": 1211166,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "HC Spoonani",
+    "level": 75,
+    "xp": 1210851,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Lvl 99 Defen",
+    "level": 74,
+    "xp": 1206870,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "load burger",
+    "level": 74,
+    "xp": 1205166,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "H_jatt",
+    "level": 74,
+    "xp": 1202050,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "HCM0nk3y",
+    "level": 74,
+    "xp": 1197023,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Zegecko v2",
+    "level": 74,
+    "xp": 1193188,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "s0a1",
+    "level": 74,
+    "xp": 1172773,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Faglioni",
+    "level": 74,
+    "xp": 1159963,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "torso brah",
+    "level": 74,
+    "xp": 1153160,
+    "dead": false
+   }
+  ],
+  "Fletching": [
+   {
+    "rank": 1,
+    "name": "hc conquer",
+    "level": 91,
+    "xp": 6495963,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Ximending",
+    "level": 90,
+    "xp": 5899193,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HCW Truus",
+    "level": 90,
+    "xp": 5780937,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Fletch 4 GP",
+    "level": 90,
+    "xp": 5529651,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "xd maik2",
+    "level": 86,
+    "xp": 3683987,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "jlo feature",
+    "level": 84,
+    "xp": 3170451,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "DeadSwap HCW",
+    "level": 84,
+    "xp": 3029157,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Dezealy",
+    "level": 83,
+    "xp": 2675247,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "THlCC N HARD",
+    "level": 82,
+    "xp": 2660838,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "33388",
+    "level": 82,
+    "xp": 2655184,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "SkyHi1",
+    "level": 82,
+    "xp": 2592756,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "1 Life Harry",
+    "level": 82,
+    "xp": 2518834,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "SourHardcore",
+    "level": 81,
+    "xp": 2412329,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Kiwi Hammy G",
+    "level": 81,
+    "xp": 2363013,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "L ochi",
+    "level": 81,
+    "xp": 2314068,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Bawwz Jr",
+    "level": 81,
+    "xp": 2275022,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Boothwooth",
+    "level": 81,
+    "xp": 2215459,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "bch of death",
+    "level": 81,
+    "xp": 2203145,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "HCW Skiller",
+    "level": 80,
+    "xp": 2101107,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "8D HCM",
+    "level": 80,
+    "xp": 2028681,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Capt Starda",
+    "level": 79,
+    "xp": 1959400,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Ford 0S",
+    "level": 78,
+    "xp": 1754444,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "T SUBBB",
+    "level": 78,
+    "xp": 1745626,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Zegecko v2",
+    "level": 77,
+    "xp": 1621261,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "PatMeSoft",
+    "level": 77,
+    "xp": 1568668,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "Kinkcore",
+    "level": 77,
+    "xp": 1541994,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Eleanor Mani",
+    "level": 77,
+    "xp": 1516281,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "DM if needed",
+    "level": 76,
+    "xp": 1430844,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "ItsGraftedHC",
+    "level": 76,
+    "xp": 1409623,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "TubbyCookz",
+    "level": 76,
+    "xp": 1396319,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "NotTodayZamy",
+    "level": 75,
+    "xp": 1264027,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Hcw Vicks",
+    "level": 75,
+    "xp": 1228928,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "H_jatt",
+    "level": 75,
+    "xp": 1225577,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "HC MAZEIKIS",
+    "level": 74,
+    "xp": 1204789,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "Timzz fletch",
+    "level": 74,
+    "xp": 1178420,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "BIGBACKMULE",
+    "level": 74,
+    "xp": 1152465,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Majin Cell",
+    "level": 74,
+    "xp": 1118966,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "WoothBooth",
+    "level": 73,
+    "xp": 1036259,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "OopsImDied",
+    "level": 73,
+    "xp": 1025674,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "Khiwo",
+    "level": 73,
+    "xp": 1011871,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Iwontdiejoke",
+    "level": 72,
+    "xp": 992065,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "4-11-2026",
+    "level": 72,
+    "xp": 976703,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Wandamas",
+    "level": 72,
+    "xp": 907497,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Altacation 5",
+    "level": 71,
+    "xp": 833420,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "KingSukamon",
+    "level": 70,
+    "xp": 775570,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Wildenator",
+    "level": 70,
+    "xp": 766816,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Hard Scowder",
+    "level": 70,
+    "xp": 757391,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "HCferrocious",
+    "level": 70,
+    "xp": 740456,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "HC Serf",
+    "level": 70,
+    "xp": 739713,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "HC Gonna Die",
+    "level": 70,
+    "xp": 738684,
+    "dead": false
+   }
+  ],
+  "Fishing": [
+   {
+    "rank": 1,
+    "name": "FrigidSleep",
+    "level": 86,
+    "xp": 3852803,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "HC Ho Li Puk",
+    "level": 84,
+    "xp": 3068822,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HC God OB",
+    "level": 80,
+    "xp": 2004030,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "HcDookieSpot",
+    "level": 80,
+    "xp": 1992762,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "HCW Taneli",
+    "level": 80,
+    "xp": 1986220,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "fishman g",
+    "level": 79,
+    "xp": 1946322,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Angler rush",
+    "level": 79,
+    "xp": 1848747,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "HC Senzham",
+    "level": 78,
+    "xp": 1757995,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Juu en kuole",
+    "level": 78,
+    "xp": 1650458,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Chaoscrab72",
+    "level": 77,
+    "xp": 1580061,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "HC Liu Wang",
+    "level": 77,
+    "xp": 1555556,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Holy pk",
+    "level": 77,
+    "xp": 1507970,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Lillekomp",
+    "level": 77,
+    "xp": 1478479,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Jimmys Rank1",
+    "level": 76,
+    "xp": 1464791,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Hardroom",
+    "level": 76,
+    "xp": 1433030,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Fishinq Tips",
+    "level": 76,
+    "xp": 1380919,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HC Oak Plank",
+    "level": 76,
+    "xp": 1379032,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "kaukalooo",
+    "level": 76,
+    "xp": 1346400,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "AlarmingHCW",
+    "level": 76,
+    "xp": 1342070,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "DoNotDieThx",
+    "level": 75,
+    "xp": 1319582,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "carlstopdie",
+    "level": 75,
+    "xp": 1269930,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "BootiPebbles",
+    "level": 75,
+    "xp": 1254747,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "TowardsDawn",
+    "level": 75,
+    "xp": 1227988,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "WookieThumbs",
+    "level": 75,
+    "xp": 1224936,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Karambwanted",
+    "level": 75,
+    "xp": 1211281,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "HCW Salacia",
+    "level": 75,
+    "xp": 1210557,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "HCW Fontus",
+    "level": 74,
+    "xp": 1203277,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Dead Prenti",
+    "level": 74,
+    "xp": 1194507,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "Stiff Wood",
+    "level": 74,
+    "xp": 1160800,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Magby ex",
+    "level": 74,
+    "xp": 1156802,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "GP Pack Yak",
+    "level": 74,
+    "xp": 1135633,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "LumberBallz",
+    "level": 73,
+    "xp": 1089798,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Marks mule4",
+    "level": 73,
+    "xp": 1078150,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "MC85",
+    "level": 73,
+    "xp": 1052293,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "HC M00",
+    "level": 73,
+    "xp": 1039291,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "nullashy",
+    "level": 73,
+    "xp": 1028541,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "lvl3 Hc",
+    "level": 73,
+    "xp": 1022848,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "FishyCrik",
+    "level": 73,
+    "xp": 1017697,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Turssualtti",
+    "level": 73,
+    "xp": 993460,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "angleralt z9",
+    "level": 72,
+    "xp": 990502,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Phok Wot",
+    "level": 72,
+    "xp": 988033,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "CyanHardcore",
+    "level": 72,
+    "xp": 986720,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "ALT 8008",
+    "level": 72,
+    "xp": 981234,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HcwMaxim",
+    "level": 72,
+    "xp": 962230,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Pift",
+    "level": 72,
+    "xp": 937974,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Camflip",
+    "level": 72,
+    "xp": 931754,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "hcwuber1",
+    "level": 72,
+    "xp": 929110,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Raisin HC",
+    "level": 72,
+    "xp": 928714,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Glaive Rush",
+    "level": 72,
+    "xp": 927501,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "LiT HC Docta",
+    "level": 72,
+    "xp": 924670,
+    "dead": false
+   }
+  ],
+  "Firemaking": [
+   {
+    "rank": 1,
+    "name": "Shawn Bay",
+    "level": 99,
+    "xp": 16820161,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Lunny HCW",
+    "level": 99,
+    "xp": 13034928,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HC Grichel",
+    "level": 98,
+    "xp": 12987459,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "hc moneyslut",
+    "level": 98,
+    "xp": 12628259,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Pyromanimak2",
+    "level": 97,
+    "xp": 11190037,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "TDF III",
+    "level": 96,
+    "xp": 9977287,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "x ym",
+    "level": 95,
+    "xp": 9210646,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "DEFYDEATH-2",
+    "level": 95,
+    "xp": 9048416,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Hickory Jake",
+    "level": 94,
+    "xp": 8411923,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Phasmafunk",
+    "level": 94,
+    "xp": 8351400,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "HCW zwijger",
+    "level": 94,
+    "xp": 8336151,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "jimmyhcw",
+    "level": 93,
+    "xp": 7914059,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "HCW Petya",
+    "level": 92,
+    "xp": 7188918,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "RetroRab",
+    "level": 92,
+    "xp": 7006806,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Kami Pimp",
+    "level": 90,
+    "xp": 5881894,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Kalistrak",
+    "level": 90,
+    "xp": 5709073,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "WisdomPeekW",
+    "level": 90,
+    "xp": 5578617,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "TylerBearxd",
+    "level": 90,
+    "xp": 5559444,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Logic YT",
+    "level": 90,
+    "xp": 5363637,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "VanRS",
+    "level": 90,
+    "xp": 5352802,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "IDFappraisal",
+    "level": 89,
+    "xp": 5200652,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "softerichard",
+    "level": 89,
+    "xp": 5150327,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Mammoth Nugs",
+    "level": 89,
+    "xp": 5137308,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Taurela",
+    "level": 89,
+    "xp": 5117277,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "I3ig on osrs",
+    "level": 89,
+    "xp": 4972789,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "HCW zog",
+    "level": 89,
+    "xp": 4964261,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "HCTeacea",
+    "level": 89,
+    "xp": 4962567,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "HardcoreEnvi",
+    "level": 89,
+    "xp": 4883488,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "Moren",
+    "level": 88,
+    "xp": 4790148,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Ov Ashes",
+    "level": 88,
+    "xp": 4413485,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Im Softcor3",
+    "level": 88,
+    "xp": 4411531,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Vin1250",
+    "level": 87,
+    "xp": 4200573,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "G0DAMITdonut",
+    "level": 86,
+    "xp": 3957301,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "HCW Warner",
+    "level": 86,
+    "xp": 3867984,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "OofMyNuts",
+    "level": 86,
+    "xp": 3724511,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "HCW Cnote",
+    "level": 86,
+    "xp": 3705862,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "HCW Breeze",
+    "level": 86,
+    "xp": 3625710,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "GOLD III",
+    "level": 85,
+    "xp": 3579355,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Weeggah",
+    "level": 85,
+    "xp": 3311518,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "FeraligatrHC",
+    "level": 85,
+    "xp": 3272063,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "hc WRLDs",
+    "level": 84,
+    "xp": 3230157,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "0nlySki11z",
+    "level": 84,
+    "xp": 3183690,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "ZezimasCurse",
+    "level": 84,
+    "xp": 3087142,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Bad Boobs",
+    "level": 84,
+    "xp": 3061624,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Amy Angler",
+    "level": 84,
+    "xp": 3038339,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "HC Navbrah",
+    "level": 83,
+    "xp": 2910218,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "yakorka",
+    "level": 83,
+    "xp": 2875900,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Shellmon",
+    "level": 83,
+    "xp": 2870078,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Sorry Baws",
+    "level": 82,
+    "xp": 2588433,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "ConjoCore",
+    "level": 82,
+    "xp": 2557732,
+    "dead": false
+   }
+  ],
+  "Crafting": [
+   {
+    "rank": 1,
+    "name": "TN1K CRAFT",
+    "level": 92,
+    "xp": 6530368,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "FlRST TO 99",
+    "level": 90,
+    "xp": 5675650,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Crafting 1",
+    "level": 86,
+    "xp": 3858118,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "tisukisu2222",
+    "level": 85,
+    "xp": 3347152,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Maatiaiskisu",
+    "level": 81,
+    "xp": 2342026,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Whisky Craft",
+    "level": 81,
+    "xp": 2330494,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "PepsiMaxChry",
+    "level": 74,
+    "xp": 1204455,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Weedle Main",
+    "level": 74,
+    "xp": 1101811,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "HCwaalt",
+    "level": 70,
+    "xp": 796522,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "HardcoreW2",
+    "level": 70,
+    "xp": 764577,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "codrush",
+    "level": 69,
+    "xp": 717256,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "K0rte ALT",
+    "level": 69,
+    "xp": 684070,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "rilstwo",
+    "level": 68,
+    "xp": 664418,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "HCW Vinny",
+    "level": 68,
+    "xp": 613183,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Bownsen Onit",
+    "level": 64,
+    "xp": 443585,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "Crabguy2",
+    "level": 64,
+    "xp": 416302,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "1 False Fart",
+    "level": 63,
+    "xp": 392088,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Elf pee",
+    "level": 62,
+    "xp": 367852,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "HCW4",
+    "level": 62,
+    "xp": 359909,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Antonn HC",
+    "level": 62,
+    "xp": 355705,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "HC BTN 5",
+    "level": 62,
+    "xp": 334547,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "gpShuyi",
+    "level": 61,
+    "xp": 316167,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Private Prop",
+    "level": 61,
+    "xp": 311574,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "HC Sutanu",
+    "level": 61,
+    "xp": 306063,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "THlCC N HARD",
+    "level": 60,
+    "xp": 301866,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "xi softcore",
+    "level": 60,
+    "xp": 289026,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Swe HCore",
+    "level": 60,
+    "xp": 278527,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Jubligator",
+    "level": 60,
+    "xp": 273905,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "HC Shrubbery",
+    "level": 59,
+    "xp": 272324,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "HCW FR0Z3N",
+    "level": 59,
+    "xp": 268798,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "HCW Cedation",
+    "level": 59,
+    "xp": 266336,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Helios light",
+    "level": 59,
+    "xp": 263423,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "sahara camel",
+    "level": 59,
+    "xp": 262426,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Dead Knuupy",
+    "level": 59,
+    "xp": 257253,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "HARDWORL D",
+    "level": 59,
+    "xp": 255680,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "HCW JaI",
+    "level": 59,
+    "xp": 252077,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "MuniHC",
+    "level": 59,
+    "xp": 248411,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "Woox ur mom",
+    "level": 58,
+    "xp": 235465,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Prime Genkai",
+    "level": 58,
+    "xp": 231260,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "WalkingKat",
+    "level": 58,
+    "xp": 226873,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "SoloMssion",
+    "level": 58,
+    "xp": 226583,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "HCW MADEX",
+    "level": 58,
+    "xp": 224630,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "metal auger",
+    "level": 57,
+    "xp": 221648,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "vermont kiss",
+    "level": 57,
+    "xp": 220262,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Die Refusal",
+    "level": 57,
+    "xp": 216915,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Ceuric",
+    "level": 57,
+    "xp": 214055,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "KariKusimaa",
+    "level": 57,
+    "xp": 213427,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "L V 9",
+    "level": 57,
+    "xp": 212134,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Shay 99",
+    "level": 57,
+    "xp": 210540,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "HC SO EZ",
+    "level": 57,
+    "xp": 210255,
+    "dead": false
+   }
+  ],
+  "Smithing": [
+   {
+    "rank": 1,
+    "name": "im meltii",
+    "level": 94,
+    "xp": 8325689,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Bonk on HC",
+    "level": 86,
+    "xp": 3900414,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "smith go brr",
+    "level": 85,
+    "xp": 3302851,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "6 nines",
+    "level": 84,
+    "xp": 3173826,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "HcoreMars",
+    "level": 84,
+    "xp": 3047248,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "EnwardeBRing",
+    "level": 83,
+    "xp": 2859792,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Ely Peanuts5",
+    "level": 78,
+    "xp": 1780479,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Raikhard",
+    "level": 76,
+    "xp": 1438019,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "trickscoot",
+    "level": 76,
+    "xp": 1412191,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "KOKOPAN_TEDY",
+    "level": 76,
+    "xp": 1357037,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "HCworld01",
+    "level": 75,
+    "xp": 1306509,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "BigHardBob",
+    "level": 74,
+    "xp": 1195641,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "nakdeadge",
+    "level": 74,
+    "xp": 1096602,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "HC MaoZeDong",
+    "level": 73,
+    "xp": 1081452,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "DoughFondler",
+    "level": 73,
+    "xp": 1079569,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "HCMigin",
+    "level": 73,
+    "xp": 1075559,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "iluvdinosors",
+    "level": 73,
+    "xp": 1030032,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "HC Nop",
+    "level": 73,
+    "xp": 1024730,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Harde Maas",
+    "level": 73,
+    "xp": 1023241,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "BajaBIaster",
+    "level": 72,
+    "xp": 935511,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "MisakiHC",
+    "level": 71,
+    "xp": 874401,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "olave garden",
+    "level": 71,
+    "xp": 857537,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "HCW Sniffer",
+    "level": 71,
+    "xp": 840406,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Re Mont",
+    "level": 71,
+    "xp": 831390,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "SodasSlave",
+    "level": 70,
+    "xp": 809774,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "AllShops",
+    "level": 70,
+    "xp": 805376,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Fusco HC",
+    "level": 70,
+    "xp": 803518,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "LoveAndLevel",
+    "level": 70,
+    "xp": 796152,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "HC Noobalhao",
+    "level": 70,
+    "xp": 779331,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "HC ZWARTE",
+    "level": 70,
+    "xp": 776433,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "BlackCat_604",
+    "level": 70,
+    "xp": 771774,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "HxcDrew",
+    "level": 70,
+    "xp": 769251,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Savikuono",
+    "level": 70,
+    "xp": 763616,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "pet bnuuy",
+    "level": 70,
+    "xp": 755577,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "DeathIceClaw",
+    "level": 70,
+    "xp": 755549,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "Mikeman HCW",
+    "level": 70,
+    "xp": 752335,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Hard Bound",
+    "level": 70,
+    "xp": 745673,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "Pesky Toads",
+    "level": 70,
+    "xp": 745232,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "HC-Tnelson45",
+    "level": 70,
+    "xp": 744554,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "HCM Djinn",
+    "level": 70,
+    "xp": 742319,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Mainvincible",
+    "level": 70,
+    "xp": 738759,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "DA 1ST HC",
+    "level": 70,
+    "xp": 737644,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "mooky wooky1",
+    "level": 69,
+    "xp": 727001,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "CannonbaIIs",
+    "level": 69,
+    "xp": 712394,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Cold Is Old",
+    "level": 69,
+    "xp": 712161,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "EpsteinWorld",
+    "level": 69,
+    "xp": 706059,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Jooooozz",
+    "level": 69,
+    "xp": 697489,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "hcsolo90",
+    "level": 69,
+    "xp": 671585,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "okthatstech",
+    "level": 68,
+    "xp": 664719,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Overcooking",
+    "level": 68,
+    "xp": 635750,
+    "dead": false
+   }
+  ],
+  "Mining": [
+   {
+    "rank": 1,
+    "name": "Nelsiii",
+    "level": 84,
+    "xp": 2989242,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "FioTerraTV",
+    "level": 83,
+    "xp": 2705647,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Masktellsea",
+    "level": 82,
+    "xp": 2564025,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "AFK At Jad",
+    "level": 82,
+    "xp": 2552320,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "mejmejmejmej",
+    "level": 80,
+    "xp": 2161187,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "HCW Gage",
+    "level": 80,
+    "xp": 2130058,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "hhhhhhh turk",
+    "level": 80,
+    "xp": 2126547,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "HC Carter HC",
+    "level": 80,
+    "xp": 2041427,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "brainrottd",
+    "level": 79,
+    "xp": 1901003,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Mister Werk",
+    "level": 79,
+    "xp": 1830297,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "HC Tehengo",
+    "level": 78,
+    "xp": 1794301,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "HCMLZH",
+    "level": 78,
+    "xp": 1706455,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "VorkMiner",
+    "level": 78,
+    "xp": 1690912,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Lukeee HCW",
+    "level": 78,
+    "xp": 1648528,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "hc main att2",
+    "level": 78,
+    "xp": 1629212,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "hak-der",
+    "level": 77,
+    "xp": 1594486,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HC AARON CH",
+    "level": 77,
+    "xp": 1515662,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "ronsu americ",
+    "level": 77,
+    "xp": 1514077,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "mlm enjoyer1",
+    "level": 77,
+    "xp": 1491110,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Tapislutgo",
+    "level": 76,
+    "xp": 1469020,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Frownz",
+    "level": 76,
+    "xp": 1381805,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "FAKEROFHC",
+    "level": 76,
+    "xp": 1338378,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "axes go brrr",
+    "level": 75,
+    "xp": 1331805,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "I Am Mining",
+    "level": 75,
+    "xp": 1299793,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "SKILLERMANHC",
+    "level": 75,
+    "xp": 1266988,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "HCskillgapz",
+    "level": 75,
+    "xp": 1248367,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "MikeyREKTx",
+    "level": 75,
+    "xp": 1248035,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "WlLDYOFFICER",
+    "level": 75,
+    "xp": 1242031,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "hcw juice",
+    "level": 74,
+    "xp": 1188992,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "I Stuff Butt",
+    "level": 74,
+    "xp": 1160318,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "ChoroHC",
+    "level": 74,
+    "xp": 1146848,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Undead Thagz",
+    "level": 74,
+    "xp": 1115677,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "timpiggerton",
+    "level": 74,
+    "xp": 1108338,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "StarMiner1",
+    "level": 74,
+    "xp": 1106524,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "Kombatlevel3",
+    "level": 74,
+    "xp": 1102788,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "FisherDunk",
+    "level": 73,
+    "xp": 1089117,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "iiSupplier",
+    "level": 73,
+    "xp": 1088125,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "HC Appetite",
+    "level": 73,
+    "xp": 1080848,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "SirDeadCrack",
+    "level": 73,
+    "xp": 1047055,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "0neLlfeOnly",
+    "level": 73,
+    "xp": 1025651,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "SirMuleCrack",
+    "level": 73,
+    "xp": 1015882,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "CleaniskHC",
+    "level": 73,
+    "xp": 998920,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "somN7ium",
+    "level": 72,
+    "xp": 956642,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HCUIM Impose",
+    "level": 72,
+    "xp": 931375,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Re Mont",
+    "level": 72,
+    "xp": 921164,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Dr Beagz",
+    "level": 72,
+    "xp": 920767,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "CalmApa",
+    "level": 72,
+    "xp": 901578,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Raknore",
+    "level": 71,
+    "xp": 883065,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "HCM KG A",
+    "level": 71,
+    "xp": 872387,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "HCM KG D",
+    "level": 71,
+    "xp": 870519,
+    "dead": false
+   }
+  ],
+  "Herblore": [
+   {
+    "rank": 1,
+    "name": "Hard 7G",
+    "level": 80,
+    "xp": 2175772,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Munchey xD",
+    "level": 76,
+    "xp": 1346030,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HCW Mikeman",
+    "level": 74,
+    "xp": 1106384,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Vottaka",
+    "level": 69,
+    "xp": 675794,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "HC-Tnelson45",
+    "level": 65,
+    "xp": 482197,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Immortal Jay",
+    "level": 62,
+    "xp": 338663,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "hardcoreheck",
+    "level": 58,
+    "xp": 247169,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "EnrgyPotions",
+    "level": 58,
+    "xp": 236523,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "SoloMssion",
+    "level": 57,
+    "xp": 203987,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Hans Luther",
+    "level": 56,
+    "xp": 201366,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Smittingown",
+    "level": 56,
+    "xp": 196852,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Corun HCW",
+    "level": 55,
+    "xp": 181633,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Phasmafunk",
+    "level": 55,
+    "xp": 180158,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "WoW Fornever",
+    "level": 55,
+    "xp": 172082,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "chipndippin",
+    "level": 55,
+    "xp": 168436,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "HCW Mate",
+    "level": 55,
+    "xp": 168080,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HC PureSpam",
+    "level": 55,
+    "xp": 166970,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "d0nt Mule",
+    "level": 55,
+    "xp": 166933,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "baoxing",
+    "level": 55,
+    "xp": 166903,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "hugeandhardp",
+    "level": 55,
+    "xp": 166704,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Puppy HCW",
+    "level": 55,
+    "xp": 166687,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Hallowtrader",
+    "level": 55,
+    "xp": 166650,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Faux Reborn",
+    "level": 55,
+    "xp": 166641,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "mooky wooky1",
+    "level": 54,
+    "xp": 153641,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "LionSwagMan",
+    "level": 54,
+    "xp": 151443,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "Costef 2",
+    "level": 53,
+    "xp": 140250,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Im3stepsahea",
+    "level": 52,
+    "xp": 136185,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "R ui rr",
+    "level": 52,
+    "xp": 132774,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "HcM Lurk",
+    "level": 52,
+    "xp": 130679,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Invokedalife",
+    "level": 51,
+    "xp": 123431,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Hcw Him",
+    "level": 51,
+    "xp": 120945,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Mr Fripppe",
+    "level": 50,
+    "xp": 110652,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "LiT Docta HC",
+    "level": 50,
+    "xp": 110199,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Slayer 3",
+    "level": 50,
+    "xp": 108455,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "mooky wooky5",
+    "level": 49,
+    "xp": 98575,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "S0FTCORE BTW",
+    "level": 49,
+    "xp": 98553,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Rwinii",
+    "level": 48,
+    "xp": 91216,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "HC Vanc",
+    "level": 48,
+    "xp": 89687,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "HC Haps",
+    "level": 48,
+    "xp": 89358,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "WlNNING HC",
+    "level": 48,
+    "xp": 85301,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "lmRestarted",
+    "level": 48,
+    "xp": 83850,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "HC Guarded",
+    "level": 48,
+    "xp": 83499,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "1 False Fart",
+    "level": 48,
+    "xp": 83437,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HC Gousheng",
+    "level": 47,
+    "xp": 78547,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "3a egirl",
+    "level": 47,
+    "xp": 78388,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "HCW Alfie",
+    "level": 46,
+    "xp": 74556,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "budded herb",
+    "level": 46,
+    "xp": 73832,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Pukumon",
+    "level": 46,
+    "xp": 73244,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "hc dough boy",
+    "level": 46,
+    "xp": 72025,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "eenter",
+    "level": 46,
+    "xp": 71080,
+    "dead": false
+   }
+  ],
+  "Agility": [
+   {
+    "rank": 1,
+    "name": "Leaky Yuri",
+    "level": 84,
+    "xp": 3001755,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "eXampL v2",
+    "level": 83,
+    "xp": 2700179,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Petey Gayer",
+    "level": 81,
+    "xp": 2317822,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "TakeADragg",
+    "level": 81,
+    "xp": 2198124,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Scarf Alt",
+    "level": 80,
+    "xp": 2097896,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "155kg",
+    "level": 78,
+    "xp": 1715428,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Itfys",
+    "level": 78,
+    "xp": 1690089,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Lucario HCM",
+    "level": 78,
+    "xp": 1653212,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Itfys Death",
+    "level": 77,
+    "xp": 1571839,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Giga Trans",
+    "level": 77,
+    "xp": 1534096,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "HC daggoe 2",
+    "level": 77,
+    "xp": 1514613,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "rev killa2",
+    "level": 77,
+    "xp": 1501107,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "HC daggoe 1",
+    "level": 77,
+    "xp": 1496942,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "rev kiollla2",
+    "level": 77,
+    "xp": 1489992,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Fatesent",
+    "level": 76,
+    "xp": 1449408,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "DA 1ST HC",
+    "level": 76,
+    "xp": 1442492,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Giant Snacco",
+    "level": 76,
+    "xp": 1416400,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "S ooz",
+    "level": 76,
+    "xp": 1387694,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Scarf Alt1",
+    "level": 76,
+    "xp": 1340541,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "username pat",
+    "level": 76,
+    "xp": 1339974,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "zuk my tip",
+    "level": 75,
+    "xp": 1333026,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "N4thanTurn",
+    "level": 75,
+    "xp": 1307743,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "ayr4 the boy",
+    "level": 75,
+    "xp": 1225549,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "7w1stedBow",
+    "level": 75,
+    "xp": 1220074,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Barry Goated",
+    "level": 75,
+    "xp": 1219536,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "alex hcw",
+    "level": 75,
+    "xp": 1210704,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "BoastfulBob",
+    "level": 74,
+    "xp": 1192860,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "JoyfulJohn",
+    "level": 74,
+    "xp": 1192673,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "SoulfulSam",
+    "level": 74,
+    "xp": 1158827,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "StinkiiPinky",
+    "level": 74,
+    "xp": 1135277,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "mumsbuns",
+    "level": 74,
+    "xp": 1120822,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Marlbo Reds",
+    "level": 74,
+    "xp": 1115267,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Ni1sbuss",
+    "level": 74,
+    "xp": 1107500,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "NutZacOSR5",
+    "level": 73,
+    "xp": 1080590,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "1 Life One",
+    "level": 73,
+    "xp": 1052293,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "WILDY0FFlCER",
+    "level": 73,
+    "xp": 1037554,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "El Chav",
+    "level": 73,
+    "xp": 1021605,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "HCW Posh",
+    "level": 73,
+    "xp": 1014896,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Rview",
+    "level": 73,
+    "xp": 1014293,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "KrackKaren",
+    "level": 73,
+    "xp": 1000045,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "1 Life Two",
+    "level": 73,
+    "xp": 999280,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "lmDoge",
+    "level": 73,
+    "xp": 998389,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "bik sell",
+    "level": 73,
+    "xp": 994227,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Sana Bay",
+    "level": 73,
+    "xp": 993082,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "HC Buzzerk",
+    "level": 72,
+    "xp": 992754,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "hc booze",
+    "level": 72,
+    "xp": 989367,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "HC Detil",
+    "level": 72,
+    "xp": 978076,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Threat 6",
+    "level": 72,
+    "xp": 971676,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "ChopperHc",
+    "level": 72,
+    "xp": 966240,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "4k dmg molly",
+    "level": 72,
+    "xp": 962121,
+    "dead": false
+   }
+  ],
+  "Thieving": [
+   {
+    "rank": 1,
+    "name": "Faux alt73",
+    "level": 99,
+    "xp": 13034664,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "L2ggs 07",
+    "level": 99,
+    "xp": 13034660,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "46lightman",
+    "level": 88,
+    "xp": 4768453,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Colher Douro",
+    "level": 87,
+    "xp": 4316931,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "HCW BBC",
+    "level": 87,
+    "xp": 4177629,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "HC Trocas",
+    "level": 87,
+    "xp": 4029060,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "hcge",
+    "level": 87,
+    "xp": 3982567,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "NoChainBans",
+    "level": 87,
+    "xp": 3974933,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Helimule",
+    "level": 86,
+    "xp": 3828764,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "IM Hardrned",
+    "level": 86,
+    "xp": 3751870,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "80kebbit2618",
+    "level": 86,
+    "xp": 3637889,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Ashindale",
+    "level": 85,
+    "xp": 3587753,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Gwabing",
+    "level": 85,
+    "xp": 3535851,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "JesusIsOTWHC",
+    "level": 85,
+    "xp": 3459284,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Altletics69",
+    "level": 85,
+    "xp": 3349003,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "hard bowfaxx",
+    "level": 85,
+    "xp": 3339067,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "46lighterman",
+    "level": 85,
+    "xp": 3295019,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "100thReset",
+    "level": 85,
+    "xp": 3258938,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Quaffs Clam",
+    "level": 84,
+    "xp": 3026719,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "ArdyThief",
+    "level": 83,
+    "xp": 2895108,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "BorkyGloop",
+    "level": 83,
+    "xp": 2842199,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Zygs2",
+    "level": 83,
+    "xp": 2789740,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Stealrobe685",
+    "level": 83,
+    "xp": 2682979,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "StollniPat",
+    "level": 82,
+    "xp": 2585569,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Durty Wofo",
+    "level": 82,
+    "xp": 2536710,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "John HC Main",
+    "level": 82,
+    "xp": 2529545,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Vihaaansua",
+    "level": 82,
+    "xp": 2499066,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "iwill max",
+    "level": 82,
+    "xp": 2488048,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "Aiwvia",
+    "level": 82,
+    "xp": 2463882,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "HCW WOOK",
+    "level": 82,
+    "xp": 2457703,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Saucy Crab",
+    "level": 81,
+    "xp": 2419730,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "HcGenius",
+    "level": 81,
+    "xp": 2356057,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "ghustburry71",
+    "level": 81,
+    "xp": 2338271,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "uh car uh",
+    "level": 81,
+    "xp": 2336084,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "SirSwapsing",
+    "level": 81,
+    "xp": 2263886,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "Hard Ah",
+    "level": 81,
+    "xp": 2218571,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "SacSacReset",
+    "level": 80,
+    "xp": 2150495,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "Sanzoku alt1",
+    "level": 80,
+    "xp": 2148994,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Deaths Uncle",
+    "level": 80,
+    "xp": 2104766,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "HardcoreCoin",
+    "level": 80,
+    "xp": 2091377,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Zuckherberg",
+    "level": 80,
+    "xp": 2082730,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "HARHARHARH4R",
+    "level": 80,
+    "xp": 2049966,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "HC TlMl",
+    "level": 80,
+    "xp": 2041294,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HcFearless",
+    "level": 80,
+    "xp": 2033981,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "housethievin",
+    "level": 80,
+    "xp": 2031035,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "eescarolel",
+    "level": 80,
+    "xp": 2025790,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "D0NTDIE",
+    "level": 80,
+    "xp": 2025075,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "corbV",
+    "level": 80,
+    "xp": 2004637,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "LoadMan73",
+    "level": 80,
+    "xp": 1988268,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Magby ex",
+    "level": 80,
+    "xp": 1987469,
+    "dead": false
+   }
+  ],
+  "Slayer": [
+   {
+    "rank": 1,
+    "name": "alch boomers",
+    "level": 63,
+    "xp": 390107,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Wobert Chase",
+    "level": 62,
+    "xp": 347662,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HubFlowerDev",
+    "level": 60,
+    "xp": 290215,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "RankOneHC",
+    "level": 60,
+    "xp": 280714,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "ResetRandy",
+    "level": 60,
+    "xp": 275414,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Crabguy2",
+    "level": 59,
+    "xp": 270228,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Click Reset",
+    "level": 59,
+    "xp": 256478,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Beem rules",
+    "level": 59,
+    "xp": 255594,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Jorkin2Bork",
+    "level": 59,
+    "xp": 255209,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "super coin",
+    "level": 59,
+    "xp": 250781,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "not incline",
+    "level": 58,
+    "xp": 239724,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Pooping Days",
+    "level": 58,
+    "xp": 236140,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "hugeandhardp",
+    "level": 58,
+    "xp": 229792,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "11042026",
+    "level": 58,
+    "xp": 229314,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "MySlottyLife",
+    "level": 58,
+    "xp": 226244,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "TickTaxation",
+    "level": 58,
+    "xp": 225746,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HCW EV",
+    "level": 58,
+    "xp": 225323,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "Burnt Grain",
+    "level": 58,
+    "xp": 224862,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Pesky Toad",
+    "level": 58,
+    "xp": 224549,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "HCW Thing",
+    "level": 58,
+    "xp": 224532,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Stiff Raikes",
+    "level": 58,
+    "xp": 224499,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "No Resetting",
+    "level": 58,
+    "xp": 224490,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "zebshc",
+    "level": 58,
+    "xp": 224486,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Puppy HCW",
+    "level": 58,
+    "xp": 224478,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "MainingSwap",
+    "level": 57,
+    "xp": 215946,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "IceHCW",
+    "level": 57,
+    "xp": 215892,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "HCW Alfie",
+    "level": 57,
+    "xp": 205000,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Ebp9T",
+    "level": 56,
+    "xp": 201910,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "KULLIKUOLEMA",
+    "level": 56,
+    "xp": 198989,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "AC Mike",
+    "level": 56,
+    "xp": 189228,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Damon HCW",
+    "level": 55,
+    "xp": 174530,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "DeadThisWeek",
+    "level": 55,
+    "xp": 174115,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Dakota HCW",
+    "level": 54,
+    "xp": 163733,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Run Its DBU",
+    "level": 54,
+    "xp": 160196,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "F my Llfe",
+    "level": 54,
+    "xp": 160067,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "karri huppu",
+    "level": 54,
+    "xp": 157637,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Slayer 3",
+    "level": 54,
+    "xp": 155099,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "DeadGoy",
+    "level": 54,
+    "xp": 151925,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "matthew puff",
+    "level": 53,
+    "xp": 147099,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "LiT Docta HC",
+    "level": 53,
+    "xp": 145661,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Kb9921",
+    "level": 53,
+    "xp": 143427,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "McSkittles73",
+    "level": 53,
+    "xp": 141121,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "yamaball121",
+    "level": 53,
+    "xp": 139934,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Completineer",
+    "level": 52,
+    "xp": 135277,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "HC TaoPaiPai",
+    "level": 52,
+    "xp": 134873,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "sex giver73",
+    "level": 52,
+    "xp": 133272,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "BlamPowPop",
+    "level": 52,
+    "xp": 129880,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "JLexHC",
+    "level": 52,
+    "xp": 129193,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Conecrusher9",
+    "level": 52,
+    "xp": 127085,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "HCW Goat",
+    "level": 52,
+    "xp": 126073,
+    "dead": false
+   }
+  ],
+  "Farming": [
+   {
+    "rank": 1,
+    "name": "Daddy Sylus",
+    "level": 88,
+    "xp": 4810657,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "HC Pavvo",
+    "level": 88,
+    "xp": 4667871,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Ubermensch F",
+    "level": 77,
+    "xp": 1527058,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Yosepheen",
+    "level": 76,
+    "xp": 1409642,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "DailyFrog67",
+    "level": 74,
+    "xp": 1180922,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "HardFarmBoi",
+    "level": 72,
+    "xp": 925644,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Willlis HC",
+    "level": 72,
+    "xp": 907152,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Pytrii",
+    "level": 69,
+    "xp": 702142,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Plebs HCW",
+    "level": 68,
+    "xp": 615008,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Dude Horacio",
+    "level": 66,
+    "xp": 511923,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Player4995",
+    "level": 66,
+    "xp": 507368,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Makijatti",
+    "level": 66,
+    "xp": 502219,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "jadecat57",
+    "level": 65,
+    "xp": 469727,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "hcdroooo",
+    "level": 65,
+    "xp": 467693,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Trailsly",
+    "level": 65,
+    "xp": 454932,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "KadraWasHere",
+    "level": 63,
+    "xp": 375163,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Roaching Out",
+    "level": 61,
+    "xp": 320464,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "The Showcase",
+    "level": 61,
+    "xp": 303168,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Kaalee Jeeno",
+    "level": 60,
+    "xp": 283185,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "Smittingown",
+    "level": 60,
+    "xp": 279165,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "GrandpaLives",
+    "level": 59,
+    "xp": 263417,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "HC fbz",
+    "level": 58,
+    "xp": 227831,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "HC Zaba",
+    "level": 57,
+    "xp": 214427,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "nocatnogirl",
+    "level": 57,
+    "xp": 209976,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Moms Failure",
+    "level": 56,
+    "xp": 202276,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "hot sexy men",
+    "level": 56,
+    "xp": 187787,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "Munchey xD",
+    "level": 55,
+    "xp": 183009,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Painful Paul",
+    "level": 55,
+    "xp": 181683,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "Fishpond HCW",
+    "level": 55,
+    "xp": 181035,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Fe the 1st",
+    "level": 55,
+    "xp": 180165,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Costef 2",
+    "level": 55,
+    "xp": 172445,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "HcM Lurk",
+    "level": 55,
+    "xp": 167389,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "maxcooperman",
+    "level": 55,
+    "xp": 166896,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Slut4lyfe",
+    "level": 54,
+    "xp": 164882,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "EnrgyPotions",
+    "level": 54,
+    "xp": 159911,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "Ded Any Tick",
+    "level": 53,
+    "xp": 139503,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "HCW Alfie",
+    "level": 53,
+    "xp": 139466,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "LaserFart89",
+    "level": 53,
+    "xp": 136914,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Greedy Devs",
+    "level": 52,
+    "xp": 135754,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "MoneyKraken",
+    "level": 52,
+    "xp": 130649,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "HCW DeadSwap",
+    "level": 52,
+    "xp": 129395,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "HCRubber",
+    "level": 52,
+    "xp": 127030,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Laggade",
+    "level": 52,
+    "xp": 125067,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "HC Au-Tz-T1k",
+    "level": 51,
+    "xp": 118977,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Exc Hadj",
+    "level": 51,
+    "xp": 113909,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "HCW Fafo 255",
+    "level": 50,
+    "xp": 111318,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "SSGT Savage",
+    "level": 50,
+    "xp": 110020,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Corun HCW",
+    "level": 50,
+    "xp": 109753,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Kova hihhuli",
+    "level": 50,
+    "xp": 109541,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Tee Subb",
+    "level": 50,
+    "xp": 108299,
+    "dead": false
+   }
+  ],
+  "Runecraft": [
+   {
+    "rank": 1,
+    "name": "HCW FR0Z3N",
+    "level": 78,
+    "xp": 1723614,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "HCW MADEX",
+    "level": 77,
+    "xp": 1568208,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "HC SO EZ",
+    "level": 76,
+    "xp": 1371605,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "GimmeDaMonie",
+    "level": 76,
+    "xp": 1346303,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Isaks a red",
+    "level": 74,
+    "xp": 1208890,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "hc walk",
+    "level": 74,
+    "xp": 1166873,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Skeptic GOTR",
+    "level": 74,
+    "xp": 1166603,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Conpermstate",
+    "level": 74,
+    "xp": 1159257,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "HC iet",
+    "level": 74,
+    "xp": 1151311,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Calibrator",
+    "level": 73,
+    "xp": 1093431,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "HC Arnorius",
+    "level": 73,
+    "xp": 1071021,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Joacher",
+    "level": 73,
+    "xp": 1046816,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "ANGY DAVID",
+    "level": 73,
+    "xp": 1034830,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "HCW JaI",
+    "level": 73,
+    "xp": 1024827,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Exiled55",
+    "level": 73,
+    "xp": 1011250,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "KariKusimaa",
+    "level": 72,
+    "xp": 987453,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "RyneLazuli",
+    "level": 72,
+    "xp": 987183,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "HCRANK1RC1",
+    "level": 72,
+    "xp": 977443,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Oon Hardcore",
+    "level": 72,
+    "xp": 975191,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "LionSwagMan",
+    "level": 72,
+    "xp": 959909,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Mr AbuuNazir",
+    "level": 72,
+    "xp": 953552,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "Only1Lyfee",
+    "level": 72,
+    "xp": 918420,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Vigethos",
+    "level": 72,
+    "xp": 899849,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "HCW Theodore",
+    "level": 71,
+    "xp": 868072,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "BGK Kelly",
+    "level": 71,
+    "xp": 836964,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "HC GOTR Alt",
+    "level": 71,
+    "xp": 834655,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "ChetGPT",
+    "level": 70,
+    "xp": 780140,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "Elfinlys",
+    "level": 70,
+    "xp": 779813,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "MillieButter",
+    "level": 70,
+    "xp": 774887,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Red Elppa",
+    "level": 70,
+    "xp": 739834,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Law Fish 154",
+    "level": 69,
+    "xp": 734237,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "Jarquinton",
+    "level": 69,
+    "xp": 726560,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "WetCat17",
+    "level": 69,
+    "xp": 707712,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "TsaawHC",
+    "level": 69,
+    "xp": 689100,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "Babusu",
+    "level": 69,
+    "xp": 687509,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "Stewbill",
+    "level": 69,
+    "xp": 680234,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Vette Reet",
+    "level": 69,
+    "xp": 676496,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "Khiwo",
+    "level": 69,
+    "xp": 672264,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "HC GM MAIN",
+    "level": 69,
+    "xp": 668121,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "CyberPsychoo",
+    "level": 68,
+    "xp": 641795,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "LowkeyToxic",
+    "level": 68,
+    "xp": 632500,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "CanDuke",
+    "level": 68,
+    "xp": 616960,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Prime Genkai",
+    "level": 68,
+    "xp": 611215,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "KrumHCW",
+    "level": 67,
+    "xp": 605027,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "ItsTaterz",
+    "level": 67,
+    "xp": 593143,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Edge Cases",
+    "level": 67,
+    "xp": 581497,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Ceuric",
+    "level": 67,
+    "xp": 575008,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "HCW Fregat",
+    "level": 67,
+    "xp": 570402,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "L V 9",
+    "level": 67,
+    "xp": 556876,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "cool planet",
+    "level": 66,
+    "xp": 543859,
+    "dead": false
+   }
+  ],
+  "Hunter": [
+   {
+    "rank": 1,
+    "name": "Glorplet",
+    "level": 94,
+    "xp": 8586767,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "Life Timer",
+    "level": 94,
+    "xp": 8262491,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "VisVisVis",
+    "level": 85,
+    "xp": 3275772,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Boxsaw Bamf",
+    "level": 85,
+    "xp": 3270754,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "V Pieterjan",
+    "level": 84,
+    "xp": 3201061,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "HcwFarmer",
+    "level": 84,
+    "xp": 3101234,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "Belittles",
+    "level": 84,
+    "xp": 3060270,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "HC YaWhy",
+    "level": 83,
+    "xp": 2897512,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "WOJAPE",
+    "level": 83,
+    "xp": 2832373,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "ChinSupplier",
+    "level": 83,
+    "xp": 2831837,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Checkmage",
+    "level": 83,
+    "xp": 2785243,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Hollyphant",
+    "level": 83,
+    "xp": 2686710,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "hcw-hcw-hcw",
+    "level": 82,
+    "xp": 2537974,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "HogNibbler67",
+    "level": 82,
+    "xp": 2510367,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Stolit K",
+    "level": 82,
+    "xp": 2480221,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "CashiesLTD1",
+    "level": 81,
+    "xp": 2256535,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "CashiesLTD",
+    "level": 81,
+    "xp": 2253793,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "fattestGuard",
+    "level": 81,
+    "xp": 2225564,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "sashicore",
+    "level": 81,
+    "xp": 2220403,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "tall tree17",
+    "level": 81,
+    "xp": 2204498,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "Phattppickle",
+    "level": 80,
+    "xp": 2173846,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "HCW Borkage",
+    "level": 80,
+    "xp": 2170879,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "sex_panther4",
+    "level": 80,
+    "xp": 2129016,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "22d8",
+    "level": 80,
+    "xp": 2079719,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Spinal Clerk",
+    "level": 80,
+    "xp": 2034391,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "swapgoblin",
+    "level": 80,
+    "xp": 2019692,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "HCM Kana",
+    "level": 80,
+    "xp": 1994171,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "hcproman2",
+    "level": 80,
+    "xp": 1991095,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "Live Traps",
+    "level": 79,
+    "xp": 1849048,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Hunucked",
+    "level": 79,
+    "xp": 1827690,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "Nonthaburi",
+    "level": 79,
+    "xp": 1827146,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "HCWiseLoner",
+    "level": 78,
+    "xp": 1754891,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Chomp Chaser",
+    "level": 78,
+    "xp": 1747317,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "JayMoths",
+    "level": 78,
+    "xp": 1720682,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "pvm4m0neyh",
+    "level": 78,
+    "xp": 1707240,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "PKA PODCAST",
+    "level": 78,
+    "xp": 1629528,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "ratitor",
+    "level": 77,
+    "xp": 1614807,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "TreyMoth",
+    "level": 77,
+    "xp": 1566875,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Xbow Tesla",
+    "level": 77,
+    "xp": 1564898,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "fupaflipper5",
+    "level": 77,
+    "xp": 1546485,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Time 2 Reset",
+    "level": 77,
+    "xp": 1545988,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "Voiceisfatt",
+    "level": 77,
+    "xp": 1529979,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "CLAPSKY",
+    "level": 77,
+    "xp": 1490126,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Nice Big Hug",
+    "level": 76,
+    "xp": 1466765,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Bams Bum",
+    "level": 76,
+    "xp": 1459110,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "MAIN HC MAIN",
+    "level": 76,
+    "xp": 1440734,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "HC Fabre",
+    "level": 76,
+    "xp": 1419756,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Borthing",
+    "level": 76,
+    "xp": 1416535,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "Odas peenuts",
+    "level": 76,
+    "xp": 1406462,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "Iggy Harder",
+    "level": 76,
+    "xp": 1401822,
+    "dead": false
+   }
+  ],
+  "Construction": [
+   {
+    "rank": 1,
+    "name": "AirHardcore",
+    "level": 75,
+    "xp": 1253939,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "HCW C8",
+    "level": 72,
+    "xp": 944912,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "Kalistrak",
+    "level": 72,
+    "xp": 907796,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "HCW Senran",
+    "level": 69,
+    "xp": 674958,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "HcwAltarHost",
+    "level": 67,
+    "xp": 552152,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "HCW Flik",
+    "level": 67,
+    "xp": 551041,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "HCGunsling",
+    "level": 65,
+    "xp": 459496,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Harvest Gold",
+    "level": 63,
+    "xp": 376024,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Hard Moonga",
+    "level": 60,
+    "xp": 278644,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "Moren",
+    "level": 57,
+    "xp": 215955,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "riadingson",
+    "level": 57,
+    "xp": 205360,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "HC Fliptard",
+    "level": 57,
+    "xp": 203525,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Mammoth Nugs",
+    "level": 56,
+    "xp": 200635,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "Snorey Jr",
+    "level": 56,
+    "xp": 185371,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Fruzzoh",
+    "level": 55,
+    "xp": 177269,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "HC Vanc",
+    "level": 55,
+    "xp": 170994,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "Lunny HCW",
+    "level": 54,
+    "xp": 159523,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "well nerd 4",
+    "level": 54,
+    "xp": 159388,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "HCW zog",
+    "level": 54,
+    "xp": 155588,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "TheRealKappa",
+    "level": 54,
+    "xp": 154240,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "RingOfLifee",
+    "level": 54,
+    "xp": 151690,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "HC Grichel",
+    "level": 53,
+    "xp": 146860,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Wrong tactic",
+    "level": 52,
+    "xp": 128772,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "Dan tini",
+    "level": 52,
+    "xp": 127475,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "Foot Pursuit",
+    "level": 52,
+    "xp": 126636,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "Fauxkingdumb",
+    "level": 52,
+    "xp": 125063,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "NeverDie HCW",
+    "level": 52,
+    "xp": 124566,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "nexmvp",
+    "level": 51,
+    "xp": 123272,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "ErIando",
+    "level": 51,
+    "xp": 119664,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "bot ilabaca",
+    "level": 51,
+    "xp": 119043,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "open wide4me",
+    "level": 51,
+    "xp": 113352,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "SoloMssion",
+    "level": 51,
+    "xp": 112108,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "mooky wooky1",
+    "level": 50,
+    "xp": 111030,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Ambaessa",
+    "level": 50,
+    "xp": 110076,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "l8ll",
+    "level": 50,
+    "xp": 107705,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "1 False Fart",
+    "level": 50,
+    "xp": 107641,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "DanHCTrade",
+    "level": 50,
+    "xp": 107435,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "HCW Alfie",
+    "level": 50,
+    "xp": 107235,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "LaserFart89",
+    "level": 50,
+    "xp": 104629,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "Fury HCW",
+    "level": 50,
+    "xp": 104566,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "TurtleHaeim",
+    "level": 50,
+    "xp": 104345,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "Corun HCW",
+    "level": 50,
+    "xp": 104068,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Hard Rak",
+    "level": 50,
+    "xp": 104032,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "TickTaxation",
+    "level": 50,
+    "xp": 103752,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "Safe Forever",
+    "level": 50,
+    "xp": 103420,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "Lihtsurelik",
+    "level": 50,
+    "xp": 103336,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "Goatman Stan",
+    "level": 50,
+    "xp": 103291,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "HCW DeadSwap",
+    "level": 50,
+    "xp": 103249,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "lil oopsie",
+    "level": 50,
+    "xp": 103177,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "HomerFatnGay",
+    "level": 50,
+    "xp": 103114,
+    "dead": false
+   }
+  ],
+  "Sailing": [
+   {
+    "rank": 1,
+    "name": "Snorey Jr",
+    "level": 80,
+    "xp": 2069767,
+    "dead": false
+   },
+   {
+    "rank": 2,
+    "name": "lts Lugal",
+    "level": 80,
+    "xp": 2052695,
+    "dead": false
+   },
+   {
+    "rank": 3,
+    "name": "NeverDie HCW",
+    "level": 75,
+    "xp": 1218407,
+    "dead": false
+   },
+   {
+    "rank": 4,
+    "name": "Wrong tactic",
+    "level": 74,
+    "xp": 1113158,
+    "dead": false
+   },
+   {
+    "rank": 5,
+    "name": "Briangayfrfn",
+    "level": 73,
+    "xp": 994211,
+    "dead": false
+   },
+   {
+    "rank": 6,
+    "name": "Karmei",
+    "level": 72,
+    "xp": 904263,
+    "dead": false
+   },
+   {
+    "rank": 7,
+    "name": "riadingson",
+    "level": 71,
+    "xp": 885007,
+    "dead": false
+   },
+   {
+    "rank": 8,
+    "name": "Exiled58",
+    "level": 71,
+    "xp": 869929,
+    "dead": false
+   },
+   {
+    "rank": 9,
+    "name": "Exiled57",
+    "level": 71,
+    "xp": 856485,
+    "dead": false
+   },
+   {
+    "rank": 10,
+    "name": "HomerFatnGay",
+    "level": 70,
+    "xp": 760908,
+    "dead": false
+   },
+   {
+    "rank": 11,
+    "name": "Foot Pursuit",
+    "level": 68,
+    "xp": 644172,
+    "dead": false
+   },
+   {
+    "rank": 12,
+    "name": "Now Keel Me",
+    "level": 68,
+    "xp": 612398,
+    "dead": false
+   },
+   {
+    "rank": 13,
+    "name": "Inside Toes",
+    "level": 68,
+    "xp": 607540,
+    "dead": false
+   },
+   {
+    "rank": 14,
+    "name": "drainbtw",
+    "level": 67,
+    "xp": 549780,
+    "dead": false
+   },
+   {
+    "rank": 15,
+    "name": "Mr Tonno",
+    "level": 66,
+    "xp": 530088,
+    "dead": false
+   },
+   {
+    "rank": 16,
+    "name": "HC Maindalf",
+    "level": 66,
+    "xp": 511547,
+    "dead": false
+   },
+   {
+    "rank": 17,
+    "name": "HCW Clawra",
+    "level": 65,
+    "xp": 486793,
+    "dead": false
+   },
+   {
+    "rank": 18,
+    "name": "xZach HC",
+    "level": 65,
+    "xp": 468092,
+    "dead": false
+   },
+   {
+    "rank": 19,
+    "name": "Smork Squad",
+    "level": 65,
+    "xp": 460348,
+    "dead": false
+   },
+   {
+    "rank": 20,
+    "name": "HCM KQ",
+    "level": 64,
+    "xp": 436366,
+    "dead": false
+   },
+   {
+    "rank": 21,
+    "name": "HCMountain",
+    "level": 64,
+    "xp": 430240,
+    "dead": false
+   },
+   {
+    "rank": 22,
+    "name": "bot ilabaca",
+    "level": 64,
+    "xp": 427587,
+    "dead": false
+   },
+   {
+    "rank": 23,
+    "name": "Here to Swap",
+    "level": 64,
+    "xp": 411568,
+    "dead": false
+   },
+   {
+    "rank": 24,
+    "name": "goods seller",
+    "level": 63,
+    "xp": 405228,
+    "dead": false
+   },
+   {
+    "rank": 25,
+    "name": "PawnSailor",
+    "level": 63,
+    "xp": 386643,
+    "dead": false
+   },
+   {
+    "rank": 26,
+    "name": "Sephulchre",
+    "level": 63,
+    "xp": 375465,
+    "dead": false
+   },
+   {
+    "rank": 27,
+    "name": "HC Sailerman",
+    "level": 63,
+    "xp": 370420,
+    "dead": false
+   },
+   {
+    "rank": 28,
+    "name": "AmazingHCW",
+    "level": 63,
+    "xp": 370283,
+    "dead": false
+   },
+   {
+    "rank": 29,
+    "name": "NoCremation",
+    "level": 62,
+    "xp": 367365,
+    "dead": false
+   },
+   {
+    "rank": 30,
+    "name": "Nov 4 2026",
+    "level": 62,
+    "xp": 361964,
+    "dead": false
+   },
+   {
+    "rank": 31,
+    "name": "mf i",
+    "level": 62,
+    "xp": 357044,
+    "dead": false
+   },
+   {
+    "rank": 32,
+    "name": "redworm35",
+    "level": 62,
+    "xp": 353585,
+    "dead": false
+   },
+   {
+    "rank": 33,
+    "name": "Dead Zabo",
+    "level": 62,
+    "xp": 335414,
+    "dead": false
+   },
+   {
+    "rank": 34,
+    "name": "Yunlicorn",
+    "level": 61,
+    "xp": 327434,
+    "dead": false
+   },
+   {
+    "rank": 35,
+    "name": "Michael Hage",
+    "level": 61,
+    "xp": 318375,
+    "dead": false
+   },
+   {
+    "rank": 36,
+    "name": "0nly Life",
+    "level": 61,
+    "xp": 311111,
+    "dead": false
+   },
+   {
+    "rank": 37,
+    "name": "Bondsmiths",
+    "level": 61,
+    "xp": 307652,
+    "dead": false
+   },
+   {
+    "rank": 38,
+    "name": "Siggs Evan",
+    "level": 60,
+    "xp": 292278,
+    "dead": false
+   },
+   {
+    "rank": 39,
+    "name": "Mushoku-kun",
+    "level": 60,
+    "xp": 289101,
+    "dead": false
+   },
+   {
+    "rank": 40,
+    "name": "ErIando",
+    "level": 60,
+    "xp": 281846,
+    "dead": false
+   },
+   {
+    "rank": 41,
+    "name": "Tfa Lockhard",
+    "level": 59,
+    "xp": 266304,
+    "dead": false
+   },
+   {
+    "rank": 42,
+    "name": "Dead Man 67",
+    "level": 59,
+    "xp": 256316,
+    "dead": false
+   },
+   {
+    "rank": 43,
+    "name": "Degen Autist",
+    "level": 58,
+    "xp": 244465,
+    "dead": false
+   },
+   {
+    "rank": 44,
+    "name": "Matty IsHard",
+    "level": 58,
+    "xp": 233061,
+    "dead": false
+   },
+   {
+    "rank": 45,
+    "name": "ymantis hard",
+    "level": 58,
+    "xp": 226694,
+    "dead": false
+   },
+   {
+    "rank": 46,
+    "name": "HC BTN 1",
+    "level": 58,
+    "xp": 226654,
+    "dead": false
+   },
+   {
+    "rank": 47,
+    "name": "HCMainIRL",
+    "level": 58,
+    "xp": 225601,
+    "dead": false
+   },
+   {
+    "rank": 48,
+    "name": "Markopolo71",
+    "level": 57,
+    "xp": 217408,
+    "dead": false
+   },
+   {
+    "rank": 49,
+    "name": "mr_invader_P",
+    "level": 57,
+    "xp": 215576,
+    "dead": false
+   },
+   {
+    "rank": 50,
+    "name": "DanHCTrade",
+    "level": 57,
+    "xp": 214263,
+    "dead": false
+   }
+  ]
+ },
+ "notes": "Top 50 per table. In skill tables, 'dead' is only known for players also in the overall top 50."
+}

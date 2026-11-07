@@ -1,0 +1,7480 @@
+{
+ "updated": "2026-11-07T18:02:02Z",
+ "status": "live",
+ "mode": "hiscore_oldschool_hardcore_mains",
+ "ranked_players": 25950,
+ "min_total": 300,
+ "last_full_scan": "2026-11-07T17:11:15Z",
+ "counts": {
+  "today": 287,
+  "all_time": 562,
+  "resets": 438,
+  "highest_total": 982,
+  "deadliest_hour": {
+   "start": "2026-11-06T00:00:00Z",
+   "deaths": 4
+  }
+ },
+ "deaths_per_hour": [
+  10,
+  12,
+  4,
+  15,
+  6,
+  18,
+  1,
+  26,
+  5,
+  27,
+  16,
+  28,
+  11,
+  10,
+  10,
+  10,
+  21,
+  9,
+  9,
+  6,
+  10,
+  4,
+  9,
+  10
+ ],
+ "deaths": [
+  {
+   "fate": "died",
+   "time": 1794073638715,
+   "time_exact": true,
+   "total": 399,
+   "xp": 1269262,
+   "combat": 65,
+   "top_skills": [
+    [
+     "Attack",
+     65
+    ],
+    [
+     "Strength",
+     60
+    ],
+    [
+     "Hitpoints",
+     59
+    ]
+   ],
+   "top_boss": null,
+   "world": 424,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HCW Jal",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794072082571,
+   "time_exact": false,
+   "window_start": 1793966390964,
+   "total": 746,
+   "xp": 920147,
+   "tracked": false,
+   "name": "Chinesecurca",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794062296466,
+   "total": 576,
+   "xp": 466868,
+   "name": "JHcSwaps",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794062296466,
+   "total": 541,
+   "xp": 965598,
+   "name": "HC Riddlez",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794062928439,
+   "total": 496,
+   "xp": 514445,
+   "name": "Sorlisa",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794062928439,
+   "total": 463,
+   "xp": 1073236,
+   "name": "Dinkenflickr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794062928439,
+   "total": 460,
+   "xp": 405800,
+   "name": "B0atyfan1",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794062928439,
+   "total": 441,
+   "xp": 335015,
+   "name": "Jarmo Isosuo",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794063497181,
+   "total": 380,
+   "xp": 213189,
+   "name": "HCW Mollen",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794071475662,
+   "time_exact": false,
+   "window_start": 1794064105957,
+   "total": 325,
+   "xp": 138919,
+   "name": "0x0B5E55ED",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794070861602,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 409,
+   "xp": 527086,
+   "tracked": false,
+   "name": "My Van Broke",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794068849874,
+   "time_exact": true,
+   "total": 386,
+   "xp": 434312,
+   "combat": 40,
+   "top_skills": [
+    [
+     "Ranged",
+     55
+    ],
+    [
+     "Magic",
+     50
+    ],
+    [
+     "Hitpoints",
+     47
+    ]
+   ],
+   "top_boss": null,
+   "world": 304,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Eken Spoon",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794067809076,
+   "time_exact": false,
+   "window_start": 1794059227818,
+   "total": 606,
+   "xp": 1112144,
+   "name": "Harder Frog",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794067809076,
+   "time_exact": false,
+   "window_start": 1794059839684,
+   "total": 420,
+   "xp": 210371,
+   "name": "HcDid",
+   "run": 4,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794067809076,
+   "time_exact": false,
+   "window_start": 1794060446952,
+   "total": 345,
+   "xp": 939830,
+   "name": "HCWJugs",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794067809076,
+   "time_exact": false,
+   "window_start": 1794060446952,
+   "total": 341,
+   "xp": 197568,
+   "name": "HC Ivey",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794067809076,
+   "time_exact": false,
+   "window_start": 1794060446952,
+   "total": 313,
+   "xp": 243425,
+   "name": "Elamanlanka",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794067809076,
+   "time_exact": false,
+   "window_start": 1794061061705,
+   "total": 309,
+   "xp": 519315,
+   "name": "Keanus Pen15",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794067513858,
+   "time_exact": true,
+   "total": 576,
+   "xp": 1792120,
+   "combat": 66,
+   "top_skills": [
+    [
+     "Ranged",
+     73
+    ],
+    [
+     "Hitpoints",
+     63
+    ],
+    [
+     "Magic",
+     50
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    4
+   ],
+   "world": 346,
+   "location": {
+    "x": 3176,
+    "y": 5727,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HCW Bowlcut",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794065975792,
+   "time_exact": false,
+   "window_start": 1794014057155,
+   "total": 618,
+   "xp": 1285327,
+   "tracked": false,
+   "name": "Tonka Bozo",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794064105957,
+   "time_exact": false,
+   "window_start": 1794055575815,
+   "total": 660,
+   "xp": 1115311,
+   "name": "Lasth0wLong",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794064105957,
+   "time_exact": false,
+   "window_start": 1794058010743,
+   "total": 304,
+   "xp": 199128,
+   "name": "bum bum dum",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794064105957,
+   "time_exact": false,
+   "window_start": 1794012830116,
+   "total": 395,
+   "xp": 1034870,
+   "tracked": false,
+   "name": "Goose Cape",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794063497181,
+   "time_exact": false,
+   "window_start": 1793954945209,
+   "total": 486,
+   "xp": 1766784,
+   "tracked": false,
+   "name": "HCW Fletchy",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794062928439,
+   "time_exact": false,
+   "window_start": 1794011608907,
+   "total": 394,
+   "xp": 277584,
+   "tracked": false,
+   "name": "HxcWorld Xz",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794061331317,
+   "time_exact": true,
+   "total": 669,
+   "xp": 681642,
+   "combat": 53,
+   "top_skills": [
+    [
+     "Runecraft",
+     54
+    ],
+    [
+     "Magic",
+     49
+    ],
+    [
+     "Attack",
+     44
+    ]
+   ],
+   "top_boss": null,
+   "world": 305,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HC Biggity",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794061061705,
+   "time_exact": false,
+   "window_start": 1794052516325,
+   "total": 918,
+   "xp": 1916806,
+   "name": "HCMain K0rte",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794061061705,
+   "time_exact": false,
+   "window_start": 1794052516325,
+   "total": 643,
+   "xp": 1704997,
+   "name": "Tonka Bozo",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794061061705,
+   "time_exact": false,
+   "window_start": 1794052516325,
+   "total": 585,
+   "xp": 769552,
+   "name": "HCAmpy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794061061705,
+   "time_exact": false,
+   "window_start": 1794053161495,
+   "total": 533,
+   "xp": 364520,
+   "name": "3valpkerHC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794061061705,
+   "time_exact": false,
+   "window_start": 1794053784144,
+   "total": 411,
+   "xp": 150999,
+   "name": "ImmortalMatt",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794061061705,
+   "time_exact": false,
+   "window_start": 1794055004548,
+   "total": 316,
+   "xp": 431172,
+   "name": "MonetenCash",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794060446952,
+   "time_exact": false,
+   "window_start": 1794009181146,
+   "total": 457,
+   "xp": 183672,
+   "tracked": false,
+   "name": "HC Wexler",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794058874183,
+   "time_exact": true,
+   "total": 610,
+   "xp": 1388951,
+   "combat": 71,
+   "top_skills": [
+    [
+     "Attack",
+     60
+    ],
+    [
+     "Strength",
+     60
+    ],
+    [
+     "Magic",
+     59
+    ]
+   ],
+   "top_boss": [
+    "Barrows Chests",
+    3
+   ],
+   "world": 462,
+   "location": {
+    "x": 3171,
+    "y": 5727,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Zuwo Shalom",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794058010743,
+   "time_exact": false,
+   "window_start": 1794050709098,
+   "total": 460,
+   "xp": 316608,
+   "name": "HCWPandaDEX",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794058010743,
+   "time_exact": false,
+   "window_start": 1794050709098,
+   "total": 448,
+   "xp": 523758,
+   "name": "D K 99",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794057925628,
+   "time_exact": true,
+   "total": 327,
+   "xp": 384394,
+   "combat": 56,
+   "top_skills": [
+    [
+     "Strength",
+     53
+    ],
+    [
+     "Hitpoints",
+     45
+    ],
+    [
+     "Attack",
+     44
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    6
+   ],
+   "world": 613,
+   "location": {
+    "x": 3171,
+    "y": 5727,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "axidentul",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794057925628,
+   "time_exact": true,
+   "total": 327,
+   "xp": 384394,
+   "combat": 56,
+   "top_skills": [
+    [
+     "Strength",
+     53
+    ],
+    [
+     "Hitpoints",
+     45
+    ],
+    [
+     "Attack",
+     44
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    6
+   ],
+   "world": 613,
+   "location": {
+    "x": 3171,
+    "y": 5727,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "tyja alt",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794057404434,
+   "time_exact": false,
+   "window_start": 1793948224237,
+   "total": 418,
+   "xp": 378558,
+   "tracked": false,
+   "name": "Tutorial TCG",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794056191700,
+   "time_exact": false,
+   "window_start": 1794003666731,
+   "total": 560,
+   "xp": 788077,
+   "tracked": false,
+   "name": "IgnitedFenix",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794055575815,
+   "time_exact": false,
+   "window_start": 1794003666731,
+   "total": 333,
+   "xp": 145597,
+   "tracked": false,
+   "name": "BebsiMaxer",
+   "run": 4,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794055004548,
+   "time_exact": false,
+   "window_start": 1794046466898,
+   "total": 982,
+   "xp": 2604770,
+   "name": "DUNECOOON",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794055004548,
+   "time_exact": false,
+   "window_start": 1794046466898,
+   "total": 694,
+   "xp": 1811615,
+   "name": "HCW Bobicles",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794055004548,
+   "time_exact": false,
+   "window_start": 1794047033908,
+   "total": 571,
+   "xp": 362125,
+   "name": "0 Fatalities",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794055004548,
+   "time_exact": false,
+   "window_start": 1794047033908,
+   "total": 541,
+   "xp": 626344,
+   "name": "PuolikasJugu",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794055004548,
+   "time_exact": false,
+   "window_start": 1794048863919,
+   "total": 305,
+   "xp": 247609,
+   "name": "blaazd af",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794054355126,
+   "time_exact": false,
+   "window_start": 1794002488719,
+   "total": 588,
+   "xp": 591943,
+   "tracked": false,
+   "name": "HugeMintCake",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794053161495,
+   "time_exact": false,
+   "window_start": 1793943951822,
+   "total": 332,
+   "xp": 358879,
+   "tracked": false,
+   "name": "Tower of Xop",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794052665113,
+   "time_exact": true,
+   "total": 447,
+   "xp": 654409,
+   "combat": 47,
+   "top_skills": [
+    [
+     "Magic",
+     62
+    ],
+    [
+     "Hitpoints",
+     50
+    ],
+    [
+     "Woodcutting",
+     41
+    ]
+   ],
+   "top_boss": [
+    "Obor",
+    5
+   ],
+   "world": 630,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "dumb The-Mad",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794052665113,
+   "time_exact": true,
+   "tracked": false,
+   "total": 447,
+   "xp": 654409,
+   "combat": 47,
+   "top_skills": [
+    [
+     "Magic",
+     62
+    ],
+    [
+     "Hitpoints",
+     50
+    ],
+    [
+     "Woodcutting",
+     41
+    ]
+   ],
+   "top_boss": [
+    "Obor",
+    5
+   ],
+   "world": 630,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "dumb The-Mad",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794051911057,
+   "time_exact": false,
+   "window_start": 1794043988142,
+   "total": 553,
+   "xp": 1238462,
+   "name": "LlL SKlES",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794051911057,
+   "time_exact": false,
+   "window_start": 1794044594563,
+   "total": 394,
+   "xp": 190167,
+   "name": "ImaDC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794051911057,
+   "time_exact": false,
+   "window_start": 1794045232076,
+   "total": 359,
+   "xp": 486535,
+   "name": "Xiou Wu",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794051911057,
+   "time_exact": false,
+   "window_start": 1794045813257,
+   "total": 327,
+   "xp": 143454,
+   "name": "SmorksNBorks",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794050709098,
+   "time_exact": false,
+   "window_start": 1793940303477,
+   "total": 336,
+   "xp": 183909,
+   "tracked": false,
+   "name": "SluttyPup",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794050709098,
+   "time_exact": false,
+   "window_start": 1793997566137,
+   "total": 543,
+   "xp": 489398,
+   "tracked": false,
+   "name": "HCW Bobicles",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794050709098,
+   "time_exact": false,
+   "window_start": 1793997566137,
+   "total": 701,
+   "xp": 628681,
+   "tracked": false,
+   "name": "Ripbone",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794048863919,
+   "time_exact": false,
+   "window_start": 1794040366220,
+   "total": 610,
+   "xp": 637342,
+   "name": "HugeMintCake",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794048863919,
+   "time_exact": false,
+   "window_start": 1794040366220,
+   "total": 575,
+   "xp": 525417,
+   "name": "Stiff as Tam",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794048863919,
+   "time_exact": false,
+   "window_start": 1794041598577,
+   "total": 399,
+   "xp": 228550,
+   "name": "HCJarda",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794048863919,
+   "time_exact": false,
+   "window_start": 1794041598577,
+   "total": 395,
+   "xp": 442912,
+   "name": "Phuk Death",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794048863919,
+   "time_exact": false,
+   "window_start": 1794042186824,
+   "total": 365,
+   "xp": 1468890,
+   "name": "1Life oke",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794048863919,
+   "time_exact": false,
+   "window_start": 1794042809266,
+   "total": 304,
+   "xp": 701475,
+   "name": "KimLong90",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794048473913,
+   "time_exact": true,
+   "total": 340,
+   "xp": 161860,
+   "combat": 40,
+   "top_skills": [
+    [
+     "Crafting",
+     40
+    ],
+    [
+     "Hitpoints",
+     34
+    ],
+    [
+     "Strength",
+     32
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    21
+   ],
+   "world": 613,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Crawler Saga",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794037268515,
+   "total": 590,
+   "xp": 355794,
+   "name": "kittychud420",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794037268515,
+   "total": 553,
+   "xp": 628451,
+   "name": "detuksizgay",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794037268515,
+   "total": 508,
+   "xp": 4637315,
+   "name": "dreadrocket",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794037885380,
+   "total": 478,
+   "xp": 296240,
+   "name": "BebsiMaxer",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794037885380,
+   "total": 468,
+   "xp": 1496510,
+   "name": "1 Life Four",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794037885380,
+   "total": 452,
+   "xp": 375890,
+   "name": "HC TOMBZ",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794038494076,
+   "total": 386,
+   "xp": 343194,
+   "name": "Nephewbegi",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794038494076,
+   "total": 355,
+   "xp": 237334,
+   "name": "EllieHC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794038494076,
+   "total": 332,
+   "xp": 2241432,
+   "name": "Fe mc cheese",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794038494076,
+   "total": 318,
+   "xp": 184932,
+   "name": "Sloraka",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1794038494076,
+   "total": 312,
+   "xp": 294976,
+   "name": "NlNTENDO GBA",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1793991439650,
+   "total": 456,
+   "xp": 665491,
+   "tracked": false,
+   "name": "N0 Reset",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1793992088502,
+   "total": 308,
+   "xp": 652092,
+   "tracked": false,
+   "name": "iilNHliii",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794045813257,
+   "time_exact": false,
+   "window_start": 1793935413170,
+   "total": 337,
+   "xp": 177405,
+   "tracked": false,
+   "name": "H8 Nagger",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794043988142,
+   "time_exact": false,
+   "window_start": 1793990218351,
+   "total": 944,
+   "xp": 2389515,
+   "tracked": false,
+   "name": "by odeon",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794043375344,
+   "time_exact": false,
+   "window_start": 1793989002357,
+   "total": 514,
+   "xp": 1264785,
+   "tracked": false,
+   "name": "hc aleem",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794042809266,
+   "time_exact": false,
+   "window_start": 1794033609924,
+   "total": 631,
+   "xp": 1098300,
+   "name": "Sunridge",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794042809266,
+   "time_exact": false,
+   "window_start": 1794034830050,
+   "total": 411,
+   "xp": 242393,
+   "name": "ALIDAYOUNGOG",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794042809266,
+   "time_exact": false,
+   "window_start": 1794035462381,
+   "total": 326,
+   "xp": 114945,
+   "name": "HC Carpellia",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794042809266,
+   "time_exact": false,
+   "window_start": 1794036092058,
+   "total": 305,
+   "xp": 98058,
+   "name": "Attempt42",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794042809266,
+   "time_exact": false,
+   "window_start": 1793988423491,
+   "total": 321,
+   "xp": 446896,
+   "tracked": false,
+   "name": "DyingToWeed",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794042327023,
+   "time_exact": true,
+   "total": 597,
+   "xp": 1147179,
+   "combat": 69,
+   "top_skills": [
+    [
+     "Attack",
+     60
+    ],
+    [
+     "Strength",
+     58
+    ],
+    [
+     "Hitpoints",
+     56
+    ]
+   ],
+   "top_boss": [
+    "Barrows Chests",
+    6
+   ],
+   "world": 301,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HCw Oja",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794042327023,
+   "time_exact": true,
+   "tracked": false,
+   "total": 597,
+   "xp": 1147179,
+   "combat": 69,
+   "top_skills": [
+    [
+     "Attack",
+     60
+    ],
+    [
+     "Strength",
+     58
+    ],
+    [
+     "Hitpoints",
+     56
+    ]
+   ],
+   "top_boss": [
+    "Barrows Chests",
+    6
+   ],
+   "world": 301,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HCw Oja",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794042286630,
+   "time_exact": true,
+   "total": 513,
+   "xp": 365596,
+   "combat": 44,
+   "top_skills": [
+    [
+     "Attack",
+     44
+    ],
+    [
+     "Magic",
+     44
+    ],
+    [
+     "Thieving",
+     42
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    26
+   ],
+   "world": 591,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "hc toedawg",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794031173759,
+   "total": 643,
+   "xp": 874574,
+   "name": "safestnomnom",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794031173759,
+   "total": 625,
+   "xp": 700265,
+   "name": "I3igDaddyy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794031808325,
+   "total": 422,
+   "xp": 586281,
+   "name": "BoingyDoingy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794032390927,
+   "total": 395,
+   "xp": 216192,
+   "name": "Hard tried",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794032390927,
+   "total": 361,
+   "xp": 165864,
+   "name": "Erect Zach",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794032390927,
+   "total": 330,
+   "xp": 915833,
+   "name": "HARDLIFE819",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794033045387,
+   "total": 315,
+   "xp": 198588,
+   "name": "Sxvoy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794033045387,
+   "total": 312,
+   "xp": 185702,
+   "name": "Nr20",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794033045387,
+   "total": 306,
+   "xp": 84417,
+   "name": "HCStorm",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794039144753,
+   "time_exact": false,
+   "window_start": 1794033045387,
+   "total": 305,
+   "xp": 338060,
+   "name": "John Hard Co",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794037870379,
+   "time_exact": true,
+   "total": 431,
+   "xp": 240695,
+   "combat": 38,
+   "top_skills": [
+    [
+     "Fishing",
+     43
+    ],
+    [
+     "Cooking",
+     41
+    ],
+    [
+     "Attack",
+     40
+    ]
+   ],
+   "top_boss": null,
+   "world": 504,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HC CHAOTIC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794037268515,
+   "time_exact": false,
+   "window_start": 1793982268059,
+   "total": 554,
+   "xp": 369242,
+   "tracked": false,
+   "name": "KingHcMain",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794036702366,
+   "time_exact": false,
+   "window_start": 1793981656958,
+   "total": 370,
+   "xp": 290216,
+   "tracked": false,
+   "name": "RiscyBiscy",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794036092058,
+   "time_exact": false,
+   "window_start": 1794028126573,
+   "total": 598,
+   "xp": 1062309,
+   "name": "Canada HCW",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794036092058,
+   "time_exact": false,
+   "window_start": 1794028735204,
+   "total": 453,
+   "xp": 287648,
+   "name": "Ignorer",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794036092058,
+   "time_exact": false,
+   "window_start": 1794028735204,
+   "total": 408,
+   "xp": 397072,
+   "name": "Gobble Gator",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794036092058,
+   "time_exact": false,
+   "window_start": 1793981656958,
+   "total": 426,
+   "xp": 725306,
+   "tracked": false,
+   "name": "iBolt U",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794035462381,
+   "time_exact": false,
+   "window_start": 1793980476011,
+   "total": 589,
+   "xp": 469718,
+   "tracked": false,
+   "name": "B 0 E R",
+   "run": 4,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794035462381,
+   "time_exact": false,
+   "window_start": 1793981060988,
+   "total": 358,
+   "xp": 1349011,
+   "tracked": false,
+   "name": "HCW 1 LIFE",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794035271320,
+   "time_exact": true,
+   "total": 332,
+   "xp": 535108,
+   "combat": 29,
+   "top_skills": [
+    [
+     "Firemaking",
+     58
+    ],
+    [
+     "Magic",
+     55
+    ],
+    [
+     "Woodcutting",
+     48
+    ]
+   ],
+   "top_boss": [
+    "Wintertodt",
+    3
+   ],
+   "world": 631,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "SilverHills",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794034830050,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 331,
+   "xp": 235371,
+   "tracked": false,
+   "name": "FIR3 W00D",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794034830050,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 336,
+   "xp": 373708,
+   "tracked": false,
+   "name": "Hcwhapsi",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794033045387,
+   "time_exact": false,
+   "window_start": 1794025079233,
+   "total": 634,
+   "xp": 1161274,
+   "name": "BnkSales",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794033045387,
+   "time_exact": false,
+   "window_start": 1794025079233,
+   "total": 633,
+   "xp": 1728613,
+   "name": "Klusco",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794033045387,
+   "time_exact": false,
+   "window_start": 1794025079233,
+   "total": 542,
+   "xp": 667804,
+   "name": "Masak HCM",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794033045387,
+   "time_exact": false,
+   "window_start": 1794026260290,
+   "total": 405,
+   "xp": 590207,
+   "name": "smellyfishyd",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794033045387,
+   "time_exact": false,
+   "window_start": 1794026260290,
+   "total": 370,
+   "xp": 180219,
+   "name": "RatFaceKillr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794033045387,
+   "time_exact": false,
+   "window_start": 1794026912088,
+   "total": 334,
+   "xp": 200033,
+   "name": "ISEEGH0STS",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794032390927,
+   "time_exact": false,
+   "window_start": 1793977379731,
+   "total": 719,
+   "xp": 1194907,
+   "tracked": false,
+   "name": "snow woofer",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794031808325,
+   "time_exact": false,
+   "window_start": 1793976163257,
+   "total": 416,
+   "xp": 196684,
+   "tracked": false,
+   "name": "NewV1pas",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794031808325,
+   "time_exact": false,
+   "window_start": 1793976776606,
+   "total": 374,
+   "xp": 202612,
+   "tracked": false,
+   "name": "BlastoiseFan",
+   "run": 4,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794017105121,
+   "total": 706,
+   "xp": 636184,
+   "name": "Ripbone",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794017105121,
+   "total": 609,
+   "xp": 509919,
+   "name": "B 0 E R",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794017105121,
+   "total": 584,
+   "xp": 863845,
+   "name": "IgnitedFenix",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794017752558,
+   "total": 548,
+   "xp": 557751,
+   "name": "EmmaKay21",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794017752558,
+   "total": 511,
+   "xp": 392713,
+   "name": "RiscyBiscy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794017752558,
+   "total": 507,
+   "xp": 348753,
+   "name": "Rhygarz",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794017752558,
+   "total": 483,
+   "xp": 479952,
+   "name": "Barwf",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 439,
+   "xp": 885389,
+   "name": "one deather",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 435,
+   "xp": 556980,
+   "name": "cElLlnGFAn53",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 431,
+   "xp": 1130572,
+   "name": "HC-SkylarH",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 419,
+   "xp": 211595,
+   "name": "noob player5",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 415,
+   "xp": 238648,
+   "name": "Ronxx",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 412,
+   "xp": 336987,
+   "name": "vancooter",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 409,
+   "xp": 527086,
+   "name": "My Van Broke",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 405,
+   "xp": 769984,
+   "name": "hardkurr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 400,
+   "xp": 547427,
+   "name": "AdefiantHC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018352601,
+   "total": 398,
+   "xp": 1176330,
+   "name": "Goose Cape",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018972560,
+   "total": 380,
+   "xp": 242458,
+   "name": "ExtremeWang",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018972560,
+   "total": 357,
+   "xp": 589235,
+   "name": "hcstyle",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794018972560,
+   "total": 345,
+   "xp": 405546,
+   "name": "Hcwhapsi",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794019542836,
+   "total": 321,
+   "xp": 82779,
+   "name": "HC Forkfu",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794019542836,
+   "total": 312,
+   "xp": 114832,
+   "name": "ratatapunana",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794029993616,
+   "time_exact": false,
+   "window_start": 1794019542836,
+   "total": 308,
+   "xp": 652092,
+   "name": "iilNHliii",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794028836223,
+   "time_exact": true,
+   "total": 408,
+   "xp": 422568,
+   "combat": 33,
+   "top_skills": [
+    [
+     "Fishing",
+     53
+    ],
+    [
+     "Cooking",
+     51
+    ],
+    [
+     "Attack",
+     44
+    ]
+   ],
+   "top_boss": [
+    "Tempoross",
+    26
+   ],
+   "world": 532,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HCUpperDecky",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794028761217,
+   "time_exact": true,
+   "total": 543,
+   "xp": 497652,
+   "combat": 48,
+   "top_skills": [
+    [
+     "Magic",
+     54
+    ],
+    [
+     "Hitpoints",
+     47
+    ],
+    [
+     "Attack",
+     44
+    ]
+   ],
+   "top_boss": null,
+   "world": 440,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "an9nke",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794028735204,
+   "time_exact": false,
+   "window_start": 1793974327589,
+   "total": 436,
+   "xp": 1593638,
+   "tracked": false,
+   "name": "infected bob",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794028735204,
+   "time_exact": false,
+   "window_start": 1793974327589,
+   "total": 513,
+   "xp": 701488,
+   "tracked": false,
+   "name": "Jhaycen HCW",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794027918089,
+   "time_exact": true,
+   "total": 320,
+   "xp": 138039,
+   "combat": 30,
+   "top_skills": [
+    [
+     "Agility",
+     40
+    ],
+    [
+     "Attack",
+     40
+    ],
+    [
+     "Strength",
+     30
+    ]
+   ],
+   "top_boss": null,
+   "world": 611,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "babsnevrdies",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794009181146,
+   "total": 755,
+   "xp": 1035227,
+   "name": "HCW Agane",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794009181146,
+   "total": 684,
+   "xp": 522366,
+   "name": "HCW Chubby",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794009786990,
+   "total": 546,
+   "xp": 389900,
+   "name": "HC Mels",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794009786990,
+   "total": 545,
+   "xp": 487707,
+   "name": "Bloblyhblob",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794009786990,
+   "total": 533,
+   "xp": 478747,
+   "name": "WorldOfHardC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794009786990,
+   "total": 506,
+   "xp": 348412,
+   "name": "OneLifeBlub",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794009786990,
+   "total": 482,
+   "xp": 320922,
+   "name": "Zeelb",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 450,
+   "xp": 819503,
+   "name": "EoJeet",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 416,
+   "xp": 224742,
+   "name": "JUNGLE HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 398,
+   "xp": 166562,
+   "name": "BugelFingers",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 394,
+   "xp": 277584,
+   "name": "HxcWorld Xz",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026912088,
+   "time_exact": false,
+   "window_start": 1794011608907,
+   "total": 309,
+   "xp": 632962,
+   "name": "HCyoloworld",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794026260290,
+   "time_exact": false,
+   "window_start": 1793971834171,
+   "total": 385,
+   "xp": 1042362,
+   "tracked": false,
+   "name": "HCW Slayer",
+   "run": 5,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794025079233,
+   "time_exact": false,
+   "window_start": 1793971240765,
+   "total": 356,
+   "xp": 728026,
+   "tracked": false,
+   "name": "Rod Minion 2",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794025079233,
+   "time_exact": false,
+   "window_start": 1793971240765,
+   "total": 591,
+   "xp": 992854,
+   "tracked": false,
+   "name": "Majin buubee",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794024466304,
+   "time_exact": false,
+   "window_start": 1793971240765,
+   "total": 366,
+   "xp": 832467,
+   "tracked": false,
+   "name": "Giza Hard",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794011033752,
+   "total": 339,
+   "xp": 225027,
+   "name": "Chilicore",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794011033752,
+   "total": 352,
+   "xp": 159800,
+   "name": "PuleMightDie",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 463,
+   "xp": 628716,
+   "name": "SlNK PlSSER",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794009181146,
+   "total": 589,
+   "xp": 418432,
+   "name": "KingHcMain",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794011033752,
+   "total": 360,
+   "xp": 555945,
+   "name": "Saifrock HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794001217744,
+   "total": 829,
+   "xp": 1045248,
+   "name": "Chinesecurca",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794001859056,
+   "total": 551,
+   "xp": 609525,
+   "name": "bibithebozo",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794001859056,
+   "total": 508,
+   "xp": 439013,
+   "name": "[#YW7X8T4IA]",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794002488719,
+   "total": 426,
+   "xp": 725306,
+   "name": "iBolt U",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794002488719,
+   "total": 421,
+   "xp": 584364,
+   "name": "Notcumcore",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794003097337,
+   "total": 389,
+   "xp": 348718,
+   "name": "Hard Blaine",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794003097337,
+   "total": 381,
+   "xp": 259562,
+   "name": "HardNerd2",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794003097337,
+   "total": 360,
+   "xp": 289586,
+   "name": "chat not now",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794003097337,
+   "total": 354,
+   "xp": 224693,
+   "name": "MR901 HCW",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794003666731,
+   "total": 342,
+   "xp": 192084,
+   "name": "911HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023815229,
+   "time_exact": false,
+   "window_start": 1794003666731,
+   "total": 311,
+   "xp": 349522,
+   "name": "Ebola Sr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023245374,
+   "time_exact": false,
+   "window_start": 1794011608907,
+   "total": 302,
+   "xp": 100670,
+   "name": "CabbageBuggs",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023245374,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 401,
+   "xp": 342357,
+   "name": "H SUICIDE C",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023245374,
+   "time_exact": false,
+   "window_start": 1794011033752,
+   "total": 365,
+   "xp": 472395,
+   "name": "DyingToWeed",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023245374,
+   "time_exact": false,
+   "window_start": 1794009181146,
+   "total": 612,
+   "xp": 1422454,
+   "name": "Majin buubee",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794023245374,
+   "time_exact": false,
+   "window_start": 1794009181146,
+   "total": 700,
+   "xp": 660279,
+   "name": "NU0RINNN",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794022602849,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 457,
+   "xp": 183672,
+   "name": "HC Wexler",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794022602849,
+   "time_exact": false,
+   "window_start": 1794010388319,
+   "total": 433,
+   "xp": 434069,
+   "name": "BoneHer519",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794022602849,
+   "time_exact": false,
+   "window_start": 1793969396612,
+   "total": 689,
+   "xp": 1213339,
+   "tracked": false,
+   "name": "lCannotdie",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794021996081,
+   "time_exact": false,
+   "window_start": 1794011033752,
+   "total": 374,
+   "xp": 202612,
+   "name": "BlastoiseFan",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794021996081,
+   "time_exact": false,
+   "window_start": 1793969396612,
+   "total": 426,
+   "xp": 618302,
+   "tracked": false,
+   "name": "RIPBOCA91218",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794021492670,
+   "time_exact": true,
+   "total": 682,
+   "xp": 837402,
+   "combat": 60,
+   "top_skills": [
+    [
+     "Magic",
+     55
+    ],
+    [
+     "Attack",
+     54
+    ],
+    [
+     "Hitpoints",
+     51
+    ]
+   ],
+   "top_boss": null,
+   "world": 542,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "iSMiLeZHC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794020193850,
+   "time_exact": false,
+   "window_start": 1793967609930,
+   "total": 684,
+   "xp": 522366,
+   "tracked": false,
+   "name": "HCW Chubby",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794018972560,
+   "time_exact": false,
+   "window_start": 1793966390964,
+   "total": 362,
+   "xp": 706300,
+   "tracked": false,
+   "name": "Rush 10k GP",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794018558447,
+   "time_exact": true,
+   "total": 483,
+   "xp": 479952,
+   "combat": 3,
+   "top_skills": [
+    [
+     "Firemaking",
+     50
+    ],
+    [
+     "Woodcutting",
+     48
+    ],
+    [
+     "Cooking",
+     46
+    ]
+   ],
+   "top_boss": null,
+   "world": 515,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Barwfd",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794017752558,
+   "time_exact": false,
+   "window_start": 1793965125501,
+   "total": 414,
+   "xp": 408395,
+   "tracked": false,
+   "name": "Vantablak",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794017752558,
+   "time_exact": false,
+   "window_start": 1793965125501,
+   "total": 473,
+   "xp": 632679,
+   "tracked": false,
+   "name": "Tustaquita",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793993317068,
+   "total": 754,
+   "xp": 2234312,
+   "name": "karoty",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793993317068,
+   "total": 614,
+   "xp": 812683,
+   "name": "1-800-IMLOST",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793993317068,
+   "total": 576,
+   "xp": 818688,
+   "name": "Jhaycen HCW",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793993898382,
+   "total": 550,
+   "xp": 528486,
+   "name": "HCW Deli",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793993898382,
+   "total": 520,
+   "xp": 1345902,
+   "name": "hc aleem",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793993898382,
+   "total": 461,
+   "xp": 899760,
+   "name": "Tower of Xop",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793994513978,
+   "total": 457,
+   "xp": 541057,
+   "name": "BamThanatos",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793994513978,
+   "total": 390,
+   "xp": 162033,
+   "name": "Ellisw123",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793995149495,
+   "total": 367,
+   "xp": 193230,
+   "name": "rucking ray",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793995149495,
+   "total": 358,
+   "xp": 595222,
+   "name": "HCW PushinP",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793995149495,
+   "total": 353,
+   "xp": 214506,
+   "name": "ChoppedFish",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793995741331,
+   "total": 313,
+   "xp": 129596,
+   "name": "HC on easy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793995741331,
+   "total": 303,
+   "xp": 272370,
+   "name": "Jupiteresque",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794016489743,
+   "time_exact": false,
+   "window_start": 1793963947564,
+   "total": 818,
+   "xp": 1316220,
+   "tracked": false,
+   "name": "Dino slave 1",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794015923430,
+   "time_exact": false,
+   "window_start": 1794003097337,
+   "total": 366,
+   "xp": 122061,
+   "name": "masonbanking",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794015923430,
+   "time_exact": false,
+   "window_start": 1794002488719,
+   "total": 415,
+   "xp": 289637,
+   "name": "L2PR",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794015923430,
+   "time_exact": false,
+   "window_start": 1794001859056,
+   "total": 487,
+   "xp": 1128963,
+   "name": "bV60",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794015923430,
+   "time_exact": false,
+   "window_start": 1793962721487,
+   "total": 532,
+   "xp": 436242,
+   "tracked": false,
+   "name": "HCW Deli",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794015923430,
+   "time_exact": false,
+   "window_start": 1793962721487,
+   "total": 432,
+   "xp": 986192,
+   "tracked": false,
+   "name": "bV60",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794015780736,
+   "time_exact": true,
+   "total": 427,
+   "xp": 240898,
+   "combat": 43,
+   "top_skills": [
+    [
+     "Strength",
+     40
+    ],
+    [
+     "Attack",
+     40
+    ],
+    [
+     "Hitpoints",
+     38
+    ]
+   ],
+   "top_boss": null,
+   "world": 569,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "MouncMain",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794015313401,
+   "time_exact": false,
+   "window_start": 1794001859056,
+   "total": 481,
+   "xp": 507860,
+   "name": "afk hc sadz",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794015313401,
+   "time_exact": false,
+   "window_start": 1794003666731,
+   "total": 346,
+   "xp": 104757,
+   "name": "HardFakeTaxi",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794014700442,
+   "time_exact": false,
+   "window_start": 1794003097337,
+   "total": 404,
+   "xp": 1293554,
+   "name": "HCW Slayer",
+   "run": 4,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794014057155,
+   "time_exact": false,
+   "window_start": 1794001217744,
+   "total": 762,
+   "xp": 1863881,
+   "name": "lCannotdie",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794014057155,
+   "time_exact": false,
+   "window_start": 1793956172117,
+   "total": 395,
+   "xp": 366713,
+   "tracked": false,
+   "name": "HCBedgeville",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794013429971,
+   "time_exact": false,
+   "window_start": 1793956172117,
+   "total": 628,
+   "xp": 1826733,
+   "tracked": false,
+   "name": "karoty",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794011033752,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 687,
+   "xp": 689732,
+   "tracked": false,
+   "name": "HCW Wildy",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794009330271,
+   "time_exact": true,
+   "total": 436,
+   "xp": 323311,
+   "combat": 49,
+   "top_skills": [
+    [
+     "Magic",
+     48
+    ],
+    [
+     "Attack",
+     45
+    ],
+    [
+     "Strength",
+     41
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    23
+   ],
+   "world": 603,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "DeathsoulFPS",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794009181146,
+   "time_exact": false,
+   "window_start": 1793950670150,
+   "total": 350,
+   "xp": 408518,
+   "tracked": false,
+   "name": "a dy",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793995741331,
+   "total": 300,
+   "xp": 153830,
+   "name": "435ijk245",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793994513978,
+   "total": 419,
+   "xp": 154193,
+   "name": "CardiganJoe",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793987200492,
+   "total": 415,
+   "xp": 261695,
+   "name": "7ACK",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793987200492,
+   "total": 407,
+   "xp": 519143,
+   "name": "deez wut",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793987200492,
+   "total": 370,
+   "xp": 297565,
+   "name": "OnionRenegd",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793987810081,
+   "total": 351,
+   "xp": 414069,
+   "name": "a dy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793987810081,
+   "total": 341,
+   "xp": 804022,
+   "name": "busty flaps",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794008583766,
+   "time_exact": false,
+   "window_start": 1793988423491,
+   "total": 300,
+   "xp": 88352,
+   "name": "Mullbirrick",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794007981772,
+   "time_exact": false,
+   "window_start": 1793994513978,
+   "total": 397,
+   "xp": 185798,
+   "name": "HC Toddler",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794007981772,
+   "time_exact": false,
+   "window_start": 1793993898382,
+   "total": 461,
+   "xp": 243094,
+   "name": "NewV1pas",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794007981772,
+   "time_exact": false,
+   "window_start": 1793995149495,
+   "total": 381,
+   "xp": 849032,
+   "name": "Giza Hard",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794007372526,
+   "time_exact": false,
+   "window_start": 1793993898382,
+   "total": 475,
+   "xp": 289712,
+   "name": "Ex pected",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794006723265,
+   "time_exact": false,
+   "window_start": 1793993898382,
+   "total": 554,
+   "xp": 1142479,
+   "name": "Main Roller",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794006723265,
+   "time_exact": false,
+   "window_start": 1793995741331,
+   "total": 327,
+   "xp": 182971,
+   "name": "Chism",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794006723265,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 395,
+   "xp": 570963,
+   "tracked": false,
+   "name": "[#HSM1S27EJ]",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794006723265,
+   "time_exact": false,
+   "window_start": 1793949488800,
+   "total": 670,
+   "xp": 1338625,
+   "tracked": false,
+   "name": "Colo Guy",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794006104552,
+   "time_exact": false,
+   "window_start": 1793993317068,
+   "total": 765,
+   "xp": 878784,
+   "name": "highcore420",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794005501565,
+   "time_exact": false,
+   "window_start": 1793948224237,
+   "total": 622,
+   "xp": 808765,
+   "tracked": false,
+   "name": "OTFA",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794005501565,
+   "time_exact": false,
+   "window_start": 1793948839948,
+   "total": 727,
+   "xp": 752767,
+   "tracked": false,
+   "name": "highcore420",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794003338689,
+   "time_exact": true,
+   "total": 589,
+   "xp": 1904702,
+   "combat": 70,
+   "top_skills": [
+    [
+     "Ranged",
+     71
+    ],
+    [
+     "Hitpoints",
+     62
+    ],
+    [
+     "Defence",
+     60
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    200
+   ],
+   "world": 545,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Daddy Range",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1794003338689,
+   "time_exact": true,
+   "tracked": false,
+   "total": 589,
+   "xp": 1904702,
+   "combat": 70,
+   "top_skills": [
+    [
+     "Ranged",
+     71
+    ],
+    [
+     "Hitpoints",
+     62
+    ],
+    [
+     "Defence",
+     60
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    200
+   ],
+   "world": 545,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Daddy Range",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794003097337,
+   "time_exact": false,
+   "window_start": 1793945172195,
+   "total": 398,
+   "xp": 460066,
+   "tracked": false,
+   "name": "younggas271k",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793986555452,
+   "total": 514,
+   "xp": 418137,
+   "name": "JewMoneyLord",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793987810081,
+   "total": 358,
+   "xp": 1349011,
+   "name": "HCW 1 LIFE",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793978645713,
+   "total": 704,
+   "xp": 503447,
+   "name": "[#DW46FPXWT]",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793979233152,
+   "total": 545,
+   "xp": 640439,
+   "name": "piphunter",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793979233152,
+   "total": 471,
+   "xp": 757088,
+   "name": "WES_HC_WORLD",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 425,
+   "xp": 455407,
+   "name": "Jack Pease",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 402,
+   "xp": 238128,
+   "name": "nick d3260",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 374,
+   "xp": 443384,
+   "name": "Mourned Loss",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000649938,
+   "time_exact": false,
+   "window_start": 1793980476011,
+   "total": 347,
+   "xp": 338631,
+   "name": "meant2live",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000026027,
+   "time_exact": false,
+   "window_start": 1793987810081,
+   "total": 315,
+   "xp": 158155,
+   "name": "Darb HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000026027,
+   "time_exact": false,
+   "window_start": 1793987200492,
+   "total": 421,
+   "xp": 346894,
+   "name": "SnartDau",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000026027,
+   "time_exact": false,
+   "window_start": 1793986555452,
+   "total": 439,
+   "xp": 1671723,
+   "name": "infected bob",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000026027,
+   "time_exact": false,
+   "window_start": 1793986555452,
+   "total": 459,
+   "xp": 239260,
+   "name": "kek one time",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1794000026027,
+   "time_exact": false,
+   "window_start": 1793987810081,
+   "total": 350,
+   "xp": 219871,
+   "name": "Cummywyrms",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793999386422,
+   "time_exact": false,
+   "window_start": 1793987810081,
+   "total": 353,
+   "xp": 229644,
+   "name": "KUALE MATO",
+   "run": 4,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793998816424,
+   "time_exact": false,
+   "window_start": 1793941512823,
+   "total": 529,
+   "xp": 1732230,
+   "tracked": false,
+   "name": "Gerbil Gerry",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793998202792,
+   "time_exact": false,
+   "window_start": 1793985952174,
+   "total": 723,
+   "xp": 1231317,
+   "name": "snow woofer",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793996980421,
+   "time_exact": false,
+   "window_start": 1793940303477,
+   "total": 313,
+   "xp": 337873,
+   "tracked": false,
+   "name": "HCM God",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793996348009,
+   "time_exact": false,
+   "window_start": 1793881685151,
+   "total": 496,
+   "xp": 261711,
+   "tracked": false,
+   "name": "KaiHavertZuk",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793993898382,
+   "time_exact": false,
+   "window_start": 1793936047856,
+   "total": 482,
+   "xp": 315686,
+   "tracked": false,
+   "name": "aLovedGamer",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793993898382,
+   "time_exact": false,
+   "window_start": 1793878632705,
+   "total": 411,
+   "xp": 836639,
+   "tracked": false,
+   "name": "Zaf Frigid",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793980476011,
+   "total": 350,
+   "xp": 160173,
+   "name": "Died To 67",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793978645713,
+   "total": 743,
+   "xp": 1205901,
+   "name": "HC vs Server",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793971240765,
+   "total": 529,
+   "xp": 1732230,
+   "name": "Gerbil Gerry",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793971834171,
+   "total": 418,
+   "xp": 378558,
+   "name": "Tutorial TCG",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793972486773,
+   "total": 395,
+   "xp": 366713,
+   "name": "HCBedgeville",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793972486773,
+   "total": 374,
+   "xp": 262728,
+   "name": "Guccimarx",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793972486773,
+   "total": 361,
+   "xp": 231275,
+   "name": "CumServer",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793992673254,
+   "time_exact": false,
+   "window_start": 1793972486773,
+   "total": 356,
+   "xp": 728026,
+   "name": "Rod Minion 2",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793992088502,
+   "time_exact": false,
+   "window_start": 1793979233152,
+   "total": 469,
+   "xp": 210417,
+   "name": "avantoewwolf",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793992088502,
+   "time_exact": false,
+   "window_start": 1793978645713,
+   "total": 693,
+   "xp": 1362278,
+   "name": "Colo Guy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793991439650,
+   "time_exact": false,
+   "window_start": 1793980476011,
+   "total": 333,
+   "xp": 75862,
+   "name": "Chek Once",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793991439650,
+   "time_exact": false,
+   "window_start": 1793979233152,
+   "total": 457,
+   "xp": 297685,
+   "name": "BushyASS740",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793991439650,
+   "time_exact": false,
+   "window_start": 1793979233152,
+   "total": 555,
+   "xp": 775498,
+   "name": "FK DARK WIZ",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793990870664,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 365,
+   "xp": 794618,
+   "name": "Rush 10k GP",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793990870664,
+   "time_exact": false,
+   "window_start": 1793978645713,
+   "total": 720,
+   "xp": 741608,
+   "name": "HCW Wildy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793990870664,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 438,
+   "xp": 197915,
+   "name": "HC Ghoul",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793990870664,
+   "time_exact": false,
+   "window_start": 1793979855448,
+   "total": 398,
+   "xp": 166590,
+   "name": "HRDCORE Dalt",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793990870664,
+   "time_exact": false,
+   "window_start": 1793979233152,
+   "total": 483,
+   "xp": 671284,
+   "name": "Tustaquita",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793990218351,
+   "time_exact": false,
+   "window_start": 1793978645713,
+   "total": 771,
+   "xp": 1110367,
+   "name": "OTFA",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793990218351,
+   "time_exact": false,
+   "window_start": 1793876182412,
+   "total": 401,
+   "xp": 505994,
+   "tracked": false,
+   "name": "HM_Mendoza",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793987468320,
+   "time_exact": true,
+   "total": 584,
+   "xp": 311092,
+   "combat": 36,
+   "top_skills": [
+    [
+     "Attack",
+     41
+    ],
+    [
+     "Ranged",
+     37
+    ],
+    [
+     "Smithing",
+     36
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    52
+   ],
+   "world": 350,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Xie Zheng",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793985952174,
+   "time_exact": false,
+   "window_start": 1793928719308,
+   "total": 405,
+   "xp": 373689,
+   "tracked": false,
+   "name": "Harder Love",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793985366430,
+   "time_exact": false,
+   "window_start": 1793971834171,
+   "total": 426,
+   "xp": 618302,
+   "name": "RIPBOCA91218",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793985366430,
+   "time_exact": false,
+   "window_start": 1793963947564,
+   "total": 818,
+   "xp": 1316220,
+   "name": "Dino slave 1",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793985366430,
+   "time_exact": false,
+   "window_start": 1793964558112,
+   "total": 518,
+   "xp": 345234,
+   "name": "4th Novembr",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793985366430,
+   "time_exact": false,
+   "window_start": 1793964558112,
+   "total": 496,
+   "xp": 427732,
+   "name": "Slut Rark",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793985366430,
+   "time_exact": false,
+   "window_start": 1793965737775,
+   "total": 344,
+   "xp": 229654,
+   "name": "[#QA9H80RMV]",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793985366430,
+   "time_exact": false,
+   "window_start": 1793965737775,
+   "total": 317,
+   "xp": 192094,
+   "name": "Giryanna",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793985366430,
+   "time_exact": false,
+   "window_start": 1793965737775,
+   "total": 313,
+   "xp": 338854,
+   "name": "HCM God",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793984729784,
+   "time_exact": false,
+   "window_start": 1793971834171,
+   "total": 431,
+   "xp": 767061,
+   "name": "Grym Tides",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793984729784,
+   "time_exact": false,
+   "window_start": 1793927497186,
+   "total": 518,
+   "xp": 345234,
+   "tracked": false,
+   "name": "4th Novembr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793984144401,
+   "time_exact": false,
+   "window_start": 1793972486773,
+   "total": 350,
+   "xp": 469360,
+   "name": "kepribomb",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793984144401,
+   "time_exact": false,
+   "window_start": 1793971834171,
+   "total": 415,
+   "xp": 414323,
+   "name": "Vantablak",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793982987447,
+   "time_exact": true,
+   "total": 460,
+   "xp": 366017,
+   "combat": 41,
+   "top_skills": [
+    [
+     "Agility",
+     56
+    ],
+    [
+     "Attack",
+     41
+    ],
+    [
+     "Runecraft",
+     35
+    ]
+   ],
+   "top_boss": null,
+   "world": 304,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Huggen3",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793982268059,
+   "time_exact": false,
+   "window_start": 1793972486773,
+   "total": 362,
+   "xp": 272158,
+   "name": "HcW 7Nathan8",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793982268059,
+   "time_exact": false,
+   "window_start": 1793925630049,
+   "total": 569,
+   "xp": 365386,
+   "tracked": false,
+   "name": "HCAragon649",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793982268059,
+   "time_exact": false,
+   "window_start": 1793864577163,
+   "total": 395,
+   "xp": 570963,
+   "tracked": false,
+   "name": "Rafatarded",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793981656958,
+   "time_exact": false,
+   "window_start": 1793925043307,
+   "total": 431,
+   "xp": 767061,
+   "tracked": false,
+   "name": "Grym Tides",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793981060988,
+   "time_exact": false,
+   "window_start": 1793925043307,
+   "total": 350,
+   "xp": 469360,
+   "tracked": false,
+   "name": "kepribomb",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793979855448,
+   "time_exact": false,
+   "window_start": 1793923803937,
+   "total": 386,
+   "xp": 558568,
+   "tracked": false,
+   "name": "HCW Raiden",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793979233152,
+   "time_exact": false,
+   "window_start": 1793921967318,
+   "total": 409,
+   "xp": 471897,
+   "tracked": false,
+   "name": "EasyOutplay2",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793978645713,
+   "time_exact": false,
+   "window_start": 1793921349489,
+   "total": 705,
+   "xp": 450271,
+   "tracked": false,
+   "name": "hc h1pstr",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793965125501,
+   "total": 372,
+   "xp": 137252,
+   "name": "Yellow Clxck",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793951885382,
+   "total": 704,
+   "xp": 503447,
+   "name": "Isa Reetard",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793951885382,
+   "total": 505,
+   "xp": 277710,
+   "name": "Mich Star",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793951885382,
+   "total": 486,
+   "xp": 1766784,
+   "name": "HCW Fletchy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 478,
+   "xp": 220391,
+   "name": "KindHexproof",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 436,
+   "xp": 404526,
+   "name": "Harder Love",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 424,
+   "xp": 376977,
+   "name": "SluttyPup",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 421,
+   "xp": 705845,
+   "name": "HC ez 4 me",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 383,
+   "xp": 289683,
+   "name": "fatretard7",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 374,
+   "xp": 193025,
+   "name": "PollyYangs",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 365,
+   "xp": 226030,
+   "name": "H8 Nagger",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 357,
+   "xp": 149503,
+   "name": "Auvix",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 344,
+   "xp": 229654,
+   "name": "FatGayJewGoy",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953762914,
+   "total": 331,
+   "xp": 156428,
+   "name": "KeybWarr",
+   "run": 4,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953762914,
+   "total": 319,
+   "xp": 209334,
+   "name": "kullikeisari",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953762914,
+   "total": 318,
+   "xp": 121891,
+   "name": "HCiH8 Blacks",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977991071,
+   "time_exact": false,
+   "window_start": 1793953762914,
+   "total": 311,
+   "xp": 1162895,
+   "name": "NUMEIRO",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977379731,
+   "time_exact": false,
+   "window_start": 1793964558112,
+   "total": 455,
+   "xp": 541305,
+   "name": "HC WORLD 615",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793977379731,
+   "time_exact": false,
+   "window_start": 1793963947564,
+   "total": 760,
+   "xp": 1177501,
+   "name": "Hc RideOrDie",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793976776606,
+   "time_exact": false,
+   "window_start": 1793964558112,
+   "total": 464,
+   "xp": 231392,
+   "name": "21st one",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793976776606,
+   "time_exact": false,
+   "window_start": 1793965125501,
+   "total": 410,
+   "xp": 184523,
+   "name": "free skyline",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793975558639,
+   "time_exact": false,
+   "window_start": 1793857880531,
+   "total": 385,
+   "xp": 396042,
+   "tracked": false,
+   "name": "FrigidMain",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793974969890,
+   "time_exact": false,
+   "window_start": 1793917687590,
+   "total": 420,
+   "xp": 720579,
+   "tracked": false,
+   "name": "1UP Ai Alch",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793974327589,
+   "time_exact": false,
+   "window_start": 1793964558112,
+   "total": 495,
+   "xp": 324224,
+   "name": "1 Life Clay",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793974327589,
+   "time_exact": false,
+   "window_start": 1793917687590,
+   "total": 389,
+   "xp": 753239,
+   "tracked": false,
+   "name": "SmaKKr",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793972486773,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 320,
+   "xp": 1315395,
+   "tracked": false,
+   "name": "Craig Alt2",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793971834171,
+   "time_exact": false,
+   "window_start": 1793914010460,
+   "total": 654,
+   "xp": 1072915,
+   "tracked": false,
+   "name": "Hc RideOrDie",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970635994,
+   "time_exact": false,
+   "window_start": 1793951885382,
+   "total": 493,
+   "xp": 250033,
+   "name": "Co l by",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970635994,
+   "time_exact": false,
+   "window_start": 1793945172195,
+   "total": 609,
+   "xp": 407253,
+   "name": "Clu3less HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970635994,
+   "time_exact": false,
+   "window_start": 1793945172195,
+   "total": 494,
+   "xp": 382028,
+   "name": "1 Hard Gnome",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970635994,
+   "time_exact": false,
+   "window_start": 1793945826486,
+   "total": 425,
+   "xp": 226297,
+   "name": "StaySporty",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970008911,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 446,
+   "xp": 237984,
+   "name": "KangarooDuw",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970008911,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 420,
+   "xp": 720670,
+   "name": "1UP Ai Alch",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970008911,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 382,
+   "xp": 198823,
+   "name": "BashirShahid",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970008911,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 462,
+   "xp": 532196,
+   "name": "sillywork HC",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793970008911,
+   "time_exact": false,
+   "window_start": 1793951885382,
+   "total": 484,
+   "xp": 276844,
+   "name": "CYPRU S",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793969396612,
+   "time_exact": false,
+   "window_start": 1793951885382,
+   "total": 549,
+   "xp": 365164,
+   "name": "Sloraka",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793969396612,
+   "time_exact": false,
+   "window_start": 1793952541061,
+   "total": 404,
+   "xp": 161893,
+   "name": "gay dice",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793969396612,
+   "time_exact": false,
+   "window_start": 1793953150882,
+   "total": 353,
+   "xp": 141070,
+   "name": "HooCeeMylsy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793969396612,
+   "time_exact": false,
+   "window_start": 1793911550748,
+   "total": 530,
+   "xp": 299270,
+   "tracked": false,
+   "name": "Yut Reborn",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793968177311,
+   "time_exact": false,
+   "window_start": 1793951885382,
+   "total": 482,
+   "xp": 316577,
+   "name": "aLovedGamer",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793968177311,
+   "time_exact": false,
+   "window_start": 1793909679175,
+   "total": 403,
+   "xp": 310281,
+   "tracked": false,
+   "name": "sillywork HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793965737775,
+   "time_exact": false,
+   "window_start": 1793848108791,
+   "total": 301,
+   "xp": 87605,
+   "tracked": false,
+   "name": "pleasure hom",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793963312881,
+   "time_exact": false,
+   "window_start": 1793945826486,
+   "total": 398,
+   "xp": 460066,
+   "name": "younggas271k",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793963312881,
+   "time_exact": false,
+   "window_start": 1793946401308,
+   "total": 313,
+   "xp": 194802,
+   "name": "HCFEmain",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793963312881,
+   "time_exact": false,
+   "window_start": 1793945826486,
+   "total": 413,
+   "xp": 278348,
+   "name": "EmptysoulHC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793963312881,
+   "time_exact": false,
+   "window_start": 1793937862779,
+   "total": 597,
+   "xp": 435921,
+   "name": "BudsNeverDie",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793963312881,
+   "time_exact": false,
+   "window_start": 1793939083009,
+   "total": 346,
+   "xp": 519731,
+   "name": "Amusing x",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793963312881,
+   "time_exact": false,
+   "window_start": 1793939713887,
+   "total": 332,
+   "xp": 479259,
+   "name": "HCW I EatAss",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793962721487,
+   "time_exact": false,
+   "window_start": 1793904826943,
+   "total": 476,
+   "xp": 489308,
+   "tracked": false,
+   "name": "Chimp Reborn",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793961819869,
+   "time_exact": true,
+   "total": 608,
+   "xp": 829083,
+   "combat": 61,
+   "top_skills": [
+    [
+     "Strength",
+     57
+    ],
+    [
+     "Mining",
+     55
+    ],
+    [
+     "Attack",
+     49
+    ]
+   ],
+   "top_boss": null,
+   "world": 484,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "JimTeacher",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793961819869,
+   "time_exact": true,
+   "tracked": false,
+   "total": 608,
+   "xp": 829083,
+   "combat": 61,
+   "top_skills": [
+    [
+     "Strength",
+     57
+    ],
+    [
+     "Mining",
+     55
+    ],
+    [
+     "Attack",
+     49
+    ]
+   ],
+   "top_boss": null,
+   "world": 484,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "JimTeacher",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793957400448,
+   "time_exact": false,
+   "window_start": 1793945826486,
+   "total": 457,
+   "xp": 231904,
+   "name": "TypeKBT",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793957400448,
+   "time_exact": false,
+   "window_start": 1793945826486,
+   "total": 409,
+   "xp": 471897,
+   "name": "EasyOutplay2",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793956771702,
+   "time_exact": false,
+   "window_start": 1793903605261,
+   "total": 312,
+   "xp": 301331,
+   "tracked": false,
+   "name": "Psalm 118 6",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793956771702,
+   "time_exact": false,
+   "window_start": 1793904175073,
+   "total": 339,
+   "xp": 182110,
+   "tracked": false,
+   "name": "Sister Brule",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793953762914,
+   "time_exact": false,
+   "window_start": 1793894546625,
+   "total": 367,
+   "xp": 145301,
+   "tracked": false,
+   "name": "TypeKBT",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793953150882,
+   "time_exact": false,
+   "window_start": 1793893311438,
+   "total": 471,
+   "xp": 435760,
+   "tracked": false,
+   "name": "Dead Pistola",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793953150882,
+   "time_exact": false,
+   "window_start": 1793893943495,
+   "total": 452,
+   "xp": 280624,
+   "tracked": false,
+   "name": "King Wab",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793952541061,
+   "time_exact": false,
+   "window_start": 1793893311438,
+   "total": 310,
+   "xp": 290345,
+   "tracked": false,
+   "name": "DeathOfilbo",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793951279177,
+   "time_exact": false,
+   "window_start": 1793937862779,
+   "total": 563,
+   "xp": 511290,
+   "name": "Giggle Goat",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793951279177,
+   "time_exact": false,
+   "window_start": 1793930525616,
+   "total": 569,
+   "xp": 365386,
+   "name": "HCAragon649",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793951279177,
+   "time_exact": false,
+   "window_start": 1793931163366,
+   "total": 434,
+   "xp": 216237,
+   "name": "HCJonnyBiggs",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793951279177,
+   "time_exact": false,
+   "window_start": 1793931771384,
+   "total": 374,
+   "xp": 191846,
+   "name": "MorrXPson",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793950670150,
+   "time_exact": false,
+   "window_start": 1793939083009,
+   "total": 389,
+   "xp": 332106,
+   "name": "HARD-KHAR",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793950670150,
+   "time_exact": false,
+   "window_start": 1793937862779,
+   "total": 507,
+   "xp": 531302,
+   "name": "PotaDough",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793950059722,
+   "time_exact": false,
+   "window_start": 1793939083009,
+   "total": 368,
+   "xp": 128445,
+   "name": "22RK",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793950059722,
+   "time_exact": false,
+   "window_start": 1793938490649,
+   "total": 417,
+   "xp": 217320,
+   "name": "NoodleNecked",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793947656533,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 412,
+   "xp": 207754,
+   "tracked": false,
+   "name": "Vuldranni",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793947422904,
+   "time_exact": true,
+   "total": 327,
+   "xp": 944606,
+   "combat": 23,
+   "top_skills": [
+    [
+     "Firemaking",
+     70
+    ],
+    [
+     "Woodcutting",
+     53
+    ],
+    [
+     "Thieving",
+     31
+    ]
+   ],
+   "top_boss": [
+    "Wintertodt",
+    43
+   ],
+   "world": 346,
+   "location": {
+    "x": 3171,
+    "y": 5727,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "gia n",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793947046780,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 536,
+   "xp": 419292,
+   "tracked": false,
+   "name": "Giggle Goat",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793946401308,
+   "time_exact": false,
+   "window_start": 1793887174131,
+   "total": 332,
+   "xp": 247025,
+   "tracked": false,
+   "name": "GoldengloryH",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793944602650,
+   "time_exact": false,
+   "window_start": 1793932384869,
+   "total": 309,
+   "xp": 145623,
+   "name": "stinkytinka",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793944602650,
+   "time_exact": false,
+   "window_start": 1793930525616,
+   "total": 723,
+   "xp": 488599,
+   "name": "hc h1pstr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793944602650,
+   "time_exact": false,
+   "window_start": 1793923222108,
+   "total": 507,
+   "xp": 298244,
+   "name": "Pancake Man",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793944602650,
+   "time_exact": false,
+   "window_start": 1793923803937,
+   "total": 457,
+   "xp": 282320,
+   "name": "9 11 Dancers",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793944602650,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 352,
+   "xp": 249211,
+   "name": "HC Bosh",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793944602650,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 332,
+   "xp": 247025,
+   "name": "GoldengloryH",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793944602650,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 313,
+   "xp": 83745,
+   "name": "PotCore",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793943951822,
+   "time_exact": false,
+   "window_start": 1793931163366,
+   "total": 403,
+   "xp": 271472,
+   "name": "FBF20",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793943951822,
+   "time_exact": false,
+   "window_start": 1793931163366,
+   "total": 459,
+   "xp": 290570,
+   "name": "ChancedTheHC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793943951822,
+   "time_exact": false,
+   "window_start": 1793931163366,
+   "total": 462,
+   "xp": 321806,
+   "name": "King Wab",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793943414150,
+   "time_exact": true,
+   "total": 365,
+   "xp": 221537,
+   "combat": 44,
+   "top_skills": [
+    [
+     "Attack",
+     44
+    ],
+    [
+     "Magic",
+     42
+    ],
+    [
+     "Hitpoints",
+     35
+    ]
+   ],
+   "top_boss": null,
+   "world": 590,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Not Deckiez",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793943381873,
+   "time_exact": false,
+   "window_start": 1793930525616,
+   "total": 580,
+   "xp": 610278,
+   "name": "OG Hard Bone",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793943381873,
+   "time_exact": false,
+   "window_start": 1793884742871,
+   "total": 312,
+   "xp": 431523,
+   "tracked": false,
+   "name": "Psi Pher",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793942768744,
+   "time_exact": false,
+   "window_start": 1793931771384,
+   "total": 345,
+   "xp": 130012,
+   "name": "AsmirsHard",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793941512823,
+   "time_exact": false,
+   "window_start": 1793882933163,
+   "total": 303,
+   "xp": 187555,
+   "tracked": false,
+   "name": "ResetRuzen",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793940935326,
+   "time_exact": false,
+   "window_start": 1793882933163,
+   "total": 487,
+   "xp": 317739,
+   "tracked": false,
+   "name": "TESLA JET",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793940303477,
+   "time_exact": false,
+   "window_start": 1793829107685,
+   "total": 420,
+   "xp": 230597,
+   "tracked": false,
+   "name": "Sand Gigger",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 373,
+   "xp": 438546,
+   "name": "Twabing",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 367,
+   "xp": 407420,
+   "name": "HC Ivey",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 344,
+   "xp": 319264,
+   "name": "FatFart7",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 306,
+   "xp": 314933,
+   "name": "St0pTheb0atz",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 662,
+   "xp": 548544,
+   "name": "Mal Penguino",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 566,
+   "xp": 348253,
+   "name": "Hardcore Alt",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 536,
+   "xp": 323534,
+   "name": "Panuy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 511,
+   "xp": 437176,
+   "name": "Lil Ass Ni",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793915883859,
+   "total": 389,
+   "xp": 753239,
+   "name": "SmaKKr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793915883859,
+   "total": 369,
+   "xp": 219015,
+   "name": "87 Parry 783",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793915883859,
+   "total": 355,
+   "xp": 308736,
+   "name": "HardBubba",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793937225579,
+   "time_exact": false,
+   "window_start": 1793916498148,
+   "total": 340,
+   "xp": 164696,
+   "name": "EximusCore",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793936639420,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 362,
+   "xp": 241999,
+   "name": "BroWhattt",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793936639420,
+   "time_exact": false,
+   "window_start": 1793923803937,
+   "total": 401,
+   "xp": 322452,
+   "name": "HCWF",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793936047856,
+   "time_exact": false,
+   "window_start": 1793923803937,
+   "total": 412,
+   "xp": 207944,
+   "name": "Vuldranni",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793936047856,
+   "time_exact": false,
+   "window_start": 1793924403970,
+   "total": 339,
+   "xp": 466122,
+   "name": "Psalm 118 6",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793935413170,
+   "time_exact": false,
+   "window_start": 1793923803937,
+   "total": 385,
+   "xp": 158585,
+   "name": "alwayzafk",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793935413170,
+   "time_exact": false,
+   "window_start": 1793878054399,
+   "total": 345,
+   "xp": 158773,
+   "tracked": false,
+   "name": "SmorksNBorks",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793933563620,
+   "time_exact": false,
+   "window_start": 1793875622754,
+   "total": 455,
+   "xp": 266058,
+   "tracked": false,
+   "name": "Hardcore Alt",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793932384869,
+   "time_exact": false,
+   "window_start": 1793873737611,
+   "total": 493,
+   "xp": 282081,
+   "tracked": false,
+   "name": "manimjuul",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793929939052,
+   "time_exact": false,
+   "window_start": 1793915883859,
+   "total": 384,
+   "xp": 189152,
+   "name": "W u r z o",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793929939052,
+   "time_exact": false,
+   "window_start": 1793908508078,
+   "total": 422,
+   "xp": 313210,
+   "name": "Evilclifton",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793929939052,
+   "time_exact": false,
+   "window_start": 1793908508078,
+   "total": 403,
+   "xp": 222326,
+   "name": "Huitzaro",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793929939052,
+   "time_exact": false,
+   "window_start": 1793908508078,
+   "total": 369,
+   "xp": 193678,
+   "name": "Prankz",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793929939052,
+   "time_exact": false,
+   "window_start": 1793909117789,
+   "total": 353,
+   "xp": 143519,
+   "name": "Its Got Hard",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793929314850,
+   "time_exact": false,
+   "window_start": 1793916498148,
+   "total": 320,
+   "xp": 1315395,
+   "name": "Craig Alt2",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793928843916,
+   "time_exact": true,
+   "total": 542,
+   "xp": 299577,
+   "combat": 44,
+   "top_skills": [
+    [
+     "Attack",
+     45
+    ],
+    [
+     "Mining",
+     41
+    ],
+    [
+     "Agility",
+     40
+    ]
+   ],
+   "top_boss": null,
+   "world": 368,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Ten Bisons",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793928719308,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 476,
+   "xp": 489308,
+   "name": "Chimp Reborn",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793928719308,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 551,
+   "xp": 483357,
+   "name": "HC Deals",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793928719308,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 507,
+   "xp": 380250,
+   "name": "TESLA JET",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793928100308,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 428,
+   "xp": 240673,
+   "name": "IM ST0NED HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793928100308,
+   "time_exact": false,
+   "window_start": 1793868842543,
+   "total": 444,
+   "xp": 233010,
+   "tracked": false,
+   "name": "V Hard Munch",
+   "run": 3,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793927497186,
+   "time_exact": false,
+   "window_start": 1793915261960,
+   "total": 539,
+   "xp": 492060,
+   "name": "Dead Pistola",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793926848362,
+   "time_exact": false,
+   "window_start": 1793915883859,
+   "total": 354,
+   "xp": 212343,
+   "name": "KeybWarr",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793926848362,
+   "time_exact": false,
+   "window_start": 1793866436419,
+   "total": 304,
+   "xp": 151848,
+   "tracked": false,
+   "name": "goyalty",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793926848362,
+   "time_exact": false,
+   "window_start": 1793866436419,
+   "total": 580,
+   "xp": 345552,
+   "tracked": false,
+   "name": "Mal Penguino",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793925601888,
+   "time_exact": true,
+   "total": 513,
+   "xp": 633266,
+   "combat": 35,
+   "top_skills": [
+    [
+     "Agility",
+     63
+    ],
+    [
+     "Attack",
+     44
+    ],
+    [
+     "Thieving",
+     42
+    ]
+   ],
+   "top_boss": null,
+   "world": 482,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "RockyHCM",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793925601888,
+   "time_exact": true,
+   "tracked": false,
+   "total": 513,
+   "xp": 633266,
+   "combat": 35,
+   "top_skills": [
+    [
+     "Agility",
+     63
+    ],
+    [
+     "Attack",
+     44
+    ],
+    [
+     "Thieving",
+     42
+    ]
+   ],
+   "top_boss": null,
+   "world": 482,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "RockyHCM",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793925307866,
+   "time_exact": true,
+   "total": 452,
+   "xp": 204079,
+   "combat": 37,
+   "top_skills": [
+    [
+     "Attack",
+     44
+    ],
+    [
+     "Agility",
+     34
+    ],
+    [
+     "Smithing",
+     33
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    4
+   ],
+   "world": 350,
+   "location": {
+    "x": 3178,
+    "y": 5728,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "NE Carpal",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793925307866,
+   "time_exact": true,
+   "tracked": false,
+   "total": 452,
+   "xp": 204079,
+   "combat": 37,
+   "top_skills": [
+    [
+     "Attack",
+     44
+    ],
+    [
+     "Agility",
+     34
+    ],
+    [
+     "Smithing",
+     33
+    ]
+   ],
+   "top_boss": [
+    "Brutus",
+    4
+   ],
+   "world": 350,
+   "location": {
+    "x": 3178,
+    "y": 5728,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "NE Carpal",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793925043307,
+   "time_exact": false,
+   "window_start": 1793863380116,
+   "total": 531,
+   "xp": 329308,
+   "tracked": false,
+   "name": "Grim Escape",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793925043307,
+   "time_exact": false,
+   "window_start": 1793863380116,
+   "total": 415,
+   "xp": 274896,
+   "tracked": false,
+   "name": "chicken01234",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793923803937,
+   "time_exact": false,
+   "window_start": 1793862117667,
+   "total": 416,
+   "xp": 280495,
+   "tracked": false,
+   "name": "B 0 E R",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793922610863,
+   "time_exact": false,
+   "window_start": 1793900537260,
+   "total": 575,
+   "xp": 334961,
+   "name": "KaiHavertZuk",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793922610863,
+   "time_exact": false,
+   "window_start": 1793900537260,
+   "total": 541,
+   "xp": 306759,
+   "name": "Bozo Fudge",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793922610863,
+   "time_exact": false,
+   "window_start": 1793900537260,
+   "total": 462,
+   "xp": 216156,
+   "name": "Jekkupullo67",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793922610863,
+   "time_exact": false,
+   "window_start": 1793901153469,
+   "total": 354,
+   "xp": 169317,
+   "name": "M0stly 0s",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793922610863,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 333,
+   "xp": 175883,
+   "name": "Hardcore Dzn",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793922610863,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 328,
+   "xp": 212026,
+   "name": "BubbaMing",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793921967318,
+   "time_exact": false,
+   "window_start": 1793908508078,
+   "total": 395,
+   "xp": 230810,
+   "name": "kakes hell",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793921349489,
+   "time_exact": false,
+   "window_start": 1793908508078,
+   "total": 385,
+   "xp": 329800,
+   "name": "MauveOgre",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793921349489,
+   "time_exact": false,
+   "window_start": 1793908508078,
+   "total": 391,
+   "xp": 227772,
+   "name": "PullOutHard",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793921349489,
+   "time_exact": false,
+   "window_start": 1793907853064,
+   "total": 460,
+   "xp": 390647,
+   "name": "HC Roippa",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793921349489,
+   "time_exact": false,
+   "window_start": 1793909117789,
+   "total": 323,
+   "xp": 206433,
+   "name": "2High4HCW",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793921349489,
+   "time_exact": false,
+   "window_start": 1793907853064,
+   "total": 433,
+   "xp": 240590,
+   "name": "BeegeesCozIm",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793920170698,
+   "time_exact": false,
+   "window_start": 1793908508078,
+   "total": 402,
+   "xp": 199076,
+   "name": "77 Fawn Cut",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793919557573,
+   "time_exact": false,
+   "window_start": 1793907853064,
+   "total": 455,
+   "xp": 210446,
+   "name": "HowCanMakegp",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793919557573,
+   "time_exact": false,
+   "window_start": 1793859671750,
+   "total": 458,
+   "xp": 277162,
+   "tracked": false,
+   "name": "tecumsee",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793919557573,
+   "time_exact": false,
+   "window_start": 1793859671750,
+   "total": 383,
+   "xp": 275312,
+   "tracked": false,
+   "name": "Bone Is Dead",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793914624377,
+   "time_exact": true,
+   "total": 343,
+   "xp": 151704,
+   "combat": 34,
+   "top_skills": [
+    [
+     "Attack",
+     41
+    ],
+    [
+     "Magic",
+     35
+    ],
+    [
+     "Prayer",
+     31
+    ]
+   ],
+   "top_boss": null,
+   "world": 556,
+   "location": {
+    "x": 3176,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "FisherOnlyC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793900537260,
+   "total": 494,
+   "xp": 393745,
+   "name": "Click HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 351,
+   "xp": 108615,
+   "name": "Doctor Acula",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 446,
+   "xp": 247539,
+   "name": "jihxdist",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 429,
+   "xp": 368983,
+   "name": "FrogLad3",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 427,
+   "xp": 287497,
+   "name": "WILDYOFFIC3R",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 404,
+   "xp": 262663,
+   "name": "watt3rz",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 401,
+   "xp": 505994,
+   "name": "HM_Mendoza",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 395,
+   "xp": 570963,
+   "name": "[#HSM1S27EJ]",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 387,
+   "xp": 492840,
+   "name": "DieToPVP",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 377,
+   "xp": 198045,
+   "name": "SmorksNBorks",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 367,
+   "xp": 150432,
+   "name": "No name test",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 359,
+   "xp": 189124,
+   "name": "StereoHyp3",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 358,
+   "xp": 353826,
+   "name": "EST95J",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 332,
+   "xp": 105163,
+   "name": "pleasure hom",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 326,
+   "xp": 292096,
+   "name": "H MTP",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 310,
+   "xp": 290345,
+   "name": "DeathOfilbo",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 303,
+   "xp": 187555,
+   "name": "ResetRuzen",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914623062,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 302,
+   "xp": 93142,
+   "name": "I Spectral",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914010460,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 314,
+   "xp": 161431,
+   "name": "OrangeKumera",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914010460,
+   "time_exact": false,
+   "window_start": 1793900537260,
+   "total": 447,
+   "xp": 277330,
+   "name": "Rat2081",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914010460,
+   "time_exact": false,
+   "window_start": 1793901153469,
+   "total": 406,
+   "xp": 269454,
+   "name": "He did this",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914010460,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 315,
+   "xp": 167358,
+   "name": "HC Z-Dr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793914010460,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 321,
+   "xp": 148253,
+   "name": "Geogantic",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793913398684,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 339,
+   "xp": 160132,
+   "name": "LiveBoopin",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793913398684,
+   "time_exact": false,
+   "window_start": 1793853607209,
+   "total": 500,
+   "xp": 293853,
+   "tracked": false,
+   "name": "Kransnheiser",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793912787331,
+   "time_exact": false,
+   "window_start": 1793900537260,
+   "total": 469,
+   "xp": 745258,
+   "name": "Cola-Xero",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793912787331,
+   "time_exact": false,
+   "window_start": 1793901765830,
+   "total": 336,
+   "xp": 204186,
+   "name": "HMT tops TFA",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793912787331,
+   "time_exact": false,
+   "window_start": 1793900537260,
+   "total": 527,
+   "xp": 360179,
+   "name": "tecumsee",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793910931625,
+   "time_exact": false,
+   "window_start": 1793851775692,
+   "total": 503,
+   "xp": 648451,
+   "tracked": false,
+   "name": "LilTatakae",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793909401000,
+   "time_exact": true,
+   "total": 486,
+   "xp": 352301,
+   "combat": 46,
+   "top_skills": [
+    [
+     "Magic",
+     46
+    ],
+    [
+     "Attack",
+     45
+    ],
+    [
+     "Prayer",
+     39
+    ]
+   ],
+   "top_boss": null,
+   "world": 621,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Tirbunal",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793907853064,
+   "time_exact": false,
+   "window_start": 1793848108791,
+   "total": 380,
+   "xp": 245037,
+   "tracked": false,
+   "name": "FrogLad3",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793907818068,
+   "time_exact": true,
+   "total": 388,
+   "xp": 400129,
+   "combat": 51,
+   "top_skills": [
+    [
+     "Magic",
+     53
+    ],
+    [
+     "Attack",
+     49
+    ],
+    [
+     "Hitpoints",
+     45
+    ]
+   ],
+   "top_boss": null,
+   "world": 625,
+   "location": {
+    "x": 3171,
+    "y": 5727,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "HC Main1",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 432,
+   "xp": 397574,
+   "name": "EvosHard",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 461,
+   "xp": 220377,
+   "name": "GrimReapahr",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793881685151,
+   "total": 489,
+   "xp": 232598,
+   "name": "IVIidget Sex",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793881685151,
+   "total": 411,
+   "xp": 836639,
+   "name": "Zaf Frigid",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793881685151,
+   "total": 395,
+   "xp": 570963,
+   "name": "Rafatarded",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793881685151,
+   "total": 383,
+   "xp": 275312,
+   "name": "Bone Is Dead",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793881685151,
+   "total": 379,
+   "xp": 243522,
+   "name": "CumSnatcher4",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793907245172,
+   "time_exact": false,
+   "window_start": 1793882334092,
+   "total": 303,
+   "xp": 138483,
+   "name": "Shine Again",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906683870,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 385,
+   "xp": 231020,
+   "name": "itaHardWorld",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906683870,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 545,
+   "xp": 478735,
+   "name": "GezzaMcHcann",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906683870,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 341,
+   "xp": 318519,
+   "name": "eliop hunter",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906683870,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 304,
+   "xp": 151848,
+   "name": "goyalty",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906015542,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 517,
+   "xp": 370975,
+   "name": "B 0 E R",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906015542,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 472,
+   "xp": 659246,
+   "name": "HMO5",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906015542,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 300,
+   "xp": 107982,
+   "name": "HCM Toast",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793906015542,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 320,
+   "xp": 312881,
+   "name": "HCmain zakyn",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793905438777,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 306,
+   "xp": 176357,
+   "name": "Ned Le Rats",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793905438777,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 328,
+   "xp": 124526,
+   "name": "loomsmasher",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793905438777,
+   "time_exact": false,
+   "window_start": 1793846260729,
+   "total": 379,
+   "xp": 246269,
+   "tracked": false,
+   "name": "HC SUKlI",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793904826943,
+   "time_exact": false,
+   "window_start": 1793889640130,
+   "total": 312,
+   "xp": 431601,
+   "name": "Psi Pher",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793904175073,
+   "time_exact": false,
+   "window_start": 1793889067260,
+   "total": 327,
+   "xp": 199137,
+   "name": "DBtoDeath",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793904175073,
+   "time_exact": false,
+   "window_start": 1793888455252,
+   "total": 533,
+   "xp": 331643,
+   "name": "Grim Escape",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793902990765,
+   "time_exact": false,
+   "window_start": 1793844402591,
+   "total": 332,
+   "xp": 293233,
+   "tracked": false,
+   "name": "eliop hunter",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793894546625,
+   "time_exact": false,
+   "window_start": 1793882334092,
+   "total": 339,
+   "xp": 147560,
+   "name": "OwnReallTeal",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793894546625,
+   "time_exact": false,
+   "window_start": 1793876182412,
+   "total": 302,
+   "xp": 140118,
+   "name": "Hard Burglar",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793893943495,
+   "time_exact": false,
+   "window_start": 1793881685151,
+   "total": 477,
+   "xp": 271600,
+   "name": "DeadChickn",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793887841779,
+   "time_exact": false,
+   "window_start": 1793868272408,
+   "total": 410,
+   "xp": 779619,
+   "name": "FrigidMain",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793886603657,
+   "time_exact": false,
+   "window_start": 1793874999966,
+   "total": 436,
+   "xp": 453116,
+   "name": "No Me No Die",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793886603657,
+   "time_exact": false,
+   "window_start": 1793874999966,
+   "total": 494,
+   "xp": 431431,
+   "name": "HCW Ashley",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793886603657,
+   "time_exact": false,
+   "window_start": 1793875622754,
+   "total": 355,
+   "xp": 286425,
+   "name": "Oud TH",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793886603657,
+   "time_exact": false,
+   "window_start": 1793874999966,
+   "total": 450,
+   "xp": 247186,
+   "name": "V Hard Munch",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793886225728,
+   "time_exact": true,
+   "total": 361,
+   "xp": 304551,
+   "combat": 45,
+   "top_skills": [
+    [
+     "Magic",
+     50
+    ],
+    [
+     "Attack",
+     44
+    ],
+    [
+     "Hitpoints",
+     41
+    ]
+   ],
+   "top_boss": null,
+   "world": 613,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "tiredturtles",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793881111573,
+   "time_exact": false,
+   "window_start": 1793862117667,
+   "total": 337,
+   "xp": 113498,
+   "name": "CrawlToChaos",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793881111573,
+   "time_exact": false,
+   "window_start": 1793862738469,
+   "total": 324,
+   "xp": 137474,
+   "name": "LAURlE",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793879841765,
+   "time_exact": false,
+   "window_start": 1793868842543,
+   "total": 364,
+   "xp": 204552,
+   "name": "HCW the jkm",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793874386811,
+   "time_exact": false,
+   "window_start": 1793856047391,
+   "total": 430,
+   "xp": 211670,
+   "name": "Tomar Look",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793874386811,
+   "time_exact": false,
+   "window_start": 1793856047391,
+   "total": 402,
+   "xp": 238645,
+   "name": "OkayNowQuit",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793874386811,
+   "time_exact": false,
+   "window_start": 1793856047391,
+   "total": 377,
+   "xp": 212090,
+   "name": "[#3N1U1A4DT]",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793874386811,
+   "time_exact": false,
+   "window_start": 1793856644620,
+   "total": 311,
+   "xp": 109194,
+   "name": "JAG103 HC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793873737611,
+   "time_exact": false,
+   "window_start": 1793862738469,
+   "total": 308,
+   "xp": 284493,
+   "name": "Hc Soberish",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793873737611,
+   "time_exact": false,
+   "window_start": 1793862117667,
+   "total": 409,
+   "xp": 251987,
+   "name": "chicken01234",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793873737611,
+   "time_exact": false,
+   "window_start": 1793862738469,
+   "total": 310,
+   "xp": 121452,
+   "name": "HcDid",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793873177010,
+   "time_exact": false,
+   "window_start": 1793862117667,
+   "total": 479,
+   "xp": 317233,
+   "name": "HC SUKlI",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793873177010,
+   "time_exact": false,
+   "window_start": 1793862738469,
+   "total": 310,
+   "xp": 207111,
+   "name": "Reeeset",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793867623827,
+   "time_exact": false,
+   "window_start": 1793856644620,
+   "total": 328,
+   "xp": 120316,
+   "name": "Inside Toes",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793867623827,
+   "time_exact": false,
+   "window_start": 1793849304052,
+   "total": 372,
+   "xp": 191712,
+   "name": "BamThanatos",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793867623827,
+   "time_exact": false,
+   "window_start": 1793849904370,
+   "total": 300,
+   "xp": 1321751,
+   "name": "Ben Whitmore",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793865823316,
+   "time_exact": false,
+   "window_start": 1793856644620,
+   "total": 329,
+   "xp": 259588,
+   "name": "Sorry Baws",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793861526754,
+   "time_exact": false,
+   "window_start": 1793849304052,
+   "total": 341,
+   "xp": 153277,
+   "name": "jamaismourir",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793861526754,
+   "time_exact": false,
+   "window_start": 1793849904370,
+   "total": 302,
+   "xp": 88983,
+   "name": "DieBwoWannai",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793861526754,
+   "time_exact": false,
+   "window_start": 1793843223470,
+   "total": 372,
+   "xp": 123150,
+   "name": "SparHC",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793861526754,
+   "time_exact": false,
+   "window_start": 1793843223470,
+   "total": 332,
+   "xp": 228581,
+   "name": "Harpcoord",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793860274366,
+   "time_exact": false,
+   "window_start": 1793849304052,
+   "total": 337,
+   "xp": 132500,
+   "name": "Vddypu",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "died",
+   "time": 1793860009733,
+   "time_exact": true,
+   "total": 302,
+   "xp": 206147,
+   "combat": 36,
+   "top_skills": [
+    [
+     "Magic",
+     43
+    ],
+    [
+     "Attack",
+     41
+    ],
+    [
+     "Agility",
+     40
+    ]
+   ],
+   "top_boss": null,
+   "world": 357,
+   "location": {
+    "x": 3171,
+    "y": 5726,
+    "plane": 0,
+    "on_map": true
+   },
+   "npc_killer": null,
+   "player_killer": null,
+   "death_reason": null,
+   "location_text": null,
+   "death_text": null,
+   "name": "Death n Void",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793859090665,
+   "time_exact": false,
+   "window_start": 1793849904370,
+   "total": 304,
+   "xp": 108357,
+   "name": "HC MAIN Jodo",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793859090665,
+   "time_exact": false,
+   "window_start": 1793812316876,
+   "total": 348,
+   "xp": 200421,
+   "tracked": false,
+   "name": "ResetRandy",
+   "run": 2,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793855392008,
+   "time_exact": false,
+   "window_start": 1793837089813,
+   "total": 430,
+   "xp": 261120,
+   "name": "Sand Gigger",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793855392008,
+   "time_exact": false,
+   "window_start": 1793837089813,
+   "total": 383,
+   "xp": 292661,
+   "name": "[#7JYK0H3D8]",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793855392008,
+   "time_exact": false,
+   "window_start": 1793837089813,
+   "total": 311,
+   "xp": 139928,
+   "name": "LunarSceptre",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793855392008,
+   "time_exact": false,
+   "window_start": 1793837705714,
+   "total": 309,
+   "xp": 92719,
+   "name": "DrewMustDie",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793854812580,
+   "time_exact": false,
+   "window_start": 1793843223470,
+   "total": 403,
+   "xp": 171351,
+   "name": "BlackCat_604",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793852359249,
+   "time_exact": false,
+   "window_start": 1793843223470,
+   "total": 509,
+   "xp": 532926,
+   "name": "ResetRandy",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793848698331,
+   "time_exact": false,
+   "window_start": 1793831551238,
+   "total": 360,
+   "xp": 200104,
+   "name": "man ey digga",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793848698331,
+   "time_exact": false,
+   "window_start": 1793831551238,
+   "total": 358,
+   "xp": 221690,
+   "name": "CumManiac67",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793846875934,
+   "time_exact": false,
+   "window_start": 1793837089813,
+   "total": 448,
+   "xp": 211415,
+   "name": "DeathByLag",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793842615765,
+   "time_exact": false,
+   "window_start": 1793826079858,
+   "total": 366,
+   "xp": 190681,
+   "name": "Hard Penuz",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "fallen",
+   "time": 1793842615765,
+   "time_exact": false,
+   "window_start": 1793826079858,
+   "total": 306,
+   "xp": 119812,
+   "name": "FO0D",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793841959899,
+   "time_exact": false,
+   "window_start": 1793831551238,
+   "total": 311,
+   "xp": 153323,
+   "name": "The Resetter",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793836438093,
+   "time_exact": false,
+   "window_start": 1793826079858,
+   "total": 337,
+   "xp": 168223,
+   "name": "LovLance",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793836438093,
+   "time_exact": false,
+   "window_start": 1793821195971,
+   "total": 365,
+   "xp": 160505,
+   "name": "DeadAgain V3",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793833403471,
+   "time_exact": false,
+   "window_start": 1793826079858,
+   "total": 331,
+   "xp": 138976,
+   "name": "HCTeme",
+   "run": 1,
+   "notable": false
+  },
+  {
+   "fate": "reset",
+   "time": 1793830981439,
+   "time_exact": false,
+   "window_start": 1793816242599,
+   "total": 316,
+   "xp": 149267,
+   "name": "0riion",
+   "run": 1,
+   "notable": false
+  }
+ ]
+}
