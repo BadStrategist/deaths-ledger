@@ -1,0 +1,62 @@
+{
+ "last_run": "2026-11-14T16:20:52Z",
+ "steps": {
+  "population": {
+   "ok": true,
+   "at": "2026-11-14T16:15:57Z",
+   "ms": 272
+  },
+  "watcher": {
+   "ok": true,
+   "at": "2026-11-14T16:15:58Z",
+   "ms": 8164
+  },
+  "hiscores": {
+   "ok": true,
+   "at": "2026-11-14T16:16:06Z",
+   "ms": 71292
+  },
+  "firsts": {
+   "ok": true,
+   "at": "2026-11-14T16:17:17Z",
+   "ms": 13672
+  },
+  "graveyard": {
+   "ok": true,
+   "at": "2026-11-14T16:17:31Z",
+   "ms": 201027
+  },
+  "xposts": {
+   "ok": true,
+   "at": "2026-11-14T16:20:52Z",
+   "ms": 8
+  }
+ },
+ "graveyard": {
+  "mode": "hiscore_oldschool_hardcore_mains",
+  "page_scan": "ok",
+  "relay": true,
+  "pages": 1294,
+  "stop": 701,
+  "min_total": 300,
+  "new_deaths": 0,
+  "requests": 195,
+  "cycle_page": 335,
+  "tracking": {
+   "tracked": 5810,
+   "added": 0,
+   "checked": 182,
+   "deaths": 0,
+   "errors": 0,
+   "unchecked": 0
+  }
+ },
+ "last_ok": {
+  "population": "2026-11-14T16:15:57Z",
+  "watcher": "2026-11-14T16:15:58Z",
+  "graveyard": "2026-11-14T16:17:31Z",
+  "hiscores": "2026-11-14T16:16:06Z",
+  "xposts": "2026-11-14T16:20:52Z",
+  "firsts": "2026-11-14T16:17:17Z"
+ }
+}

@@ -1,0 +1,615 @@
+{
+ "status": "live",
+ "updated": "2026-11-14T16:17:17Z",
+ "mode": "hiscore_oldschool_hardcore_mains",
+ "firsts": {
+  "kc-26": {
+   "id": "kc-26",
+   "cat": "boss",
+   "label": "Brutus",
+   "names": [
+    "1Life1Foot",
+    "RiskySoul",
+    "Im3stepsahea",
+    "Babylon Baby",
+    "HCM God"
+   ],
+   "value": 17,
+   "seen": "2026-11-04T12:10:36Z",
+   "headline": false
+  },
+  "kc-69": {
+   "id": "kc-69",
+   "cat": "boss",
+   "label": "Tempoross",
+   "names": [
+    "Meripeto",
+    "Barry Goated",
+    "Wig on HCW"
+   ],
+   "value": 7,
+   "seen": "2026-11-04T14:13:55Z",
+   "headline": false
+  },
+  "kc-88": {
+   "id": "kc-88",
+   "cat": "boss",
+   "label": "Wintertodt",
+   "names": [
+    "SoloMillion",
+    "billybob39",
+    "jimmyhcw",
+    "Pyromanimak2"
+   ],
+   "value": 8,
+   "seen": "2026-11-04T15:28:30Z",
+   "headline": false
+  },
+  "kc-37": {
+   "id": "kc-37",
+   "cat": "boss",
+   "label": "Crazy Archaeologist",
+   "names": [
+    "1 Life Dusky"
+   ],
+   "value": 7,
+   "seen": "2026-11-04T16:34:03Z",
+   "headline": false
+  },
+  "kc-64": {
+   "id": "kc-64",
+   "cat": "boss",
+   "label": "Scurrius",
+   "names": [
+    "DJ Reborn",
+    "Hard Zurk"
+   ],
+   "value": 13,
+   "seen": "2026-11-05T03:28:05Z",
+   "headline": false
+  },
+  "kc-25": {
+   "id": "kc-25",
+   "cat": "boss",
+   "label": "Barrows Chests",
+   "names": [
+    "Furry Taiyl"
+   ],
+   "value": 5,
+   "seen": "2026-11-05T03:48:49Z",
+   "headline": false
+  },
+  "total-1000": {
+   "id": "total-1000",
+   "cat": "total",
+   "label": "1,000 total level",
+   "names": [
+    "SoloMssion"
+   ],
+   "value": 1000,
+   "seen": "2026-11-05T17:41:56Z",
+   "headline": true
+  },
+  "kc-39": {
+   "id": "kc-39",
+   "cat": "boss",
+   "label": "Dagannoth Rex",
+   "names": [
+    "gooner neet"
+   ],
+   "value": 15,
+   "seen": "2026-11-05T18:12:37Z",
+   "headline": false
+  },
+  "kc-27": {
+   "id": "kc-27",
+   "cat": "boss",
+   "label": "Bryophyta",
+   "names": [
+    "Loch i"
+   ],
+   "value": 6,
+   "seen": "2026-11-06T00:00:00Z",
+   "headline": false
+  },
+  "kc-72": {
+   "id": "kc-72",
+   "cat": "boss",
+   "label": "The Hueycoatl",
+   "names": [
+    "hcw atm"
+   ],
+   "value": 6,
+   "seen": "2026-11-06T03:43:40Z",
+   "headline": false
+  },
+  "99-firemaking": {
+   "id": "99-firemaking",
+   "cat": "99",
+   "label": "99 Firemaking",
+   "names": [
+    "Lunny HCW"
+   ],
+   "value": 13034688,
+   "seen": "2026-11-06T08:08:40Z",
+   "headline": true
+  },
+  "kc-60": {
+   "id": "kc-60",
+   "cat": "boss",
+   "label": "Obor",
+   "names": [
+    "I Luv Froppy"
+   ],
+   "value": 5,
+   "seen": "2026-11-06T13:10:18Z",
+   "headline": false
+  },
+  "kc-45": {
+   "id": "kc-45",
+   "cat": "boss",
+   "label": "Giant Mole",
+   "names": [
+    "IWilNevarDie"
+   ],
+   "value": 5,
+   "seen": "2026-11-06T15:02:46Z",
+   "headline": false
+  },
+  "kc-29": {
+   "id": "kc-29",
+   "cat": "boss",
+   "label": "Calvar'ion",
+   "names": [
+    "SocksThe Cat"
+   ],
+   "value": 10,
+   "seen": "2026-11-07T02:04:49Z",
+   "headline": false
+  },
+  "kc-24": {
+   "id": "kc-24",
+   "cat": "boss",
+   "label": "Artio",
+   "names": [
+    "not incline"
+   ],
+   "value": 50,
+   "seen": "2026-11-07T03:56:41Z",
+   "headline": false
+  },
+  "99-thieving": {
+   "id": "99-thieving",
+   "cat": "99",
+   "label": "99 Thieving",
+   "names": [
+    "L2ggs 07"
+   ],
+   "value": 13034660,
+   "seen": "2026-11-07T10:34:20Z",
+   "headline": true
+  },
+  "kc-22": {
+   "id": "kc-22",
+   "cat": "boss",
+   "label": "Amoxliatl",
+   "names": [
+    "Cave Guard"
+   ],
+   "value": 6,
+   "seen": "2026-11-07T13:26:37Z",
+   "headline": false
+  },
+  "kc-91": {
+   "id": "kc-91",
+   "cat": "boss",
+   "label": "Zulrah",
+   "names": [
+    "bonebolts"
+   ],
+   "value": 5,
+   "seen": "2026-11-07T17:10:55Z",
+   "headline": true
+  },
+  "kc-53": {
+   "id": "kc-53",
+   "cat": "boss",
+   "label": "Lunar Chests",
+   "names": [
+    "Im3stepsahea"
+   ],
+   "value": 6,
+   "seen": "2026-11-07T22:56:17Z",
+   "headline": false
+  },
+  "kc-74": {
+   "id": "kc-74",
+   "cat": "boss",
+   "label": "The Royal Titans",
+   "names": [
+    "HCW Deviate",
+    "GnoWayIDie"
+   ],
+   "value": 8,
+   "seen": "2026-11-08T00:58:56Z",
+   "headline": false
+  },
+  "death-1000": {
+   "id": "death-1000",
+   "cat": "death",
+   "label": "First 1,000+ total to fall",
+   "names": [
+    "Fury HCW"
+   ],
+   "value": 1054,
+   "seen": "2026-11-08T04:12:34Z",
+   "headline": true
+  },
+  "kc-86": {
+   "id": "kc-86",
+   "cat": "boss",
+   "label": "Vet'ion",
+   "names": [
+    "Dead Malloxy"
+   ],
+   "value": 18,
+   "seen": "2026-11-08T04:42:47Z",
+   "headline": false
+  },
+  "kc-65": {
+   "id": "kc-65",
+   "cat": "boss",
+   "label": "Shellbane Gryphon",
+   "names": [
+    "XayahFeet"
+   ],
+   "value": 6,
+   "seen": "2026-11-08T05:33:16Z",
+   "headline": false
+  },
+  "kc-38": {
+   "id": "kc-38",
+   "cat": "boss",
+   "label": "Dagannoth Prime",
+   "names": [
+    "RankOneHC"
+   ],
+   "value": 5,
+   "seen": "2026-11-08T07:04:39Z",
+   "headline": false
+  },
+  "99-hunter": {
+   "id": "99-hunter",
+   "cat": "99",
+   "label": "99 Hunter",
+   "names": [
+    "Life Timer"
+   ],
+   "value": 13035485,
+   "seen": "2026-11-08T16:14:15Z",
+   "headline": true
+  },
+  "kc-41": {
+   "id": "kc-41",
+   "cat": "boss",
+   "label": "Deranged Archaeologist",
+   "names": [
+    "chitydrawers"
+   ],
+   "value": 7,
+   "seen": "2026-11-08T19:57:48Z",
+   "headline": false
+  },
+  "99-cooking": {
+   "id": "99-cooking",
+   "cat": "99",
+   "label": "99 Cooking",
+   "names": [
+    "Clamy"
+   ],
+   "value": 13034910,
+   "seen": "2026-11-09T00:22:36Z",
+   "headline": true
+  },
+  "kc-33": {
+   "id": "kc-33",
+   "cat": "boss",
+   "label": "Chaos Elemental",
+   "names": [
+    "HCW CEO"
+   ],
+   "value": 17,
+   "seen": "2026-11-09T04:15:56Z",
+   "headline": false
+  },
+  "99-smithing": {
+   "id": "99-smithing",
+   "cat": "99",
+   "label": "99 Smithing",
+   "names": [
+    "im meltii"
+   ],
+   "value": 13034534,
+   "seen": "2026-11-09T05:27:34Z",
+   "headline": true
+  },
+  "kc-34": {
+   "id": "kc-34",
+   "cat": "boss",
+   "label": "Chaos Fanatic",
+   "names": [
+    "DeepSeaRisk"
+   ],
+   "value": 5,
+   "seen": "2026-11-09T05:47:55Z",
+   "headline": false
+  },
+  "kc-68": {
+   "id": "kc-68",
+   "cat": "boss",
+   "label": "Spindel",
+   "names": [
+    "Giant Diesel"
+   ],
+   "value": 7,
+   "seen": "2026-11-09T13:35:58Z",
+   "headline": false
+  },
+  "99-crafting": {
+   "id": "99-crafting",
+   "cat": "99",
+   "label": "99 Crafting",
+   "names": [
+    "TN1K CRAFT"
+   ],
+   "value": 13034517,
+   "seen": "2026-11-10T05:09:21Z",
+   "headline": true
+  },
+  "kc-54": {
+   "id": "kc-54",
+   "cat": "boss",
+   "label": "Mad Angel",
+   "names": [
+    "The Deino"
+   ],
+   "value": 7,
+   "seen": "2026-11-10T07:51:55Z",
+   "headline": false
+  },
+  "total-1500": {
+   "id": "total-1500",
+   "cat": "total",
+   "label": "1,500 total level",
+   "names": [
+    "HCW Alfie"
+   ],
+   "value": 1500,
+   "seen": "2026-11-10T10:36:12Z",
+   "headline": true
+  },
+  "99-fletching": {
+   "id": "99-fletching",
+   "cat": "99",
+   "label": "99 Fletching",
+   "names": [
+    "hc conquer"
+   ],
+   "value": 13034542,
+   "seen": "2026-11-10T14:30:50Z",
+   "headline": true
+  },
+  "kc-82": {
+   "id": "kc-82",
+   "cat": "boss",
+   "label": "TzKal-Zuk",
+   "names": [
+    "GnoWayIDie"
+   ],
+   "value": 1,
+   "seen": "2026-11-11T00:01:44Z",
+   "headline": true
+  },
+  "kc-63": {
+   "id": "kc-63",
+   "cat": "boss",
+   "label": "Scorpia",
+   "names": [
+    "pipperdan"
+   ],
+   "value": 5,
+   "seen": "2026-11-11T00:53:27Z",
+   "headline": false
+  },
+  "99-ranged": {
+   "id": "99-ranged",
+   "cat": "99",
+   "label": "99 Ranged",
+   "names": [
+    "fat rat rick"
+   ],
+   "value": 13034435,
+   "seen": "2026-11-11T08:01:26Z",
+   "headline": true
+  },
+  "kc-62": {
+   "id": "kc-62",
+   "cat": "boss",
+   "label": "Sarachnis",
+   "names": [
+    "HcWorld Ry"
+   ],
+   "value": 5,
+   "seen": "2026-11-11T13:30:19Z",
+   "headline": false
+  },
+  "99-woodcutting": {
+   "id": "99-woodcutting",
+   "cat": "99",
+   "label": "99 Woodcutting",
+   "names": [
+    "hc not iron"
+   ],
+   "value": 13039350,
+   "seen": "2026-11-11T22:55:34Z",
+   "headline": true
+  },
+  "kc-47": {
+   "id": "kc-47",
+   "cat": "boss",
+   "label": "Hespori",
+   "names": [
+    "KadraWasHere"
+   ],
+   "value": 5,
+   "seen": "2026-11-11T23:15:42Z",
+   "headline": false
+  },
+  "99-farming": {
+   "id": "99-farming",
+   "cat": "99",
+   "label": "99 Farming",
+   "names": [
+    "Daddy Sylus"
+   ],
+   "value": 13056590,
+   "seen": "2026-11-12T02:18:56Z",
+   "headline": true
+  },
+  "kc-13": {
+   "id": "kc-13",
+   "cat": "clue",
+   "label": "Master clue scroll",
+   "names": [
+    "Clue Capone"
+   ],
+   "value": 1,
+   "seen": "2026-11-12T11:10:04Z",
+   "headline": true
+  },
+  "kc-40": {
+   "id": "kc-40",
+   "cat": "boss",
+   "label": "Dagannoth Supreme",
+   "names": [
+    "RankOneHC"
+   ],
+   "value": 5,
+   "seen": "2026-11-12T14:54:04Z",
+   "headline": false
+  },
+  "kc-85": {
+   "id": "kc-85",
+   "cat": "boss",
+   "label": "Venenatis",
+   "names": [
+    "McSkittles73"
+   ],
+   "value": 6,
+   "seen": "2026-11-12T17:27:12Z",
+   "headline": false
+  },
+  "99-magic": {
+   "id": "99-magic",
+   "cat": "99",
+   "label": "99 Magic",
+   "names": [
+    "READING B00K"
+   ],
+   "value": 13034873,
+   "seen": "2026-11-13T12:40:26Z",
+   "headline": true
+  },
+  "kc-66": {
+   "id": "kc-66",
+   "cat": "boss",
+   "label": "Skotizo",
+   "names": [
+    "WSOW"
+   ],
+   "value": 6,
+   "seen": "2026-11-13T16:55:35Z",
+   "headline": true
+  },
+  "99-prayer": {
+   "id": "99-prayer",
+   "cat": "99",
+   "label": "99 Prayer",
+   "names": [
+    "HCW C8"
+   ],
+   "value": 13034492,
+   "seen": "2026-11-13T23:46:17Z",
+   "headline": true
+  },
+  "99-fishing": {
+   "id": "99-fishing",
+   "cat": "99",
+   "label": "99 Fishing",
+   "names": [
+    "FrigidSleep"
+   ],
+   "value": 13034503,
+   "seen": "2026-11-13T23:46:17Z",
+   "headline": true
+  },
+  "99-herblore": {
+   "id": "99-herblore",
+   "cat": "99",
+   "label": "99 Herblore",
+   "names": [
+    "Hard 7G"
+   ],
+   "value": 13034439,
+   "seen": "2026-11-13T23:46:17Z",
+   "headline": true
+  },
+  "kc-80": {
+   "id": "kc-80",
+   "cat": "raid",
+   "label": "Tombs of Amascut",
+   "names": [
+    "RIP S0RA"
+   ],
+   "value": 5,
+   "seen": "2026-11-14T01:07:12Z",
+   "headline": true
+  },
+  "kc-70": {
+   "id": "kc-70",
+   "cat": "boss",
+   "label": "The Gauntlet",
+   "names": [
+    "BK_Crowner"
+   ],
+   "value": 15,
+   "seen": "2026-11-14T07:14:06Z",
+   "headline": true
+  },
+  "99-sailing": {
+   "id": "99-sailing",
+   "cat": "99",
+   "label": "99 Sailing",
+   "names": [
+    "Snorey Jr"
+   ],
+   "value": 13034460,
+   "seen": "2026-11-14T09:07:44Z",
+   "headline": true
+  },
+  "kc-49": {
+   "id": "kc-49",
+   "cat": "boss",
+   "label": "King Black Dragon",
+   "names": [
+    "cchirpchirp"
+   ],
+   "value": 7,
+   "seen": "2026-11-14T14:46:09Z",
+   "headline": false
+  }
+ },
+ "cursor": 11,
+ "max_total": 2376,
+ "total_categories": 105
+}
